@@ -24,7 +24,7 @@ pub fn run() {
             commands::move_pet_window,
             commands::resize_pet_window,
             commands::update_tray,
-            commands::debug_boot,
+            commands::quit_app,
         ])
         .setup(|app| {
             // Ensure user data directory exists

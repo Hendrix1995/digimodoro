@@ -92,9 +92,87 @@ sprite.addEventListener('mousedown', (e) => {
   window.addEventListener('mouseup', onUp, true)
 })
 
-window.addEventListener('contextmenu', (e) => e.preventDefault())
+async function doHatchNew(): Promise<void> {
+  const fresh = initialState({
+    now: Math.floor(Date.now() / 1000),
+    petId: `pet_${Math.random().toString(36).slice(2, 10)}${Date.now().toString(36).slice(-4)}`,
+    seedEggVariant: 1 + Math.floor(Math.random() * 11),
+    personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[Math.floor(Math.random() * 5)],
+  })
+  await invoke('reset_pet', { newState: fresh })
+  void emit('digi:reset-pet', { fresh })
+}
+
+const menu = document.createElement('div')
+menu.id = 'ctx-menu'
+menu.className = 'ctx-menu hidden'
+document.body.appendChild(menu)
+let currentSnap: Snapshot | undefined
+
+window.addEventListener('contextmenu', (e) => {
+  e.preventDefault()
+  showContextMenu()
+})
+
+document.addEventListener('mousedown', (e) => {
+  if (!menu.classList.contains('hidden') && !(e.target as HTMLElement).closest('#ctx-menu')) {
+    menu.classList.add('hidden')
+  }
+})
+
+function showContextMenu(): void {
+  while (menu.firstChild) menu.removeChild(menu.firstChild)
+  const snap = currentSnap
+  const now = Math.floor(Date.now() / 1000)
+
+  if (!snap || snap.state.rip) {
+    addMenuItem(t('hatchNew', lang), () => void doHatchNew())
+  } else {
+    const phase = snap.phase.kind
+    if (phase === 'idle') {
+      addMenuItem(t('startFocus', lang), () => scheduler.dispatch({ type: 'start_focus', now }))
+    } else if (phase === 'focus') {
+      addMenuItem(t('pause', lang), () => scheduler.dispatch({ type: 'pause', now }))
+      addMenuItem(t('abort', lang), () => scheduler.dispatch({ type: 'abort', now }))
+    } else if (phase === 'paused') {
+      addMenuItem(t('resume', lang), () => scheduler.dispatch({ type: 'resume', now }))
+      addMenuItem(t('abort', lang), () => scheduler.dispatch({ type: 'abort', now }))
+    } else if (phase === 'done') {
+      addMenuItem(t('startBreak', lang), () => scheduler.dispatch({ type: 'acknowledge_done', now }))
+      addMenuItem(t('skipBreak', lang), () => scheduler.dispatch({ type: 'skip_break', now }))
+    } else if (phase === 'break') {
+      addMenuItem(t('pause', lang), () => scheduler.dispatch({ type: 'pause', now }))
+      addMenuItem(t('skipBreak', lang), () => scheduler.dispatch({ type: 'skip_break', now }))
+    }
+  }
+
+  addSeparator()
+  addMenuItem(t('showStatus', lang), () => void invoke('show_control_window'))
+  addSeparator()
+  addMenuItem(t('quit', lang), () => void invoke('quit_app').catch(() => {}))
+
+  menu.classList.remove('hidden')
+}
+
+function addMenuItem(label: string, onClick: () => void): void {
+  const item = document.createElement('div')
+  item.className = 'ctx-item'
+  item.textContent = label
+  item.addEventListener('click', () => {
+    menu.classList.add('hidden')
+    onClick()
+  })
+  menu.appendChild(item)
+}
+
+function addSeparator(): void {
+  const sep = document.createElement('div')
+  sep.className = 'ctx-sep'
+  menu.appendChild(sep)
+}
 
 function broadcastSnapshot(snap: Snapshot): void {
+  currentSnap = snap
   void emit('digi:snapshot', snap)
 }
 
@@ -141,8 +219,6 @@ async function registerActionListener(): Promise<void> {
 }
 
 async function boot(): Promise<void> {
-  await invoke('debug_boot').catch(() => {})
-
   const rules = await invoke<EvolutionRule[]>('load_evolution_rules')
   const lineage = await invoke<Record<string, string>>('load_egg_lineage')
   setEggLineage(lineage)

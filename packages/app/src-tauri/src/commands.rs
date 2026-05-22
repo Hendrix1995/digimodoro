@@ -118,87 +118,6 @@ pub fn resize_pet_window(app: AppHandle, width: f64, height: f64) -> Result<(), 
     Ok(())
 }
 
-// --- Debug ---
-
-#[tauri::command]
-pub fn debug_boot(app: AppHandle) -> Result<String, String> {
-    use std::fmt::Write;
-    let mut log = String::new();
-
-    // 1. Data dir
-    let data_dir = store::get_data_dir();
-    writeln!(log, "[data_dir] {}", data_dir.display()).ok();
-    writeln!(log, "[data_dir exists] {}", data_dir.exists()).ok();
-
-    // 2. Resource dir (BaseDirectory::Resource)
-    match app.path().resource_dir() {
-        Ok(res) => {
-            writeln!(log, "[resource_dir] {}", res.display()).ok();
-            writeln!(log, "[resource_dir exists] {}", res.exists()).ok();
-
-            // Check key resource files
-            for path in &[
-                "resources/evolution.json",
-                "resources/roster.json",
-                "resources/egg-lineage.json",
-                "resources/sprites",
-            ] {
-                let full = res.join(path);
-                writeln!(log, "[{}] exists={}", path, full.exists()).ok();
-            }
-
-            // Check sprites subdirectories
-            let sprites = res.join("resources").join("sprites");
-            if sprites.exists() {
-                match std::fs::read_dir(&sprites) {
-                    Ok(entries) => {
-                        let mut count = 0;
-                        let mut samples = Vec::new();
-                        for entry in entries.flatten() {
-                            count += 1;
-                            if samples.len() < 10 {
-                                samples.push(format!("{}", entry.path().display()));
-                            }
-                        }
-                        writeln!(log, "[sprites/ entries] {}", count).ok();
-                        for s in &samples {
-                            writeln!(log, "  {}", s).ok();
-                        }
-                    }
-                    Err(e) => { writeln!(log, "[sprites/ read_dir error] {}", e).ok(); }
-                }
-            }
-
-            // Check a specific sprite file
-            let test_sprite = res.join("resources").join("sprites").join("botamon").join("idle.gif");
-            writeln!(log, "[sprites/botamon/idle.gif] exists={}", test_sprite.exists()).ok();
-
-            let test_egg = res.join("resources").join("sprites").join("egg").join("v01.png");
-            writeln!(log, "[sprites/egg/v01.png] exists={}", test_egg.exists()).ok();
-        }
-        Err(e) => {
-            writeln!(log, "[resource_dir error] {}", e).ok();
-        }
-    }
-
-    // 3. Try resolving via the same method used by load_resource_json
-    match app.path().resolve("resources/evolution.json", tauri::path::BaseDirectory::Resource) {
-        Ok(p) => writeln!(log, "[resolve data/evolution.json] {} exists={}", p.display(), p.exists()).ok(),
-        Err(e) => writeln!(log, "[resolve data/evolution.json error] {}", e).ok(),
-    };
-
-    match app.path().resolve("resources/sprites", tauri::path::BaseDirectory::Resource) {
-        Ok(p) => writeln!(log, "[resolve sprites] {} exists={}", p.display(), p.exists()).ok(),
-        Err(e) => writeln!(log, "[resolve sprites error] {}", e).ok(),
-    };
-
-    // Write to debug.log
-    let log_path = data_dir.join("debug.log");
-    std::fs::write(&log_path, &log).ok();
-    writeln!(log, "[debug.log written to] {}", log_path.display()).ok();
-
-    Ok(log)
-}
 
 // --- Tray ---
 
@@ -209,4 +128,9 @@ pub fn update_tray(app: AppHandle, title: String, _phase_info: String) -> Result
         tray.set_tooltip(Some(&format!("DigiModoro{}", title))).map_err(|e| e.to_string())?;
     }
     Ok(())
+}
+
+#[tauri::command]
+pub fn quit_app(app: AppHandle) {
+    app.exit(0);
 }

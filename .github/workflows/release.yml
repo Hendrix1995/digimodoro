@@ -4,7 +4,6 @@ on:
   push:
     tags:
       - 'v*.*.*'
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -42,12 +41,11 @@ jobs:
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAG_NAME: ${{ github.ref_name }}
         with:
           projectPath: packages/app
           tauriScript: pnpm tauri
-          tagName: ${{ env.TAG_NAME }}
-          releaseName: DigiModoro ${{ env.TAG_NAME }}
-          releaseBody: See the assets to download and install this version.
-          releaseDraft: true
+          tagName: v__VERSION__
+          releaseName: DigiModoro v__VERSION__
+          releaseBody: Windows 전용 데스크탑 앱. .exe 파일을 다운로드하여 설치하세요.
+          releaseDraft: false
           prerelease: false

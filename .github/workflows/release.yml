@@ -45,6 +45,7 @@ jobs:
           TAG_NAME: ${{ github.ref_name }}
         with:
           projectPath: packages/app
+          tauriScript: pnpm tauri
           tagName: ${{ env.TAG_NAME }}
           releaseName: DigiModoro ${{ env.TAG_NAME }}
           releaseBody: See the assets to download and install this version.

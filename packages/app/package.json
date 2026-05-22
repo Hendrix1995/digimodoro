@@ -5,6 +5,7 @@
   "description": "Tauri shell for DigiModoro",
   "type": "module",
   "scripts": {
+    "tauri": "tauri",
     "clean": "rm -rf dist",
     "vite:dev": "vite dev",
     "vite:build": "vite build",

@@ -9,9 +9,7 @@ Korean version: [README.md](README.md)
 
 ## Download (non-developers)
 
-### macOS — .pkg installer (recommended)
-
-The `.pkg` installer auto-strips the unsigned-app quarantine attribute during install, so it's a clean double-click experience with no Terminal involved.
+### macOS
 
 | Architecture | Download |
 |---|---|
@@ -24,20 +22,7 @@ Install:
 3. Run through the installer ("Continue → Continue → Install").
 4. Done — launch DigiModoro from Launchpad.
 
-(A postinstall script runs `xattr -cr /Applications/DigiModoro.app` automatically.)
-
-### macOS — .dmg (drag-and-drop / for Homebrew)
-
-| Architecture | Download |
-|---|---|
-| Apple Silicon | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
-| Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
-
-A direct `.dmg` download triggers Gatekeeper's *"is damaged"* error. Either run `xattr -cr /Applications/DigiModoro.app` once after copying to `/Applications`, or install via Homebrew Cask:
-
-```bash
-brew install --cask Hendrix1995/digimodoro/digimodoro
-```
+(A postinstall script auto-strips the `com.apple.quarantine` attribute from `/Applications/DigiModoro.app`, so no Terminal command is needed.)
 
 ### Windows
 

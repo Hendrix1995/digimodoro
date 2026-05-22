@@ -36,16 +36,10 @@ extraResources:
 
 mac:
   target:
-    # .pkg is the primary distribution format. The pkg-scripts postinstall
-    # automatically strips com.apple.quarantine after install, so users get
-    # working app from a double-click without ever touching Terminal. dmg
-    # is kept as a secondary option for users who prefer drag-and-drop or
-    # for Homebrew Cask installs.
+    # .pkg only. The postinstall script under build/pkg-scripts/ strips
+    # com.apple.quarantine after install, giving non-developers a clean
+    # double-click experience with no Terminal involvement.
     - target: pkg
-      arch:
-        - arm64
-        - x64
-    - target: dmg
       arch:
         - arm64
         - x64
@@ -53,15 +47,7 @@ mac:
   identity: null  # ad-hoc unsigned for local builds
   hardenedRuntime: false
   gatekeeperAssess: false
-  # Drop the version from the filename so README direct-download links
-  # ('/releases/latest/download/...') stay valid across versions.
   artifactName: ${productName}-mac-${arch}.${ext}
-
-dmg:
-  writeUpdateInfo: false
-  # ULFO = LZFSE — Apple's modern compressor. Better ratio than the default
-  # bzip2 format, with native macOS 10.11+ support (we already require 10.12+).
-  format: ULFO
 
 pkg:
   scripts: build/pkg-scripts

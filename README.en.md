@@ -10,11 +10,11 @@
 
 | OS | |
 |---|---|
-| macOS (Apple Silicon) | [DigiModoro-mac-arm64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.pkg) |
-| macOS (Intel) | [DigiModoro-mac-x64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.pkg) |
+| macOS (Apple Silicon) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| macOS (Intel) | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
 | Windows | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
 
-**macOS**: double-click the `.pkg` → if a warning appears, right-click → **Open** → "Continue → Install".
+**macOS**: open the `.dmg` → drag DigiModoro into `Applications` → launch from Launchpad. If a warning appears on first run, right-click → **Open**.
 **Windows**: double-click the `.exe` → if a warning appears, **More info → Run anyway**.
 
 ---

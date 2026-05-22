@@ -36,10 +36,7 @@ extraResources:
 
 mac:
   target:
-    # .pkg only. The postinstall script under build/pkg-scripts/ strips
-    # com.apple.quarantine after install, giving non-developers a clean
-    # double-click experience with no Terminal involvement.
-    - target: pkg
+    - target: dmg
       arch:
         - arm64
         - x64
@@ -49,12 +46,9 @@ mac:
   gatekeeperAssess: false
   artifactName: ${productName}-mac-${arch}.${ext}
 
-pkg:
-  scripts: build/pkg-scripts
-  installLocation: /Applications
-  allowAnywhere: true
-  allowCurrentUserHome: true
-  allowRootDirectory: true
+dmg:
+  writeUpdateInfo: false
+  format: ULFO
 
 win:
   target:

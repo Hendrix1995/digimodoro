@@ -10,12 +10,12 @@ English: [README.en.md](README.en.md)
 
 | 운영체제 | |
 |---|---|
-| macOS (Apple Silicon) | [DigiModoro-mac-arm64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.pkg) |
-| macOS (Intel) | [DigiModoro-mac-x64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.pkg) |
+| macOS (Apple Silicon) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| macOS (Intel) | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
 | Windows | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
 
-**macOS**: 받은 `.pkg` 더블클릭 → 경고가 뜨면 **우클릭 → 열기** → "계속 → 설치".
-**Windows**: 받은 `.exe` 더블클릭 → 경고가 뜨면 **추가 정보 → 실행**.
+**macOS**: `.dmg` 더블클릭 → 안의 DigiModoro 아이콘을 `Applications` 폴더로 드래그 → Launchpad에서 실행. 첫 실행 시 경고가 뜨면 **우클릭 → 열기**.
+**Windows**: `.exe` 더블클릭 → 경고가 뜨면 **추가 정보 → 실행**.
 
 ---
 

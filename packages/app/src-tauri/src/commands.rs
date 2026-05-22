@@ -40,12 +40,12 @@ pub fn append_session(session: serde_json::Value) -> Result<(), String> {
 
 #[tauri::command]
 pub fn load_evolution_rules(app: AppHandle) -> Result<serde_json::Value, String> {
-    store::load_resource_json(&app, "evolution.json")
+    store::load_resource_json(&app, "resources/evolution.json")
 }
 
 #[tauri::command]
 pub fn load_egg_lineage(app: AppHandle) -> Result<serde_json::Value, String> {
-    store::load_resource_json(&app, "egg-lineage.json")
+    store::load_resource_json(&app, "resources/egg-lineage.json")
 }
 
 // --- Sprite loading (data URL) ---
@@ -138,17 +138,17 @@ pub fn debug_boot(app: AppHandle) -> Result<String, String> {
 
             // Check key resource files
             for path in &[
-                "evolution.json",
-                "roster.json",
-                "egg-lineage.json",
-                "sprites",
+                "resources/evolution.json",
+                "resources/roster.json",
+                "resources/egg-lineage.json",
+                "resources/sprites",
             ] {
                 let full = res.join(path);
                 writeln!(log, "[{}] exists={}", path, full.exists()).ok();
             }
 
             // Check sprites subdirectories
-            let sprites = res.join("sprites");
+            let sprites = res.join("resources").join("sprites");
             if sprites.exists() {
                 match std::fs::read_dir(&sprites) {
                     Ok(entries) => {
@@ -170,10 +170,10 @@ pub fn debug_boot(app: AppHandle) -> Result<String, String> {
             }
 
             // Check a specific sprite file
-            let test_sprite = res.join("sprites").join("botamon").join("idle.gif");
+            let test_sprite = res.join("resources").join("sprites").join("botamon").join("idle.gif");
             writeln!(log, "[sprites/botamon/idle.gif] exists={}", test_sprite.exists()).ok();
 
-            let test_egg = res.join("sprites").join("egg").join("v01.png");
+            let test_egg = res.join("resources").join("sprites").join("egg").join("v01.png");
             writeln!(log, "[sprites/egg/v01.png] exists={}", test_egg.exists()).ok();
         }
         Err(e) => {
@@ -182,12 +182,12 @@ pub fn debug_boot(app: AppHandle) -> Result<String, String> {
     }
 
     // 3. Try resolving via the same method used by load_resource_json
-    match app.path().resolve("evolution.json", tauri::path::BaseDirectory::Resource) {
+    match app.path().resolve("resources/evolution.json", tauri::path::BaseDirectory::Resource) {
         Ok(p) => writeln!(log, "[resolve data/evolution.json] {} exists={}", p.display(), p.exists()).ok(),
         Err(e) => writeln!(log, "[resolve data/evolution.json error] {}", e).ok(),
     };
 
-    match app.path().resolve("sprites", tauri::path::BaseDirectory::Resource) {
+    match app.path().resolve("resources/sprites", tauri::path::BaseDirectory::Resource) {
         Ok(p) => writeln!(log, "[resolve sprites] {} exists={}", p.display(), p.exists()).ok(),
         Err(e) => writeln!(log, "[resolve sprites error] {}", e).ok(),
     };

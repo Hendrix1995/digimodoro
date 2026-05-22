@@ -15,6 +15,7 @@ release
 
 # Tauri
 packages/app/src-tauri/target
+packages/app/src-tauri/resources
 
 # Sprite raw sources (recovered locally, not committed)
 packages/data/sprites/_raw

@@ -7,7 +7,7 @@
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
     "beforeDevCommand": "pnpm vite:dev",
-    "beforeBuildCommand": "pnpm vite:build"
+    "beforeBuildCommand": "node copy-resources.mjs && pnpm vite:build"
   },
   "app": {
     "windows": [
@@ -38,10 +38,7 @@
       "icons/icon.png"
     ],
     "resources": [
-      "../../data/evolution.json",
-      "../../data/roster.json",
-      "../../data/egg-lineage.json",
-      "../../data/sprites/"
+      "resources/"
     ],
     "windows": {
       "webviewInstallMode": {

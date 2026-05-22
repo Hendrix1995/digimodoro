@@ -143,6 +143,6 @@ pub fn load_resource_json(app: &tauri::AppHandle, relative_path: &str) -> Result
 
 pub fn get_sprites_dir(app: &tauri::AppHandle) -> Result<PathBuf, String> {
     app.path()
-        .resolve("sprites", tauri::path::BaseDirectory::Resource)
+        .resolve("resources/sprites", tauri::path::BaseDirectory::Resource)
         .map_err(|e| format!("resolve sprites: {}", e))
 }

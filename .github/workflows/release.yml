@@ -43,12 +43,21 @@ jobs:
         working-directory: packages/app
         run: node esbuild.config.mjs
 
-      - name: Package (mac)
+      - name: Package (mac arm64)
         if: matrix.target == 'mac'
         working-directory: packages/app
-        run: pnpm exec electron-builder --mac
+        # Build each arch sequentially. electron-builder's pkg target writes
+        # to the same temp filename ('com.hendrix.digimodoro.pkg') for both
+        # archs and crashes when the parallel arm64/x64 builds clash on it.
+        run: pnpm exec electron-builder --mac --arm64
         env:
-          # No code signing — ad-hoc unsigned, matches local builds.
+          CSC_IDENTITY_AUTO_DISCOVERY: false
+
+      - name: Package (mac x64)
+        if: matrix.target == 'mac'
+        working-directory: packages/app
+        run: pnpm exec electron-builder --mac --x64
+        env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
 
       - name: Package (win)

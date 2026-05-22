@@ -1,0 +1,3306 @@
+[
+  {
+    "id": "egg",
+    "name": "Digi Egg",
+    "stage": "egg",
+    "sprite": {
+      "idle": "egg/idle.png"
+    }
+  },
+  {
+    "id": "aegisdramon",
+    "name": "Aegisdramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "aegisdramon/idle.gif"
+    }
+  },
+  {
+    "id": "aerovdramon",
+    "name": "Aero V-dramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "aerovdramon/idle.gif"
+    }
+  },
+  {
+    "id": "agumon",
+    "name": "Agumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "agumon/idle.gif"
+    }
+  },
+  {
+    "id": "airdramon",
+    "name": "Airdramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "airdramon/idle.gif"
+    }
+  },
+  {
+    "id": "akatorimon",
+    "name": "Akatorimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "akatorimon/idle.gif"
+    }
+  },
+  {
+    "id": "allomon",
+    "name": "Allomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "allomon/idle.gif"
+    }
+  },
+  {
+    "id": "alphamon",
+    "name": "Alphamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "alphamon/idle.gif"
+    }
+  },
+  {
+    "id": "alraumon",
+    "name": "Alraumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "alraumon/idle.gif"
+    }
+  },
+  {
+    "id": "atlurkabuterimonred",
+    "name": "Atlur Kabuterimon (Red)",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "atlurkabuterimonred/idle.gif"
+    }
+  },
+  {
+    "id": "andromon",
+    "name": "Andromon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "andromon/idle.gif"
+    }
+  },
+  {
+    "id": "angemon",
+    "name": "Angemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "angemon/idle.gif"
+    }
+  },
+  {
+    "id": "angewomon",
+    "name": "Angewomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "angewomon/idle.gif"
+    }
+  },
+  {
+    "id": "ankylomon",
+    "name": "Ankylomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "ankylomon/idle.gif"
+    }
+  },
+  {
+    "id": "andiramon",
+    "name": "Andiramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "andiramon/idle.gif"
+    }
+  },
+  {
+    "id": "anubimon",
+    "name": "Anubimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "anubimon/idle.gif"
+    }
+  },
+  {
+    "id": "hanumon",
+    "name": "Hanumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "hanumon/idle.gif"
+    }
+  },
+  {
+    "id": "apocalymon",
+    "name": "Apocalymon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "apocalymon/idle.gif"
+    }
+  },
+  {
+    "id": "apollomon",
+    "name": "Apollomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "apollomon/idle.gif"
+    }
+  },
+  {
+    "id": "aquilamon",
+    "name": "Aquilamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "aquilamon/idle.gif"
+    }
+  },
+  {
+    "id": "archnemon",
+    "name": "Archnemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "archnemon/idle.gif"
+    }
+  },
+  {
+    "id": "algomonperfect",
+    "name": "Algomon (Perfect)",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "algomonperfect/idle.gif"
+    }
+  },
+  {
+    "id": "algomonultimate",
+    "name": "Algomon (Ultimate)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "algomonultimate/idle.gif"
+    }
+  },
+  {
+    "id": "armagemon",
+    "name": "Armagemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "armagemon/idle.gif"
+    }
+  },
+  {
+    "id": "babamon",
+    "name": "Babamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "babamon/idle.gif"
+    }
+  },
+  {
+    "id": "baihumon",
+    "name": "Baihumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "baihumon/idle.gif"
+    }
+  },
+  {
+    "id": "bakemon",
+    "name": "Bakemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "bakemon/idle.gif"
+    }
+  },
+  {
+    "id": "bakumon",
+    "name": "Bakumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "bakumon/idle.gif"
+    }
+  },
+  {
+    "id": "bancholeomon",
+    "name": "Bancho Leomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "bancholeomon/idle.gif"
+    }
+  },
+  {
+    "id": "barbamon",
+    "name": "Barbamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "barbamon/idle.gif"
+    }
+  },
+  {
+    "id": "bastemon",
+    "name": "Bastemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "bastemon/idle.gif"
+    }
+  },
+  {
+    "id": "bearmon",
+    "name": "Bearmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "bearmon/idle.gif"
+    }
+  },
+  {
+    "id": "beelzebumon",
+    "name": "Beelzebumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "beelzebumon/idle.gif"
+    }
+  },
+  {
+    "id": "beelzebumonblastmode",
+    "name": "Beelzebumon(Blast Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "beelzebumonblastmode/idle.gif"
+    }
+  },
+  {
+    "id": "belialvamdemon",
+    "name": "Belial Vamdemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "belialvamdemon/idle.gif"
+    }
+  },
+  {
+    "id": "belphemonsleepmode",
+    "name": "Belphemon(Sleep Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "belphemonsleepmode/idle.gif"
+    }
+  },
+  {
+    "id": "betamon",
+    "name": "Betamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "betamon/idle.gif"
+    }
+  },
+  {
+    "id": "bigmamemon",
+    "name": "Big Mamemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "bigmamemon/idle.gif"
+    }
+  },
+  {
+    "id": "birdramon",
+    "name": "Birdramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "birdramon/idle.gif"
+    }
+  },
+  {
+    "id": "bishopchessmonwhite",
+    "name": "Bishop Chessmon (White)",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "bishopchessmonwhite/idle.gif"
+    }
+  },
+  {
+    "id": "piyomon",
+    "name": "Piyomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "piyomon/idle.gif"
+    }
+  },
+  {
+    "id": "blackrapidmon",
+    "name": "Black Rapidmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "blackrapidmon/idle.gif"
+    }
+  },
+  {
+    "id": "blacksaintgalgomon",
+    "name": "Black Saint Galgomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "blacksaintgalgomon/idle.gif"
+    }
+  },
+  {
+    "id": "blackwargreymon",
+    "name": "Black War Greymon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "blackwargreymon/idle.gif"
+    }
+  },
+  {
+    "id": "blackmegalogrowmon",
+    "name": "Black Megalo Growmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "blackmegalogrowmon/idle.gif"
+    }
+  },
+  {
+    "id": "blastmon",
+    "name": "Blastmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "blastmon/idle.gif"
+    }
+  },
+  {
+    "id": "blossomon",
+    "name": "Blossomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "blossomon/idle.gif"
+    }
+  },
+  {
+    "id": "bluemeramon",
+    "name": "Blue Meramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "bluemeramon/idle.gif"
+    }
+  },
+  {
+    "id": "boltmon",
+    "name": "Boltmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "boltmon/idle.gif"
+    }
+  },
+  {
+    "id": "bombernanimon",
+    "name": "Bomber Nanimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "bombernanimon/idle.gif"
+    }
+  },
+  {
+    "id": "bommon",
+    "name": "Bommon",
+    "stage": "fresh",
+    "sprite": {
+      "idle": "bommon/idle.gif"
+    }
+  },
+  {
+    "id": "botamon",
+    "name": "Botamon",
+    "stage": "fresh",
+    "sprite": {
+      "idle": "botamon/idle.gif"
+    }
+  },
+  {
+    "id": "brachimon",
+    "name": "Brachimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "brachimon/idle.gif"
+    }
+  },
+  {
+    "id": "budmon",
+    "name": "Budmon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "budmon/idle.gif"
+    }
+  },
+  {
+    "id": "candmon",
+    "name": "Candmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "candmon/idle.gif"
+    }
+  },
+  {
+    "id": "cannondramon",
+    "name": "Cannondramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "cannondramon/idle.gif"
+    }
+  },
+  {
+    "id": "centalmon",
+    "name": "Centalmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "centalmon/idle.gif"
+    }
+  },
+  {
+    "id": "cerberumon",
+    "name": "Cerberumon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "cerberumon/idle.gif"
+    }
+  },
+  {
+    "id": "chaosdramon",
+    "name": "Chaosdramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "chaosdramon/idle.gif"
+    }
+  },
+  {
+    "id": "chaosdukemon",
+    "name": "Chaos Dukemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "chaosdukemon/idle.gif"
+    }
+  },
+  {
+    "id": "chaosdukemoncore",
+    "name": "Chaos Dukemon Core",
+    "stage": "mega",
+    "sprite": {
+      "idle": "chaosdukemoncore/idle.gif"
+    }
+  },
+  {
+    "id": "chaosgrimmon",
+    "name": "Chaos Grimmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "chaosgrimmon/idle.gif"
+    }
+  },
+  {
+    "id": "chaosmon",
+    "name": "Chaosmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "chaosmon/idle.gif"
+    }
+  },
+  {
+    "id": "jyureimon",
+    "name": "Jyureimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "jyureimon/idle.gif"
+    }
+  },
+  {
+    "id": "cherubimonvirtue",
+    "name": "Cherubimon (Virtue)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "cherubimonvirtue/idle.gif"
+    }
+  },
+  {
+    "id": "cherubimonvice",
+    "name": "Cherubimon (Vice)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "cherubimonvice/idle.gif"
+    }
+  },
+  {
+    "id": "chicomon",
+    "name": "Chicomon",
+    "stage": "fresh",
+    "sprite": {
+      "idle": "chicomon/idle.gif"
+    }
+  },
+  {
+    "id": "chicchimon",
+    "name": "Chicchimon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "chicchimon/idle.gif"
+    }
+  },
+  {
+    "id": "chocomon",
+    "name": "Chocomon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "chocomon/idle.gif"
+    }
+  },
+  {
+    "id": "chronomonholymode",
+    "name": "Chronomon Holy Mode",
+    "stage": "mega",
+    "sprite": {
+      "idle": "chronomonholymode/idle.gif"
+    }
+  },
+  {
+    "id": "chronomondestroymode",
+    "name": "Chronomon Destroy Mode",
+    "stage": "mega",
+    "sprite": {
+      "idle": "chronomondestroymode/idle.gif"
+    }
+  },
+  {
+    "id": "chrysalimon",
+    "name": "Chrysalimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "chrysalimon/idle.gif"
+    }
+  },
+  {
+    "id": "clockmon",
+    "name": "Clockmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "clockmon/idle.gif"
+    }
+  },
+  {
+    "id": "coelamon",
+    "name": "Coelamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "coelamon/idle.gif"
+    }
+  },
+  {
+    "id": "coronamon",
+    "name": "Coronamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "coronamon/idle.gif"
+    }
+  },
+  {
+    "id": "demon",
+    "name": "Demon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "demon/idle.gif"
+    }
+  },
+  {
+    "id": "crescemon",
+    "name": "Crescemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "crescemon/idle.gif"
+    }
+  },
+  {
+    "id": "cyberdramon",
+    "name": "Cyberdramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "cyberdramon/idle.gif"
+    }
+  },
+  {
+    "id": "damemon",
+    "name": "Damemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "damemon/idle.gif"
+    }
+  },
+  {
+    "id": "daipenmon",
+    "name": "Daipenmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "daipenmon/idle.gif"
+    }
+  },
+  {
+    "id": "darkdramon",
+    "name": "Darkdramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "darkdramon/idle.gif"
+    }
+  },
+  {
+    "id": "darklizamon",
+    "name": "Dark Lizamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "darklizamon/idle.gif"
+    }
+  },
+  {
+    "id": "darktyranomon",
+    "name": "Dark Tyranomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "darktyranomon/idle.gif"
+    }
+  },
+  {
+    "id": "deathmon",
+    "name": "Deathmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "deathmon/idle.gif"
+    }
+  },
+  {
+    "id": "deathmonblack",
+    "name": "Deathmon (Black)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "deathmonblack/idle.gif"
+    }
+  },
+  {
+    "id": "revolmon",
+    "name": "Revolmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "revolmon/idle.gif"
+    }
+  },
+  {
+    "id": "delumon",
+    "name": "Delumon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "delumon/idle.gif"
+    }
+  },
+  {
+    "id": "devidramon",
+    "name": "Devidramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "devidramon/idle.gif"
+    }
+  },
+  {
+    "id": "devimon",
+    "name": "Devimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "devimon/idle.gif"
+    }
+  },
+  {
+    "id": "devitamamon",
+    "name": "Devitamamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "devitamamon/idle.gif"
+    }
+  },
+  {
+    "id": "diablomon",
+    "name": "Diablomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "diablomon/idle.gif"
+    }
+  },
+  {
+    "id": "dianamon",
+    "name": "Dianamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "dianamon/idle.gif"
+    }
+  },
+  {
+    "id": "diatrymon",
+    "name": "Diatrymon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "diatrymon/idle.gif"
+    }
+  },
+  {
+    "id": "digitamamon",
+    "name": "Digitamamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "digitamamon/idle.gif"
+    }
+  },
+  {
+    "id": "dinobeemon",
+    "name": "Dinobeemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "dinobeemon/idle.gif"
+    }
+  },
+  {
+    "id": "dinohumon",
+    "name": "Dinohumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "dinohumon/idle.gif"
+    }
+  },
+  {
+    "id": "divemon",
+    "name": "Divemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "divemon/idle.gif"
+    }
+  },
+  {
+    "id": "gaogamon",
+    "name": "Gaogamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "gaogamon/idle.gif"
+    }
+  },
+  {
+    "id": "dokugumon",
+    "name": "Dokugumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "dokugumon/idle.gif"
+    }
+  },
+  {
+    "id": "dokunemon",
+    "name": "Dokunemon",
+    "stage": "child",
+    "sprite": {
+      "idle": "dokunemon/idle.gif"
+    }
+  },
+  {
+    "id": "rukamon",
+    "name": "Rukamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "rukamon/idle.gif"
+    }
+  },
+  {
+    "id": "dondokomon",
+    "name": "Dondokomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "dondokomon/idle.gif"
+    }
+  },
+  {
+    "id": "dorimon",
+    "name": "Dorimon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "dorimon/idle.gif"
+    }
+  },
+  {
+    "id": "dorugamon",
+    "name": "DORUgamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "dorugamon/idle.gif"
+    }
+  },
+  {
+    "id": "dorugoramon",
+    "name": "DORUgoramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "dorugoramon/idle.gif"
+    }
+  },
+  {
+    "id": "doruguremon",
+    "name": "DORUguremon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "doruguremon/idle.gif"
+    }
+  },
+  {
+    "id": "dorumon",
+    "name": "DORUmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "dorumon/idle.gif"
+    }
+  },
+  {
+    "id": "dotfalcomon",
+    "name": "Dot Falcomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "dotfalcomon/idle.gif"
+    }
+  },
+  {
+    "id": "dracumon",
+    "name": "Dracumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "dracumon/idle.gif"
+    }
+  },
+  {
+    "id": "dagomon",
+    "name": "Dagomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "dagomon/idle.gif"
+    }
+  },
+  {
+    "id": "drimogemon",
+    "name": "Drimogemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "drimogemon/idle.gif"
+    }
+  },
+  {
+    "id": "duftmon",
+    "name": "Duftmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "duftmon/idle.gif"
+    }
+  },
+  {
+    "id": "dukemon",
+    "name": "Dukemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "dukemon/idle.gif"
+    }
+  },
+  {
+    "id": "ebemon",
+    "name": "EBEmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "ebemon/idle.gif"
+    }
+  },
+  {
+    "id": "ebidramon",
+    "name": "Ebidramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "ebidramon/idle.gif"
+    }
+  },
+  {
+    "id": "etemon",
+    "name": "Etemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "etemon/idle.gif"
+    }
+  },
+  {
+    "id": "evilmon",
+    "name": "Evilmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "evilmon/idle.gif"
+    }
+  },
+  {
+    "id": "exogrimmon",
+    "name": "Exo Grimmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "exogrimmon/idle.gif"
+    }
+  },
+  {
+    "id": "falcomon",
+    "name": "Falcomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "falcomon/idle.gif"
+    }
+  },
+  {
+    "id": "firamon",
+    "name": "Firamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "firamon/idle.gif"
+    }
+  },
+  {
+    "id": "fladramon",
+    "name": "Fladramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "fladramon/idle.gif"
+    }
+  },
+  {
+    "id": "flarelizamon",
+    "name": "Flare Lizamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "flarelizamon/idle.gif"
+    }
+  },
+  {
+    "id": "flaremon",
+    "name": "Flaremon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "flaremon/idle.gif"
+    }
+  },
+  {
+    "id": "floramon",
+    "name": "Floramon",
+    "stage": "child",
+    "sprite": {
+      "idle": "floramon/idle.gif"
+    }
+  },
+  {
+    "id": "flymon",
+    "name": "Flymon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "flymon/idle.gif"
+    }
+  },
+  {
+    "id": "yukidarumon",
+    "name": "Yukidarumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "yukidarumon/idle.gif"
+    }
+  },
+  {
+    "id": "fugamon",
+    "name": "Fugamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "fugamon/idle.gif"
+    }
+  },
+  {
+    "id": "gabumon",
+    "name": "Gabumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "gabumon/idle.gif"
+    }
+  },
+  {
+    "id": "gaioumon",
+    "name": "Gaioumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "gaioumon/idle.gif"
+    }
+  },
+  {
+    "id": "galgomon",
+    "name": "Galgomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "galgomon/idle.gif"
+    }
+  },
+  {
+    "id": "ganimon",
+    "name": "Ganimon",
+    "stage": "child",
+    "sprite": {
+      "idle": "ganimon/idle.gif"
+    }
+  },
+  {
+    "id": "gaomon",
+    "name": "Gaomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "gaomon/idle.gif"
+    }
+  },
+  {
+    "id": "gaossmon",
+    "name": "Gaossmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "gaossmon/idle.gif"
+    }
+  },
+  {
+    "id": "garudamon",
+    "name": "Garudamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "garudamon/idle.gif"
+    }
+  },
+  {
+    "id": "garurumon",
+    "name": "Garurumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "garurumon/idle.gif"
+    }
+  },
+  {
+    "id": "gekomon",
+    "name": "Gekomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "gekomon/idle.gif"
+    }
+  },
+  {
+    "id": "geogreymon",
+    "name": "Geo Greymon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "geogreymon/idle.gif"
+    }
+  },
+  {
+    "id": "geremon",
+    "name": "Geremon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "geremon/idle.gif"
+    }
+  },
+  {
+    "id": "gesomon",
+    "name": "Gesomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "gesomon/idle.gif"
+    }
+  },
+  {
+    "id": "gigadramon",
+    "name": "Gigadramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "gigadramon/idle.gif"
+    }
+  },
+  {
+    "id": "gigaseadramon",
+    "name": "Giga Seadramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "gigaseadramon/idle.gif"
+    }
+  },
+  {
+    "id": "gigimon",
+    "name": "Gigimon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "gigimon/idle.gif"
+    }
+  },
+  {
+    "id": "giromon",
+    "name": "Giromon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "giromon/idle.gif"
+    }
+  },
+  {
+    "id": "gizamon",
+    "name": "Gizamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "gizamon/idle.gif"
+    }
+  },
+  {
+    "id": "goburimon",
+    "name": "Goburimon",
+    "stage": "child",
+    "sprite": {
+      "idle": "goburimon/idle.gif"
+    }
+  },
+  {
+    "id": "goldvdramon",
+    "name": "Gold V-dramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "goldvdramon/idle.gif"
+    }
+  },
+  {
+    "id": "golemon",
+    "name": "Golemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "golemon/idle.gif"
+    }
+  },
+  {
+    "id": "gomamon",
+    "name": "Gomamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "gomamon/idle.gif"
+    }
+  },
+  {
+    "id": "gottsumon",
+    "name": "Gottsumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "gottsumon/idle.gif"
+    }
+  },
+  {
+    "id": "granddracumon",
+    "name": "Grand Dracumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "granddracumon/idle.gif"
+    }
+  },
+  {
+    "id": "grankuwagamon",
+    "name": "Gran Kuwagamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "grankuwagamon/idle.gif"
+    }
+  },
+  {
+    "id": "grandlocomon",
+    "name": "Grand Locomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "grandlocomon/idle.gif"
+    }
+  },
+  {
+    "id": "grappuleomon",
+    "name": "Grappu Leomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "grappuleomon/idle.gif"
+    }
+  },
+  {
+    "id": "greymon",
+    "name": "Greymon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "greymon/idle.gif"
+    }
+  },
+  {
+    "id": "grimmon",
+    "name": "Grimmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "grimmon/idle.gif"
+    }
+  },
+  {
+    "id": "gryzmon",
+    "name": "Gryzmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "gryzmon/idle.gif"
+    }
+  },
+  {
+    "id": "growmon",
+    "name": "Growmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "growmon/idle.gif"
+    }
+  },
+  {
+    "id": "griffomon",
+    "name": "Griffomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "griffomon/idle.gif"
+    }
+  },
+  {
+    "id": "guardromon",
+    "name": "Guardromon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "guardromon/idle.gif"
+    }
+  },
+  {
+    "id": "guilmon",
+    "name": "Guilmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "guilmon/idle.gif"
+    }
+  },
+  {
+    "id": "gummymon",
+    "name": "Gummymon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "gummymon/idle.gif"
+    }
+  },
+  {
+    "id": "gawappamon",
+    "name": "Gawappamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "gawappamon/idle.gif"
+    }
+  },
+  {
+    "id": "hagurumon",
+    "name": "Hagurumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "hagurumon/idle.gif"
+    }
+  },
+  {
+    "id": "hawkmon",
+    "name": "Hawkmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "hawkmon/idle.gif"
+    }
+  },
+  {
+    "id": "heraklekabuterimon",
+    "name": "Herakle Kabuterimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "heraklekabuterimon/idle.gif"
+    }
+  },
+  {
+    "id": "hiandromon",
+    "name": "Hi Andromon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "hiandromon/idle.gif"
+    }
+  },
+  {
+    "id": "holyangemon",
+    "name": "Holy Angemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "holyangemon/idle.gif"
+    }
+  },
+  {
+    "id": "hookmon",
+    "name": "Hookmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "hookmon/idle.gif"
+    }
+  },
+  {
+    "id": "hyougamon",
+    "name": "Hyougamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "hyougamon/idle.gif"
+    }
+  },
+  {
+    "id": "icedevimon",
+    "name": "Ice Devimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "icedevimon/idle.gif"
+    }
+  },
+  {
+    "id": "icemon",
+    "name": "Icemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "icemon/idle.gif"
+    }
+  },
+  {
+    "id": "igamon",
+    "name": "Igamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "igamon/idle.gif"
+    }
+  },
+  {
+    "id": "ikkakumon",
+    "name": "Ikkakumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "ikkakumon/idle.gif"
+    }
+  },
+  {
+    "id": "imperialdramondragonmode",
+    "name": "Imperialdramon(Dragon Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "imperialdramondragonmode/idle.gif"
+    }
+  },
+  {
+    "id": "imperialdramondragonmodeblack",
+    "name": "Imperialdramon(Dragon Mode (Black))",
+    "stage": "mega",
+    "sprite": {
+      "idle": "imperialdramondragonmodeblack/idle.gif"
+    }
+  },
+  {
+    "id": "imperialdramonfightermode",
+    "name": "Imperialdramon(Fighter Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "imperialdramonfightermode/idle.gif"
+    }
+  },
+  {
+    "id": "imperialdramonpaladinmode",
+    "name": "Imperialdramon(Paladin Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "imperialdramonpaladinmode/idle.gif"
+    }
+  },
+  {
+    "id": "impmon",
+    "name": "Impmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "impmon/idle.gif"
+    }
+  },
+  {
+    "id": "infermon",
+    "name": "Infermon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "infermon/idle.gif"
+    }
+  },
+  {
+    "id": "mojyamon",
+    "name": "Mojyamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "mojyamon/idle.gif"
+    }
+  },
+  {
+    "id": "jijimon",
+    "name": "Jijimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "jijimon/idle.gif"
+    }
+  },
+  {
+    "id": "jumbogamemon",
+    "name": "Jumbo Gamemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "jumbogamemon/idle.gif"
+    }
+  },
+  {
+    "id": "justimonaccelarm",
+    "name": "Justimon(Accel Arm)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "justimonaccelarm/idle.gif"
+    }
+  },
+  {
+    "id": "kabukimon",
+    "name": "Kabukimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kabukimon/idle.gif"
+    }
+  },
+  {
+    "id": "kabuterimon",
+    "name": "Kabuterimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kabuterimon/idle.gif"
+    }
+  },
+  {
+    "id": "kamemon",
+    "name": "Kamemon",
+    "stage": "child",
+    "sprite": {
+      "idle": "kamemon/idle.gif"
+    }
+  },
+  {
+    "id": "caprimon",
+    "name": "Caprimon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "caprimon/idle.gif"
+    }
+  },
+  {
+    "id": "karatenmon",
+    "name": "Karatenmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "karatenmon/idle.gif"
+    }
+  },
+  {
+    "id": "karatukinumemon",
+    "name": "Karatuki Numemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "karatukinumemon/idle.gif"
+    }
+  },
+  {
+    "id": "kenkimon",
+    "name": "Kenkimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kenkimon/idle.gif"
+    }
+  },
+  {
+    "id": "keramon",
+    "name": "Keramon",
+    "stage": "child",
+    "sprite": {
+      "idle": "keramon/idle.gif"
+    }
+  },
+  {
+    "id": "kingchessmon",
+    "name": "King Chessmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "kingchessmon/idle.gif"
+    }
+  },
+  {
+    "id": "kiwimon",
+    "name": "Kiwimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kiwimon/idle.gif"
+    }
+  },
+  {
+    "id": "knightchessmonblack",
+    "name": "Knight Chessmon (Black)",
+    "stage": "adult",
+    "sprite": {
+      "idle": "knightchessmonblack/idle.gif"
+    }
+  },
+  {
+    "id": "knightchessmonwhite",
+    "name": "Knight Chessmon (White)",
+    "stage": "adult",
+    "sprite": {
+      "idle": "knightchessmonwhite/idle.gif"
+    }
+  },
+  {
+    "id": "knightmon",
+    "name": "Knightmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "knightmon/idle.gif"
+    }
+  },
+  {
+    "id": "kokuwamon",
+    "name": "Kokuwamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "kokuwamon/idle.gif"
+    }
+  },
+  {
+    "id": "kongoumon",
+    "name": "Kongoumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kongoumon/idle.gif"
+    }
+  },
+  {
+    "id": "koromon",
+    "name": "Koromon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "koromon/idle.gif"
+    }
+  },
+  {
+    "id": "kotemon",
+    "name": "Kotemon",
+    "stage": "child",
+    "sprite": {
+      "idle": "kotemon/idle.gif"
+    }
+  },
+  {
+    "id": "kougamon",
+    "name": "Kougamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kougamon/idle.gif"
+    }
+  },
+  {
+    "id": "kudamon",
+    "name": "Kudamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "kudamon/idle.gif"
+    }
+  },
+  {
+    "id": "kunemon",
+    "name": "Kunemon",
+    "stage": "child",
+    "sprite": {
+      "idle": "kunemon/idle.gif"
+    }
+  },
+  {
+    "id": "kuramon",
+    "name": "Kuramon",
+    "stage": "fresh",
+    "sprite": {
+      "idle": "kuramon/idle.gif"
+    }
+  },
+  {
+    "id": "kuwagamon",
+    "name": "Kuwagamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kuwagamon/idle.gif"
+    }
+  },
+  {
+    "id": "kuzuhamon",
+    "name": "Kuzuhamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "kuzuhamon/idle.gif"
+    }
+  },
+  {
+    "id": "kyubimon",
+    "name": "Kyubimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "kyubimon/idle.gif"
+    }
+  },
+  {
+    "id": "kyukimon",
+    "name": "Kyukimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "kyukimon/idle.gif"
+    }
+  },
+  {
+    "id": "ladydevimon",
+    "name": "Lady Devimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "ladydevimon/idle.gif"
+    }
+  },
+  {
+    "id": "lampmon",
+    "name": "Lampmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "lampmon/idle.gif"
+    }
+  },
+  {
+    "id": "lekismon",
+    "name": "Lekismon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "lekismon/idle.gif"
+    }
+  },
+  {
+    "id": "leomon",
+    "name": "Leomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "leomon/idle.gif"
+    }
+  },
+  {
+    "id": "reppamon",
+    "name": "Reppamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "reppamon/idle.gif"
+    }
+  },
+  {
+    "id": "leviamon",
+    "name": "Leviamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "leviamon/idle.gif"
+    }
+  },
+  {
+    "id": "lilamon",
+    "name": "Lilamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "lilamon/idle.gif"
+    }
+  },
+  {
+    "id": "lilithmon",
+    "name": "Lilithmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "lilithmon/idle.gif"
+    }
+  },
+  {
+    "id": "lilimon",
+    "name": "Lilimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "lilimon/idle.gif"
+    }
+  },
+  {
+    "id": "lopmon",
+    "name": "Lopmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "lopmon/idle.gif"
+    }
+  },
+  {
+    "id": "lotusmon",
+    "name": "Lotusmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "lotusmon/idle.gif"
+    }
+  },
+  {
+    "id": "lucemon",
+    "name": "Lucemon",
+    "stage": "child",
+    "sprite": {
+      "idle": "lucemon/idle.gif"
+    }
+  },
+  {
+    "id": "lunamon",
+    "name": "Lunamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "lunamon/idle.gif"
+    }
+  },
+  {
+    "id": "lynxmon",
+    "name": "Lynxmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "lynxmon/idle.gif"
+    }
+  },
+  {
+    "id": "machgaogamon",
+    "name": "Mach Gaogamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "machgaogamon/idle.gif"
+    }
+  },
+  {
+    "id": "mugendramon",
+    "name": "Mugendramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "mugendramon/idle.gif"
+    }
+  },
+  {
+    "id": "madleomon",
+    "name": "Mad Leomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "madleomon/idle.gif"
+    }
+  },
+  {
+    "id": "holydramon",
+    "name": "Holydramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "holydramon/idle.gif"
+    }
+  },
+  {
+    "id": "magnamon",
+    "name": "Magnamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "magnamon/idle.gif"
+    }
+  },
+  {
+    "id": "mamemon",
+    "name": "Mamemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "mamemon/idle.gif"
+    }
+  },
+  {
+    "id": "mametyramon",
+    "name": "Mametyramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "mametyramon/idle.gif"
+    }
+  },
+  {
+    "id": "mammon",
+    "name": "Mammon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "mammon/idle.gif"
+    }
+  },
+  {
+    "id": "marinangemon",
+    "name": "Marin Angemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "marinangemon/idle.gif"
+    }
+  },
+  {
+    "id": "marindevimon",
+    "name": "Marin Devimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "marindevimon/idle.gif"
+    }
+  },
+  {
+    "id": "matadrmon",
+    "name": "Matadrmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "matadrmon/idle.gif"
+    }
+  },
+  {
+    "id": "mechanorimon",
+    "name": "Mechanorimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "mechanorimon/idle.gif"
+    }
+  },
+  {
+    "id": "megadramon",
+    "name": "Megadramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "megadramon/idle.gif"
+    }
+  },
+  {
+    "id": "atlurkabuterimonblue",
+    "name": "Atlur Kabuterimon (Blue)",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "atlurkabuterimonblue/idle.gif"
+    }
+  },
+  {
+    "id": "megaseadramon",
+    "name": "Mega Seadramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "megaseadramon/idle.gif"
+    }
+  },
+  {
+    "id": "megidramon",
+    "name": "Megidramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "megidramon/idle.gif"
+    }
+  },
+  {
+    "id": "metaletemon",
+    "name": "Metal Etemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "metaletemon/idle.gif"
+    }
+  },
+  {
+    "id": "metalgarurumon",
+    "name": "Metal Garurumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "metalgarurumon/idle.gif"
+    }
+  },
+  {
+    "id": "metalgreymon",
+    "name": "Metal Greymon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "metalgreymon/idle.gif"
+    }
+  },
+  {
+    "id": "metalmamemon",
+    "name": "Metal Mamemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "metalmamemon/idle.gif"
+    }
+  },
+  {
+    "id": "metalseadramon",
+    "name": "Metal Seadramon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "metalseadramon/idle.gif"
+    }
+  },
+  {
+    "id": "metaltyranomon",
+    "name": "Metal Tyranomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "metaltyranomon/idle.gif"
+    }
+  },
+  {
+    "id": "insekimon",
+    "name": "Insekimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "insekimon/idle.gif"
+    }
+  },
+  {
+    "id": "millenniumon",
+    "name": "Millenniumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "millenniumon/idle.gif"
+    }
+  },
+  {
+    "id": "minervamon",
+    "name": "Minervamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "minervamon/idle.gif"
+    }
+  },
+  {
+    "id": "minomon",
+    "name": "Minomon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "minomon/idle.gif"
+    }
+  },
+  {
+    "id": "minotaurmon",
+    "name": "Minotaurmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "minotaurmon/idle.gif"
+    }
+  },
+  {
+    "id": "miragegaogamon",
+    "name": "Mirage Gaogamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "miragegaogamon/idle.gif"
+    }
+  },
+  {
+    "id": "miragegaogamonburstmode",
+    "name": "Mirage Gaogamon(Burst Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "miragegaogamonburstmode/idle.gif"
+    }
+  },
+  {
+    "id": "monochromon",
+    "name": "Monochromon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "monochromon/idle.gif"
+    }
+  },
+  {
+    "id": "monodramon",
+    "name": "Monodramon",
+    "stage": "child",
+    "sprite": {
+      "idle": "monodramon/idle.gif"
+    }
+  },
+  {
+    "id": "monzaemon",
+    "name": "Monzaemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "monzaemon/idle.gif"
+    }
+  },
+  {
+    "id": "moonmillenniumon",
+    "name": "Moon Millenniumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "moonmillenniumon/idle.gif"
+    }
+  },
+  {
+    "id": "moonmon",
+    "name": "Moonmon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "moonmon/idle.gif"
+    }
+  },
+  {
+    "id": "morishellmon",
+    "name": "Mori Shellmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "morishellmon/idle.gif"
+    }
+  },
+  {
+    "id": "muchomon",
+    "name": "Muchomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "muchomon/idle.gif"
+    }
+  },
+  {
+    "id": "tuchidarumon",
+    "name": "Tuchidarumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tuchidarumon/idle.gif"
+    }
+  },
+  {
+    "id": "mummymon",
+    "name": "Mummymon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "mummymon/idle.gif"
+    }
+  },
+  {
+    "id": "mushmon",
+    "name": "Mushmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "mushmon/idle.gif"
+    }
+  },
+  {
+    "id": "musyamon",
+    "name": "Musyamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "musyamon/idle.gif"
+    }
+  },
+  {
+    "id": "nanimon",
+    "name": "Nanimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "nanimon/idle.gif"
+    }
+  },
+  {
+    "id": "nanomon",
+    "name": "Nanomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "nanomon/idle.gif"
+    }
+  },
+  {
+    "id": "nefertimon",
+    "name": "Nefertimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "nefertimon/idle.gif"
+    }
+  },
+  {
+    "id": "neptunemon",
+    "name": "Neptunemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "neptunemon/idle.gif"
+    }
+  },
+  {
+    "id": "nisedrimogemon",
+    "name": "Nise Drimogemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "nisedrimogemon/idle.gif"
+    }
+  },
+  {
+    "id": "numemon",
+    "name": "Numemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "numemon/idle.gif"
+    }
+  },
+  {
+    "id": "octmon",
+    "name": "Octmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "octmon/idle.gif"
+    }
+  },
+  {
+    "id": "orgemon",
+    "name": "Orgemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "orgemon/idle.gif"
+    }
+  },
+  {
+    "id": "okuwamon",
+    "name": "Okuwamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "okuwamon/idle.gif"
+    }
+  },
+  {
+    "id": "omegamon",
+    "name": "Omegamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "omegamon/idle.gif"
+    }
+  },
+  {
+    "id": "omekamon",
+    "name": "Omekamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "omekamon/idle.gif"
+    }
+  },
+  {
+    "id": "ofanimon",
+    "name": "Ofanimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "ofanimon/idle.gif"
+    }
+  },
+  {
+    "id": "ofanimonfalldownmode",
+    "name": "Ofanimon(Falldown Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "ofanimonfalldownmode/idle.gif"
+    }
+  },
+  {
+    "id": "otamamon",
+    "name": "Otamamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "otamamon/idle.gif"
+    }
+  },
+  {
+    "id": "owlmon",
+    "name": "Owlmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "owlmon/idle.gif"
+    }
+  },
+  {
+    "id": "pagumon",
+    "name": "Pagumon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "pagumon/idle.gif"
+    }
+  },
+  {
+    "id": "paildramon",
+    "name": "Paildramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "paildramon/idle.gif"
+    }
+  },
+  {
+    "id": "palmon",
+    "name": "Palmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "palmon/idle.gif"
+    }
+  },
+  {
+    "id": "pandamon",
+    "name": "Pandamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "pandamon/idle.gif"
+    }
+  },
+  {
+    "id": "parasimon",
+    "name": "Parasimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "parasimon/idle.gif"
+    }
+  },
+  {
+    "id": "parrotmon",
+    "name": "Parrotmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "parrotmon/idle.gif"
+    }
+  },
+  {
+    "id": "patamon",
+    "name": "Patamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "patamon/idle.gif"
+    }
+  },
+  {
+    "id": "pawnchessmonblack",
+    "name": "Pawn Chessmon (Black)",
+    "stage": "child",
+    "sprite": {
+      "idle": "pawnchessmonblack/idle.gif"
+    }
+  },
+  {
+    "id": "pawnchessmonwhite",
+    "name": "Pawn Chessmon (White)",
+    "stage": "child",
+    "sprite": {
+      "idle": "pawnchessmonwhite/idle.gif"
+    }
+  },
+  {
+    "id": "peckmon",
+    "name": "Peckmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "peckmon/idle.gif"
+    }
+  },
+  {
+    "id": "penmon",
+    "name": "Penmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "penmon/idle.gif"
+    }
+  },
+  {
+    "id": "fantomon",
+    "name": "Fantomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "fantomon/idle.gif"
+    }
+  },
+  {
+    "id": "pharaohmon",
+    "name": "Pharaohmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "pharaohmon/idle.gif"
+    }
+  },
+  {
+    "id": "hououmon",
+    "name": "Hououmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "hououmon/idle.gif"
+    }
+  },
+  {
+    "id": "picodevimon",
+    "name": "Pico Devimon",
+    "stage": "child",
+    "sprite": {
+      "idle": "picodevimon/idle.gif"
+    }
+  },
+  {
+    "id": "piemon",
+    "name": "Piemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "piemon/idle.gif"
+    }
+  },
+  {
+    "id": "pipismon",
+    "name": "Pipismon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "pipismon/idle.gif"
+    }
+  },
+  {
+    "id": "piccolomon",
+    "name": "Piccolomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "piccolomon/idle.gif"
+    }
+  },
+  {
+    "id": "platinumsukamon",
+    "name": "Platinum Sukamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "platinumsukamon/idle.gif"
+    }
+  },
+  {
+    "id": "plesiomon",
+    "name": "Plesiomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "plesiomon/idle.gif"
+    }
+  },
+  {
+    "id": "plotmon",
+    "name": "Plotmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "plotmon/idle.gif"
+    }
+  },
+  {
+    "id": "ponchomon",
+    "name": "Ponchomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "ponchomon/idle.gif"
+    }
+  },
+  {
+    "id": "poyomon",
+    "name": "Poyomon",
+    "stage": "fresh",
+    "sprite": {
+      "idle": "poyomon/idle.gif"
+    }
+  },
+  {
+    "id": "prairiemon",
+    "name": "Prairiemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "prairiemon/idle.gif"
+    }
+  },
+  {
+    "id": "princemamemon",
+    "name": "Prince Mamemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "princemamemon/idle.gif"
+    }
+  },
+  {
+    "id": "pukumon",
+    "name": "Pukumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "pukumon/idle.gif"
+    }
+  },
+  {
+    "id": "pinochimon",
+    "name": "Pinochimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "pinochimon/idle.gif"
+    }
+  },
+  {
+    "id": "puttimon",
+    "name": "Puttimon",
+    "stage": "fresh",
+    "sprite": {
+      "idle": "puttimon/idle.gif"
+    }
+  },
+  {
+    "id": "queenchessmon",
+    "name": "Queen Chessmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "queenchessmon/idle.gif"
+    }
+  },
+  {
+    "id": "qinglongmon",
+    "name": "Qinglongmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "qinglongmon/idle.gif"
+    }
+  },
+  {
+    "id": "rapidmonperfect",
+    "name": "Rapidmon Perfect",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "rapidmonperfect/idle.gif"
+    }
+  },
+  {
+    "id": "raptordramon",
+    "name": "Raptordramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "raptordramon/idle.gif"
+    }
+  },
+  {
+    "id": "lalamon",
+    "name": "Lalamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "lalamon/idle.gif"
+    }
+  },
+  {
+    "id": "raremon",
+    "name": "Raremon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "raremon/idle.gif"
+    }
+  },
+  {
+    "id": "ravmon",
+    "name": "Ravmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "ravmon/idle.gif"
+    }
+  },
+  {
+    "id": "redvegimon",
+    "name": "Red Vegimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "redvegimon/idle.gif"
+    }
+  },
+  {
+    "id": "renamon",
+    "name": "Renamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "renamon/idle.gif"
+    }
+  },
+  {
+    "id": "rizegreymon",
+    "name": "Rize Greymon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "rizegreymon/idle.gif"
+    }
+  },
+  {
+    "id": "gokimon",
+    "name": "Gokimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "gokimon/idle.gif"
+    }
+  },
+  {
+    "id": "rookchessmonwhite",
+    "name": "Rook Chessmon (White)",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "rookchessmonwhite/idle.gif"
+    }
+  },
+  {
+    "id": "rosemon",
+    "name": "Rosemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "rosemon/idle.gif"
+    }
+  },
+  {
+    "id": "rosemonburstmode",
+    "name": "Rosemon(Burst Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "rosemonburstmode/idle.gif"
+    }
+  },
+  {
+    "id": "saberdramon",
+    "name": "Saberdramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "saberdramon/idle.gif"
+    }
+  },
+  {
+    "id": "saberleomon",
+    "name": "Saber Leomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "saberleomon/idle.gif"
+    }
+  },
+  {
+    "id": "saintgalgomon",
+    "name": "Saint Galgomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "saintgalgomon/idle.gif"
+    }
+  },
+  {
+    "id": "sakuyamon",
+    "name": "Sakuyamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "sakuyamon/idle.gif"
+    }
+  },
+  {
+    "id": "sandyanmamon",
+    "name": "Sand Yanmamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "sandyanmamon/idle.gif"
+    }
+  },
+  {
+    "id": "sangloupmon",
+    "name": "Sangloupmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "sangloupmon/idle.gif"
+    }
+  },
+  {
+    "id": "scorpiomon",
+    "name": "Scorpiomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "scorpiomon/idle.gif"
+    }
+  },
+  {
+    "id": "seadramon",
+    "name": "Seadramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "seadramon/idle.gif"
+    }
+  },
+  {
+    "id": "seahomon",
+    "name": "Seahomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "seahomon/idle.gif"
+    }
+  },
+  {
+    "id": "seraphimon",
+    "name": "Seraphimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "seraphimon/idle.gif"
+    }
+  },
+  {
+    "id": "shadramon",
+    "name": "Shadramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "shadramon/idle.gif"
+    }
+  },
+  {
+    "id": "shakkoumon",
+    "name": "Shakkoumon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "shakkoumon/idle.gif"
+    }
+  },
+  {
+    "id": "shakomon",
+    "name": "Shakomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "shakomon/idle.gif"
+    }
+  },
+  {
+    "id": "shamamon",
+    "name": "Shamamon",
+    "stage": "child",
+    "sprite": {
+      "idle": "shamamon/idle.gif"
+    }
+  },
+  {
+    "id": "shawujinmon",
+    "name": "Shawujinmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "shawujinmon/idle.gif"
+    }
+  },
+  {
+    "id": "shellmon",
+    "name": "Shellmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "shellmon/idle.gif"
+    }
+  },
+  {
+    "id": "shinegreymon",
+    "name": "Shine Greymon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "shinegreymon/idle.gif"
+    }
+  },
+  {
+    "id": "shinegreymonburstmode",
+    "name": "Shine Greymon(Burst Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "shinegreymonburstmode/idle.gif"
+    }
+  },
+  {
+    "id": "shinegreymonruinmode",
+    "name": "Shine Greymon(Ruin Mode)",
+    "stage": "mega",
+    "sprite": {
+      "idle": "shinegreymonruinmode/idle.gif"
+    }
+  },
+  {
+    "id": "tonosamagekomon",
+    "name": "Tonosama Gekomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "tonosamagekomon/idle.gif"
+    }
+  },
+  {
+    "id": "shurimon",
+    "name": "Shurimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "shurimon/idle.gif"
+    }
+  },
+  {
+    "id": "silphymon",
+    "name": "Silphymon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "silphymon/idle.gif"
+    }
+  },
+  {
+    "id": "sinduramon",
+    "name": "Sinduramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "sinduramon/idle.gif"
+    }
+  },
+  {
+    "id": "skullbaluchimon",
+    "name": "Skull Baluchimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "skullbaluchimon/idle.gif"
+    }
+  },
+  {
+    "id": "skullgreymon",
+    "name": "Skull Greymon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "skullgreymon/idle.gif"
+    }
+  },
+  {
+    "id": "skullmammon",
+    "name": "Skull Mammon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "skullmammon/idle.gif"
+    }
+  },
+  {
+    "id": "slashangemon",
+    "name": "Slash Angemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "slashangemon/idle.gif"
+    }
+  },
+  {
+    "id": "sleipmon",
+    "name": "Sleipmon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "sleipmon/idle.gif"
+    }
+  },
+  {
+    "id": "snimon",
+    "name": "Snimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "snimon/idle.gif"
+    }
+  },
+  {
+    "id": "snowgoburimon",
+    "name": "Snow Goburimon",
+    "stage": "child",
+    "sprite": {
+      "idle": "snowgoburimon/idle.gif"
+    }
+  },
+  {
+    "id": "solarmon",
+    "name": "Solarmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "solarmon/idle.gif"
+    }
+  },
+  {
+    "id": "sorcerimon",
+    "name": "Sorcerimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "sorcerimon/idle.gif"
+    }
+  },
+  {
+    "id": "spinomon",
+    "name": "Spinomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "spinomon/idle.gif"
+    }
+  },
+  {
+    "id": "starmon",
+    "name": "Starmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "starmon/idle.gif"
+    }
+  },
+  {
+    "id": "stingmon",
+    "name": "Stingmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "stingmon/idle.gif"
+    }
+  },
+  {
+    "id": "sukamon",
+    "name": "Sukamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "sukamon/idle.gif"
+    }
+  },
+  {
+    "id": "sunflowmon",
+    "name": "Sunflowmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "sunflowmon/idle.gif"
+    }
+  },
+  {
+    "id": "sunmon",
+    "name": "Sunmon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "sunmon/idle.gif"
+    }
+  },
+  {
+    "id": "superstarmon",
+    "name": "Superstarmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "superstarmon/idle.gif"
+    }
+  },
+  {
+    "id": "susanoomon",
+    "name": "Susanoomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "susanoomon/idle.gif"
+    }
+  },
+  {
+    "id": "tactimon",
+    "name": "Tactimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "tactimon/idle.gif"
+    }
+  },
+  {
+    "id": "tailmon",
+    "name": "Tailmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tailmon/idle.gif"
+    }
+  },
+  {
+    "id": "tanemon",
+    "name": "Tanemon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "tanemon/idle.gif"
+    }
+  },
+  {
+    "id": "tankmon",
+    "name": "Tankmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tankmon/idle.gif"
+    }
+  },
+  {
+    "id": "taomon",
+    "name": "Taomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "taomon/idle.gif"
+    }
+  },
+  {
+    "id": "tekkamon",
+    "name": "Tekkamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "tekkamon/idle.gif"
+    }
+  },
+  {
+    "id": "tentomon",
+    "name": "Tentomon",
+    "stage": "child",
+    "sprite": {
+      "idle": "tentomon/idle.gif"
+    }
+  },
+  {
+    "id": "terriermon",
+    "name": "Terriermon",
+    "stage": "child",
+    "sprite": {
+      "idle": "terriermon/idle.gif"
+    }
+  },
+  {
+    "id": "togemon",
+    "name": "Togemon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "togemon/idle.gif"
+    }
+  },
+  {
+    "id": "tokomon",
+    "name": "Tokomon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "tokomon/idle.gif"
+    }
+  },
+  {
+    "id": "tortamon",
+    "name": "Tortamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tortamon/idle.gif"
+    }
+  },
+  {
+    "id": "tocanmon",
+    "name": "Tocanmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tocanmon/idle.gif"
+    }
+  },
+  {
+    "id": "toyagumon",
+    "name": "Toy Agumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "toyagumon/idle.gif"
+    }
+  },
+  {
+    "id": "toyagumonblack",
+    "name": "Toy Agumon (Black)",
+    "stage": "child",
+    "sprite": {
+      "idle": "toyagumonblack/idle.gif"
+    }
+  },
+  {
+    "id": "triceramon",
+    "name": "Triceramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "triceramon/idle.gif"
+    }
+  },
+  {
+    "id": "tukaimon",
+    "name": "Tukaimon",
+    "stage": "child",
+    "sprite": {
+      "idle": "tukaimon/idle.gif"
+    }
+  },
+  {
+    "id": "tsumemon",
+    "name": "Tsumemon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "tsumemon/idle.gif"
+    }
+  },
+  {
+    "id": "tunomon",
+    "name": "Tunomon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "tunomon/idle.gif"
+    }
+  },
+  {
+    "id": "tylomon",
+    "name": "Tylomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tylomon/idle.gif"
+    }
+  },
+  {
+    "id": "tyranomon",
+    "name": "Tyranomon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "tyranomon/idle.gif"
+    }
+  },
+  {
+    "id": "unimon",
+    "name": "Unimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "unimon/idle.gif"
+    }
+  },
+  {
+    "id": "vdramon",
+    "name": "V-dramon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "vdramon/idle.gif"
+    }
+  },
+  {
+    "id": "vmon",
+    "name": "V-mon",
+    "stage": "child",
+    "sprite": {
+      "idle": "vmon/idle.gif"
+    }
+  },
+  {
+    "id": "vademon",
+    "name": "Vademon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "vademon/idle.gif"
+    }
+  },
+  {
+    "id": "vajramon",
+    "name": "Vajramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "vajramon/idle.gif"
+    }
+  },
+  {
+    "id": "valkyrimon",
+    "name": "Valkyrimon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "valkyrimon/idle.gif"
+    }
+  },
+  {
+    "id": "vamdemon",
+    "name": "Vamdemon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "vamdemon/idle.gif"
+    }
+  },
+  {
+    "id": "vegimon",
+    "name": "Vegimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "vegimon/idle.gif"
+    }
+  },
+  {
+    "id": "venomvamdemon",
+    "name": "Venom Vamdemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "venomvamdemon/idle.gif"
+    }
+  },
+  {
+    "id": "vermillimon",
+    "name": "Vermillimon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "vermillimon/idle.gif"
+    }
+  },
+  {
+    "id": "vikemon",
+    "name": "Vikemon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "vikemon/idle.gif"
+    }
+  },
+  {
+    "id": "volcamon",
+    "name": "Volcamon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "volcamon/idle.gif"
+    }
+  },
+  {
+    "id": "wanyamon",
+    "name": "Wanyamon",
+    "stage": "baby",
+    "sprite": {
+      "idle": "wanyamon/idle.gif"
+    }
+  },
+  {
+    "id": "wargreymon",
+    "name": "War Greymon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "wargreymon/idle.gif"
+    }
+  },
+  {
+    "id": "megalogrowmon",
+    "name": "Megalo Growmon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "megalogrowmon/idle.gif"
+    }
+  },
+  {
+    "id": "waruseadramon",
+    "name": "Waru Seadramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "waruseadramon/idle.gif"
+    }
+  },
+  {
+    "id": "zassoumon",
+    "name": "Zassoumon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "zassoumon/idle.gif"
+    }
+  },
+  {
+    "id": "wendimon",
+    "name": "Wendimon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "wendimon/idle.gif"
+    }
+  },
+  {
+    "id": "weregarurumon",
+    "name": "Were Garurumon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "weregarurumon/idle.gif"
+    }
+  },
+  {
+    "id": "weregarurumonblack",
+    "name": "Were Garurumon (Black)",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "weregarurumonblack/idle.gif"
+    }
+  },
+  {
+    "id": "whamon",
+    "name": "Whamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "whamon/idle.gif"
+    }
+  },
+  {
+    "id": "wizarmon",
+    "name": "Wizarmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "wizarmon/idle.gif"
+    }
+  },
+  {
+    "id": "woodmon",
+    "name": "Woodmon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "woodmon/idle.gif"
+    }
+  },
+  {
+    "id": "wormmon",
+    "name": "Wormmon",
+    "stage": "child",
+    "sprite": {
+      "idle": "wormmon/idle.gif"
+    }
+  },
+  {
+    "id": "extyranomon",
+    "name": "Ex-Tyranomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "extyranomon/idle.gif"
+    }
+  },
+  {
+    "id": "xuanwumon",
+    "name": "Xuanwumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "xuanwumon/idle.gif"
+    }
+  },
+  {
+    "id": "xvmon",
+    "name": "XV-mon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "xvmon/idle.gif"
+    }
+  },
+  {
+    "id": "yanmamon",
+    "name": "Yanmamon",
+    "stage": "adult",
+    "sprite": {
+      "idle": "yanmamon/idle.gif"
+    }
+  },
+  {
+    "id": "yatagaramon",
+    "name": "Yatagaramon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "yatagaramon/idle.gif"
+    }
+  },
+  {
+    "id": "yukiagumon",
+    "name": "Yuki Agumon",
+    "stage": "child",
+    "sprite": {
+      "idle": "yukiagumon/idle.gif"
+    }
+  },
+  {
+    "id": "zanbamon",
+    "name": "Zanbamon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "zanbamon/idle.gif"
+    }
+  },
+  {
+    "id": "zeedmillenniumon",
+    "name": "Zeed Millenniumon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "zeedmillenniumon/idle.gif"
+    }
+  },
+  {
+    "id": "zhuqiaomon",
+    "name": "Zhuqiaomon",
+    "stage": "mega",
+    "sprite": {
+      "idle": "zhuqiaomon/idle.gif"
+    }
+  },
+  {
+    "id": "zudomon",
+    "name": "Zudomon",
+    "stage": "perfect",
+    "sprite": {
+      "idle": "zudomon/idle.gif"
+    }
+  }
+]

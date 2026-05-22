@@ -1,0 +1,7854 @@
+[
+  {
+    "from": "egg",
+    "forksRequired": 1,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "bommon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "botamon"
+      },
+      {
+        "slot": "midday",
+        "to": "chicomon"
+      },
+      {
+        "slot": "evening",
+        "to": "kuramon"
+      },
+      {
+        "slot": "night",
+        "to": "poyomon"
+      }
+    ]
+  },
+  {
+    "from": "aerovdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "spinomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "zanbamon"
+      },
+      {
+        "slot": "midday",
+        "to": "chaosdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "night",
+        "to": "dorugoramon"
+      }
+    ]
+  },
+  {
+    "from": "agumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tocanmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "grimmon"
+      },
+      {
+        "slot": "midday",
+        "to": "wendimon"
+      },
+      {
+        "slot": "evening",
+        "to": "airdramon"
+      },
+      {
+        "slot": "night",
+        "to": "angemon"
+      }
+    ]
+  },
+  {
+    "from": "airdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "paildramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andiramon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "angewomon"
+      }
+    ]
+  },
+  {
+    "from": "akatorimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "superstarmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "midday",
+        "to": "garudamon"
+      },
+      {
+        "slot": "evening",
+        "to": "gigadramon"
+      },
+      {
+        "slot": "night",
+        "to": "parrotmon"
+      }
+    ]
+  },
+  {
+    "from": "allomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "weregarurumonblack"
+      },
+      {
+        "slot": "forenoon",
+        "to": "zudomon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "mametyramon"
+      },
+      {
+        "slot": "night",
+        "to": "megalogrowmon"
+      }
+    ]
+  },
+  {
+    "from": "alraumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "greymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "ponchomon"
+      },
+      {
+        "slot": "midday",
+        "to": "raremon"
+      },
+      {
+        "slot": "evening",
+        "to": "vegimon"
+      },
+      {
+        "slot": "night",
+        "to": "aquilamon"
+      }
+    ]
+  },
+  {
+    "from": "atlurkabuterimonred",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "beelzebumonblastmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "duftmon"
+      },
+      {
+        "slot": "midday",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "evening",
+        "to": "holydramon"
+      },
+      {
+        "slot": "night",
+        "to": "chaosdukemon"
+      }
+    ]
+  },
+  {
+    "from": "andromon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "slashangemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "miragegaogamonburstmode"
+      },
+      {
+        "slot": "midday",
+        "to": "boltmon"
+      },
+      {
+        "slot": "evening",
+        "to": "chaosdramon"
+      },
+      {
+        "slot": "night",
+        "to": "hiandromon"
+      }
+    ]
+  },
+  {
+    "from": "angemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "zudomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "archnemon"
+      }
+    ]
+  },
+  {
+    "from": "angewomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shinegreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "seraphimon"
+      },
+      {
+        "slot": "midday",
+        "to": "babamon"
+      },
+      {
+        "slot": "evening",
+        "to": "baihumon"
+      },
+      {
+        "slot": "night",
+        "to": "beelzebumon"
+      }
+    ]
+  },
+  {
+    "from": "ankylomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mametyramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "mammon"
+      },
+      {
+        "slot": "evening",
+        "to": "triceramon"
+      },
+      {
+        "slot": "night",
+        "to": "piccolomon"
+      }
+    ]
+  },
+  {
+    "from": "andiramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "valkyrimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "pukumon"
+      },
+      {
+        "slot": "midday",
+        "to": "diablomon"
+      },
+      {
+        "slot": "evening",
+        "to": "rosemon"
+      },
+      {
+        "slot": "night",
+        "to": "hououmon"
+      }
+    ]
+  },
+  {
+    "from": "hanumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "blossomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "mammon"
+      },
+      {
+        "slot": "night",
+        "to": "cyberdramon"
+      }
+    ]
+  },
+  {
+    "from": "aquilamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "archnemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "angewomon"
+      },
+      {
+        "slot": "midday",
+        "to": "dagomon"
+      },
+      {
+        "slot": "evening",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "night",
+        "to": "ladydevimon"
+      }
+    ]
+  },
+  {
+    "from": "archnemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "leviamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "rosemonburstmode"
+      },
+      {
+        "slot": "midday",
+        "to": "babamon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "piemon"
+      }
+    ]
+  },
+  {
+    "from": "algomonperfect",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "miragegaogamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saintgalgomon"
+      },
+      {
+        "slot": "midday",
+        "to": "piemon"
+      },
+      {
+        "slot": "evening",
+        "to": "deathmon"
+      },
+      {
+        "slot": "night",
+        "to": "algomonultimate"
+      }
+    ]
+  },
+  {
+    "from": "bakemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "parrotmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "bakumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "allomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tortamon"
+      },
+      {
+        "slot": "midday",
+        "to": "gawappamon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "birdramon"
+      }
+    ]
+  },
+  {
+    "from": "bastemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "justimonaccelarm"
+      },
+      {
+        "slot": "forenoon",
+        "to": "kuzuhamon"
+      },
+      {
+        "slot": "midday",
+        "to": "babamon"
+      },
+      {
+        "slot": "evening",
+        "to": "cherubimonvirtue"
+      },
+      {
+        "slot": "night",
+        "to": "seraphimon"
+      }
+    ]
+  },
+  {
+    "from": "bearmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "drimogemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "diatrymon"
+      },
+      {
+        "slot": "midday",
+        "to": "platinumsukamon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "garurumon"
+      }
+    ]
+  },
+  {
+    "from": "betamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "saberdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "damemon"
+      },
+      {
+        "slot": "midday",
+        "to": "firamon"
+      },
+      {
+        "slot": "evening",
+        "to": "airdramon"
+      },
+      {
+        "slot": "night",
+        "to": "coelamon"
+      }
+    ]
+  },
+  {
+    "from": "bigmamemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "diablomon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "griffomon"
+      }
+    ]
+  },
+  {
+    "from": "birdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "atlurkabuterimonblue"
+      }
+    ]
+  },
+  {
+    "from": "bishopchessmonwhite",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "hiandromon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "hououmon"
+      },
+      {
+        "slot": "midday",
+        "to": "blacksaintgalgomon"
+      },
+      {
+        "slot": "evening",
+        "to": "jumbogamemon"
+      },
+      {
+        "slot": "night",
+        "to": "kingchessmon"
+      }
+    ]
+  },
+  {
+    "from": "piyomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "hyougamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "raptordramon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "birdramon"
+      }
+    ]
+  },
+  {
+    "from": "blackrapidmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ofanimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "holydramon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "seraphimon"
+      },
+      {
+        "slot": "night",
+        "to": "blacksaintgalgomon"
+      }
+    ]
+  },
+  {
+    "from": "blackmegalogrowmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "algomonultimate"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aegisdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "beelzebumon"
+      },
+      {
+        "slot": "night",
+        "to": "chaosdukemon"
+      }
+    ]
+  },
+  {
+    "from": "blossomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "queenchessmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "zhuqiaomon"
+      },
+      {
+        "slot": "midday",
+        "to": "anubimon"
+      },
+      {
+        "slot": "evening",
+        "to": "barbamon"
+      },
+      {
+        "slot": "night",
+        "to": "boltmon"
+      }
+    ]
+  },
+  {
+    "from": "bluemeramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "chaosdukemoncore"
+      },
+      {
+        "slot": "forenoon",
+        "to": "babamon"
+      },
+      {
+        "slot": "midday",
+        "to": "barbamon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "darkdramon"
+      }
+    ]
+  },
+  {
+    "from": "bombernanimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "blackmegalogrowmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "megadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "nanomon"
+      },
+      {
+        "slot": "night",
+        "to": "giromon"
+      }
+    ]
+  },
+  {
+    "from": "bommon",
+    "forksRequired": 2,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "koromon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tokomon"
+      },
+      {
+        "slot": "midday",
+        "to": "wanyamon"
+      },
+      {
+        "slot": "evening",
+        "to": "minomon"
+      },
+      {
+        "slot": "night",
+        "to": "sunmon"
+      }
+    ]
+  },
+  {
+    "from": "botamon",
+    "forksRequired": 2,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "pagumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "moonmon"
+      },
+      {
+        "slot": "midday",
+        "to": "dorimon"
+      },
+      {
+        "slot": "evening",
+        "to": "budmon"
+      },
+      {
+        "slot": "night",
+        "to": "koromon"
+      }
+    ]
+  },
+  {
+    "from": "brachimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "anubimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "imperialdramondragonmodeblack"
+      },
+      {
+        "slot": "midday",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "cannondramon"
+      },
+      {
+        "slot": "night",
+        "to": "chaosdramon"
+      }
+    ]
+  },
+  {
+    "from": "budmon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "terriermon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "snowgoburimon"
+      },
+      {
+        "slot": "midday",
+        "to": "plotmon"
+      },
+      {
+        "slot": "evening",
+        "to": "lucemon"
+      },
+      {
+        "slot": "night",
+        "to": "betamon"
+      }
+    ]
+  },
+  {
+    "from": "candmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "coelamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "bakemon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "birdramon"
+      },
+      {
+        "slot": "night",
+        "to": "devimon"
+      }
+    ]
+  },
+  {
+    "from": "centalmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "cerberumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "grankuwagamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "chronomonholymode"
+      },
+      {
+        "slot": "midday",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "evening",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "night",
+        "to": "wargreymon"
+      }
+    ]
+  },
+  {
+    "from": "chaosgrimmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "lilithmon"
+      },
+      {
+        "slot": "midday",
+        "to": "exogrimmon"
+      },
+      {
+        "slot": "evening",
+        "to": "sleipmon"
+      },
+      {
+        "slot": "night",
+        "to": "granddracumon"
+      }
+    ]
+  },
+  {
+    "from": "jyureimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kingchessmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "piemon"
+      },
+      {
+        "slot": "midday",
+        "to": "pinochimon"
+      },
+      {
+        "slot": "evening",
+        "to": "jijimon"
+      },
+      {
+        "slot": "night",
+        "to": "darkdramon"
+      }
+    ]
+  },
+  {
+    "from": "chicomon",
+    "forksRequired": 2,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gigimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "minomon"
+      },
+      {
+        "slot": "midday",
+        "to": "sunmon"
+      },
+      {
+        "slot": "evening",
+        "to": "tokomon"
+      },
+      {
+        "slot": "night",
+        "to": "chicchimon"
+      }
+    ]
+  },
+  {
+    "from": "chicchimon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "monodramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "goburimon"
+      },
+      {
+        "slot": "midday",
+        "to": "candmon"
+      },
+      {
+        "slot": "evening",
+        "to": "patamon"
+      },
+      {
+        "slot": "night",
+        "to": "muchomon"
+      }
+    ]
+  },
+  {
+    "from": "chocomon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dondokomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "gomamon"
+      },
+      {
+        "slot": "midday",
+        "to": "coronamon"
+      },
+      {
+        "slot": "evening",
+        "to": "picodevimon"
+      },
+      {
+        "slot": "night",
+        "to": "shamamon"
+      }
+    ]
+  },
+  {
+    "from": "chrysalimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "midday",
+        "to": "nanomon"
+      },
+      {
+        "slot": "evening",
+        "to": "cyberdramon"
+      },
+      {
+        "slot": "night",
+        "to": "algomonperfect"
+      }
+    ]
+  },
+  {
+    "from": "clockmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "cyberdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "night",
+        "to": "nanomon"
+      }
+    ]
+  },
+  {
+    "from": "coelamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ladydevimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andromon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "night",
+        "to": "cyberdramon"
+      }
+    ]
+  },
+  {
+    "from": "coronamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "octmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "clockmon"
+      },
+      {
+        "slot": "midday",
+        "to": "leomon"
+      },
+      {
+        "slot": "evening",
+        "to": "lynxmon"
+      },
+      {
+        "slot": "night",
+        "to": "sorcerimon"
+      }
+    ]
+  },
+  {
+    "from": "crescemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ofanimonfalldownmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "lotusmon"
+      },
+      {
+        "slot": "midday",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "evening",
+        "to": "skullmammon"
+      },
+      {
+        "slot": "night",
+        "to": "rosemon"
+      }
+    ]
+  },
+  {
+    "from": "cyberdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "grandlocomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "imperialdramonfightermode"
+      },
+      {
+        "slot": "midday",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "evening",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "night",
+        "to": "alphamon"
+      }
+    ]
+  },
+  {
+    "from": "damemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "megadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andromon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullbaluchimon"
+      },
+      {
+        "slot": "evening",
+        "to": "blackmegalogrowmon"
+      },
+      {
+        "slot": "night",
+        "to": "rapidmonperfect"
+      }
+    ]
+  },
+  {
+    "from": "daipenmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "kyukimon"
+      },
+      {
+        "slot": "midday",
+        "to": "angewomon"
+      },
+      {
+        "slot": "evening",
+        "to": "andiramon"
+      },
+      {
+        "slot": "night",
+        "to": "fantomon"
+      }
+    ]
+  },
+  {
+    "from": "darklizamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metalgreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "extyranomon"
+      },
+      {
+        "slot": "midday",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "evening",
+        "to": "bastemon"
+      },
+      {
+        "slot": "night",
+        "to": "gigadramon"
+      }
+    ]
+  },
+  {
+    "from": "darktyranomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mummymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "night",
+        "to": "blackmegalogrowmon"
+      }
+    ]
+  },
+  {
+    "from": "revolmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "vademon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "dagomon"
+      }
+    ]
+  },
+  {
+    "from": "delumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "blastmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "baihumon"
+      },
+      {
+        "slot": "midday",
+        "to": "boltmon"
+      },
+      {
+        "slot": "evening",
+        "to": "griffomon"
+      },
+      {
+        "slot": "night",
+        "to": "hououmon"
+      }
+    ]
+  },
+  {
+    "from": "devidramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "crescemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "dagomon"
+      },
+      {
+        "slot": "evening",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "night",
+        "to": "archnemon"
+      }
+    ]
+  },
+  {
+    "from": "devimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vermillimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "algomonperfect"
+      },
+      {
+        "slot": "evening",
+        "to": "andiramon"
+      },
+      {
+        "slot": "night",
+        "to": "bastemon"
+      }
+    ]
+  },
+  {
+    "from": "diatrymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "atlurkabuterimonred"
+      },
+      {
+        "slot": "forenoon",
+        "to": "delumon"
+      },
+      {
+        "slot": "midday",
+        "to": "garudamon"
+      },
+      {
+        "slot": "evening",
+        "to": "andiramon"
+      },
+      {
+        "slot": "night",
+        "to": "sinduramon"
+      }
+    ]
+  },
+  {
+    "from": "digitamamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "belphemonsleepmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "boltmon"
+      },
+      {
+        "slot": "midday",
+        "to": "deathmon"
+      },
+      {
+        "slot": "evening",
+        "to": "deathmonblack"
+      },
+      {
+        "slot": "night",
+        "to": "devitamamon"
+      }
+    ]
+  },
+  {
+    "from": "dinobeemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "omegamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "venomvamdemon"
+      },
+      {
+        "slot": "night",
+        "to": "wargreymon"
+      }
+    ]
+  },
+  {
+    "from": "dinohumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "divemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "midday",
+        "to": "cyberdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "mummymon"
+      },
+      {
+        "slot": "night",
+        "to": "jyureimon"
+      }
+    ]
+  },
+  {
+    "from": "divemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "bancholeomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "seraphimon"
+      },
+      {
+        "slot": "midday",
+        "to": "rosemon"
+      },
+      {
+        "slot": "evening",
+        "to": "slashangemon"
+      },
+      {
+        "slot": "night",
+        "to": "ofanimon"
+      }
+    ]
+  },
+  {
+    "from": "gaogamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vamdemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "evening",
+        "to": "mammon"
+      },
+      {
+        "slot": "night",
+        "to": "megaseadramon"
+      }
+    ]
+  },
+  {
+    "from": "dokugumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "bishopchessmonwhite"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "atlurkabuterimonblue"
+      }
+    ]
+  },
+  {
+    "from": "dokunemon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "daipenmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "starmon"
+      },
+      {
+        "slot": "midday",
+        "to": "flymon"
+      },
+      {
+        "slot": "evening",
+        "to": "gokimon"
+      },
+      {
+        "slot": "night",
+        "to": "darklizamon"
+      }
+    ]
+  },
+  {
+    "from": "rukamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "zudomon"
+      },
+      {
+        "slot": "evening",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "night",
+        "to": "andromon"
+      }
+    ]
+  },
+  {
+    "from": "dondokomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "redvegimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "lekismon"
+      },
+      {
+        "slot": "midday",
+        "to": "yanmamon"
+      },
+      {
+        "slot": "evening",
+        "to": "grimmon"
+      },
+      {
+        "slot": "night",
+        "to": "shellmon"
+      }
+    ]
+  },
+  {
+    "from": "dorimon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dokunemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "palmon"
+      },
+      {
+        "slot": "midday",
+        "to": "pawnchessmonblack"
+      },
+      {
+        "slot": "evening",
+        "to": "falcomon"
+      },
+      {
+        "slot": "night",
+        "to": "alraumon"
+      }
+    ]
+  },
+  {
+    "from": "dorugamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "karatenmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "delumon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "bigmamemon"
+      }
+    ]
+  },
+  {
+    "from": "doruguremon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "griffomon"
+      },
+      {
+        "slot": "midday",
+        "to": "alphamon"
+      },
+      {
+        "slot": "evening",
+        "to": "dorugoramon"
+      },
+      {
+        "slot": "night",
+        "to": "boltmon"
+      }
+    ]
+  },
+  {
+    "from": "dorumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "magnamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tailmon"
+      },
+      {
+        "slot": "midday",
+        "to": "garurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "greymon"
+      },
+      {
+        "slot": "night",
+        "to": "centalmon"
+      }
+    ]
+  },
+  {
+    "from": "dotfalcomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "angemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "stingmon"
+      },
+      {
+        "slot": "midday",
+        "to": "starmon"
+      },
+      {
+        "slot": "evening",
+        "to": "saberdramon"
+      },
+      {
+        "slot": "night",
+        "to": "diatrymon"
+      }
+    ]
+  },
+  {
+    "from": "dracumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dorugamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "guardromon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "night",
+        "to": "bakemon"
+      }
+    ]
+  },
+  {
+    "from": "dagomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "rosemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "chaosdukemon"
+      },
+      {
+        "slot": "midday",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "devitamamon"
+      }
+    ]
+  },
+  {
+    "from": "drimogemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "atlurkabuterimonred"
+      },
+      {
+        "slot": "night",
+        "to": "bigmamemon"
+      }
+    ]
+  },
+  {
+    "from": "ebidramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "nanomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "dagomon"
+      },
+      {
+        "slot": "evening",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "night",
+        "to": "andromon"
+      }
+    ]
+  },
+  {
+    "from": "etemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mugendramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "bancholeomon"
+      },
+      {
+        "slot": "midday",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "deathmonblack"
+      },
+      {
+        "slot": "night",
+        "to": "demon"
+      }
+    ]
+  },
+  {
+    "from": "evilmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "ladydevimon"
+      },
+      {
+        "slot": "night",
+        "to": "marindevimon"
+      }
+    ]
+  },
+  {
+    "from": "falcomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "fugamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "sangloupmon"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "tyranomon"
+      },
+      {
+        "slot": "night",
+        "to": "orgemon"
+      }
+    ]
+  },
+  {
+    "from": "firamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dagomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "karatenmon"
+      },
+      {
+        "slot": "evening",
+        "to": "machgaogamon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "fladramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vajramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "megadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "night",
+        "to": "holyangemon"
+      }
+    ]
+  },
+  {
+    "from": "flarelizamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "algomonperfect"
+      },
+      {
+        "slot": "forenoon",
+        "to": "extyranomon"
+      },
+      {
+        "slot": "midday",
+        "to": "megadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "night",
+        "to": "triceramon"
+      }
+    ]
+  },
+  {
+    "from": "flaremon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ebemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "wargreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "rosemon"
+      },
+      {
+        "slot": "night",
+        "to": "dukemon"
+      }
+    ]
+  },
+  {
+    "from": "floramon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "akatorimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "nefertimon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "vegimon"
+      },
+      {
+        "slot": "night",
+        "to": "kabuterimon"
+      }
+    ]
+  },
+  {
+    "from": "flymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dinobeemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "evening",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "yukidarumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "night",
+        "to": "andromon"
+      }
+    ]
+  },
+  {
+    "from": "fugamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "yatagaramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "etemon"
+      },
+      {
+        "slot": "midday",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "evening",
+        "to": "blackmegalogrowmon"
+      },
+      {
+        "slot": "night",
+        "to": "garudamon"
+      }
+    ]
+  },
+  {
+    "from": "gabumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "karatukinumemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "kabukimon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "birdramon"
+      },
+      {
+        "slot": "night",
+        "to": "aquilamon"
+      }
+    ]
+  },
+  {
+    "from": "galgomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "rapidmonperfect"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "andiramon"
+      },
+      {
+        "slot": "evening",
+        "to": "blackrapidmon"
+      },
+      {
+        "slot": "night",
+        "to": "crescemon"
+      }
+    ]
+  },
+  {
+    "from": "ganimon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "darklizamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "musyamon"
+      },
+      {
+        "slot": "midday",
+        "to": "whamon"
+      },
+      {
+        "slot": "evening",
+        "to": "seadramon"
+      },
+      {
+        "slot": "night",
+        "to": "coelamon"
+      }
+    ]
+  },
+  {
+    "from": "gaomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kabuterimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "vegimon"
+      }
+    ]
+  },
+  {
+    "from": "gaossmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "geogreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tyranomon"
+      },
+      {
+        "slot": "midday",
+        "to": "woodmon"
+      },
+      {
+        "slot": "evening",
+        "to": "hanumon"
+      },
+      {
+        "slot": "night",
+        "to": "tuchidarumon"
+      }
+    ]
+  },
+  {
+    "from": "garudamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dorugoramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "holydramon"
+      },
+      {
+        "slot": "midday",
+        "to": "demon"
+      },
+      {
+        "slot": "evening",
+        "to": "anubimon"
+      },
+      {
+        "slot": "night",
+        "to": "beelzebumon"
+      }
+    ]
+  },
+  {
+    "from": "garurumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "infermon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "gekomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vademon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "evening",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "night",
+        "to": "triceramon"
+      }
+    ]
+  },
+  {
+    "from": "geogreymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "jyureimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "night",
+        "to": "mammon"
+      }
+    ]
+  },
+  {
+    "from": "geremon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "vademon"
+      },
+      {
+        "slot": "night",
+        "to": "etemon"
+      }
+    ]
+  },
+  {
+    "from": "gesomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "blackrapidmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "vademon"
+      },
+      {
+        "slot": "midday",
+        "to": "dagomon"
+      },
+      {
+        "slot": "evening",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "night",
+        "to": "megaseadramon"
+      }
+    ]
+  },
+  {
+    "from": "gigadramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tactimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "evening",
+        "to": "diablomon"
+      },
+      {
+        "slot": "night",
+        "to": "mugendramon"
+      }
+    ]
+  },
+  {
+    "from": "gigimon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "shamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "floramon"
+      },
+      {
+        "slot": "evening",
+        "to": "lunamon"
+      },
+      {
+        "slot": "night",
+        "to": "agumon"
+      }
+    ]
+  },
+  {
+    "from": "giromon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "devitamamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "pukumon"
+      },
+      {
+        "slot": "evening",
+        "to": "chaosdramon"
+      },
+      {
+        "slot": "night",
+        "to": "deathmon"
+      }
+    ]
+  },
+  {
+    "from": "gizamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "evilmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "sukamon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "goburimon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "growmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tuchidarumon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "numemon"
+      }
+    ]
+  },
+  {
+    "from": "goldvdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "matadrmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "metalgreymon"
+      },
+      {
+        "slot": "night",
+        "to": "nanomon"
+      }
+    ]
+  },
+  {
+    "from": "golemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "taomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "midday",
+        "to": "triceramon"
+      },
+      {
+        "slot": "evening",
+        "to": "zudomon"
+      },
+      {
+        "slot": "night",
+        "to": "piccolomon"
+      }
+    ]
+  },
+  {
+    "from": "gomamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "aquilamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "devidramon"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "whamon"
+      },
+      {
+        "slot": "night",
+        "to": "yukidarumon"
+      }
+    ]
+  },
+  {
+    "from": "gottsumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ikkakumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "garurumon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "tyranomon"
+      }
+    ]
+  },
+  {
+    "from": "grappuleomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "imperialdramonpaladinmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "griffomon"
+      },
+      {
+        "slot": "evening",
+        "to": "baihumon"
+      },
+      {
+        "slot": "night",
+        "to": "xuanwumon"
+      }
+    ]
+  },
+  {
+    "from": "greymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "garudamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "grimmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "machgaogamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "chaosgrimmon"
+      },
+      {
+        "slot": "midday",
+        "to": "tekkamon"
+      },
+      {
+        "slot": "evening",
+        "to": "bluemeramon"
+      },
+      {
+        "slot": "night",
+        "to": "insekimon"
+      }
+    ]
+  },
+  {
+    "from": "gryzmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "scorpiomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "mammon"
+      },
+      {
+        "slot": "evening",
+        "to": "nanomon"
+      },
+      {
+        "slot": "night",
+        "to": "delumon"
+      }
+    ]
+  },
+  {
+    "from": "growmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "insekimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "evening",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "night",
+        "to": "megadramon"
+      }
+    ]
+  },
+  {
+    "from": "guardromon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "holyangemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "vademon"
+      },
+      {
+        "slot": "night",
+        "to": "andromon"
+      }
+    ]
+  },
+  {
+    "from": "guilmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "pipismon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "devimon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "birdramon"
+      },
+      {
+        "slot": "night",
+        "to": "numemon"
+      }
+    ]
+  },
+  {
+    "from": "gummymon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kunemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "bakumon"
+      },
+      {
+        "slot": "midday",
+        "to": "dorumon"
+      },
+      {
+        "slot": "evening",
+        "to": "alraumon"
+      },
+      {
+        "slot": "night",
+        "to": "toyagumon"
+      }
+    ]
+  },
+  {
+    "from": "gawappamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mammon"
+      },
+      {
+        "slot": "midday",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "blossomon"
+      },
+      {
+        "slot": "night",
+        "to": "waruseadramon"
+      }
+    ]
+  },
+  {
+    "from": "hagurumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "omekamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "kiwimon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "tyranomon"
+      }
+    ]
+  },
+  {
+    "from": "hawkmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kyubimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "whamon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "birdramon"
+      }
+    ]
+  },
+  {
+    "from": "holyangemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dianamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "evening",
+        "to": "alphamon"
+      },
+      {
+        "slot": "night",
+        "to": "barbamon"
+      }
+    ]
+  },
+  {
+    "from": "hookmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "weregarurumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "evening",
+        "to": "zudomon"
+      },
+      {
+        "slot": "night",
+        "to": "mummymon"
+      }
+    ]
+  },
+  {
+    "from": "hyougamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "lilamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "etemon"
+      },
+      {
+        "slot": "midday",
+        "to": "mammon"
+      },
+      {
+        "slot": "evening",
+        "to": "zudomon"
+      },
+      {
+        "slot": "night",
+        "to": "bluemeramon"
+      }
+    ]
+  },
+  {
+    "from": "icedevimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "chaosgrimmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "dagomon"
+      },
+      {
+        "slot": "midday",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "evening",
+        "to": "zudomon"
+      },
+      {
+        "slot": "night",
+        "to": "ladydevimon"
+      }
+    ]
+  },
+  {
+    "from": "icemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "silphymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "vademon"
+      },
+      {
+        "slot": "evening",
+        "to": "etemon"
+      },
+      {
+        "slot": "night",
+        "to": "mammon"
+      }
+    ]
+  },
+  {
+    "from": "igamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "giromon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "piccolomon"
+      }
+    ]
+  },
+  {
+    "from": "ikkakumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "sinduramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "triceramon"
+      },
+      {
+        "slot": "night",
+        "to": "zudomon"
+      }
+    ]
+  },
+  {
+    "from": "impmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "morishellmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "icedevimon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "devimon"
+      }
+    ]
+  },
+  {
+    "from": "infermon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "pinochimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "demon"
+      },
+      {
+        "slot": "midday",
+        "to": "diablomon"
+      },
+      {
+        "slot": "evening",
+        "to": "venomvamdemon"
+      },
+      {
+        "slot": "night",
+        "to": "piemon"
+      }
+    ]
+  },
+  {
+    "from": "mojyamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "brachimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "night",
+        "to": "skullgreymon"
+      }
+    ]
+  },
+  {
+    "from": "kabukimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "waruseadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "weregarurumon"
+      },
+      {
+        "slot": "midday",
+        "to": "jyureimon"
+      },
+      {
+        "slot": "evening",
+        "to": "knightmon"
+      },
+      {
+        "slot": "night",
+        "to": "algomonperfect"
+      }
+    ]
+  },
+  {
+    "from": "kabuterimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "vademon"
+      },
+      {
+        "slot": "evening",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "kamemon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "geremon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "kuwagamon"
+      },
+      {
+        "slot": "midday",
+        "to": "whamon"
+      },
+      {
+        "slot": "evening",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "caprimon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gizamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "dracumon"
+      },
+      {
+        "slot": "midday",
+        "to": "hawkmon"
+      },
+      {
+        "slot": "evening",
+        "to": "penmon"
+      },
+      {
+        "slot": "night",
+        "to": "gottsumon"
+      }
+    ]
+  },
+  {
+    "from": "karatenmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "anubimon"
+      },
+      {
+        "slot": "midday",
+        "to": "barbamon"
+      },
+      {
+        "slot": "evening",
+        "to": "gigaseadramon"
+      },
+      {
+        "slot": "night",
+        "to": "kuzuhamon"
+      }
+    ]
+  },
+  {
+    "from": "karatukinumemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "skullbaluchimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "evening",
+        "to": "mammon"
+      },
+      {
+        "slot": "night",
+        "to": "megaseadramon"
+      }
+    ]
+  },
+  {
+    "from": "kenkimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "pandamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andromon"
+      },
+      {
+        "slot": "midday",
+        "to": "sinduramon"
+      },
+      {
+        "slot": "evening",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "night",
+        "to": "jyureimon"
+      }
+    ]
+  },
+  {
+    "from": "keramon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "zassoumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "peckmon"
+      },
+      {
+        "slot": "midday",
+        "to": "garurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "kabuterimon"
+      },
+      {
+        "slot": "night",
+        "to": "bakemon"
+      }
+    ]
+  },
+  {
+    "from": "kiwimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "bluemeramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "midday",
+        "to": "blossomon"
+      },
+      {
+        "slot": "evening",
+        "to": "delumon"
+      },
+      {
+        "slot": "night",
+        "to": "garudamon"
+      }
+    ]
+  },
+  {
+    "from": "knightchessmonblack",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "andromon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "pandamon"
+      },
+      {
+        "slot": "midday",
+        "to": "megalogrowmon"
+      },
+      {
+        "slot": "evening",
+        "to": "bishopchessmonwhite"
+      },
+      {
+        "slot": "night",
+        "to": "extyranomon"
+      }
+    ]
+  },
+  {
+    "from": "knightchessmonwhite",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kyukimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "megadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "atlurkabuterimonred"
+      },
+      {
+        "slot": "evening",
+        "to": "knightmon"
+      },
+      {
+        "slot": "night",
+        "to": "pandamon"
+      }
+    ]
+  },
+  {
+    "from": "knightmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "susanoomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "wargreymon"
+      },
+      {
+        "slot": "night",
+        "to": "alphamon"
+      }
+    ]
+  },
+  {
+    "from": "kokuwamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "woodmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tylomon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "centalmon"
+      },
+      {
+        "slot": "night",
+        "to": "ebidramon"
+      }
+    ]
+  },
+  {
+    "from": "kongoumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "dinobeemon"
+      },
+      {
+        "slot": "evening",
+        "to": "atlurkabuterimonred"
+      },
+      {
+        "slot": "night",
+        "to": "zudomon"
+      }
+    ]
+  },
+  {
+    "from": "koromon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "wormmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "toyagumon"
+      },
+      {
+        "slot": "midday",
+        "to": "piyomon"
+      },
+      {
+        "slot": "evening",
+        "to": "mushmon"
+      },
+      {
+        "slot": "night",
+        "to": "agumon"
+      }
+    ]
+  },
+  {
+    "from": "kotemon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "numemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "seadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "greymon"
+      },
+      {
+        "slot": "evening",
+        "to": "kabuterimon"
+      },
+      {
+        "slot": "night",
+        "to": "starmon"
+      }
+    ]
+  },
+  {
+    "from": "kougamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "angewomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "giromon"
+      },
+      {
+        "slot": "midday",
+        "to": "lilimon"
+      },
+      {
+        "slot": "evening",
+        "to": "jyureimon"
+      },
+      {
+        "slot": "night",
+        "to": "karatenmon"
+      }
+    ]
+  },
+  {
+    "from": "kudamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gokimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "reppamon"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "flarelizamon"
+      },
+      {
+        "slot": "night",
+        "to": "seahomon"
+      }
+    ]
+  },
+  {
+    "from": "kunemon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "leomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monochromon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "tyranomon"
+      }
+    ]
+  },
+  {
+    "from": "kuramon",
+    "forksRequired": 2,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gummymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "caprimon"
+      },
+      {
+        "slot": "midday",
+        "to": "budmon"
+      },
+      {
+        "slot": "evening",
+        "to": "pagumon"
+      },
+      {
+        "slot": "night",
+        "to": "tsumemon"
+      }
+    ]
+  },
+  {
+    "from": "kuwagamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "megadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "night",
+        "to": "tonosamagekomon"
+      }
+    ]
+  },
+  {
+    "from": "kyubimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "triceramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "ladydevimon"
+      },
+      {
+        "slot": "evening",
+        "to": "vamdemon"
+      },
+      {
+        "slot": "night",
+        "to": "weregarurumon"
+      }
+    ]
+  },
+  {
+    "from": "kyukimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "apocalymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "holydramon"
+      },
+      {
+        "slot": "midday",
+        "to": "sakuyamon"
+      },
+      {
+        "slot": "evening",
+        "to": "kuzuhamon"
+      },
+      {
+        "slot": "night",
+        "to": "slashangemon"
+      }
+    ]
+  },
+  {
+    "from": "ladydevimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "imperialdramondragonmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "apocalymon"
+      },
+      {
+        "slot": "midday",
+        "to": "beelzebumon"
+      },
+      {
+        "slot": "evening",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "night",
+        "to": "deathmonblack"
+      }
+    ]
+  },
+  {
+    "from": "lekismon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "flaremon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "ladydevimon"
+      },
+      {
+        "slot": "midday",
+        "to": "waruseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "andiramon"
+      },
+      {
+        "slot": "night",
+        "to": "taomon"
+      }
+    ]
+  },
+  {
+    "from": "leomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "andiramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "night",
+        "to": "vademon"
+      }
+    ]
+  },
+  {
+    "from": "reppamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "angewomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "mammon"
+      },
+      {
+        "slot": "evening",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "night",
+        "to": "piccolomon"
+      }
+    ]
+  },
+  {
+    "from": "lilamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "deathmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "babamon"
+      },
+      {
+        "slot": "night",
+        "to": "demon"
+      }
+    ]
+  },
+  {
+    "from": "lilimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shinegreymonburstmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "belialvamdemon"
+      },
+      {
+        "slot": "night",
+        "to": "boltmon"
+      }
+    ]
+  },
+  {
+    "from": "lopmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "lynxmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "bombernanimon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "centalmon"
+      },
+      {
+        "slot": "night",
+        "to": "coelamon"
+      }
+    ]
+  },
+  {
+    "from": "lucemon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gaogamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tankmon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "tortamon"
+      }
+    ]
+  },
+  {
+    "from": "lunamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "igamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "icemon"
+      },
+      {
+        "slot": "midday",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "evening",
+        "to": "tailmon"
+      },
+      {
+        "slot": "night",
+        "to": "tylomon"
+      }
+    ]
+  },
+  {
+    "from": "lynxmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "lilimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "bluemeramon"
+      },
+      {
+        "slot": "evening",
+        "to": "weregarurumon"
+      },
+      {
+        "slot": "night",
+        "to": "knightmon"
+      }
+    ]
+  },
+  {
+    "from": "machgaogamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gigaseadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "metalgarurumon"
+      }
+    ]
+  },
+  {
+    "from": "madleomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "bastemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "grappuleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "night",
+        "to": "rizegreymon"
+      }
+    ]
+  },
+  {
+    "from": "magnamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "fantomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "garudamon"
+      },
+      {
+        "slot": "midday",
+        "to": "knightmon"
+      },
+      {
+        "slot": "evening",
+        "to": "paildramon"
+      },
+      {
+        "slot": "night",
+        "to": "volcamon"
+      }
+    ]
+  },
+  {
+    "from": "mamemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "zeedmillenniumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "boltmon"
+      },
+      {
+        "slot": "midday",
+        "to": "griffomon"
+      },
+      {
+        "slot": "evening",
+        "to": "jijimon"
+      },
+      {
+        "slot": "night",
+        "to": "kingchessmon"
+      }
+    ]
+  },
+  {
+    "from": "mametyramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "millenniumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "wargreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "princemamemon"
+      },
+      {
+        "slot": "night",
+        "to": "megidramon"
+      }
+    ]
+  },
+  {
+    "from": "mammon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "cherubimonvirtue"
+      },
+      {
+        "slot": "forenoon",
+        "to": "anubimon"
+      },
+      {
+        "slot": "midday",
+        "to": "beelzebumon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "duftmon"
+      }
+    ]
+  },
+  {
+    "from": "marindevimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shinegreymonruinmode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "diablomon"
+      }
+    ]
+  },
+  {
+    "from": "matadrmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "moonmillenniumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "venomvamdemon"
+      },
+      {
+        "slot": "midday",
+        "to": "piemon"
+      },
+      {
+        "slot": "evening",
+        "to": "rosemon"
+      },
+      {
+        "slot": "night",
+        "to": "blackwargreymon"
+      }
+    ]
+  },
+  {
+    "from": "mechanorimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gigadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "extyranomon"
+      }
+    ]
+  },
+  {
+    "from": "megadramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "jumbogamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aegisdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "belphemonsleepmode"
+      },
+      {
+        "slot": "evening",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "night",
+        "to": "chaosdramon"
+      }
+    ]
+  },
+  {
+    "from": "atlurkabuterimonblue",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "boltmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "jijimon"
+      },
+      {
+        "slot": "midday",
+        "to": "blastmon"
+      },
+      {
+        "slot": "evening",
+        "to": "dorugoramon"
+      },
+      {
+        "slot": "night",
+        "to": "grankuwagamon"
+      }
+    ]
+  },
+  {
+    "from": "megaseadramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "lampmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "aegisdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "apocalymon"
+      },
+      {
+        "slot": "night",
+        "to": "blackwargreymon"
+      }
+    ]
+  },
+  {
+    "from": "metalgreymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "belialvamdemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "holydramon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "alphamon"
+      },
+      {
+        "slot": "night",
+        "to": "baihumon"
+      }
+    ]
+  },
+  {
+    "from": "metalmamemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "boltmon"
+      },
+      {
+        "slot": "midday",
+        "to": "cannondramon"
+      },
+      {
+        "slot": "evening",
+        "to": "chaosdramon"
+      },
+      {
+        "slot": "night",
+        "to": "ebemon"
+      }
+    ]
+  },
+  {
+    "from": "metaltyranomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "parasimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "armagemon"
+      },
+      {
+        "slot": "evening",
+        "to": "blacksaintgalgomon"
+      },
+      {
+        "slot": "night",
+        "to": "blackwargreymon"
+      }
+    ]
+  },
+  {
+    "from": "insekimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "pharaohmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "baihumon"
+      },
+      {
+        "slot": "night",
+        "to": "belphemonsleepmode"
+      }
+    ]
+  },
+  {
+    "from": "minomon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "pawnchessmonwhite"
+      },
+      {
+        "slot": "forenoon",
+        "to": "bearmon"
+      },
+      {
+        "slot": "midday",
+        "to": "gottsumon"
+      },
+      {
+        "slot": "evening",
+        "to": "lalamon"
+      },
+      {
+        "slot": "night",
+        "to": "tentomon"
+      }
+    ]
+  },
+  {
+    "from": "minotaurmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "sleipmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "piemon"
+      },
+      {
+        "slot": "midday",
+        "to": "vikemon"
+      },
+      {
+        "slot": "evening",
+        "to": "pharaohmon"
+      },
+      {
+        "slot": "night",
+        "to": "leviamon"
+      }
+    ]
+  },
+  {
+    "from": "monochromon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "angewomon"
+      }
+    ]
+  },
+  {
+    "from": "monodramon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kougamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "goldvdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "tyranomon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "monzaemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "skullmammon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "babamon"
+      },
+      {
+        "slot": "midday",
+        "to": "bancholeomon"
+      },
+      {
+        "slot": "evening",
+        "to": "cherubimonvirtue"
+      },
+      {
+        "slot": "night",
+        "to": "deathmon"
+      }
+    ]
+  },
+  {
+    "from": "moonmon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "otamamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tentomon"
+      },
+      {
+        "slot": "midday",
+        "to": "keramon"
+      },
+      {
+        "slot": "evening",
+        "to": "gabumon"
+      },
+      {
+        "slot": "night",
+        "to": "lopmon"
+      }
+    ]
+  },
+  {
+    "from": "morishellmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "rizegreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "triceramon"
+      },
+      {
+        "slot": "evening",
+        "to": "vermillimon"
+      },
+      {
+        "slot": "night",
+        "to": "tonosamagekomon"
+      }
+    ]
+  },
+  {
+    "from": "muchomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "nanimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "ankylomon"
+      },
+      {
+        "slot": "midday",
+        "to": "seadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "octmon"
+      },
+      {
+        "slot": "night",
+        "to": "orgemon"
+      }
+    ]
+  },
+  {
+    "from": "tuchidarumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tekkamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "insekimon"
+      },
+      {
+        "slot": "midday",
+        "to": "pandamon"
+      },
+      {
+        "slot": "evening",
+        "to": "holyangemon"
+      },
+      {
+        "slot": "night",
+        "to": "superstarmon"
+      }
+    ]
+  },
+  {
+    "from": "mummymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ravmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "demon"
+      },
+      {
+        "slot": "midday",
+        "to": "algomonultimate"
+      },
+      {
+        "slot": "evening",
+        "to": "armagemon"
+      },
+      {
+        "slot": "night",
+        "to": "barbamon"
+      }
+    ]
+  },
+  {
+    "from": "mushmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "chrysalimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "flymon"
+      },
+      {
+        "slot": "midday",
+        "to": "birdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "numemon"
+      }
+    ]
+  },
+  {
+    "from": "musyamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "minotaurmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "evening",
+        "to": "fantomon"
+      },
+      {
+        "slot": "night",
+        "to": "mummymon"
+      }
+    ]
+  },
+  {
+    "from": "nanimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mammon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "vademon"
+      },
+      {
+        "slot": "midday",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "evening",
+        "to": "etemon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "nanomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "granddracumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "barbamon"
+      },
+      {
+        "slot": "evening",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "night",
+        "to": "deathmon"
+      }
+    ]
+  },
+  {
+    "from": "nefertimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "megalogrowmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "angewomon"
+      },
+      {
+        "slot": "midday",
+        "to": "etemon"
+      },
+      {
+        "slot": "evening",
+        "to": "insekimon"
+      },
+      {
+        "slot": "night",
+        "to": "knightmon"
+      }
+    ]
+  },
+  {
+    "from": "nisedrimogemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "knightmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "midday",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "evening",
+        "to": "doruguremon"
+      },
+      {
+        "slot": "night",
+        "to": "insekimon"
+      }
+    ]
+  },
+  {
+    "from": "numemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "doruguremon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "night",
+        "to": "brachimon"
+      }
+    ]
+  },
+  {
+    "from": "octmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shakkoumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "dagomon"
+      },
+      {
+        "slot": "midday",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "evening",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "night",
+        "to": "aerovdramon"
+      }
+    ]
+  },
+  {
+    "from": "orgemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "digitamamon"
+      }
+    ]
+  },
+  {
+    "from": "okuwamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "chronomondestroymode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "diablomon"
+      },
+      {
+        "slot": "night",
+        "to": "grankuwagamon"
+      }
+    ]
+  },
+  {
+    "from": "omekamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "extyranomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tekkamon"
+      },
+      {
+        "slot": "midday",
+        "to": "knightmon"
+      },
+      {
+        "slot": "evening",
+        "to": "superstarmon"
+      },
+      {
+        "slot": "night",
+        "to": "doruguremon"
+      }
+    ]
+  },
+  {
+    "from": "otamamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "knightchessmonwhite"
+      },
+      {
+        "slot": "forenoon",
+        "to": "birdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "whamon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "owlmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tekkamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mammon"
+      },
+      {
+        "slot": "midday",
+        "to": "vamdemon"
+      },
+      {
+        "slot": "evening",
+        "to": "bastemon"
+      },
+      {
+        "slot": "night",
+        "to": "weregarurumonblack"
+      }
+    ]
+  },
+  {
+    "from": "pagumon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ganimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "shakomon"
+      },
+      {
+        "slot": "midday",
+        "to": "dotfalcomon"
+      },
+      {
+        "slot": "evening",
+        "to": "bearmon"
+      },
+      {
+        "slot": "night",
+        "to": "gizamon"
+      }
+    ]
+  },
+  {
+    "from": "paildramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "night",
+        "to": "wargreymon"
+      }
+    ]
+  },
+  {
+    "from": "palmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "sunflowmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "shadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "birdramon"
+      },
+      {
+        "slot": "night",
+        "to": "numemon"
+      }
+    ]
+  },
+  {
+    "from": "pandamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "exogrimmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "midday",
+        "to": "jijimon"
+      },
+      {
+        "slot": "evening",
+        "to": "deathmon"
+      },
+      {
+        "slot": "night",
+        "to": "bancholeomon"
+      }
+    ]
+  },
+  {
+    "from": "parrotmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "apollomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "midday",
+        "to": "griffomon"
+      },
+      {
+        "slot": "evening",
+        "to": "hououmon"
+      },
+      {
+        "slot": "night",
+        "to": "ravmon"
+      }
+    ]
+  },
+  {
+    "from": "patamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "hanumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "seahomon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "birdramon"
+      }
+    ]
+  },
+  {
+    "from": "pawnchessmonblack",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "unimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "golemon"
+      },
+      {
+        "slot": "midday",
+        "to": "starmon"
+      },
+      {
+        "slot": "evening",
+        "to": "wizarmon"
+      },
+      {
+        "slot": "night",
+        "to": "platinumsukamon"
+      }
+    ]
+  },
+  {
+    "from": "pawnchessmonwhite",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "sorcerimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "wizarmon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "starmon"
+      },
+      {
+        "slot": "night",
+        "to": "revolmon"
+      }
+    ]
+  },
+  {
+    "from": "peckmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "rookchessmonwhite"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mammon"
+      },
+      {
+        "slot": "midday",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "night",
+        "to": "piccolomon"
+      }
+    ]
+  },
+  {
+    "from": "penmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mechanorimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "flarelizamon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "birdramon"
+      },
+      {
+        "slot": "night",
+        "to": "whamon"
+      }
+    ]
+  },
+  {
+    "from": "fantomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "beelzebumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "apocalymon"
+      },
+      {
+        "slot": "midday",
+        "to": "demon"
+      },
+      {
+        "slot": "evening",
+        "to": "barbamon"
+      },
+      {
+        "slot": "night",
+        "to": "blackwargreymon"
+      }
+    ]
+  },
+  {
+    "from": "picodevimon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "sandyanmamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mojyamon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "garurumon"
+      }
+    ]
+  },
+  {
+    "from": "pipismon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "grappuleomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "mammon"
+      },
+      {
+        "slot": "evening",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "night",
+        "to": "marindevimon"
+      }
+    ]
+  },
+  {
+    "from": "piccolomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "demon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "babamon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "cherubimonvirtue"
+      }
+    ]
+  },
+  {
+    "from": "platinumsukamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "delumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "vademon"
+      },
+      {
+        "slot": "evening",
+        "to": "etemon"
+      },
+      {
+        "slot": "night",
+        "to": "brachimon"
+      }
+    ]
+  },
+  {
+    "from": "plotmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shellmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "vdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "yukidarumon"
+      }
+    ]
+  },
+  {
+    "from": "ponchomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shawujinmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "fantomon"
+      },
+      {
+        "slot": "midday",
+        "to": "vajramon"
+      },
+      {
+        "slot": "evening",
+        "to": "machgaogamon"
+      },
+      {
+        "slot": "night",
+        "to": "megalogrowmon"
+      }
+    ]
+  },
+  {
+    "from": "poyomon",
+    "forksRequired": 2,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tunomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "chicchimon"
+      },
+      {
+        "slot": "midday",
+        "to": "chocomon"
+      },
+      {
+        "slot": "evening",
+        "to": "tokomon"
+      },
+      {
+        "slot": "night",
+        "to": "gummymon"
+      }
+    ]
+  },
+  {
+    "from": "prairiemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "blackrapidmon"
+      },
+      {
+        "slot": "evening",
+        "to": "taomon"
+      },
+      {
+        "slot": "night",
+        "to": "parrotmon"
+      }
+    ]
+  },
+  {
+    "from": "puttimon",
+    "forksRequired": 2,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tsumemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tanemon"
+      },
+      {
+        "slot": "midday",
+        "to": "chicchimon"
+      },
+      {
+        "slot": "evening",
+        "to": "chocomon"
+      },
+      {
+        "slot": "night",
+        "to": "sunmon"
+      }
+    ]
+  },
+  {
+    "from": "rapidmonperfect",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "blacksaintgalgomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "evening",
+        "to": "cherubimonvice"
+      },
+      {
+        "slot": "night",
+        "to": "cherubimonvirtue"
+      }
+    ]
+  },
+  {
+    "from": "raptordramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "volcamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "megadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "holyangemon"
+      },
+      {
+        "slot": "night",
+        "to": "cyberdramon"
+      }
+    ]
+  },
+  {
+    "from": "lalamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gryzmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "fladramon"
+      },
+      {
+        "slot": "midday",
+        "to": "birdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "vegimon"
+      }
+    ]
+  },
+  {
+    "from": "raremon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "cerberumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "vademon"
+      },
+      {
+        "slot": "evening",
+        "to": "dagomon"
+      },
+      {
+        "slot": "night",
+        "to": "etemon"
+      }
+    ]
+  },
+  {
+    "from": "redvegimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vademon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "atlurkabuterimonred"
+      },
+      {
+        "slot": "midday",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "delumon"
+      },
+      {
+        "slot": "night",
+        "to": "lilimon"
+      }
+    ]
+  },
+  {
+    "from": "renamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "revolmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "yanmamon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "rizegreymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vikemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "demon"
+      },
+      {
+        "slot": "midday",
+        "to": "wargreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "rosemon"
+      },
+      {
+        "slot": "night",
+        "to": "qinglongmon"
+      }
+    ]
+  },
+  {
+    "from": "gokimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "etemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "midday",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "evening",
+        "to": "archnemon"
+      },
+      {
+        "slot": "night",
+        "to": "dinobeemon"
+      }
+    ]
+  },
+  {
+    "from": "rookchessmonwhite",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "deathmonblack"
+      },
+      {
+        "slot": "forenoon",
+        "to": "kingchessmon"
+      },
+      {
+        "slot": "midday",
+        "to": "pinochimon"
+      },
+      {
+        "slot": "evening",
+        "to": "bancholeomon"
+      },
+      {
+        "slot": "night",
+        "to": "griffomon"
+      }
+    ]
+  },
+  {
+    "from": "saberdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "megadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "midday",
+        "to": "ladydevimon"
+      },
+      {
+        "slot": "evening",
+        "to": "cyberdramon"
+      },
+      {
+        "slot": "night",
+        "to": "fantomon"
+      }
+    ]
+  },
+  {
+    "from": "sandyanmamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "midday",
+        "to": "brachimon"
+      },
+      {
+        "slot": "evening",
+        "to": "gigadramon"
+      },
+      {
+        "slot": "night",
+        "to": "monzaemon"
+      }
+    ]
+  },
+  {
+    "from": "sangloupmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "angewomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "vamdemon"
+      },
+      {
+        "slot": "midday",
+        "to": "archnemon"
+      },
+      {
+        "slot": "evening",
+        "to": "weregarurumonblack"
+      },
+      {
+        "slot": "night",
+        "to": "scorpiomon"
+      }
+    ]
+  },
+  {
+    "from": "scorpiomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "princemamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "holydramon"
+      },
+      {
+        "slot": "midday",
+        "to": "pharaohmon"
+      },
+      {
+        "slot": "evening",
+        "to": "blastmon"
+      },
+      {
+        "slot": "night",
+        "to": "grankuwagamon"
+      }
+    ]
+  },
+  {
+    "from": "seadramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "night",
+        "to": "blackrapidmon"
+      }
+    ]
+  },
+  {
+    "from": "seahomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "yatagaramon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullbaluchimon"
+      },
+      {
+        "slot": "evening",
+        "to": "kyukimon"
+      },
+      {
+        "slot": "night",
+        "to": "rapidmonperfect"
+      }
+    ]
+  },
+  {
+    "from": "shadramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dinobeemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "paildramon"
+      },
+      {
+        "slot": "midday",
+        "to": "volcamon"
+      },
+      {
+        "slot": "evening",
+        "to": "weregarurumonblack"
+      },
+      {
+        "slot": "night",
+        "to": "atlurkabuterimonblue"
+      }
+    ]
+  },
+  {
+    "from": "shakkoumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "baihumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "belialvamdemon"
+      },
+      {
+        "slot": "evening",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "night",
+        "to": "cherubimonvirtue"
+      }
+    ]
+  },
+  {
+    "from": "shakomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kongoumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "hookmon"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "whamon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "shamamon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "airdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "knightchessmonblack"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "vegimon"
+      },
+      {
+        "slot": "night",
+        "to": "garurumon"
+      }
+    ]
+  },
+  {
+    "from": "shawujinmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "chaosmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "vikemon"
+      },
+      {
+        "slot": "night",
+        "to": "barbamon"
+      }
+    ]
+  },
+  {
+    "from": "shellmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "dagomon"
+      },
+      {
+        "slot": "night",
+        "to": "marindevimon"
+      }
+    ]
+  },
+  {
+    "from": "tonosamagekomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "sakuyamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "gigaseadramon"
+      }
+    ]
+  },
+  {
+    "from": "shurimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "garudamon"
+      },
+      {
+        "slot": "midday",
+        "to": "lilimon"
+      },
+      {
+        "slot": "evening",
+        "to": "mummymon"
+      },
+      {
+        "slot": "night",
+        "to": "knightmon"
+      }
+    ]
+  },
+  {
+    "from": "silphymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "barbamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "holydramon"
+      },
+      {
+        "slot": "midday",
+        "to": "griffomon"
+      },
+      {
+        "slot": "evening",
+        "to": "hououmon"
+      },
+      {
+        "slot": "night",
+        "to": "cherubimonvirtue"
+      }
+    ]
+  },
+  {
+    "from": "sinduramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "boltmon"
+      },
+      {
+        "slot": "midday",
+        "to": "hououmon"
+      },
+      {
+        "slot": "evening",
+        "to": "baihumon"
+      },
+      {
+        "slot": "night",
+        "to": "cherubimonvice"
+      }
+    ]
+  },
+  {
+    "from": "skullbaluchimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "piemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "skullmammon"
+      },
+      {
+        "slot": "midday",
+        "to": "zanbamon"
+      },
+      {
+        "slot": "evening",
+        "to": "griffomon"
+      },
+      {
+        "slot": "night",
+        "to": "anubimon"
+      }
+    ]
+  },
+  {
+    "from": "skullgreymon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "chaosdramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "midday",
+        "to": "demon"
+      },
+      {
+        "slot": "evening",
+        "to": "gaioumon"
+      },
+      {
+        "slot": "night",
+        "to": "megidramon"
+      }
+    ]
+  },
+  {
+    "from": "snimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "midday",
+        "to": "zudomon"
+      },
+      {
+        "slot": "evening",
+        "to": "blossomon"
+      },
+      {
+        "slot": "night",
+        "to": "fantomon"
+      }
+    ]
+  },
+  {
+    "from": "snowgoburimon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gekomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "dinohumon"
+      },
+      {
+        "slot": "midday",
+        "to": "numemon"
+      },
+      {
+        "slot": "evening",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "solarmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "darktyranomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "galgomon"
+      },
+      {
+        "slot": "midday",
+        "to": "birdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "whamon"
+      },
+      {
+        "slot": "night",
+        "to": "nanimon"
+      }
+    ]
+  },
+  {
+    "from": "sorcerimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "angewomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "dagomon"
+      },
+      {
+        "slot": "midday",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "evening",
+        "to": "holyangemon"
+      },
+      {
+        "slot": "night",
+        "to": "bluemeramon"
+      }
+    ]
+  },
+  {
+    "from": "starmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "vademon"
+      },
+      {
+        "slot": "night",
+        "to": "angewomon"
+      }
+    ]
+  },
+  {
+    "from": "stingmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "angewomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "midday",
+        "to": "extyranomon"
+      },
+      {
+        "slot": "evening",
+        "to": "mammon"
+      },
+      {
+        "slot": "night",
+        "to": "megaseadramon"
+      }
+    ]
+  },
+  {
+    "from": "sukamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "vademon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "andromon"
+      },
+      {
+        "slot": "night",
+        "to": "angewomon"
+      }
+    ]
+  },
+  {
+    "from": "sunflowmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "angewomon"
+      },
+      {
+        "slot": "midday",
+        "to": "holyangemon"
+      },
+      {
+        "slot": "evening",
+        "to": "atlurkabuterimonred"
+      },
+      {
+        "slot": "night",
+        "to": "blossomon"
+      }
+    ]
+  },
+  {
+    "from": "sunmon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "betamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "hagurumon"
+      },
+      {
+        "slot": "midday",
+        "to": "agumon"
+      },
+      {
+        "slot": "evening",
+        "to": "plotmon"
+      },
+      {
+        "slot": "night",
+        "to": "guilmon"
+      }
+    ]
+  },
+  {
+    "from": "superstarmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "venomvamdemon"
+      },
+      {
+        "slot": "evening",
+        "to": "jijimon"
+      },
+      {
+        "slot": "night",
+        "to": "princemamemon"
+      }
+    ]
+  },
+  {
+    "from": "tailmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "atlurkabuterimonblue"
+      }
+    ]
+  },
+  {
+    "from": "tanemon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "toyagumonblack"
+      },
+      {
+        "slot": "forenoon",
+        "to": "tukaimon"
+      },
+      {
+        "slot": "midday",
+        "to": "gaossmon"
+      },
+      {
+        "slot": "evening",
+        "to": "betamon"
+      },
+      {
+        "slot": "night",
+        "to": "palmon"
+      }
+    ]
+  },
+  {
+    "from": "tankmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andromon"
+      },
+      {
+        "slot": "midday",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "evening",
+        "to": "giromon"
+      },
+      {
+        "slot": "night",
+        "to": "bigmamemon"
+      }
+    ]
+  },
+  {
+    "from": "taomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "megidramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "boltmon"
+      },
+      {
+        "slot": "evening",
+        "to": "hououmon"
+      },
+      {
+        "slot": "night",
+        "to": "valkyrimon"
+      }
+    ]
+  },
+  {
+    "from": "tekkamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "xuanwumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "heraklekabuterimon"
+      },
+      {
+        "slot": "midday",
+        "to": "boltmon"
+      },
+      {
+        "slot": "evening",
+        "to": "hiandromon"
+      },
+      {
+        "slot": "night",
+        "to": "piemon"
+      }
+    ]
+  },
+  {
+    "from": "tentomon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vegimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "rukamon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "tyranomon"
+      }
+    ]
+  },
+  {
+    "from": "terriermon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "shurimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "madleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "angemon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "tyranomon"
+      }
+    ]
+  },
+  {
+    "from": "togemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "etemon"
+      },
+      {
+        "slot": "midday",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "evening",
+        "to": "triceramon"
+      },
+      {
+        "slot": "night",
+        "to": "ladydevimon"
+      }
+    ]
+  },
+  {
+    "from": "tokomon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kudamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "impmon"
+      },
+      {
+        "slot": "midday",
+        "to": "muchomon"
+      },
+      {
+        "slot": "evening",
+        "to": "gabumon"
+      },
+      {
+        "slot": "night",
+        "to": "ganimon"
+      }
+    ]
+  },
+  {
+    "from": "tortamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andromon"
+      },
+      {
+        "slot": "midday",
+        "to": "atlurkabuterimonblue"
+      },
+      {
+        "slot": "evening",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "night",
+        "to": "angewomon"
+      }
+    ]
+  },
+  {
+    "from": "tocanmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "taomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mamemon"
+      },
+      {
+        "slot": "midday",
+        "to": "andiramon"
+      },
+      {
+        "slot": "evening",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "night",
+        "to": "bastemon"
+      }
+    ]
+  },
+  {
+    "from": "toyagumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "togemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "dokugumon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "numemon"
+      },
+      {
+        "slot": "night",
+        "to": "yukidarumon"
+      }
+    ]
+  },
+  {
+    "from": "toyagumonblack",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kenkimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "orgemon"
+      },
+      {
+        "slot": "midday",
+        "to": "devimon"
+      },
+      {
+        "slot": "evening",
+        "to": "greymon"
+      },
+      {
+        "slot": "night",
+        "to": "darktyranomon"
+      }
+    ]
+  },
+  {
+    "from": "triceramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "armagemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "blastmon"
+      },
+      {
+        "slot": "night",
+        "to": "boltmon"
+      }
+    ]
+  },
+  {
+    "from": "tukaimon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "ebidramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "nisedrimogemon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "devimon"
+      },
+      {
+        "slot": "night",
+        "to": "bakemon"
+      }
+    ]
+  },
+  {
+    "from": "tsumemon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "solarmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "gaomon"
+      },
+      {
+        "slot": "midday",
+        "to": "kokuwamon"
+      },
+      {
+        "slot": "evening",
+        "to": "tukaimon"
+      },
+      {
+        "slot": "night",
+        "to": "picodevimon"
+      }
+    ]
+  },
+  {
+    "from": "tunomon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "kotemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "lopmon"
+      },
+      {
+        "slot": "midday",
+        "to": "yukiagumon"
+      },
+      {
+        "slot": "evening",
+        "to": "betamon"
+      },
+      {
+        "slot": "night",
+        "to": "gabumon"
+      }
+    ]
+  },
+  {
+    "from": "tylomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "etemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "bigmamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "blossomon"
+      },
+      {
+        "slot": "night",
+        "to": "waruseadramon"
+      }
+    ]
+  },
+  {
+    "from": "tyranomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "bigmamemon"
+      }
+    ]
+  },
+  {
+    "from": "unimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "monzaemon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "mammon"
+      }
+    ]
+  },
+  {
+    "from": "vdramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "skullgreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "mammon"
+      },
+      {
+        "slot": "evening",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "night",
+        "to": "metaltyranomon"
+      }
+    ]
+  },
+  {
+    "from": "vmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "snimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "centalmon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "numemon"
+      }
+    ]
+  },
+  {
+    "from": "vademon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "plesiomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "babamon"
+      },
+      {
+        "slot": "midday",
+        "to": "darkdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "ebemon"
+      }
+    ]
+  },
+  {
+    "from": "vajramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gaioumon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "saberleomon"
+      },
+      {
+        "slot": "midday",
+        "to": "zanbamon"
+      },
+      {
+        "slot": "evening",
+        "to": "xuanwumon"
+      },
+      {
+        "slot": "night",
+        "to": "anubimon"
+      }
+    ]
+  },
+  {
+    "from": "vamdemon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "qinglongmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "apocalymon"
+      },
+      {
+        "slot": "midday",
+        "to": "boltmon"
+      },
+      {
+        "slot": "evening",
+        "to": "demon"
+      },
+      {
+        "slot": "night",
+        "to": "skullmammon"
+      }
+    ]
+  },
+  {
+    "from": "vegimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "vademon"
+      },
+      {
+        "slot": "midday",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "archnemon"
+      },
+      {
+        "slot": "night",
+        "to": "atlurkabuterimonblue"
+      }
+    ]
+  },
+  {
+    "from": "vermillimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "minervamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "mugendramon"
+      },
+      {
+        "slot": "midday",
+        "to": "skullmammon"
+      },
+      {
+        "slot": "evening",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "night",
+        "to": "cannondramon"
+      }
+    ]
+  },
+  {
+    "from": "volcamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "neptunemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "boltmon"
+      },
+      {
+        "slot": "evening",
+        "to": "mugendramon"
+      },
+      {
+        "slot": "night",
+        "to": "wargreymon"
+      }
+    ]
+  },
+  {
+    "from": "wanyamon",
+    "forksRequired": 4,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "renamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "guilmon"
+      },
+      {
+        "slot": "midday",
+        "to": "kamemon"
+      },
+      {
+        "slot": "evening",
+        "to": "agumon"
+      },
+      {
+        "slot": "night",
+        "to": "gabumon"
+      }
+    ]
+  },
+  {
+    "from": "megalogrowmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "griffomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "demon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalgarurumon"
+      },
+      {
+        "slot": "evening",
+        "to": "mugendramon"
+      },
+      {
+        "slot": "night",
+        "to": "wargreymon"
+      }
+    ]
+  },
+  {
+    "from": "waruseadramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "venomvamdemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metaletemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "pukumon"
+      },
+      {
+        "slot": "night",
+        "to": "demon"
+      }
+    ]
+  },
+  {
+    "from": "zassoumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "blossomon"
+      },
+      {
+        "slot": "midday",
+        "to": "brachimon"
+      },
+      {
+        "slot": "evening",
+        "to": "algomonperfect"
+      },
+      {
+        "slot": "night",
+        "to": "lilamon"
+      }
+    ]
+  },
+  {
+    "from": "wendimon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "marindevimon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andiramon"
+      },
+      {
+        "slot": "midday",
+        "to": "archnemon"
+      },
+      {
+        "slot": "evening",
+        "to": "algomonperfect"
+      },
+      {
+        "slot": "night",
+        "to": "bastemon"
+      }
+    ]
+  },
+  {
+    "from": "weregarurumon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "wargreymon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "demon"
+      }
+    ]
+  },
+  {
+    "from": "weregarurumonblack",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "dukemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "holydramon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "demon"
+      }
+    ]
+  },
+  {
+    "from": "whamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "metalmamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "aerovdramon"
+      },
+      {
+        "slot": "midday",
+        "to": "andromon"
+      },
+      {
+        "slot": "evening",
+        "to": "angewomon"
+      },
+      {
+        "slot": "night",
+        "to": "bigmamemon"
+      }
+    ]
+  },
+  {
+    "from": "wizarmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "vademon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "andromon"
+      },
+      {
+        "slot": "midday",
+        "to": "angewomon"
+      },
+      {
+        "slot": "evening",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "night",
+        "to": "piccolomon"
+      }
+    ]
+  },
+  {
+    "from": "woodmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "mamemon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "megaseadramon"
+      },
+      {
+        "slot": "midday",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "evening",
+        "to": "tonosamagekomon"
+      },
+      {
+        "slot": "night",
+        "to": "blossomon"
+      }
+    ]
+  },
+  {
+    "from": "wormmon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "gesomon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "owlmon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "angemon"
+      },
+      {
+        "slot": "night",
+        "to": "devimon"
+      }
+    ]
+  },
+  {
+    "from": "extyranomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "alphamon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "anubimon"
+      },
+      {
+        "slot": "midday",
+        "to": "blackwargreymon"
+      },
+      {
+        "slot": "evening",
+        "to": "deathmon"
+      },
+      {
+        "slot": "night",
+        "to": "devitamamon"
+      }
+    ]
+  },
+  {
+    "from": "xvmon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "andromon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "digitamamon"
+      },
+      {
+        "slot": "midday",
+        "to": "megadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "metaltyranomon"
+      },
+      {
+        "slot": "night",
+        "to": "holyangemon"
+      }
+    ]
+  },
+  {
+    "from": "yanmamon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "megadramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "okuwamon"
+      },
+      {
+        "slot": "midday",
+        "to": "piccolomon"
+      },
+      {
+        "slot": "evening",
+        "to": "brachimon"
+      },
+      {
+        "slot": "night",
+        "to": "lilimon"
+      }
+    ]
+  },
+  {
+    "from": "yatagaramon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "cherubimonvice"
+      },
+      {
+        "slot": "forenoon",
+        "to": "rosemon"
+      },
+      {
+        "slot": "midday",
+        "to": "hououmon"
+      },
+      {
+        "slot": "evening",
+        "to": "zhuqiaomon"
+      },
+      {
+        "slot": "night",
+        "to": "minervamon"
+      }
+    ]
+  },
+  {
+    "from": "yukiagumon",
+    "forksRequired": 8,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "xvmon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "prairiemon"
+      },
+      {
+        "slot": "midday",
+        "to": "airdramon"
+      },
+      {
+        "slot": "evening",
+        "to": "yukidarumon"
+      },
+      {
+        "slot": "night",
+        "to": "seadramon"
+      }
+    ]
+  },
+  {
+    "from": "zudomon",
+    "forksRequired": 16,
+    "branches": [
+      {
+        "slot": "morning",
+        "to": "cannondramon"
+      },
+      {
+        "slot": "forenoon",
+        "to": "marinangemon"
+      },
+      {
+        "slot": "midday",
+        "to": "metalseadramon"
+      },
+      {
+        "slot": "evening",
+        "to": "boltmon"
+      },
+      {
+        "slot": "night",
+        "to": "gigaseadramon"
+      }
+    ]
+  }
+]

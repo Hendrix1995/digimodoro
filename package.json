@@ -1,0 +1,24 @@
+{
+  "name": "digimodoro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Digimon-themed virtual pet powered by Pomodoro sessions. Windows + macOS desktop app.",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "dev": "pnpm --filter @digimodoro/app dev",
+    "package": "pnpm --filter @digimodoro/app package"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0",
+    "prettier": "^3.3.0"
+  }
+}

@@ -1,0 +1,49 @@
+appId: com.hendrix.digimodoro
+productName: DigiModoro
+copyright: Copyright © 2026 Hendrix
+
+directories:
+  output: ../../release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - package.json
+  - "!**/*.map"
+
+extraResources:
+  - from: ../data/evolution.json
+    to: data/evolution.json
+  - from: ../data/roster.json
+    to: data/roster.json
+  - from: ../data/sprites
+    to: sprites
+    filter:
+      - "**/*"
+      - "!_raw/**"
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
+  category: public.app-category.productivity
+  identity: null  # ad-hoc unsigned for local builds
+  hardenedRuntime: false
+  gatekeeperAssess: false
+
+dmg:
+  writeUpdateInfo: false
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: ${productName}-${version}-${arch}.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true

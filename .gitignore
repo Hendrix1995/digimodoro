@@ -1,0 +1,21 @@
+node_modules
+dist
+out
+build
+*.tsbuildinfo
+.DS_Store
+*.log
+
+# Electron build output
+release
+*.dmg
+*.exe
+*.snap
+*.AppImage
+
+# Sprite raw sources (recovered locally, not committed)
+packages/data/sprites/_raw
+
+# Editor
+.vscode
+.idea

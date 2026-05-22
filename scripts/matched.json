@@ -1,0 +1,3719 @@
+[
+  {
+    "raw_file": "001_Aegisdramon.gif",
+    "raw_num": "001",
+    "raw_name": "Aegisdramon",
+    "api_id": 917,
+    "api_name": "Aegisdramon",
+    "canonical": "Aegisdramon",
+    "id": "aegisdramon"
+  },
+  {
+    "raw_file": "002_AeroVdramon.gif",
+    "raw_num": "002",
+    "raw_name": "AeroVeedramon",
+    "api_id": 129,
+    "api_name": "Aero V-dramon",
+    "canonical": "AeroVdramon",
+    "id": "aerovdramon"
+  },
+  {
+    "raw_file": "003_Agumon.gif",
+    "raw_num": "003",
+    "raw_name": "AgumonSavers",
+    "api_id": 1,
+    "api_name": "Agumon",
+    "canonical": "Agumon",
+    "id": "agumon"
+  },
+  {
+    "raw_file": "004_Airdramon.gif",
+    "raw_num": "004",
+    "raw_name": "Airdramon",
+    "api_id": 2,
+    "api_name": "Airdramon",
+    "canonical": "Airdramon",
+    "id": "airdramon"
+  },
+  {
+    "raw_file": "005_Akatorimon.gif",
+    "raw_num": "005",
+    "raw_name": "Akatorimon",
+    "api_id": 130,
+    "api_name": "Akatorimon",
+    "canonical": "Akatorimon",
+    "id": "akatorimon"
+  },
+  {
+    "raw_file": "006_Allomon.gif",
+    "raw_num": "006",
+    "raw_name": "Allomon",
+    "api_id": 264,
+    "api_name": "Allomon",
+    "canonical": "Allomon",
+    "id": "allomon"
+  },
+  {
+    "raw_file": "007_Alphamon.gif",
+    "raw_num": "007",
+    "raw_name": "Alphamon",
+    "api_id": 636,
+    "api_name": "Alphamon",
+    "canonical": "Alphamon",
+    "id": "alphamon"
+  },
+  {
+    "raw_file": "008_Alraumon.gif",
+    "raw_num": "008",
+    "raw_name": "Alraumon",
+    "api_id": 131,
+    "api_name": "Alraumon",
+    "canonical": "Alraumon",
+    "id": "alraumon"
+  },
+  {
+    "raw_file": "009_AtlurKabuterimonRed.gif",
+    "raw_num": "009",
+    "raw_name": "AlturKabuterimonRed",
+    "api_id": 134,
+    "api_name": "Atlur Kabuterimon (Red)",
+    "canonical": "AtlurKabuterimonRed",
+    "id": "atlurkabuterimonred"
+  },
+  {
+    "raw_file": "010_Andromon.gif",
+    "raw_num": "010",
+    "raw_name": "Andromon",
+    "api_id": 37,
+    "api_name": "Andromon",
+    "canonical": "Andromon",
+    "id": "andromon"
+  },
+  {
+    "raw_file": "011_Angemon.gif",
+    "raw_num": "011",
+    "raw_name": "Angemon",
+    "api_id": 3,
+    "api_name": "Angemon",
+    "canonical": "Angemon",
+    "id": "angemon"
+  },
+  {
+    "raw_file": "012_Angewomon.gif",
+    "raw_num": "012",
+    "raw_name": "Angewomon",
+    "api_id": 38,
+    "api_name": "Angewomon",
+    "canonical": "Angewomon",
+    "id": "angewomon"
+  },
+  {
+    "raw_file": "013_Ankylomon.gif",
+    "raw_num": "013",
+    "raw_name": "Ankylomon",
+    "api_id": 266,
+    "api_name": "Ankylomon",
+    "canonical": "Ankylomon",
+    "id": "ankylomon"
+  },
+  {
+    "raw_file": "014_Andiramon.gif",
+    "raw_num": "014",
+    "raw_name": "Antiramon",
+    "api_id": 265,
+    "api_name": "Andiramon",
+    "canonical": "Andiramon",
+    "id": "andiramon"
+  },
+  {
+    "raw_file": "015_Anubimon.gif",
+    "raw_num": "015",
+    "raw_name": "Anubismon",
+    "api_id": 415,
+    "api_name": "Anubimon",
+    "canonical": "Anubimon",
+    "id": "anubimon"
+  },
+  {
+    "raw_file": "016_Hanumon.gif",
+    "raw_num": "016",
+    "raw_name": "Apemon",
+    "api_id": 246,
+    "api_name": "Hanumon",
+    "canonical": "Hanumon",
+    "id": "hanumon"
+  },
+  {
+    "raw_file": "017_Apocalymon.gif",
+    "raw_num": "017",
+    "raw_name": "Apocalymon",
+    "api_id": 132,
+    "api_name": "Apocalymon",
+    "canonical": "Apocalymon",
+    "id": "apocalymon"
+  },
+  {
+    "raw_file": "018_Apollomon.gif",
+    "raw_num": "018",
+    "raw_name": "Apollomon",
+    "api_id": 869,
+    "api_name": "Apollomon",
+    "canonical": "Apollomon",
+    "id": "apollomon"
+  },
+  {
+    "raw_file": "019_Aquilamon.gif",
+    "raw_num": "019",
+    "raw_name": "Aquilamon",
+    "api_id": 267,
+    "api_name": "Aquilamon",
+    "canonical": "Aquilamon",
+    "id": "aquilamon"
+  },
+  {
+    "raw_file": "020_Archnemon.gif",
+    "raw_num": "020",
+    "raw_name": "Arachnemon",
+    "api_id": 269,
+    "api_name": "Archnemon",
+    "canonical": "Archnemon",
+    "id": "archnemon"
+  },
+  {
+    "raw_file": "021_AlgomonPerfect.gif",
+    "raw_num": "021",
+    "raw_name": "ArgomonPerfect",
+    "api_id": 802,
+    "api_name": "Algomon (Perfect)",
+    "canonical": "AlgomonPerfect",
+    "id": "algomonperfect"
+  },
+  {
+    "raw_file": "022_AlgomonUltimate.gif",
+    "raw_num": "022",
+    "raw_name": "ArgomonUltimate",
+    "api_id": 803,
+    "api_name": "Algomon (Ultimate)",
+    "canonical": "AlgomonUltimate",
+    "id": "algomonultimate"
+  },
+  {
+    "raw_file": "023_Armagemon.gif",
+    "raw_num": "023",
+    "raw_name": "Armademon",
+    "api_id": 420,
+    "api_name": "Armagemon",
+    "canonical": "Armagemon",
+    "id": "armagemon"
+  },
+  {
+    "raw_file": "025_Babamon.gif",
+    "raw_num": "025",
+    "raw_name": "Babamon",
+    "api_id": 135,
+    "api_name": "Babamon",
+    "canonical": "Babamon",
+    "id": "babamon"
+  },
+  {
+    "raw_file": "026_Baihumon.gif",
+    "raw_num": "026",
+    "raw_name": "Baihumon",
+    "api_id": 272,
+    "api_name": "Baihumon",
+    "canonical": "Baihumon",
+    "id": "baihumon"
+  },
+  {
+    "raw_file": "027_Bakemon.gif",
+    "raw_num": "027",
+    "raw_name": "Bakemon",
+    "api_id": 41,
+    "api_name": "Bakemon",
+    "canonical": "Bakemon",
+    "id": "bakemon"
+  },
+  {
+    "raw_file": "028_Bakumon.gif",
+    "raw_num": "028",
+    "raw_name": "Bakumon",
+    "api_id": 136,
+    "api_name": "Bakumon",
+    "canonical": "Bakumon",
+    "id": "bakumon"
+  },
+  {
+    "raw_file": "029_BanchoLeomon.gif",
+    "raw_num": "029",
+    "raw_name": "BantyoLeomon",
+    "api_id": 752,
+    "api_name": "Bancho Leomon",
+    "canonical": "BanchoLeomon",
+    "id": "bancholeomon"
+  },
+  {
+    "raw_file": "030_Barbamon.gif",
+    "raw_num": "030",
+    "raw_name": "Barbamon",
+    "api_id": 640,
+    "api_name": "Barbamon",
+    "canonical": "Barbamon",
+    "id": "barbamon"
+  },
+  {
+    "raw_file": "031_Bastemon.gif",
+    "raw_num": "031",
+    "raw_name": "Bastemon",
+    "api_id": 507,
+    "api_name": "Bastemon",
+    "canonical": "Bastemon",
+    "id": "bastemon"
+  },
+  {
+    "raw_file": "032_Bearmon.gif",
+    "raw_num": "032",
+    "raw_name": "Bearmon",
+    "api_id": 508,
+    "api_name": "Bearmon",
+    "canonical": "Bearmon",
+    "id": "bearmon"
+  },
+  {
+    "raw_file": "033_Beelzebumon.gif",
+    "raw_num": "033",
+    "raw_name": "Beelzebumon",
+    "api_id": 421,
+    "api_name": "Beelzebumon",
+    "canonical": "Beelzebumon",
+    "id": "beelzebumon"
+  },
+  {
+    "raw_file": "034_BeelzebumonBlastMode.gif",
+    "raw_num": "034",
+    "raw_name": "BeelzebumonBlaster",
+    "api_id": 422,
+    "api_name": "Beelzebumon(Blast Mode)",
+    "canonical": "BeelzebumonBlastMode",
+    "id": "beelzebumonblastmode"
+  },
+  {
+    "raw_file": "036_BelialVamdemon.gif",
+    "raw_num": "036",
+    "raw_name": "BelialVamdemon",
+    "api_id": 274,
+    "api_name": "Belial Vamdemon",
+    "canonical": "BelialVamdemon",
+    "id": "belialvamdemon"
+  },
+  {
+    "raw_file": "037_BelphemonSleepMode.gif",
+    "raw_num": "037",
+    "raw_name": "Belphemon",
+    "api_id": 740,
+    "api_name": "Belphemon(Sleep Mode)",
+    "canonical": "BelphemonSleepMode",
+    "id": "belphemonsleepmode"
+  },
+  {
+    "raw_file": "038_Betamon.gif",
+    "raw_num": "038",
+    "raw_name": "Betamon",
+    "api_id": 4,
+    "api_name": "Betamon",
+    "canonical": "Betamon",
+    "id": "betamon"
+  },
+  {
+    "raw_file": "039_BigMamemon.gif",
+    "raw_num": "039",
+    "raw_name": "BigMamemon",
+    "api_id": 137,
+    "api_name": "Big Mamemon",
+    "canonical": "BigMamemon",
+    "id": "bigmamemon"
+  },
+  {
+    "raw_file": "040_Birdramon.gif",
+    "raw_num": "040",
+    "raw_name": "Birdramon",
+    "api_id": 5,
+    "api_name": "Birdramon",
+    "canonical": "Birdramon",
+    "id": "birdramon"
+  },
+  {
+    "raw_file": "041_BishopChessmonWhite.gif",
+    "raw_num": "041",
+    "raw_name": "BishopChessmon",
+    "api_id": 812,
+    "api_name": "Bishop Chessmon (White)",
+    "canonical": "BishopChessmonWhite",
+    "id": "bishopchessmonwhite"
+  },
+  {
+    "raw_file": "042_Piyomon.gif",
+    "raw_num": "042",
+    "raw_name": "Biyomon",
+    "api_id": 101,
+    "api_name": "Piyomon",
+    "canonical": "Piyomon",
+    "id": "piyomon"
+  },
+  {
+    "raw_file": "044_BlackRapidmon.gif",
+    "raw_num": "044",
+    "raw_name": "BlackRapidmon",
+    "api_id": 426,
+    "api_name": "Black Rapidmon",
+    "canonical": "BlackRapidmon",
+    "id": "blackrapidmon"
+  },
+  {
+    "raw_file": "045_BlackSaintGalgomon.gif",
+    "raw_num": "045",
+    "raw_name": "BlackSaintGalgomon",
+    "api_id": 427,
+    "api_name": "Black Saint Galgomon",
+    "canonical": "BlackSaintGalgomon",
+    "id": "blacksaintgalgomon"
+  },
+  {
+    "raw_file": "046_BlackWarGreymon.gif",
+    "raw_num": "046",
+    "raw_name": "BlackWarGreymon",
+    "api_id": 277,
+    "api_name": "Black War Greymon",
+    "canonical": "BlackWarGreymon",
+    "id": "blackwargreymon"
+  },
+  {
+    "raw_file": "047_BlackMegaloGrowmon.gif",
+    "raw_num": "047",
+    "raw_name": "BlackWarGrowlmon",
+    "api_id": 425,
+    "api_name": "Black Megalo Growmon",
+    "canonical": "BlackMegaloGrowmon",
+    "id": "blackmegalogrowmon"
+  },
+  {
+    "raw_file": "048_Blastmon.gif",
+    "raw_num": "048",
+    "raw_name": "Blastmon",
+    "api_id": 926,
+    "api_name": "Blastmon",
+    "canonical": "Blastmon",
+    "id": "blastmon"
+  },
+  {
+    "raw_file": "049_Blossomon.gif",
+    "raw_num": "049",
+    "raw_name": "Blossomon",
+    "api_id": 139,
+    "api_name": "Blossomon",
+    "canonical": "Blossomon",
+    "id": "blossomon"
+  },
+  {
+    "raw_file": "050_BlueMeramon.gif",
+    "raw_num": "050",
+    "raw_name": "BlueMeramon",
+    "api_id": 140,
+    "api_name": "Blue Meramon",
+    "canonical": "BlueMeramon",
+    "id": "bluemeramon"
+  },
+  {
+    "raw_file": "051_Boltmon.gif",
+    "raw_num": "051",
+    "raw_name": "Boltmon",
+    "api_id": 141,
+    "api_name": "Boltmon",
+    "canonical": "Boltmon",
+    "id": "boltmon"
+  },
+  {
+    "raw_file": "052_BomberNanimon.gif",
+    "raw_num": "052",
+    "raw_name": "BomberNanimon",
+    "api_id": 279,
+    "api_name": "Bomber Nanimon",
+    "canonical": "BomberNanimon",
+    "id": "bombernanimon"
+  },
+  {
+    "raw_file": "053_Bommon.gif",
+    "raw_num": "053",
+    "raw_name": "Bommon",
+    "api_id": 756,
+    "api_name": "Bommon",
+    "canonical": "Bommon",
+    "id": "bommon"
+  },
+  {
+    "raw_file": "054_Botamon.gif",
+    "raw_num": "054",
+    "raw_name": "Botamon",
+    "api_id": 6,
+    "api_name": "Botamon",
+    "canonical": "Botamon",
+    "id": "botamon"
+  },
+  {
+    "raw_file": "055_Brachimon.gif",
+    "raw_num": "055",
+    "raw_name": "Brachiomon",
+    "api_id": 142,
+    "api_name": "Brachimon",
+    "canonical": "Brachimon",
+    "id": "brachimon"
+  },
+  {
+    "raw_file": "056_Budmon.gif",
+    "raw_num": "056",
+    "raw_name": "Budmon",
+    "api_id": 814,
+    "api_name": "Budmon",
+    "canonical": "Budmon",
+    "id": "budmon"
+  },
+  {
+    "raw_file": "058_Candmon.gif",
+    "raw_num": "058",
+    "raw_name": "Candmon",
+    "api_id": 143,
+    "api_name": "Candmon",
+    "canonical": "Candmon",
+    "id": "candmon"
+  },
+  {
+    "raw_file": "059_Cannondramon.gif",
+    "raw_num": "059",
+    "raw_name": "Cannondramon",
+    "api_id": 526,
+    "api_name": "Cannondramon",
+    "canonical": "Cannondramon",
+    "id": "cannondramon"
+  },
+  {
+    "raw_file": "060_Centalmon.gif",
+    "raw_num": "060",
+    "raw_name": "Centarumon",
+    "api_id": 43,
+    "api_name": "Centalmon",
+    "canonical": "Centalmon",
+    "id": "centalmon"
+  },
+  {
+    "raw_file": "061_Cerberumon.gif",
+    "raw_num": "061",
+    "raw_name": "Cerberumon",
+    "api_id": 429,
+    "api_name": "Cerberumon",
+    "canonical": "Cerberumon",
+    "id": "cerberumon"
+  },
+  {
+    "raw_file": "062_Chaosdramon.gif",
+    "raw_num": "062",
+    "raw_name": "Chaosdramon",
+    "api_id": 536,
+    "api_name": "Chaosdramon",
+    "canonical": "Chaosdramon",
+    "id": "chaosdramon"
+  },
+  {
+    "raw_file": "063_ChaosDukemon.gif",
+    "raw_num": "063",
+    "raw_name": "ChaosDukemon",
+    "api_id": 430,
+    "api_name": "Chaos Dukemon",
+    "canonical": "ChaosDukemon",
+    "id": "chaosdukemon"
+  },
+  {
+    "raw_file": "064_ChaosDukemonCore.gif",
+    "raw_num": "064",
+    "raw_name": "ChaosDukemonCore",
+    "api_id": 876,
+    "api_name": "Chaos Dukemon Core",
+    "canonical": "ChaosDukemonCore",
+    "id": "chaosdukemoncore"
+  },
+  {
+    "raw_file": "065_ChaosGrimmon.gif",
+    "raw_num": "065",
+    "raw_name": "ChaosGrimmon",
+    "api_id": 877,
+    "api_name": "Chaos Grimmon",
+    "canonical": "ChaosGrimmon",
+    "id": "chaosgrimmon"
+  },
+  {
+    "raw_file": "066_Chaosmon.gif",
+    "raw_num": "066",
+    "raw_name": "Chaosmon-1",
+    "api_id": 757,
+    "api_name": "Chaosmon",
+    "canonical": "Chaosmon",
+    "id": "chaosmon"
+  },
+  {
+    "raw_file": "067_Jyureimon.gif",
+    "raw_num": "067",
+    "raw_name": "Cherrymon",
+    "api_id": 256,
+    "api_name": "Jyureimon",
+    "canonical": "Jyureimon",
+    "id": "jyureimon"
+  },
+  {
+    "raw_file": "068_CherubimonVirtue.gif",
+    "raw_num": "068",
+    "raw_name": "Cherubimon",
+    "api_id": 288,
+    "api_name": "Cherubimon (Virtue)",
+    "canonical": "CherubimonVirtue",
+    "id": "cherubimonvirtue"
+  },
+  {
+    "raw_file": "069_CherubimonVice.gif",
+    "raw_num": "069",
+    "raw_name": "CherubimonVirus",
+    "api_id": 287,
+    "api_name": "Cherubimon (Vice)",
+    "canonical": "CherubimonVice",
+    "id": "cherubimonvice"
+  },
+  {
+    "raw_file": "070_Chicomon.gif",
+    "raw_num": "070",
+    "raw_name": "Chibomon",
+    "api_id": 290,
+    "api_name": "Chicomon",
+    "canonical": "Chicomon",
+    "id": "chicomon"
+  },
+  {
+    "raw_file": "071_Chicchimon.gif",
+    "raw_num": "071",
+    "raw_name": "Chicchimon",
+    "api_id": 878,
+    "api_name": "Chicchimon",
+    "canonical": "Chicchimon",
+    "id": "chicchimon"
+  },
+  {
+    "raw_file": "073_Chocomon.gif",
+    "raw_num": "073",
+    "raw_name": "Chocomon",
+    "api_id": 291,
+    "api_name": "Chocomon",
+    "canonical": "Chocomon",
+    "id": "chocomon"
+  },
+  {
+    "raw_file": "074_ChronomonHolyMode.gif",
+    "raw_num": "074",
+    "raw_name": "Chronomon",
+    "api_id": 819,
+    "api_name": "Chronomon Holy Mode",
+    "canonical": "ChronomonHolyMode",
+    "id": "chronomonholymode"
+  },
+  {
+    "raw_file": "075_ChronomonDestroyMode.gif",
+    "raw_num": "075",
+    "raw_name": "ChronomonDM",
+    "api_id": 818,
+    "api_name": "Chronomon Destroy Mode",
+    "canonical": "ChronomonDestroyMode",
+    "id": "chronomondestroymode"
+  },
+  {
+    "raw_file": "076_Chrysalimon.gif",
+    "raw_num": "076",
+    "raw_name": "Chrysalimon",
+    "api_id": 292,
+    "api_name": "Chrysalimon",
+    "canonical": "Chrysalimon",
+    "id": "chrysalimon"
+  },
+  {
+    "raw_file": "077_Clockmon.gif",
+    "raw_num": "077",
+    "raw_name": "Clockmon",
+    "api_id": 149,
+    "api_name": "Clockmon",
+    "canonical": "Clockmon",
+    "id": "clockmon"
+  },
+  {
+    "raw_file": "078_Coelamon.gif",
+    "raw_num": "078",
+    "raw_name": "Coelamon",
+    "api_id": 45,
+    "api_name": "Coelamon",
+    "canonical": "Coelamon",
+    "id": "coelamon"
+  },
+  {
+    "raw_file": "079_Coronamon.gif",
+    "raw_num": "079",
+    "raw_name": "Coronamon",
+    "api_id": 882,
+    "api_name": "Coronamon",
+    "canonical": "Coronamon",
+    "id": "coronamon"
+  },
+  {
+    "raw_file": "080_Demon.gif",
+    "raw_num": "080",
+    "raw_name": "Creepymon",
+    "api_id": 154,
+    "api_name": "Demon",
+    "canonical": "Demon",
+    "id": "demon"
+  },
+  {
+    "raw_file": "081_Crescemon.gif",
+    "raw_num": "081",
+    "raw_name": "Crescemon",
+    "api_id": 883,
+    "api_name": "Crescemon",
+    "canonical": "Crescemon",
+    "id": "crescemon"
+  },
+  {
+    "raw_file": "082_Cyberdramon.gif",
+    "raw_num": "082",
+    "raw_name": "Cyberdramon",
+    "api_id": 150,
+    "api_name": "Cyberdramon",
+    "canonical": "Cyberdramon",
+    "id": "cyberdramon"
+  },
+  {
+    "raw_file": "083_Damemon.gif",
+    "raw_num": "083",
+    "raw_name": "Daemon",
+    "api_id": 936,
+    "api_name": "Damemon",
+    "canonical": "Damemon",
+    "id": "damemon"
+  },
+  {
+    "raw_file": "084_Daipenmon.gif",
+    "raw_num": "084",
+    "raw_name": "Daipenmon",
+    "api_id": 538,
+    "api_name": "Daipenmon",
+    "canonical": "Daipenmon",
+    "id": "daipenmon"
+  },
+  {
+    "raw_file": "085_Darkdramon.gif",
+    "raw_num": "085",
+    "raw_name": "Darkdramon",
+    "api_id": 761,
+    "api_name": "Darkdramon",
+    "canonical": "Darkdramon",
+    "id": "darkdramon"
+  },
+  {
+    "raw_file": "086_DarkLizamon.gif",
+    "raw_num": "086",
+    "raw_name": "DarkLizardmon",
+    "api_id": 151,
+    "api_name": "Dark Lizamon",
+    "canonical": "DarkLizamon",
+    "id": "darklizamon"
+  },
+  {
+    "raw_file": "087_DarkTyranomon.gif",
+    "raw_num": "087",
+    "raw_name": "DarkTyrannomon",
+    "api_id": 48,
+    "api_name": "Dark Tyranomon",
+    "canonical": "DarkTyranomon",
+    "id": "darktyranomon"
+  },
+  {
+    "raw_file": "088_Deathmon.gif",
+    "raw_num": "088",
+    "raw_name": "Deathmon",
+    "api_id": 296,
+    "api_name": "Deathmon",
+    "canonical": "Deathmon",
+    "id": "deathmon"
+  },
+  {
+    "raw_file": "089_DeathmonBlack.gif",
+    "raw_num": "089",
+    "raw_name": "DeathmonBlack",
+    "api_id": 297,
+    "api_name": "Deathmon (Black)",
+    "canonical": "DeathmonBlack",
+    "id": "deathmonblack"
+  },
+  {
+    "raw_file": "090_Revolmon.gif",
+    "raw_num": "090",
+    "raw_name": "Deputymon",
+    "api_id": 227,
+    "api_name": "Revolmon",
+    "canonical": "Revolmon",
+    "id": "revolmon"
+  },
+  {
+    "raw_file": "091_Delumon.gif",
+    "raw_num": "091",
+    "raw_name": "Deramon",
+    "api_id": 153,
+    "api_name": "Delumon",
+    "canonical": "Delumon",
+    "id": "delumon"
+  },
+  {
+    "raw_file": "092_Devidramon.gif",
+    "raw_num": "092",
+    "raw_name": "Devidramon",
+    "api_id": 50,
+    "api_name": "Devidramon",
+    "canonical": "Devidramon",
+    "id": "devidramon"
+  },
+  {
+    "raw_file": "093_Devimon.gif",
+    "raw_num": "093",
+    "raw_name": "Devimon",
+    "api_id": 14,
+    "api_name": "Devimon",
+    "canonical": "Devimon",
+    "id": "devimon"
+  },
+  {
+    "raw_file": "094_Devitamamon.gif",
+    "raw_num": "094",
+    "raw_name": "Devitamon",
+    "api_id": 155,
+    "api_name": "Devitamamon",
+    "canonical": "Devitamamon",
+    "id": "devitamamon"
+  },
+  {
+    "raw_file": "095_Diablomon.gif",
+    "raw_num": "095",
+    "raw_name": "Diaboromon",
+    "api_id": 156,
+    "api_name": "Diablomon",
+    "canonical": "Diablomon",
+    "id": "diablomon"
+  },
+  {
+    "raw_file": "096_Dianamon.gif",
+    "raw_num": "096",
+    "raw_name": "Dianamon",
+    "api_id": 885,
+    "api_name": "Dianamon",
+    "canonical": "Dianamon",
+    "id": "dianamon"
+  },
+  {
+    "raw_file": "097_Diatrymon.gif",
+    "raw_num": "097",
+    "raw_name": "Diatrymon",
+    "api_id": 762,
+    "api_name": "Diatrymon",
+    "canonical": "Diatrymon",
+    "id": "diatrymon"
+  },
+  {
+    "raw_file": "098_Digitamamon.gif",
+    "raw_num": "098",
+    "raw_name": "Digitamamon",
+    "api_id": 51,
+    "api_name": "Digitamamon",
+    "canonical": "Digitamamon",
+    "id": "digitamamon"
+  },
+  {
+    "raw_file": "099_Dinobeemon_2.gif",
+    "raw_num": "099",
+    "raw_name": "DinoBeemon",
+    "api_id": 300,
+    "api_name": "Dinobeemon",
+    "canonical": "Dinobeemon",
+    "id": "dinobeemon"
+  },
+  {
+    "raw_file": "100_Dinohumon.gif",
+    "raw_num": "100",
+    "raw_name": "Dinohumon",
+    "api_id": 541,
+    "api_name": "Dinohumon",
+    "canonical": "Dinohumon",
+    "id": "dinohumon"
+  },
+  {
+    "raw_file": "101_Divemon.gif",
+    "raw_num": "101",
+    "raw_name": "Divermon",
+    "api_id": 1368,
+    "api_name": "Divemon",
+    "canonical": "Divemon",
+    "id": "divemon"
+  },
+  {
+    "raw_file": "102_Gaogamon.gif",
+    "raw_num": "102",
+    "raw_name": "DMGaogamon",
+    "api_id": 825,
+    "api_name": "Gaogamon",
+    "canonical": "Gaogamon",
+    "id": "gaogamon"
+  },
+  {
+    "raw_file": "103_Dokugumon.gif",
+    "raw_num": "103",
+    "raw_name": "Dokugumon",
+    "api_id": 157,
+    "api_name": "Dokugumon",
+    "canonical": "Dokugumon",
+    "id": "dokugumon"
+  },
+  {
+    "raw_file": "104_Dokunemon.gif",
+    "raw_num": "104",
+    "raw_name": "Dokunemon",
+    "api_id": 158,
+    "api_name": "Dokunemon",
+    "canonical": "Dokunemon",
+    "id": "dokunemon"
+  },
+  {
+    "raw_file": "105_Rukamon.gif",
+    "raw_num": "105",
+    "raw_name": "Dolphmon",
+    "api_id": 106,
+    "api_name": "Rukamon",
+    "canonical": "Rukamon",
+    "id": "rukamon"
+  },
+  {
+    "raw_file": "106_Dondokomon.gif",
+    "raw_num": "106",
+    "raw_name": "Dondokomon",
+    "api_id": 941,
+    "api_name": "Dondokomon",
+    "canonical": "Dondokomon",
+    "id": "dondokomon"
+  },
+  {
+    "raw_file": "107_Dorimon.gif",
+    "raw_num": "107",
+    "raw_name": "Dorimon",
+    "api_id": 653,
+    "api_name": "Dorimon",
+    "canonical": "Dorimon",
+    "id": "dorimon"
+  },
+  {
+    "raw_file": "108_DORUgamon_2.gif",
+    "raw_num": "108",
+    "raw_name": "Dorugamon",
+    "api_id": 654,
+    "api_name": "DORUgamon",
+    "canonical": "DORUgamon",
+    "id": "dorugamon"
+  },
+  {
+    "raw_file": "109_DORUgoramon_2.gif",
+    "raw_num": "109",
+    "raw_name": "Dorugoramon",
+    "api_id": 655,
+    "api_name": "DORUgoramon",
+    "canonical": "DORUgoramon",
+    "id": "dorugoramon"
+  },
+  {
+    "raw_file": "110_DORUguremon.gif",
+    "raw_num": "110",
+    "raw_name": "Dorugreymon",
+    "api_id": 656,
+    "api_name": "DORUguremon",
+    "canonical": "DORUguremon",
+    "id": "doruguremon"
+  },
+  {
+    "raw_file": "111_DORUmon_2.gif",
+    "raw_num": "111",
+    "raw_name": "Dorumon",
+    "api_id": 657,
+    "api_name": "DORUmon",
+    "canonical": "DORUmon",
+    "id": "dorumon"
+  },
+  {
+    "raw_file": "112_DotFalcomon.gif",
+    "raw_num": "112",
+    "raw_name": "DotFalcomon",
+    "api_id": 821,
+    "api_name": "Dot Falcomon",
+    "canonical": "DotFalcomon",
+    "id": "dotfalcomon"
+  },
+  {
+    "raw_file": "113_Dracumon.gif",
+    "raw_num": "113",
+    "raw_name": "Dracmon",
+    "api_id": 763,
+    "api_name": "Dracumon",
+    "canonical": "Dracumon",
+    "id": "dracumon"
+  },
+  {
+    "raw_file": "114_Dagomon.gif",
+    "raw_num": "114",
+    "raw_name": "Dragomon",
+    "api_id": 47,
+    "api_name": "Dagomon",
+    "canonical": "Dagomon",
+    "id": "dagomon"
+  },
+  {
+    "raw_file": "115_Drimogemon.gif",
+    "raw_num": "115",
+    "raw_name": "Drimogemon",
+    "api_id": 52,
+    "api_name": "Drimogemon",
+    "canonical": "Drimogemon",
+    "id": "drimogemon"
+  },
+  {
+    "raw_file": "117_Duftmon.gif",
+    "raw_num": "117",
+    "raw_name": "Duftmon-1",
+    "api_id": 892,
+    "api_name": "Duftmon",
+    "canonical": "Duftmon",
+    "id": "duftmon"
+  },
+  {
+    "raw_file": "118_Dukemon.gif",
+    "raw_num": "118",
+    "raw_name": "Dukemon",
+    "api_id": 434,
+    "api_name": "Dukemon",
+    "canonical": "Dukemon",
+    "id": "dukemon"
+  },
+  {
+    "raw_file": "121_EBEmon_2.gif",
+    "raw_num": "121",
+    "raw_name": "Ebemon",
+    "api_id": 302,
+    "api_name": "EBEmon",
+    "canonical": "EBEmon",
+    "id": "ebemon"
+  },
+  {
+    "raw_file": "122_Ebidramon.gif",
+    "raw_num": "122",
+    "raw_name": "Ebidramon",
+    "api_id": 53,
+    "api_name": "Ebidramon",
+    "canonical": "Ebidramon",
+    "id": "ebidramon"
+  },
+  {
+    "raw_file": "123_Etemon.gif",
+    "raw_num": "123",
+    "raw_name": "Etemon",
+    "api_id": 54,
+    "api_name": "Etemon",
+    "canonical": "Etemon",
+    "id": "etemon"
+  },
+  {
+    "raw_file": "124_Evilmon.gif",
+    "raw_num": "124",
+    "raw_name": "Evilmon",
+    "api_id": 55,
+    "api_name": "Evilmon",
+    "canonical": "Evilmon",
+    "id": "evilmon"
+  },
+  {
+    "raw_file": "125_ExoGrimmon.gif",
+    "raw_num": "125",
+    "raw_name": "ExoGrimmon",
+    "api_id": 896,
+    "api_name": "Exo Grimmon",
+    "canonical": "ExoGrimmon",
+    "id": "exogrimmon"
+  },
+  {
+    "raw_file": "126_Falcomon.gif",
+    "raw_num": "126",
+    "raw_name": "Falcomon",
+    "api_id": 764,
+    "api_name": "Falcomon",
+    "canonical": "Falcomon",
+    "id": "falcomon"
+  },
+  {
+    "raw_file": "127_Firamon.gif",
+    "raw_num": "127",
+    "raw_name": "Firamon",
+    "api_id": 897,
+    "api_name": "Firamon",
+    "canonical": "Firamon",
+    "id": "firamon"
+  },
+  {
+    "raw_file": "128_Fladramon.gif",
+    "raw_num": "128",
+    "raw_name": "Flamedramon",
+    "api_id": 305,
+    "api_name": "Fladramon",
+    "canonical": "Fladramon",
+    "id": "fladramon"
+  },
+  {
+    "raw_file": "129_FlareLizamon.gif",
+    "raw_num": "129",
+    "raw_name": "FlareLizardmon",
+    "api_id": 161,
+    "api_name": "Flare Lizamon",
+    "canonical": "FlareLizamon",
+    "id": "flarelizamon"
+  },
+  {
+    "raw_file": "130_Flaremon.gif",
+    "raw_num": "130",
+    "raw_name": "Flaremon",
+    "api_id": 898,
+    "api_name": "Flaremon",
+    "canonical": "Flaremon",
+    "id": "flaremon"
+  },
+  {
+    "raw_file": "131_Floramon.gif",
+    "raw_num": "131",
+    "raw_name": "Floramon",
+    "api_id": 162,
+    "api_name": "Floramon",
+    "canonical": "Floramon",
+    "id": "floramon"
+  },
+  {
+    "raw_file": "132_Flymon.gif",
+    "raw_num": "132",
+    "raw_name": "Flymon",
+    "api_id": 57,
+    "api_name": "Flymon",
+    "canonical": "Flymon",
+    "id": "flymon"
+  },
+  {
+    "raw_file": "133_Yukidarumon.gif",
+    "raw_num": "133",
+    "raw_name": "Frigimon",
+    "api_id": 29,
+    "api_name": "Yukidarumon",
+    "canonical": "Yukidarumon",
+    "id": "yukidarumon"
+  },
+  {
+    "raw_file": "134_Fugamon.gif",
+    "raw_num": "134",
+    "raw_name": "Fugamon",
+    "api_id": 164,
+    "api_name": "Fugamon",
+    "canonical": "Fugamon",
+    "id": "fugamon"
+  },
+  {
+    "raw_file": "135_Gabumon.gif",
+    "raw_num": "135",
+    "raw_name": "Gabumon",
+    "api_id": 16,
+    "api_name": "Gabumon",
+    "canonical": "Gabumon",
+    "id": "gabumon"
+  },
+  {
+    "raw_file": "136_Gaioumon.gif",
+    "raw_num": "136",
+    "raw_name": "Gaiomon",
+    "api_id": 664,
+    "api_name": "Gaioumon",
+    "canonical": "Gaioumon",
+    "id": "gaioumon"
+  },
+  {
+    "raw_file": "138_Galgomon.gif",
+    "raw_num": "138",
+    "raw_name": "Galgomon",
+    "api_id": 308,
+    "api_name": "Galgomon",
+    "canonical": "Galgomon",
+    "id": "galgomon"
+  },
+  {
+    "raw_file": "139_Ganimon.gif",
+    "raw_num": "139",
+    "raw_name": "Ganimon",
+    "api_id": 59,
+    "api_name": "Ganimon",
+    "canonical": "Ganimon",
+    "id": "ganimon"
+  },
+  {
+    "raw_file": "141_Gaomon.gif",
+    "raw_num": "141",
+    "raw_name": "Gaomon",
+    "api_id": 826,
+    "api_name": "Gaomon",
+    "canonical": "Gaomon",
+    "id": "gaomon"
+  },
+  {
+    "raw_file": "142_Gaossmon.gif",
+    "raw_num": "142",
+    "raw_name": "Gaossmon",
+    "api_id": 945,
+    "api_name": "Gaossmon",
+    "canonical": "Gaossmon",
+    "id": "gaossmon"
+  },
+  {
+    "raw_file": "144_Garudamon.gif",
+    "raw_num": "144",
+    "raw_name": "Garudamon",
+    "api_id": 165,
+    "api_name": "Garudamon",
+    "canonical": "Garudamon",
+    "id": "garudamon"
+  },
+  {
+    "raw_file": "145_Garurumon.gif",
+    "raw_num": "145",
+    "raw_name": "Garurumon",
+    "api_id": 33,
+    "api_name": "Garurumon",
+    "canonical": "Garurumon",
+    "id": "garurumon"
+  },
+  {
+    "raw_file": "146_Gekomon.gif",
+    "raw_num": "146",
+    "raw_name": "Gekomon",
+    "api_id": 112,
+    "api_name": "Gekomon",
+    "canonical": "Gekomon",
+    "id": "gekomon"
+  },
+  {
+    "raw_file": "147_GeoGreymon.gif",
+    "raw_num": "147",
+    "raw_name": "GeoGreymon",
+    "api_id": 857,
+    "api_name": "Geo Greymon",
+    "canonical": "GeoGreymon",
+    "id": "geogreymon"
+  },
+  {
+    "raw_file": "148_Geremon.gif",
+    "raw_num": "148",
+    "raw_name": "Geremon",
+    "api_id": 234,
+    "api_name": "Geremon",
+    "canonical": "Geremon",
+    "id": "geremon"
+  },
+  {
+    "raw_file": "149_Gesomon.gif",
+    "raw_num": "149",
+    "raw_name": "Gesomon",
+    "api_id": 113,
+    "api_name": "Gesomon",
+    "canonical": "Gesomon",
+    "id": "gesomon"
+  },
+  {
+    "raw_file": "150_Gigadramon.gif",
+    "raw_num": "150",
+    "raw_name": "Gigadramon",
+    "api_id": 235,
+    "api_name": "Gigadramon",
+    "canonical": "Gigadramon",
+    "id": "gigadramon"
+  },
+  {
+    "raw_file": "151_GigaSeadramon.gif",
+    "raw_num": "151",
+    "raw_name": "GigaSeadramon",
+    "api_id": 723,
+    "api_name": "Giga Seadramon",
+    "canonical": "GigaSeadramon",
+    "id": "gigaseadramon"
+  },
+  {
+    "raw_file": "152_Gigimon.gif",
+    "raw_num": "152",
+    "raw_name": "Gigimon",
+    "api_id": 472,
+    "api_name": "Gigimon",
+    "canonical": "Gigimon",
+    "id": "gigimon"
+  },
+  {
+    "raw_file": "153_Giromon.gif",
+    "raw_num": "153",
+    "raw_name": "Giromon",
+    "api_id": 114,
+    "api_name": "Giromon",
+    "canonical": "Giromon",
+    "id": "giromon"
+  },
+  {
+    "raw_file": "154_Gizamon.gif",
+    "raw_num": "154",
+    "raw_name": "Gizamon",
+    "api_id": 115,
+    "api_name": "Gizamon",
+    "canonical": "Gizamon",
+    "id": "gizamon"
+  },
+  {
+    "raw_file": "155_Goburimon.gif",
+    "raw_num": "155",
+    "raw_name": "Goblimon",
+    "api_id": 236,
+    "api_name": "Goburimon",
+    "canonical": "Goburimon",
+    "id": "goburimon"
+  },
+  {
+    "raw_file": "156_GoldVdramon.gif",
+    "raw_num": "156",
+    "raw_name": "Goldramon",
+    "api_id": 394,
+    "api_name": "Gold V-dramon",
+    "canonical": "GoldVdramon",
+    "id": "goldvdramon"
+  },
+  {
+    "raw_file": "157_Golemon.gif",
+    "raw_num": "157",
+    "raw_name": "Golemon",
+    "api_id": 238,
+    "api_name": "Golemon",
+    "canonical": "Golemon",
+    "id": "golemon"
+  },
+  {
+    "raw_file": "158_Gomamon.gif",
+    "raw_num": "158",
+    "raw_name": "Gomamon",
+    "api_id": 117,
+    "api_name": "Gomamon",
+    "canonical": "Gomamon",
+    "id": "gomamon"
+  },
+  {
+    "raw_file": "159_Gottsumon.gif",
+    "raw_num": "159",
+    "raw_name": "Gotsumon",
+    "api_id": 119,
+    "api_name": "Gottsumon",
+    "canonical": "Gottsumon",
+    "id": "gottsumon"
+  },
+  {
+    "raw_file": "160_GrandDracumon.gif",
+    "raw_num": "160",
+    "raw_name": "GranDracmon",
+    "api_id": 793,
+    "api_name": "Grand Dracumon",
+    "canonical": "GrandDracumon",
+    "id": "granddracumon"
+  },
+  {
+    "raw_file": "161_GranKuwagamon.gif",
+    "raw_num": "161",
+    "raw_name": "GranKuwagamon",
+    "api_id": 395,
+    "api_name": "Gran Kuwagamon",
+    "canonical": "GranKuwagamon",
+    "id": "grankuwagamon"
+  },
+  {
+    "raw_file": "162_GrandLocomon.gif",
+    "raw_num": "162",
+    "raw_name": "GranLocomon",
+    "api_id": 614,
+    "api_name": "Grand Locomon",
+    "canonical": "GrandLocomon",
+    "id": "grandlocomon"
+  },
+  {
+    "raw_file": "163_GrappuLeomon.gif",
+    "raw_num": "163",
+    "raw_name": "GrappLeomon",
+    "api_id": 474,
+    "api_name": "Grappu Leomon",
+    "canonical": "GrappuLeomon",
+    "id": "grappuleomon"
+  },
+  {
+    "raw_file": "164_Greymon.gif",
+    "raw_num": "164",
+    "raw_name": "Greymon",
+    "api_id": 34,
+    "api_name": "Greymon",
+    "canonical": "Greymon",
+    "id": "greymon"
+  },
+  {
+    "raw_file": "167_Grimmon.gif",
+    "raw_num": "167",
+    "raw_name": "Grimmon",
+    "api_id": 914,
+    "api_name": "Grimmon",
+    "canonical": "Grimmon",
+    "id": "grimmon"
+  },
+  {
+    "raw_file": "168_Gryzmon.gif",
+    "raw_num": "168",
+    "raw_name": "Grizzmon",
+    "api_id": 616,
+    "api_name": "Gryzmon",
+    "canonical": "Gryzmon",
+    "id": "gryzmon"
+  },
+  {
+    "raw_file": "169_Growmon.gif",
+    "raw_num": "169",
+    "raw_name": "Growlmon",
+    "api_id": 475,
+    "api_name": "Growmon",
+    "canonical": "Growmon",
+    "id": "growmon"
+  },
+  {
+    "raw_file": "170_Griffomon.gif",
+    "raw_num": "170",
+    "raw_name": "Gryphonmon",
+    "api_id": 241,
+    "api_name": "Griffomon",
+    "canonical": "Griffomon",
+    "id": "griffomon"
+  },
+  {
+    "raw_file": "171_Guardromon.gif",
+    "raw_num": "171",
+    "raw_name": "Guadromon",
+    "api_id": 242,
+    "api_name": "Guardromon",
+    "canonical": "Guardromon",
+    "id": "guardromon"
+  },
+  {
+    "raw_file": "172_Guilmon.gif",
+    "raw_num": "172",
+    "raw_name": "Guilmon",
+    "api_id": 477,
+    "api_name": "Guilmon",
+    "canonical": "Guilmon",
+    "id": "guilmon"
+  },
+  {
+    "raw_file": "173_Gummymon.gif",
+    "raw_num": "173",
+    "raw_name": "Gumymon",
+    "api_id": 397,
+    "api_name": "Gummymon",
+    "canonical": "Gummymon",
+    "id": "gummymon"
+  },
+  {
+    "raw_file": "174_Gawappamon.gif",
+    "raw_num": "174",
+    "raw_name": "Gwappamon",
+    "api_id": 856,
+    "api_name": "Gawappamon",
+    "canonical": "Gawappamon",
+    "id": "gawappamon"
+  },
+  {
+    "raw_file": "175_Hagurumon.gif",
+    "raw_num": "175",
+    "raw_name": "Hagurumon",
+    "api_id": 244,
+    "api_name": "Hagurumon",
+    "canonical": "Hagurumon",
+    "id": "hagurumon"
+  },
+  {
+    "raw_file": "176_Hawkmon.gif",
+    "raw_num": "176",
+    "raw_name": "Hawkmon",
+    "api_id": 399,
+    "api_name": "Hawkmon",
+    "canonical": "Hawkmon",
+    "id": "hawkmon"
+  },
+  {
+    "raw_file": "177_HerakleKabuterimon.gif",
+    "raw_num": "177",
+    "raw_name": "HerculesKabuterimon",
+    "api_id": 120,
+    "api_name": "Herakle Kabuterimon",
+    "canonical": "HerakleKabuterimon",
+    "id": "heraklekabuterimon"
+  },
+  {
+    "raw_file": "178_HiAndromon.gif",
+    "raw_num": "178",
+    "raw_name": "HiAndromon",
+    "api_id": 400,
+    "api_name": "Hi Andromon",
+    "canonical": "HiAndromon",
+    "id": "hiandromon"
+  },
+  {
+    "raw_file": "179_HolyAngemon.gif",
+    "raw_num": "179",
+    "raw_name": "HolyAngemon",
+    "api_id": 121,
+    "api_name": "Holy Angemon",
+    "canonical": "HolyAngemon",
+    "id": "holyangemon"
+  },
+  {
+    "raw_file": "180_Hookmon.gif",
+    "raw_num": "180",
+    "raw_name": "Hookmon",
+    "api_id": 619,
+    "api_name": "Hookmon",
+    "canonical": "Hookmon",
+    "id": "hookmon"
+  },
+  {
+    "raw_file": "181_Hyougamon.gif",
+    "raw_num": "181",
+    "raw_name": "Hyogamon",
+    "api_id": 249,
+    "api_name": "Hyougamon",
+    "canonical": "Hyougamon",
+    "id": "hyougamon"
+  },
+  {
+    "raw_file": "182_IceDevimon.gif",
+    "raw_num": "182",
+    "raw_name": "IceDevimon",
+    "api_id": 250,
+    "api_name": "Ice Devimon",
+    "canonical": "IceDevimon",
+    "id": "icedevimon"
+  },
+  {
+    "raw_file": "183_Icemon.gif",
+    "raw_num": "183",
+    "raw_name": "Icemon",
+    "api_id": 251,
+    "api_name": "Icemon",
+    "canonical": "Icemon",
+    "id": "icemon"
+  },
+  {
+    "raw_file": "184_Igamon.gif",
+    "raw_num": "184",
+    "raw_name": "Igamon",
+    "api_id": 252,
+    "api_name": "Igamon",
+    "canonical": "Igamon",
+    "id": "igamon"
+  },
+  {
+    "raw_file": "185_Ikkakumon.gif",
+    "raw_num": "185",
+    "raw_name": "Ikkakumon",
+    "api_id": 124,
+    "api_name": "Ikkakumon",
+    "canonical": "Ikkakumon",
+    "id": "ikkakumon"
+  },
+  {
+    "raw_file": "186_ImperialdramonDragonMode.gif",
+    "raw_num": "186",
+    "raw_name": "Imperialdramon",
+    "api_id": 403,
+    "api_name": "Imperialdramon(Dragon Mode)",
+    "canonical": "ImperialdramonDragonMode",
+    "id": "imperialdramondragonmode"
+  },
+  {
+    "raw_file": "187_ImperialdramonDragonModeBlack.gif",
+    "raw_num": "187",
+    "raw_name": "ImperialdramonDMBlack",
+    "api_id": 404,
+    "api_name": "Imperialdramon(Dragon Mode (Black))",
+    "canonical": "ImperialdramonDragonModeBlack",
+    "id": "imperialdramondragonmodeblack"
+  },
+  {
+    "raw_file": "188_ImperialdramonFighterMode.gif",
+    "raw_num": "188",
+    "raw_name": "ImperialdramonFighter",
+    "api_id": 405,
+    "api_name": "Imperialdramon(Fighter Mode)",
+    "canonical": "ImperialdramonFighterMode",
+    "id": "imperialdramonfightermode"
+  },
+  {
+    "raw_file": "189_ImperialdramonPaladinMode.gif",
+    "raw_num": "189",
+    "raw_name": "ImperialdramonPaladin",
+    "api_id": 481,
+    "api_name": "Imperialdramon(Paladin Mode)",
+    "canonical": "ImperialdramonPaladinMode",
+    "id": "imperialdramonpaladinmode"
+  },
+  {
+    "raw_file": "190_Impmon.gif",
+    "raw_num": "190",
+    "raw_name": "Impmon",
+    "api_id": 482,
+    "api_name": "Impmon",
+    "canonical": "Impmon",
+    "id": "impmon"
+  },
+  {
+    "raw_file": "191_Infermon.gif",
+    "raw_num": "191",
+    "raw_name": "Infermon",
+    "api_id": 406,
+    "api_name": "Infermon",
+    "canonical": "Infermon",
+    "id": "infermon"
+  },
+  {
+    "raw_file": "192_Mojyamon.gif",
+    "raw_num": "192",
+    "raw_name": "J-Mojyamon",
+    "api_id": 72,
+    "api_name": "Mojyamon",
+    "canonical": "Mojyamon",
+    "id": "mojyamon"
+  },
+  {
+    "raw_file": "193_Jijimon.gif",
+    "raw_num": "193",
+    "raw_name": "Jijimon",
+    "api_id": 254,
+    "api_name": "Jijimon",
+    "canonical": "Jijimon",
+    "id": "jijimon"
+  },
+  {
+    "raw_file": "194_JumboGamemon.gif",
+    "raw_num": "194",
+    "raw_name": "JumboGamemon",
+    "api_id": 862,
+    "api_name": "Jumbo Gamemon",
+    "canonical": "JumboGamemon",
+    "id": "jumbogamemon"
+  },
+  {
+    "raw_file": "195_JustimonAccelArm.gif",
+    "raw_num": "195",
+    "raw_name": "Justimon",
+    "api_id": 623,
+    "api_name": "Justimon(Accel Arm)",
+    "canonical": "JustimonAccelArm",
+    "id": "justimonaccelarm"
+  },
+  {
+    "raw_file": "196_Kabukimon.gif",
+    "raw_num": "196",
+    "raw_name": "Kabukimon",
+    "api_id": 407,
+    "api_name": "Kabukimon",
+    "canonical": "Kabukimon",
+    "id": "kabukimon"
+  },
+  {
+    "raw_file": "197_Kabuterimon.gif",
+    "raw_num": "197",
+    "raw_name": "Kabuterimon",
+    "api_id": 35,
+    "api_name": "Kabuterimon",
+    "canonical": "Kabuterimon",
+    "id": "kabuterimon"
+  },
+  {
+    "raw_file": "198_Kamemon.gif",
+    "raw_num": "198",
+    "raw_name": "Kamemon",
+    "api_id": 817,
+    "api_name": "Kamemon",
+    "canonical": "Kamemon",
+    "id": "kamemon"
+  },
+  {
+    "raw_file": "199_Caprimon.gif",
+    "raw_num": "199",
+    "raw_name": "Kapurimon",
+    "api_id": 144,
+    "api_name": "Caprimon",
+    "canonical": "Caprimon",
+    "id": "caprimon"
+  },
+  {
+    "raw_file": "200_Karatenmon.gif",
+    "raw_num": "200",
+    "raw_name": "Karatenmon",
+    "api_id": 409,
+    "api_name": "Karatenmon",
+    "canonical": "Karatenmon",
+    "id": "karatenmon"
+  },
+  {
+    "raw_file": "201_KaratukiNumemon.gif",
+    "raw_num": "201",
+    "raw_name": "KaratsukiNumemon",
+    "api_id": 257,
+    "api_name": "Karatuki Numemon",
+    "canonical": "KaratukiNumemon",
+    "id": "karatukinumemon"
+  },
+  {
+    "raw_file": "202_Kenkimon.gif",
+    "raw_num": "202",
+    "raw_name": "Kenkimon",
+    "api_id": 628,
+    "api_name": "Kenkimon",
+    "canonical": "Kenkimon",
+    "id": "kenkimon"
+  },
+  {
+    "raw_file": "203_Keramon.gif",
+    "raw_num": "203",
+    "raw_name": "Keramon",
+    "api_id": 410,
+    "api_name": "Keramon",
+    "canonical": "Keramon",
+    "id": "keramon"
+  },
+  {
+    "raw_file": "204_KingChessmon.gif",
+    "raw_num": "204",
+    "raw_name": "KingChessmon",
+    "api_id": 863,
+    "api_name": "King Chessmon",
+    "canonical": "KingChessmon",
+    "id": "kingchessmon"
+  },
+  {
+    "raw_file": "205_Kiwimon.gif",
+    "raw_num": "205",
+    "raw_name": "Kiwimon",
+    "api_id": 259,
+    "api_name": "Kiwimon",
+    "canonical": "Kiwimon",
+    "id": "kiwimon"
+  },
+  {
+    "raw_file": "206_KnightChessmonBlack.gif",
+    "raw_num": "206",
+    "raw_name": "KnightChessmonBlack",
+    "api_id": 864,
+    "api_name": "Knight Chessmon (Black)",
+    "canonical": "KnightChessmonBlack",
+    "id": "knightchessmonblack"
+  },
+  {
+    "raw_file": "207_KnightChessmonWhite.gif",
+    "raw_num": "207",
+    "raw_name": "KnightChessmonWhite",
+    "api_id": 865,
+    "api_name": "Knight Chessmon (White)",
+    "canonical": "KnightChessmonWhite",
+    "id": "knightchessmonwhite"
+  },
+  {
+    "raw_file": "208_Knightmon.gif",
+    "raw_num": "208",
+    "raw_name": "Knightmon",
+    "api_id": 260,
+    "api_name": "Knightmon",
+    "canonical": "Knightmon",
+    "id": "knightmon"
+  },
+  {
+    "raw_file": "210_Kokuwamon.gif",
+    "raw_num": "210",
+    "raw_name": "Kokuwamon",
+    "api_id": 262,
+    "api_name": "Kokuwamon",
+    "canonical": "Kokuwamon",
+    "id": "kokuwamon"
+  },
+  {
+    "raw_file": "211_Kongoumon.gif",
+    "raw_num": "211",
+    "raw_name": "Kongoumon",
+    "api_id": 411,
+    "api_name": "Kongoumon",
+    "canonical": "Kongoumon",
+    "id": "kongoumon"
+  },
+  {
+    "raw_file": "212_Koromon.gif",
+    "raw_num": "212",
+    "raw_name": "Koromon",
+    "api_id": 36,
+    "api_name": "Koromon",
+    "canonical": "Koromon",
+    "id": "koromon"
+  },
+  {
+    "raw_file": "213_Kotemon.gif",
+    "raw_num": "213",
+    "raw_name": "Kotemon",
+    "api_id": 631,
+    "api_name": "Kotemon",
+    "canonical": "Kotemon",
+    "id": "kotemon"
+  },
+  {
+    "raw_file": "214_Kougamon.gif",
+    "raw_num": "214",
+    "raw_name": "Kougamon",
+    "api_id": 632,
+    "api_name": "Kougamon",
+    "canonical": "Kougamon",
+    "id": "kougamon"
+  },
+  {
+    "raw_file": "215_Kudamon.gif",
+    "raw_num": "215",
+    "raw_name": "Kudamon",
+    "api_id": 797,
+    "api_name": "Kudamon",
+    "canonical": "Kudamon",
+    "id": "kudamon"
+  },
+  {
+    "raw_file": "216_Kunemon.gif",
+    "raw_num": "216",
+    "raw_name": "Kunemon",
+    "api_id": 126,
+    "api_name": "Kunemon",
+    "canonical": "Kunemon",
+    "id": "kunemon"
+  },
+  {
+    "raw_file": "217_Kuramon.gif",
+    "raw_num": "217",
+    "raw_name": "Kuramon",
+    "api_id": 412,
+    "api_name": "Kuramon",
+    "canonical": "Kuramon",
+    "id": "kuramon"
+  },
+  {
+    "raw_file": "218_Kuwagamon.gif",
+    "raw_num": "218",
+    "raw_name": "Kuwagamon",
+    "api_id": 127,
+    "api_name": "Kuwagamon",
+    "canonical": "Kuwagamon",
+    "id": "kuwagamon"
+  },
+  {
+    "raw_file": "219_Kuzuhamon.gif",
+    "raw_num": "219",
+    "raw_name": "Kuzuhamon",
+    "api_id": 489,
+    "api_name": "Kuzuhamon",
+    "canonical": "Kuzuhamon",
+    "id": "kuzuhamon"
+  },
+  {
+    "raw_file": "220_Kyubimon.gif",
+    "raw_num": "220",
+    "raw_name": "Kyubimon",
+    "api_id": 490,
+    "api_name": "Kyubimon",
+    "canonical": "Kyubimon",
+    "id": "kyubimon"
+  },
+  {
+    "raw_file": "221_Kyukimon.gif",
+    "raw_num": "221",
+    "raw_name": "Kyukimon",
+    "api_id": 633,
+    "api_name": "Kyukimon",
+    "canonical": "Kyukimon",
+    "id": "kyukimon"
+  },
+  {
+    "raw_file": "222_LadyDevimon.gif",
+    "raw_num": "222",
+    "raw_name": "LadyDevimon",
+    "api_id": 128,
+    "api_name": "Lady Devimon",
+    "canonical": "LadyDevimon",
+    "id": "ladydevimon"
+  },
+  {
+    "raw_file": "223_Lampmon.gif",
+    "raw_num": "223",
+    "raw_name": "Lampmon",
+    "api_id": 310,
+    "api_name": "Lampmon",
+    "canonical": "Lampmon",
+    "id": "lampmon"
+  },
+  {
+    "raw_file": "224_Lekismon.gif",
+    "raw_num": "224",
+    "raw_name": "Lekismon",
+    "api_id": 899,
+    "api_name": "Lekismon",
+    "canonical": "Lekismon",
+    "id": "lekismon"
+  },
+  {
+    "raw_file": "225_Leomon.gif",
+    "raw_num": "225",
+    "raw_name": "Leomon",
+    "api_id": 60,
+    "api_name": "Leomon",
+    "canonical": "Leomon",
+    "id": "leomon"
+  },
+  {
+    "raw_file": "226_Reppamon.gif",
+    "raw_num": "226",
+    "raw_name": "Leppamon",
+    "api_id": 790,
+    "api_name": "Reppamon",
+    "canonical": "Reppamon",
+    "id": "reppamon"
+  },
+  {
+    "raw_file": "227_Leviamon.gif",
+    "raw_num": "227",
+    "raw_name": "Leviamon",
+    "api_id": 667,
+    "api_name": "Leviamon",
+    "canonical": "Leviamon",
+    "id": "leviamon"
+  },
+  {
+    "raw_file": "228_Lilamon.gif",
+    "raw_num": "228",
+    "raw_name": "Lilamon",
+    "api_id": 827,
+    "api_name": "Lilamon",
+    "canonical": "Lilamon",
+    "id": "lilamon"
+  },
+  {
+    "raw_file": "229_Lilithmon.gif",
+    "raw_num": "229",
+    "raw_name": "Lilithmon",
+    "api_id": 552,
+    "api_name": "Lilithmon",
+    "canonical": "Lilithmon",
+    "id": "lilithmon"
+  },
+  {
+    "raw_file": "230_Lilimon.gif",
+    "raw_num": "230",
+    "raw_name": "Lilymon",
+    "api_id": 166,
+    "api_name": "Lilimon",
+    "canonical": "Lilimon",
+    "id": "lilimon"
+  },
+  {
+    "raw_file": "231_Lopmon.gif",
+    "raw_num": "231",
+    "raw_name": "Lopmon",
+    "api_id": 313,
+    "api_name": "Lopmon",
+    "canonical": "Lopmon",
+    "id": "lopmon"
+  },
+  {
+    "raw_file": "232_Lotusmon.gif",
+    "raw_num": "232",
+    "raw_name": "Lotusmon",
+    "api_id": 900,
+    "api_name": "Lotusmon",
+    "canonical": "Lotusmon",
+    "id": "lotusmon"
+  },
+  {
+    "raw_file": "233_Lucemon.gif",
+    "raw_num": "233",
+    "raw_name": "Lucemon",
+    "api_id": 436,
+    "api_name": "Lucemon",
+    "canonical": "Lucemon",
+    "id": "lucemon"
+  },
+  {
+    "raw_file": "235_Lunamon.gif",
+    "raw_num": "235",
+    "raw_name": "Lunamon",
+    "api_id": 901,
+    "api_name": "Lunamon",
+    "canonical": "Lunamon",
+    "id": "lunamon"
+  },
+  {
+    "raw_file": "236_Lynxmon.gif",
+    "raw_num": "236",
+    "raw_name": "Lynxmon",
+    "api_id": 314,
+    "api_name": "Lynxmon",
+    "canonical": "Lynxmon",
+    "id": "lynxmon"
+  },
+  {
+    "raw_file": "237_MachGaogamon.gif",
+    "raw_num": "237",
+    "raw_name": "MachGaogamon",
+    "api_id": 828,
+    "api_name": "Mach Gaogamon",
+    "canonical": "MachGaogamon",
+    "id": "machgaogamon"
+  },
+  {
+    "raw_file": "238_Mugendramon.gif",
+    "raw_num": "238",
+    "raw_name": "Machinedramon",
+    "api_id": 176,
+    "api_name": "Mugendramon",
+    "canonical": "Mugendramon",
+    "id": "mugendramon"
+  },
+  {
+    "raw_file": "239_MadLeomon.gif",
+    "raw_num": "239",
+    "raw_name": "MadLeomon",
+    "api_id": 947,
+    "api_name": "Mad Leomon",
+    "canonical": "MadLeomon",
+    "id": "madleomon"
+  },
+  {
+    "raw_file": "240_Holydramon.gif",
+    "raw_num": "240",
+    "raw_name": "Magnadramon",
+    "api_id": 123,
+    "api_name": "Holydramon",
+    "canonical": "Holydramon",
+    "id": "holydramon"
+  },
+  {
+    "raw_file": "241_Magnamon.gif",
+    "raw_num": "241",
+    "raw_name": "Magnamon",
+    "api_id": 315,
+    "api_name": "Magnamon",
+    "canonical": "Magnamon",
+    "id": "magnamon"
+  },
+  {
+    "raw_file": "242_Mamemon.gif",
+    "raw_num": "242",
+    "raw_name": "Mamemon",
+    "api_id": 17,
+    "api_name": "Mamemon",
+    "canonical": "Mamemon",
+    "id": "mamemon"
+  },
+  {
+    "raw_file": "243_Mametyramon_2.gif",
+    "raw_num": "243",
+    "raw_name": "MameTyramon",
+    "api_id": 671,
+    "api_name": "Mametyramon",
+    "canonical": "Mametyramon",
+    "id": "mametyramon"
+  },
+  {
+    "raw_file": "244_Mammon.gif",
+    "raw_num": "244",
+    "raw_name": "Mammothmon",
+    "api_id": 61,
+    "api_name": "Mammon",
+    "canonical": "Mammon",
+    "id": "mammon"
+  },
+  {
+    "raw_file": "245_MarinAngemon.gif",
+    "raw_num": "245",
+    "raw_name": "MarineAngemon",
+    "api_id": 62,
+    "api_name": "Marin Angemon",
+    "canonical": "MarinAngemon",
+    "id": "marinangemon"
+  },
+  {
+    "raw_file": "246_MarinDevimon.gif",
+    "raw_num": "246",
+    "raw_name": "Marinedevimon",
+    "api_id": 63,
+    "api_name": "Marin Devimon",
+    "canonical": "MarinDevimon",
+    "id": "marindevimon"
+  },
+  {
+    "raw_file": "247_Matadrmon.gif",
+    "raw_num": "247",
+    "raw_name": "Matadormon",
+    "api_id": 769,
+    "api_name": "Matadrmon",
+    "canonical": "Matadrmon",
+    "id": "matadrmon"
+  },
+  {
+    "raw_file": "248_Mechanorimon.gif",
+    "raw_num": "248",
+    "raw_name": "Mechanorimon",
+    "api_id": 64,
+    "api_name": "Mechanorimon",
+    "canonical": "Mechanorimon",
+    "id": "mechanorimon"
+  },
+  {
+    "raw_file": "249_Megadramon.gif",
+    "raw_num": "249",
+    "raw_name": "Megadramon",
+    "api_id": 66,
+    "api_name": "Megadramon",
+    "canonical": "Megadramon",
+    "id": "megadramon"
+  },
+  {
+    "raw_file": "250_AtlurKabuterimonBlue.gif",
+    "raw_num": "250",
+    "raw_name": "MegaKabuterimonBlue",
+    "api_id": 40,
+    "api_name": "Atlur Kabuterimon (Blue)",
+    "canonical": "AtlurKabuterimonBlue",
+    "id": "atlurkabuterimonblue"
+  },
+  {
+    "raw_file": "251_MegaSeadramon.gif",
+    "raw_num": "251",
+    "raw_name": "MegaSeadramon",
+    "api_id": 65,
+    "api_name": "Mega Seadramon",
+    "canonical": "MegaSeadramon",
+    "id": "megaseadramon"
+  },
+  {
+    "raw_file": "252_Megidramon.gif",
+    "raw_num": "252",
+    "raw_name": "Megidramon",
+    "api_id": 441,
+    "api_name": "Megidramon",
+    "canonical": "Megidramon",
+    "id": "megidramon"
+  },
+  {
+    "raw_file": "254_MetalEtemon.gif",
+    "raw_num": "254",
+    "raw_name": "MetalEtemon",
+    "api_id": 67,
+    "api_name": "Metal Etemon",
+    "canonical": "MetalEtemon",
+    "id": "metaletemon"
+  },
+  {
+    "raw_file": "255_MetalGarurumon.gif",
+    "raw_num": "255",
+    "raw_name": "MetalGarurumon",
+    "api_id": 168,
+    "api_name": "Metal Garurumon",
+    "canonical": "MetalGarurumon",
+    "id": "metalgarurumon"
+  },
+  {
+    "raw_file": "256_MetalGreymon.gif",
+    "raw_num": "256",
+    "raw_name": "MetalGreymon",
+    "api_id": 169,
+    "api_name": "Metal Greymon",
+    "canonical": "MetalGreymon",
+    "id": "metalgreymon"
+  },
+  {
+    "raw_file": "257_MetalMamemon.gif",
+    "raw_num": "257",
+    "raw_name": "MetalMamemon",
+    "api_id": 20,
+    "api_name": "Metal Mamemon",
+    "canonical": "MetalMamemon",
+    "id": "metalmamemon"
+  },
+  {
+    "raw_file": "258_MetalSeadramon.gif",
+    "raw_num": "258",
+    "raw_name": "MetalSeadramon",
+    "api_id": 68,
+    "api_name": "Metal Seadramon",
+    "canonical": "MetalSeadramon",
+    "id": "metalseadramon"
+  },
+  {
+    "raw_file": "259_MetalTyranomon.gif",
+    "raw_num": "259",
+    "raw_name": "MetalTyrannomon",
+    "api_id": 69,
+    "api_name": "Metal Tyranomon",
+    "canonical": "MetalTyranomon",
+    "id": "metaltyranomon"
+  },
+  {
+    "raw_file": "260_Insekimon.gif",
+    "raw_num": "260",
+    "raw_name": "Meteormon",
+    "api_id": 253,
+    "api_name": "Insekimon",
+    "canonical": "Insekimon",
+    "id": "insekimon"
+  },
+  {
+    "raw_file": "261_Millenniumon.gif",
+    "raw_num": "261",
+    "raw_name": "Milleniummon",
+    "api_id": 170,
+    "api_name": "Millenniumon",
+    "canonical": "Millenniumon",
+    "id": "millenniumon"
+  },
+  {
+    "raw_file": "262_Minervamon.gif",
+    "raw_num": "262",
+    "raw_name": "Minervamon",
+    "api_id": 772,
+    "api_name": "Minervamon",
+    "canonical": "Minervamon",
+    "id": "minervamon"
+  },
+  {
+    "raw_file": "263_Minomon.gif",
+    "raw_num": "263",
+    "raw_name": "Minomon",
+    "api_id": 322,
+    "api_name": "Minomon",
+    "canonical": "Minomon",
+    "id": "minomon"
+  },
+  {
+    "raw_file": "264_Minotaurmon.gif",
+    "raw_num": "264",
+    "raw_name": "Minotarumon",
+    "api_id": 70,
+    "api_name": "Minotaurmon",
+    "canonical": "Minotaurmon",
+    "id": "minotaurmon"
+  },
+  {
+    "raw_file": "265_MirageGaogamon.gif",
+    "raw_num": "265",
+    "raw_name": "MirageGaogamon",
+    "api_id": 830,
+    "api_name": "Mirage Gaogamon",
+    "canonical": "MirageGaogamon",
+    "id": "miragegaogamon"
+  },
+  {
+    "raw_file": "266_MirageGaogamonBurstMode.gif",
+    "raw_num": "266",
+    "raw_name": "MirageGaogamonBurst",
+    "api_id": 831,
+    "api_name": "Mirage Gaogamon(Burst Mode)",
+    "canonical": "MirageGaogamonBurstMode",
+    "id": "miragegaogamonburstmode"
+  },
+  {
+    "raw_file": "268_Monochromon.gif",
+    "raw_num": "268",
+    "raw_name": "Monochromon",
+    "api_id": 73,
+    "api_name": "Monochromon",
+    "canonical": "Monochromon",
+    "id": "monochromon"
+  },
+  {
+    "raw_file": "269_Monodramon.gif",
+    "raw_num": "269",
+    "raw_name": "Monodramon",
+    "api_id": 444,
+    "api_name": "Monodramon",
+    "canonical": "Monodramon",
+    "id": "monodramon"
+  },
+  {
+    "raw_file": "270_Monzaemon.gif",
+    "raw_num": "270",
+    "raw_name": "Monzaemon",
+    "api_id": 21,
+    "api_name": "Monzaemon",
+    "canonical": "Monzaemon",
+    "id": "monzaemon"
+  },
+  {
+    "raw_file": "271_MoonMillenniumon.gif",
+    "raw_num": "271",
+    "raw_name": "MoonMilleniummon",
+    "api_id": 323,
+    "api_name": "Moon Millenniumon",
+    "canonical": "MoonMillenniumon",
+    "id": "moonmillenniumon"
+  },
+  {
+    "raw_file": "272_Moonmon.gif",
+    "raw_num": "272",
+    "raw_name": "Moonmon",
+    "api_id": 902,
+    "api_name": "Moonmon",
+    "canonical": "Moonmon",
+    "id": "moonmon"
+  },
+  {
+    "raw_file": "273_MoriShellmon.gif",
+    "raw_num": "273",
+    "raw_name": "MoriShellmon",
+    "api_id": 174,
+    "api_name": "Mori Shellmon",
+    "canonical": "MoriShellmon",
+    "id": "morishellmon"
+  },
+  {
+    "raw_file": "274_Muchomon.gif",
+    "raw_num": "274",
+    "raw_name": "Muchomon",
+    "api_id": 175,
+    "api_name": "Muchomon",
+    "canonical": "Muchomon",
+    "id": "muchomon"
+  },
+  {
+    "raw_file": "275_Tuchidarumon.gif",
+    "raw_num": "275",
+    "raw_name": "MudFrigimon",
+    "api_id": 197,
+    "api_name": "Tuchidarumon",
+    "canonical": "Tuchidarumon",
+    "id": "tuchidarumon"
+  },
+  {
+    "raw_file": "276_Mummymon.gif",
+    "raw_num": "276",
+    "raw_name": "Mummymon",
+    "api_id": 177,
+    "api_name": "Mummymon",
+    "canonical": "Mummymon",
+    "id": "mummymon"
+  },
+  {
+    "raw_file": "277_Mushmon.gif",
+    "raw_num": "277",
+    "raw_name": "Mushmon",
+    "api_id": 178,
+    "api_name": "Mushmon",
+    "canonical": "Mushmon",
+    "id": "mushmon"
+  },
+  {
+    "raw_file": "278_Musyamon.gif",
+    "raw_num": "278",
+    "raw_name": "Musyamon",
+    "api_id": 179,
+    "api_name": "Musyamon",
+    "canonical": "Musyamon",
+    "id": "musyamon"
+  },
+  {
+    "raw_file": "279_Nanimon.gif",
+    "raw_num": "279",
+    "raw_name": "Nanimon",
+    "api_id": 74,
+    "api_name": "Nanimon",
+    "canonical": "Nanimon",
+    "id": "nanimon"
+  },
+  {
+    "raw_file": "280_Nanomon.gif",
+    "raw_num": "280",
+    "raw_name": "Nanomon",
+    "api_id": 75,
+    "api_name": "Nanomon",
+    "canonical": "Nanomon",
+    "id": "nanomon"
+  },
+  {
+    "raw_file": "281_Nefertimon.gif",
+    "raw_num": "281",
+    "raw_name": "Nefertimon",
+    "api_id": 326,
+    "api_name": "Nefertimon",
+    "canonical": "Nefertimon",
+    "id": "nefertimon"
+  },
+  {
+    "raw_file": "282_Neptunemon.gif",
+    "raw_num": "282",
+    "raw_name": "Neptunmon",
+    "api_id": 774,
+    "api_name": "Neptunemon",
+    "canonical": "Neptunemon",
+    "id": "neptunemon"
+  },
+  {
+    "raw_file": "283_NiseDrimogemon.gif",
+    "raw_num": "283",
+    "raw_name": "NiseDrimogemon",
+    "api_id": 180,
+    "api_name": "Nise Drimogemon",
+    "canonical": "NiseDrimogemon",
+    "id": "nisedrimogemon"
+  },
+  {
+    "raw_file": "284_Numemon.gif",
+    "raw_num": "284",
+    "raw_name": "Numemon",
+    "api_id": 22,
+    "api_name": "Numemon",
+    "canonical": "Numemon",
+    "id": "numemon"
+  },
+  {
+    "raw_file": "285_Octmon.gif",
+    "raw_num": "285",
+    "raw_name": "Octomon",
+    "api_id": 76,
+    "api_name": "Octmon",
+    "canonical": "Octmon",
+    "id": "octmon"
+  },
+  {
+    "raw_file": "286_Orgemon.gif",
+    "raw_num": "286",
+    "raw_name": "Ogremon",
+    "api_id": 78,
+    "api_name": "Orgemon",
+    "canonical": "Orgemon",
+    "id": "orgemon"
+  },
+  {
+    "raw_file": "287_Okuwamon.gif",
+    "raw_num": "287",
+    "raw_name": "Okuwamon",
+    "api_id": 77,
+    "api_name": "Okuwamon",
+    "canonical": "Okuwamon",
+    "id": "okuwamon"
+  },
+  {
+    "raw_file": "288_Omegamon.gif",
+    "raw_num": "288",
+    "raw_name": "Omegamon",
+    "api_id": 183,
+    "api_name": "Omegamon",
+    "canonical": "Omegamon",
+    "id": "omegamon"
+  },
+  {
+    "raw_file": "289_Omekamon.gif",
+    "raw_num": "289",
+    "raw_name": "Omekamon",
+    "api_id": 687,
+    "api_name": "Omekamon",
+    "canonical": "Omekamon",
+    "id": "omekamon"
+  },
+  {
+    "raw_file": "290_Ofanimon.gif",
+    "raw_num": "290",
+    "raw_name": "Ophanimon",
+    "api_id": 445,
+    "api_name": "Ofanimon",
+    "canonical": "Ofanimon",
+    "id": "ofanimon"
+  },
+  {
+    "raw_file": "291_OfanimonFalldownMode.gif",
+    "raw_num": "291",
+    "raw_name": "OphanimonCore",
+    "api_id": 1061,
+    "api_name": "Ofanimon(Falldown Mode)",
+    "canonical": "OfanimonFalldownMode",
+    "id": "ofanimonfalldownmode"
+  },
+  {
+    "raw_file": "292_Otamamon.gif",
+    "raw_num": "292",
+    "raw_name": "Otamamon",
+    "api_id": 79,
+    "api_name": "Otamamon",
+    "canonical": "Otamamon",
+    "id": "otamamon"
+  },
+  {
+    "raw_file": "293_Owlmon.gif",
+    "raw_num": "293",
+    "raw_name": "Owlmon",
+    "api_id": 330,
+    "api_name": "Owlmon",
+    "canonical": "Owlmon",
+    "id": "owlmon"
+  },
+  {
+    "raw_file": "294_Pagumon.gif",
+    "raw_num": "294",
+    "raw_name": "Pagumon",
+    "api_id": 80,
+    "api_name": "Pagumon",
+    "canonical": "Pagumon",
+    "id": "pagumon"
+  },
+  {
+    "raw_file": "295_Paildramon.gif",
+    "raw_num": "295",
+    "raw_name": "Paildramon",
+    "api_id": 331,
+    "api_name": "Paildramon",
+    "canonical": "Paildramon",
+    "id": "paildramon"
+  },
+  {
+    "raw_file": "296_Palmon.gif",
+    "raw_num": "296",
+    "raw_name": "Palmon",
+    "api_id": 81,
+    "api_name": "Palmon",
+    "canonical": "Palmon",
+    "id": "palmon"
+  },
+  {
+    "raw_file": "297_Pandamon.gif",
+    "raw_num": "297",
+    "raw_name": "Pandamon",
+    "api_id": 332,
+    "api_name": "Pandamon",
+    "canonical": "Pandamon",
+    "id": "pandamon"
+  },
+  {
+    "raw_file": "298_Parasimon.gif",
+    "raw_num": "298",
+    "raw_name": "Parasimon",
+    "api_id": 596,
+    "api_name": "Parasimon",
+    "canonical": "Parasimon",
+    "id": "parasimon"
+  },
+  {
+    "raw_file": "299_Parrotmon.gif",
+    "raw_num": "299",
+    "raw_name": "Parrotmon",
+    "api_id": 213,
+    "api_name": "Parrotmon",
+    "canonical": "Parrotmon",
+    "id": "parrotmon"
+  },
+  {
+    "raw_file": "300_Patamon.gif",
+    "raw_num": "300",
+    "raw_name": "Patamon",
+    "api_id": 98,
+    "api_name": "Patamon",
+    "canonical": "Patamon",
+    "id": "patamon"
+  },
+  {
+    "raw_file": "301_PawnChessmonBlack.gif",
+    "raw_num": "301",
+    "raw_name": "PawnChessmonBlack",
+    "api_id": 841,
+    "api_name": "Pawn Chessmon (Black)",
+    "canonical": "PawnChessmonBlack",
+    "id": "pawnchessmonblack"
+  },
+  {
+    "raw_file": "302_PawnChessmonWhite.gif",
+    "raw_num": "302",
+    "raw_name": "PawnChessmonWhite",
+    "api_id": 842,
+    "api_name": "Pawn Chessmon (White)",
+    "canonical": "PawnChessmonWhite",
+    "id": "pawnchessmonwhite"
+  },
+  {
+    "raw_file": "303_Peckmon.gif",
+    "raw_num": "303",
+    "raw_name": "Peckmon",
+    "api_id": 843,
+    "api_name": "Peckmon",
+    "canonical": "Peckmon",
+    "id": "peckmon"
+  },
+  {
+    "raw_file": "304_Penmon.gif",
+    "raw_num": "304",
+    "raw_name": "Penmon",
+    "api_id": 214,
+    "api_name": "Penmon",
+    "canonical": "Penmon",
+    "id": "penmon"
+  },
+  {
+    "raw_file": "305_Fantomon.gif",
+    "raw_num": "305",
+    "raw_name": "Phantomon",
+    "api_id": 160,
+    "api_name": "Fantomon",
+    "canonical": "Fantomon",
+    "id": "fantomon"
+  },
+  {
+    "raw_file": "306_Pharaohmon.gif",
+    "raw_num": "306",
+    "raw_name": "Pharaohmon",
+    "api_id": 364,
+    "api_name": "Pharaohmon",
+    "canonical": "Pharaohmon",
+    "id": "pharaohmon"
+  },
+  {
+    "raw_file": "307_Hououmon.gif",
+    "raw_num": "307",
+    "raw_name": "Phoenixmon",
+    "api_id": 248,
+    "api_name": "Hououmon",
+    "canonical": "Hououmon",
+    "id": "hououmon"
+  },
+  {
+    "raw_file": "308_PicoDevimon.gif",
+    "raw_num": "308",
+    "raw_name": "PicoDevimon",
+    "api_id": 216,
+    "api_name": "Pico Devimon",
+    "canonical": "PicoDevimon",
+    "id": "picodevimon"
+  },
+  {
+    "raw_file": "309_Piemon.gif",
+    "raw_num": "309",
+    "raw_name": "Piedmon",
+    "api_id": 218,
+    "api_name": "Piemon",
+    "canonical": "Piemon",
+    "id": "piemon"
+  },
+  {
+    "raw_file": "310_Pipismon.gif",
+    "raw_num": "310",
+    "raw_name": "Pipismon",
+    "api_id": 365,
+    "api_name": "Pipismon",
+    "canonical": "Pipismon",
+    "id": "pipismon"
+  },
+  {
+    "raw_file": "311_Piccolomon.gif",
+    "raw_num": "311",
+    "raw_name": "Piximon",
+    "api_id": 99,
+    "api_name": "Piccolomon",
+    "canonical": "Piccolomon",
+    "id": "piccolomon"
+  },
+  {
+    "raw_file": "312_PlatinumSukamon.gif",
+    "raw_num": "312",
+    "raw_name": "PlatinumSukamon",
+    "api_id": 220,
+    "api_name": "Platinum Sukamon",
+    "canonical": "PlatinumSukamon",
+    "id": "platinumsukamon"
+  },
+  {
+    "raw_file": "313_Plesiomon.gif",
+    "raw_num": "313",
+    "raw_name": "Plesiomon",
+    "api_id": 221,
+    "api_name": "Plesiomon",
+    "canonical": "Plesiomon",
+    "id": "plesiomon"
+  },
+  {
+    "raw_file": "314_Plotmon.gif",
+    "raw_num": "314",
+    "raw_name": "Plotmon",
+    "api_id": 222,
+    "api_name": "Plotmon",
+    "canonical": "Plotmon",
+    "id": "plotmon"
+  },
+  {
+    "raw_file": "315_Ponchomon.gif",
+    "raw_num": "315",
+    "raw_name": "Ponchomon",
+    "api_id": 366,
+    "api_name": "Ponchomon",
+    "canonical": "Ponchomon",
+    "id": "ponchomon"
+  },
+  {
+    "raw_file": "316_Poyomon.gif",
+    "raw_num": "316",
+    "raw_name": "Poyomon",
+    "api_id": 102,
+    "api_name": "Poyomon",
+    "canonical": "Poyomon",
+    "id": "poyomon"
+  },
+  {
+    "raw_file": "317_Prairiemon.gif",
+    "raw_num": "317",
+    "raw_name": "Prariemon",
+    "api_id": 368,
+    "api_name": "Prairiemon",
+    "canonical": "Prairiemon",
+    "id": "prairiemon"
+  },
+  {
+    "raw_file": "318_PrinceMamemon.gif",
+    "raw_num": "318",
+    "raw_name": "PrinceMamemon",
+    "api_id": 369,
+    "api_name": "Prince Mamemon",
+    "canonical": "PrinceMamemon",
+    "id": "princemamemon"
+  },
+  {
+    "raw_file": "319_Pukumon.gif",
+    "raw_num": "319",
+    "raw_name": "Pukumon",
+    "api_id": 104,
+    "api_name": "Pukumon",
+    "canonical": "Pukumon",
+    "id": "pukumon"
+  },
+  {
+    "raw_file": "320_Pinochimon.gif",
+    "raw_num": "320",
+    "raw_name": "Puppetmon",
+    "api_id": 219,
+    "api_name": "Pinochimon",
+    "canonical": "Pinochimon",
+    "id": "pinochimon"
+  },
+  {
+    "raw_file": "321_Puttimon.gif",
+    "raw_num": "321",
+    "raw_name": "Puttimon",
+    "api_id": 600,
+    "api_name": "Puttimon",
+    "canonical": "Puttimon",
+    "id": "puttimon"
+  },
+  {
+    "raw_file": "323_QueenChessmon.gif",
+    "raw_num": "323",
+    "raw_name": "QueenChessmon",
+    "api_id": 846,
+    "api_name": "Queen Chessmon",
+    "canonical": "QueenChessmon",
+    "id": "queenchessmon"
+  },
+  {
+    "raw_file": "324_Qinglongmon.gif",
+    "raw_num": "324",
+    "raw_name": "QuingLongmon",
+    "api_id": 374,
+    "api_name": "Qinglongmon",
+    "canonical": "Qinglongmon",
+    "id": "qinglongmon"
+  },
+  {
+    "raw_file": "325_RapidmonPerfect.gif",
+    "raw_num": "325",
+    "raw_name": "Rapidmon",
+    "api_id": 463,
+    "api_name": "Rapidmon Perfect",
+    "canonical": "RapidmonPerfect",
+    "id": "rapidmonperfect"
+  },
+  {
+    "raw_file": "326_Raptordramon.gif",
+    "raw_num": "326",
+    "raw_name": "Raptordramon",
+    "api_id": 712,
+    "api_name": "Raptordramon",
+    "canonical": "Raptordramon",
+    "id": "raptordramon"
+  },
+  {
+    "raw_file": "327_Lalamon.gif",
+    "raw_num": "327",
+    "raw_name": "Raramon",
+    "api_id": 867,
+    "api_name": "Lalamon",
+    "canonical": "Lalamon",
+    "id": "lalamon"
+  },
+  {
+    "raw_file": "328_Raremon.gif",
+    "raw_num": "328",
+    "raw_name": "Raremon",
+    "api_id": 105,
+    "api_name": "Raremon",
+    "canonical": "Raremon",
+    "id": "raremon"
+  },
+  {
+    "raw_file": "329_Ravmon.gif",
+    "raw_num": "329",
+    "raw_name": "Ravemon",
+    "api_id": 847,
+    "api_name": "Ravmon",
+    "canonical": "Ravmon",
+    "id": "ravmon"
+  },
+  {
+    "raw_file": "331_RedVegimon.gif",
+    "raw_num": "331",
+    "raw_name": "RedVeggiemon",
+    "api_id": 226,
+    "api_name": "Red Vegimon",
+    "canonical": "RedVegimon",
+    "id": "redvegimon"
+  },
+  {
+    "raw_file": "332_Renamon.gif",
+    "raw_num": "332",
+    "raw_name": "Renamon",
+    "api_id": 465,
+    "api_name": "Renamon",
+    "canonical": "Renamon",
+    "id": "renamon"
+  },
+  {
+    "raw_file": "333_RizeGreymon.gif",
+    "raw_num": "333",
+    "raw_name": "RizeGreymon",
+    "api_id": 849,
+    "api_name": "Rize Greymon",
+    "canonical": "RizeGreymon",
+    "id": "rizegreymon"
+  },
+  {
+    "raw_file": "334_Gokimon.gif",
+    "raw_num": "334",
+    "raw_name": "Roachmon",
+    "api_id": 116,
+    "api_name": "Gokimon",
+    "canonical": "Gokimon",
+    "id": "gokimon"
+  },
+  {
+    "raw_file": "335_RookChessmonWhite.gif",
+    "raw_num": "335",
+    "raw_name": "RookChessmon",
+    "api_id": 912,
+    "api_name": "Rook Chessmon (White)",
+    "canonical": "RookChessmonWhite",
+    "id": "rookchessmonwhite"
+  },
+  {
+    "raw_file": "336_Rosemon.gif",
+    "raw_num": "336",
+    "raw_name": "Rosemon",
+    "api_id": 228,
+    "api_name": "Rosemon",
+    "canonical": "Rosemon",
+    "id": "rosemon"
+  },
+  {
+    "raw_file": "337_RosemonBurstMode.gif",
+    "raw_num": "337",
+    "raw_name": "RosemonBurst",
+    "api_id": 913,
+    "api_name": "Rosemon(Burst Mode)",
+    "canonical": "RosemonBurstMode",
+    "id": "rosemonburstmode"
+  },
+  {
+    "raw_file": "338_Saberdramon.gif",
+    "raw_num": "338",
+    "raw_name": "Saberdramon",
+    "api_id": 229,
+    "api_name": "Saberdramon",
+    "canonical": "Saberdramon",
+    "id": "saberdramon"
+  },
+  {
+    "raw_file": "339_SaberLeomon.gif",
+    "raw_num": "339",
+    "raw_name": "SaberLeomon",
+    "api_id": 107,
+    "api_name": "Saber Leomon",
+    "canonical": "SaberLeomon",
+    "id": "saberleomon"
+  },
+  {
+    "raw_file": "340_SaintGalgomon.gif",
+    "raw_num": "340",
+    "raw_name": "SaintGalgomon",
+    "api_id": 466,
+    "api_name": "Saint Galgomon",
+    "canonical": "SaintGalgomon",
+    "id": "saintgalgomon"
+  },
+  {
+    "raw_file": "341_Sakuyamon.gif",
+    "raw_num": "341",
+    "raw_name": "Sakuyamon",
+    "api_id": 467,
+    "api_name": "Sakuyamon",
+    "canonical": "Sakuyamon",
+    "id": "sakuyamon"
+  },
+  {
+    "raw_file": "342_SandYanmamon.gif",
+    "raw_num": "342",
+    "raw_name": "SandYanmamon",
+    "api_id": 230,
+    "api_name": "Sand Yanmamon",
+    "canonical": "SandYanmamon",
+    "id": "sandyanmamon"
+  },
+  {
+    "raw_file": "343_Sangloupmon.gif",
+    "raw_num": "343",
+    "raw_name": "Sangloupmon",
+    "api_id": 791,
+    "api_name": "Sangloupmon",
+    "canonical": "Sangloupmon",
+    "id": "sangloupmon"
+  },
+  {
+    "raw_file": "344_Scorpiomon.gif",
+    "raw_num": "344",
+    "raw_name": "Scorpiomon",
+    "api_id": 380,
+    "api_name": "Scorpiomon",
+    "canonical": "Scorpiomon",
+    "id": "scorpiomon"
+  },
+  {
+    "raw_file": "345_Seadramon.gif",
+    "raw_num": "345",
+    "raw_name": "Seadramon",
+    "api_id": 31,
+    "api_name": "Seadramon",
+    "canonical": "Seadramon",
+    "id": "seadramon"
+  },
+  {
+    "raw_file": "346_Seahomon.gif",
+    "raw_num": "346",
+    "raw_name": "Seahomon",
+    "api_id": 381,
+    "api_name": "Seahomon",
+    "canonical": "Seahomon",
+    "id": "seahomon"
+  },
+  {
+    "raw_file": "348_Seraphimon.gif",
+    "raw_num": "348",
+    "raw_name": "Seraphimon",
+    "api_id": 384,
+    "api_name": "Seraphimon",
+    "canonical": "Seraphimon",
+    "id": "seraphimon"
+  },
+  {
+    "raw_file": "349_Shadramon.gif",
+    "raw_num": "349",
+    "raw_name": "Shadramon",
+    "api_id": 386,
+    "api_name": "Shadramon",
+    "canonical": "Shadramon",
+    "id": "shadramon"
+  },
+  {
+    "raw_file": "350_Shakkoumon.gif",
+    "raw_num": "350",
+    "raw_name": "Shakkoumon",
+    "api_id": 387,
+    "api_name": "Shakkoumon",
+    "canonical": "Shakkoumon",
+    "id": "shakkoumon"
+  },
+  {
+    "raw_file": "351_Shakomon.gif",
+    "raw_num": "351",
+    "raw_name": "Shakomon",
+    "api_id": 109,
+    "api_name": "Shakomon",
+    "canonical": "Shakomon",
+    "id": "shakomon"
+  },
+  {
+    "raw_file": "352_Shamamon.gif",
+    "raw_num": "352",
+    "raw_name": "Shamamon",
+    "api_id": 231,
+    "api_name": "Shamamon",
+    "canonical": "Shamamon",
+    "id": "shamamon"
+  },
+  {
+    "raw_file": "353_Shawujinmon.gif",
+    "raw_num": "353",
+    "raw_name": "Shaujingmon",
+    "api_id": 852,
+    "api_name": "Shawujinmon",
+    "canonical": "Shawujinmon",
+    "id": "shawujinmon"
+  },
+  {
+    "raw_file": "354_Shellmon.gif",
+    "raw_num": "354",
+    "raw_name": "Shellmon",
+    "api_id": 110,
+    "api_name": "Shellmon",
+    "canonical": "Shellmon",
+    "id": "shellmon"
+  },
+  {
+    "raw_file": "355_ShineGreymon.gif",
+    "raw_num": "355",
+    "raw_name": "ShineGreymon",
+    "api_id": 853,
+    "api_name": "Shine Greymon",
+    "canonical": "ShineGreymon",
+    "id": "shinegreymon"
+  },
+  {
+    "raw_file": "356_ShineGreymonBurstMode.gif",
+    "raw_num": "356",
+    "raw_name": "ShineGreymonBurst",
+    "api_id": 855,
+    "api_name": "Shine Greymon(Burst Mode)",
+    "canonical": "ShineGreymonBurstMode",
+    "id": "shinegreymonburstmode"
+  },
+  {
+    "raw_file": "357_ShineGreymonRuinMode.gif",
+    "raw_num": "357",
+    "raw_name": "ShineGreymonRuin",
+    "api_id": 854,
+    "api_name": "Shine Greymon(Ruin Mode)",
+    "canonical": "ShineGreymonRuinMode",
+    "id": "shinegreymonruinmode"
+  },
+  {
+    "raw_file": "358_TonosamaGekomon.gif",
+    "raw_num": "358",
+    "raw_name": "ShogunGekomon",
+    "api_id": 87,
+    "api_name": "Tonosama Gekomon",
+    "canonical": "TonosamaGekomon",
+    "id": "tonosamagekomon"
+  },
+  {
+    "raw_file": "359_ShoutmonB.gif",
+    "raw_num": "359",
+    "raw_name": "ShoutmonB",
+    "api_id": 984,
+    "api_name": "Shoutmon B",
+    "canonical": "ShoutmonB",
+    "id": "shoutmonb"
+  },
+  {
+    "raw_file": "360_Shurimon.gif",
+    "raw_num": "360",
+    "raw_name": "Shurimon",
+    "api_id": 389,
+    "api_name": "Shurimon",
+    "canonical": "Shurimon",
+    "id": "shurimon"
+  },
+  {
+    "raw_file": "361_Silphymon.gif",
+    "raw_num": "361",
+    "raw_name": "Silphymon",
+    "api_id": 390,
+    "api_name": "Silphymon",
+    "canonical": "Silphymon",
+    "id": "silphymon"
+  },
+  {
+    "raw_file": "362_Sinduramon.gif",
+    "raw_num": "362",
+    "raw_name": "Sinduramon",
+    "api_id": 471,
+    "api_name": "Sinduramon",
+    "canonical": "Sinduramon",
+    "id": "sinduramon"
+  },
+  {
+    "raw_file": "363_SkullBaluchimon.gif",
+    "raw_num": "363",
+    "raw_name": "SkullBarukimon",
+    "api_id": 718,
+    "api_name": "Skull Baluchimon",
+    "canonical": "SkullBaluchimon",
+    "id": "skullbaluchimon"
+  },
+  {
+    "raw_file": "364_SkullGreymon.gif",
+    "raw_num": "364",
+    "raw_name": "SkullGreymon",
+    "api_id": 32,
+    "api_name": "Skull Greymon",
+    "canonical": "SkullGreymon",
+    "id": "skullgreymon"
+  },
+  {
+    "raw_file": "365_SkullMammon.gif",
+    "raw_num": "365",
+    "raw_name": "SkullMammon",
+    "api_id": 187,
+    "api_name": "Skull Mammon",
+    "canonical": "SkullMammon",
+    "id": "skullmammon"
+  },
+  {
+    "raw_file": "367_SlashAngemon.gif",
+    "raw_num": "367",
+    "raw_name": "SlashAngemon",
+    "api_id": 571,
+    "api_name": "Slash Angemon",
+    "canonical": "SlashAngemon",
+    "id": "slashangemon"
+  },
+  {
+    "raw_file": "368_Sleipmon.gif",
+    "raw_num": "368",
+    "raw_name": "Sleipmon",
+    "api_id": 776,
+    "api_name": "Sleipmon",
+    "canonical": "Sleipmon",
+    "id": "sleipmon"
+  },
+  {
+    "raw_file": "369_Snimon.gif",
+    "raw_num": "369",
+    "raw_name": "Snimon",
+    "api_id": 189,
+    "api_name": "Snimon",
+    "canonical": "Snimon",
+    "id": "snimon"
+  },
+  {
+    "raw_file": "370_SnowGoburimon.gif",
+    "raw_num": "370",
+    "raw_name": "SnowGoblimon",
+    "api_id": 190,
+    "api_name": "Snow Goburimon",
+    "canonical": "SnowGoburimon",
+    "id": "snowgoburimon"
+  },
+  {
+    "raw_file": "371_Solarmon.gif",
+    "raw_num": "371",
+    "raw_name": "Solarmon",
+    "api_id": 333,
+    "api_name": "Solarmon",
+    "canonical": "Solarmon",
+    "id": "solarmon"
+  },
+  {
+    "raw_file": "372_Sorcerimon.gif",
+    "raw_num": "372",
+    "raw_name": "Sorcerymon",
+    "api_id": 334,
+    "api_name": "Sorcerimon",
+    "canonical": "Sorcerimon",
+    "id": "sorcerimon"
+  },
+  {
+    "raw_file": "373_Spinomon.gif",
+    "raw_num": "373",
+    "raw_name": "Spinomon",
+    "api_id": 777,
+    "api_name": "Spinomon",
+    "canonical": "Spinomon",
+    "id": "spinomon"
+  },
+  {
+    "raw_file": "374_Starmon.gif",
+    "raw_num": "374",
+    "raw_name": "Starmon",
+    "api_id": 82,
+    "api_name": "Starmon",
+    "canonical": "Starmon",
+    "id": "starmon"
+  },
+  {
+    "raw_file": "375_Stingmon.gif",
+    "raw_num": "375",
+    "raw_name": "Stingmon",
+    "api_id": 336,
+    "api_name": "Stingmon",
+    "canonical": "Stingmon",
+    "id": "stingmon"
+  },
+  {
+    "raw_file": "376_Sukamon.gif",
+    "raw_num": "376",
+    "raw_name": "Sukamon",
+    "api_id": 108,
+    "api_name": "Sukamon",
+    "canonical": "Sukamon",
+    "id": "sukamon"
+  },
+  {
+    "raw_file": "377_Sunflowmon.gif",
+    "raw_num": "377",
+    "raw_name": "Sunflowmon",
+    "api_id": 833,
+    "api_name": "Sunflowmon",
+    "canonical": "Sunflowmon",
+    "id": "sunflowmon"
+  },
+  {
+    "raw_file": "378_Sunmon.gif",
+    "raw_num": "378",
+    "raw_name": "Sunmon",
+    "api_id": 906,
+    "api_name": "Sunmon",
+    "canonical": "Sunmon",
+    "id": "sunmon"
+  },
+  {
+    "raw_file": "379_Superstarmon_2.gif",
+    "raw_num": "379",
+    "raw_name": "SuperStarmon",
+    "api_id": 338,
+    "api_name": "Superstarmon",
+    "canonical": "Superstarmon",
+    "id": "superstarmon"
+  },
+  {
+    "raw_file": "380_Susanoomon.gif",
+    "raw_num": "380",
+    "raw_name": "Susanoomon",
+    "api_id": 576,
+    "api_name": "Susanoomon",
+    "canonical": "Susanoomon",
+    "id": "susanoomon"
+  },
+  {
+    "raw_file": "381_Tactimon.gif",
+    "raw_num": "381",
+    "raw_name": "Tactimon",
+    "api_id": 971,
+    "api_name": "Tactimon",
+    "canonical": "Tactimon",
+    "id": "tactimon"
+  },
+  {
+    "raw_file": "382_Tailmon.gif",
+    "raw_num": "382",
+    "raw_name": "Tailmon",
+    "api_id": 83,
+    "api_name": "Tailmon",
+    "canonical": "Tailmon",
+    "id": "tailmon"
+  },
+  {
+    "raw_file": "383_Tanemon.gif",
+    "raw_num": "383",
+    "raw_name": "Tanemon",
+    "api_id": 84,
+    "api_name": "Tanemon",
+    "canonical": "Tanemon",
+    "id": "tanemon"
+  },
+  {
+    "raw_file": "384_Tankmon.gif",
+    "raw_num": "384",
+    "raw_name": "Tankmon",
+    "api_id": 192,
+    "api_name": "Tankmon",
+    "canonical": "Tankmon",
+    "id": "tankmon"
+  },
+  {
+    "raw_file": "385_Taomon.gif",
+    "raw_num": "385",
+    "raw_name": "Taomon",
+    "api_id": 448,
+    "api_name": "Taomon",
+    "canonical": "Taomon",
+    "id": "taomon"
+  },
+  {
+    "raw_file": "386_Tekkamon.gif",
+    "raw_num": "386",
+    "raw_name": "Tekkamon",
+    "api_id": 193,
+    "api_name": "Tekkamon",
+    "canonical": "Tekkamon",
+    "id": "tekkamon"
+  },
+  {
+    "raw_file": "387_Tentomon.gif",
+    "raw_num": "387",
+    "raw_name": "Tentomon",
+    "api_id": 85,
+    "api_name": "Tentomon",
+    "canonical": "Tentomon",
+    "id": "tentomon"
+  },
+  {
+    "raw_file": "388_Terriermon.gif",
+    "raw_num": "388",
+    "raw_name": "Terriermon",
+    "api_id": 341,
+    "api_name": "Terriermon",
+    "canonical": "Terriermon",
+    "id": "terriermon"
+  },
+  {
+    "raw_file": "390_Togemon.gif",
+    "raw_num": "390",
+    "raw_name": "Togemon",
+    "api_id": 195,
+    "api_name": "Togemon",
+    "canonical": "Togemon",
+    "id": "togemon"
+  },
+  {
+    "raw_file": "391_Tokomon.gif",
+    "raw_num": "391",
+    "raw_name": "Tokomon",
+    "api_id": 86,
+    "api_name": "Tokomon",
+    "canonical": "Tokomon",
+    "id": "tokomon"
+  },
+  {
+    "raw_file": "392_Tortamon.gif",
+    "raw_num": "392",
+    "raw_name": "Tortomon",
+    "api_id": 88,
+    "api_name": "Tortamon",
+    "canonical": "Tortamon",
+    "id": "tortamon"
+  },
+  {
+    "raw_file": "393_Tocanmon.gif",
+    "raw_num": "393",
+    "raw_name": "Toucanmon",
+    "api_id": 342,
+    "api_name": "Tocanmon",
+    "canonical": "Tocanmon",
+    "id": "tocanmon"
+  },
+  {
+    "raw_file": "394_ToyAgumon.gif",
+    "raw_num": "394",
+    "raw_name": "ToyAgumon",
+    "api_id": 196,
+    "api_name": "Toy Agumon",
+    "canonical": "ToyAgumon",
+    "id": "toyagumon"
+  },
+  {
+    "raw_file": "395_ToyAgumonBlack.gif",
+    "raw_num": "395",
+    "raw_name": "ToyAgumonBlack",
+    "api_id": 344,
+    "api_name": "Toy Agumon (Black)",
+    "canonical": "ToyAgumonBlack",
+    "id": "toyagumonblack"
+  },
+  {
+    "raw_file": "396_Triceramon.gif",
+    "raw_num": "396",
+    "raw_name": "Triceramon",
+    "api_id": 89,
+    "api_name": "Triceramon",
+    "canonical": "Triceramon",
+    "id": "triceramon"
+  },
+  {
+    "raw_file": "397_Tukaimon.gif",
+    "raw_num": "397",
+    "raw_name": "Tsukaimon",
+    "api_id": 198,
+    "api_name": "Tukaimon",
+    "canonical": "Tukaimon",
+    "id": "tukaimon"
+  },
+  {
+    "raw_file": "398_Tsumemon.gif",
+    "raw_num": "398",
+    "raw_name": "Tsumemon",
+    "api_id": 346,
+    "api_name": "Tsumemon",
+    "canonical": "Tsumemon",
+    "id": "tsumemon"
+  },
+  {
+    "raw_file": "399_Tunomon.gif",
+    "raw_num": "399",
+    "raw_name": "Tsunomon",
+    "api_id": 24,
+    "api_name": "Tunomon",
+    "canonical": "Tunomon",
+    "id": "tunomon"
+  },
+  {
+    "raw_file": "400_Tylomon.gif",
+    "raw_num": "400",
+    "raw_name": "Tylomon",
+    "api_id": 347,
+    "api_name": "Tylomon",
+    "canonical": "Tylomon",
+    "id": "tylomon"
+  },
+  {
+    "raw_file": "401_Tyranomon_2.gif",
+    "raw_num": "401",
+    "raw_name": "tyranomon",
+    "api_id": 25,
+    "api_name": "Tyranomon",
+    "canonical": "Tyranomon",
+    "id": "tyranomon"
+  },
+  {
+    "raw_file": "402_Unimon.gif",
+    "raw_num": "402",
+    "raw_name": "Unimon",
+    "api_id": 92,
+    "api_name": "Unimon",
+    "canonical": "Unimon",
+    "id": "unimon"
+  },
+  {
+    "raw_file": "403_Vdramon.gif",
+    "raw_num": "403",
+    "raw_name": "V-Dramon",
+    "api_id": 93,
+    "api_name": "V-dramon",
+    "canonical": "Vdramon",
+    "id": "vdramon"
+  },
+  {
+    "raw_file": "404_Vmon.gif",
+    "raw_num": "404",
+    "raw_name": "V-mon",
+    "api_id": 349,
+    "api_name": "V-mon",
+    "canonical": "Vmon",
+    "id": "vmon"
+  },
+  {
+    "raw_file": "405_Vademon.gif",
+    "raw_num": "405",
+    "raw_name": "Vademon",
+    "api_id": 26,
+    "api_name": "Vademon",
+    "canonical": "Vademon",
+    "id": "vademon"
+  },
+  {
+    "raw_file": "406_Vajramon.gif",
+    "raw_num": "406",
+    "raw_name": "Vajramon",
+    "api_id": 453,
+    "api_name": "Vajramon",
+    "canonical": "Vajramon",
+    "id": "vajramon"
+  },
+  {
+    "raw_file": "407_Valkyrimon.gif",
+    "raw_num": "407",
+    "raw_name": "Valkyrimon",
+    "api_id": 350,
+    "api_name": "Valkyrimon",
+    "canonical": "Valkyrimon",
+    "id": "valkyrimon"
+  },
+  {
+    "raw_file": "408_Vamdemon.gif",
+    "raw_num": "408",
+    "raw_name": "Vamdemon",
+    "api_id": 199,
+    "api_name": "Vamdemon",
+    "canonical": "Vamdemon",
+    "id": "vamdemon"
+  },
+  {
+    "raw_file": "410_Vegimon.gif",
+    "raw_num": "410",
+    "raw_name": "Veggiemon",
+    "api_id": 27,
+    "api_name": "Vegimon",
+    "canonical": "Vegimon",
+    "id": "vegimon"
+  },
+  {
+    "raw_file": "411_VenomVamdemon.gif",
+    "raw_num": "411",
+    "raw_name": "VenomMyotismon",
+    "api_id": 200,
+    "api_name": "Venom Vamdemon",
+    "canonical": "VenomVamdemon",
+    "id": "venomvamdemon"
+  },
+  {
+    "raw_file": "412_Vermillimon.gif",
+    "raw_num": "412",
+    "raw_name": "Vermilimon",
+    "api_id": 201,
+    "api_name": "Vermillimon",
+    "canonical": "Vermillimon",
+    "id": "vermillimon"
+  },
+  {
+    "raw_file": "413_Vikemon.gif",
+    "raw_num": "413",
+    "raw_name": "Vikemon",
+    "api_id": 351,
+    "api_name": "Vikemon",
+    "canonical": "Vikemon",
+    "id": "vikemon"
+  },
+  {
+    "raw_file": "414_Volcamon.gif",
+    "raw_num": "414",
+    "raw_name": "Volcamon",
+    "api_id": 352,
+    "api_name": "Volcamon",
+    "canonical": "Volcamon",
+    "id": "volcamon"
+  },
+  {
+    "raw_file": "415_Wanyamon.gif",
+    "raw_num": "415",
+    "raw_name": "Wanyamon",
+    "api_id": 837,
+    "api_name": "Wanyamon",
+    "canonical": "Wanyamon",
+    "id": "wanyamon"
+  },
+  {
+    "raw_file": "416_WarGreymon.gif",
+    "raw_num": "416",
+    "raw_name": "WarGreymon",
+    "api_id": 202,
+    "api_name": "War Greymon",
+    "canonical": "WarGreymon",
+    "id": "wargreymon"
+  },
+  {
+    "raw_file": "417_MegaloGrowmon.gif",
+    "raw_num": "417",
+    "raw_name": "WarGrowlmon",
+    "api_id": 439,
+    "api_name": "Megalo Growmon",
+    "canonical": "MegaloGrowmon",
+    "id": "megalogrowmon"
+  },
+  {
+    "raw_file": "418_WaruSeadramon.gif",
+    "raw_num": "418",
+    "raw_name": "WaruSeadramon",
+    "api_id": 204,
+    "api_name": "Waru Seadramon",
+    "canonical": "WaruSeadramon",
+    "id": "waruseadramon"
+  },
+  {
+    "raw_file": "419_Zassoumon.gif",
+    "raw_num": "419",
+    "raw_name": "Weedmon",
+    "api_id": 212,
+    "api_name": "Zassoumon",
+    "canonical": "Zassoumon",
+    "id": "zassoumon"
+  },
+  {
+    "raw_file": "420_Wendimon.gif",
+    "raw_num": "420",
+    "raw_name": "Wendimon",
+    "api_id": 353,
+    "api_name": "Wendimon",
+    "canonical": "Wendimon",
+    "id": "wendimon"
+  },
+  {
+    "raw_file": "421_WereGarurumon.gif",
+    "raw_num": "421",
+    "raw_name": "WereGarurumon",
+    "api_id": 205,
+    "api_name": "Were Garurumon",
+    "canonical": "WereGarurumon",
+    "id": "weregarurumon"
+  },
+  {
+    "raw_file": "422_WereGarurumonBlack.gif",
+    "raw_num": "422",
+    "raw_name": "WereGarurumonBlack",
+    "api_id": 354,
+    "api_name": "Were Garurumon (Black)",
+    "canonical": "WereGarurumonBlack",
+    "id": "weregarurumonblack"
+  },
+  {
+    "raw_file": "423_Whamon.gif",
+    "raw_num": "423",
+    "raw_name": "Whamon",
+    "api_id": 28,
+    "api_name": "Whamon",
+    "canonical": "Whamon",
+    "id": "whamon"
+  },
+  {
+    "raw_file": "424_Wizarmon.gif",
+    "raw_num": "424",
+    "raw_name": "Wizarmon",
+    "api_id": 206,
+    "api_name": "Wizarmon",
+    "canonical": "Wizarmon",
+    "id": "wizarmon"
+  },
+  {
+    "raw_file": "425_Woodmon.gif",
+    "raw_num": "425",
+    "raw_name": "Woodmon",
+    "api_id": 207,
+    "api_name": "Woodmon",
+    "canonical": "Woodmon",
+    "id": "woodmon"
+  },
+  {
+    "raw_file": "426_Wormmon.gif",
+    "raw_num": "426",
+    "raw_name": "Wormmon",
+    "api_id": 356,
+    "api_name": "Wormmon",
+    "canonical": "Wormmon",
+    "id": "wormmon"
+  },
+  {
+    "raw_file": "427_ExTyranomon.gif",
+    "raw_num": "427",
+    "raw_name": "XTyrannomon",
+    "api_id": 56,
+    "api_name": "Ex-Tyranomon",
+    "canonical": "ExTyranomon",
+    "id": "extyranomon"
+  },
+  {
+    "raw_file": "428_Xuanwumon.gif",
+    "raw_num": "428",
+    "raw_name": "Xuanwumon",
+    "api_id": 357,
+    "api_name": "Xuanwumon",
+    "canonical": "Xuanwumon",
+    "id": "xuanwumon"
+  },
+  {
+    "raw_file": "429_XVmon.gif",
+    "raw_num": "429",
+    "raw_name": "XV-mon",
+    "api_id": 358,
+    "api_name": "XV-mon",
+    "canonical": "XVmon",
+    "id": "xvmon"
+  },
+  {
+    "raw_file": "430_Yanmamon.gif",
+    "raw_num": "430",
+    "raw_name": "Yanmamon",
+    "api_id": 208,
+    "api_name": "Yanmamon",
+    "canonical": "Yanmamon",
+    "id": "yanmamon"
+  },
+  {
+    "raw_file": "431_Yatagaramon.gif",
+    "raw_num": "431",
+    "raw_name": "Yatagaramon",
+    "api_id": 786,
+    "api_name": "Yatagaramon",
+    "canonical": "Yatagaramon",
+    "id": "yatagaramon"
+  },
+  {
+    "raw_file": "433_YukiAgumon.gif",
+    "raw_num": "433",
+    "raw_name": "YukiAgumon",
+    "api_id": 209,
+    "api_name": "Yuki Agumon",
+    "canonical": "YukiAgumon",
+    "id": "yukiagumon"
+  },
+  {
+    "raw_file": "434_Zanbamon.gif",
+    "raw_num": "434",
+    "raw_name": "Zanbamon",
+    "api_id": 211,
+    "api_name": "Zanbamon",
+    "canonical": "Zanbamon",
+    "id": "zanbamon"
+  },
+  {
+    "raw_file": "435_ZeedMillenniumon.gif",
+    "raw_num": "435",
+    "raw_name": "ZeedMillenniummon",
+    "api_id": 457,
+    "api_name": "Zeed Millenniumon",
+    "canonical": "ZeedMillenniumon",
+    "id": "zeedmillenniumon"
+  },
+  {
+    "raw_file": "436_Zhuqiaomon.gif",
+    "raw_num": "436",
+    "raw_name": "Zhuqiaomon",
+    "api_id": 361,
+    "api_name": "Zhuqiaomon",
+    "canonical": "Zhuqiaomon",
+    "id": "zhuqiaomon"
+  },
+  {
+    "raw_file": "437_Zudomon.gif",
+    "raw_num": "437",
+    "raw_name": "Zudomon",
+    "api_id": 96,
+    "api_name": "Zudomon",
+    "canonical": "Zudomon",
+    "id": "zudomon"
+  }
+]

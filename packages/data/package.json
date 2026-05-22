@@ -1,0 +1,17 @@
+{
+  "name": "@digimodoro/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    "./evolution.json": "./evolution.json",
+    "./roster.json": "./roster.json",
+    "./sprites/*": "./sprites/*"
+  },
+  "scripts": {
+    "build": "echo 'data package — nothing to build'",
+    "test": "echo 'data package — no tests'",
+    "typecheck": "echo 'data package — no typecheck'"
+  }
+}

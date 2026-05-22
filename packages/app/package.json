@@ -1,0 +1,23 @@
+{
+  "name": "@digimodoro/app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Electron shell for DigiModoro",
+  "main": "./dist/main/index.cjs",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "node esbuild.config.mjs",
+    "build:watch": "node esbuild.config.mjs --watch",
+    "dev": "pnpm --filter @digimodoro/core build && node esbuild.config.mjs && electron .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "echo 'app — no tests yet'",
+    "package": "pnpm --filter @digimodoro/core build && node esbuild.config.mjs && electron-builder --mac --win"
+  },
+  "devDependencies": {
+    "@digimodoro/core": "workspace:*",
+    "@digimodoro/data": "workspace:*",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0",
+    "esbuild": "^0.21.5"
+  }
+}

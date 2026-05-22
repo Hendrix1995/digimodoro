@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent !important;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+#sprite {
+  --facing: 1;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  transform-origin: 50% 100%;
+  /* Instant flip — scaleX(-1) on facing change. No transition gradient. */
+  transform: translate(-50%, -100%) scaleX(var(--facing));
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  object-fit: contain;
+  cursor: grab;
+  pointer-events: auto;
+  will-change: left, top, transform;
+}
+#sprite:active {
+  cursor: grabbing;
+}
+
+#bubble {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  margin-top: -8px;
+  background: rgba(20, 24, 33, 0.92);
+  color: #f6f8fc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  animation: pop 0.18s ease-out;
+}
+#bubble[hidden] {
+  display: none;
+}
+
+@keyframes pop {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body.is-rip #sprite {
+  filter: grayscale(1) brightness(0.55);
+}

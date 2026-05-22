@@ -6,6 +6,11 @@ directories:
   output: ../../release
   buildResources: build
 
+# Single source-of-truth icon. electron-builder picks build/icon.png up
+# automatically by convention; declaring it explicitly here keeps the intent
+# obvious and avoids the "default Electron icon is used" warning.
+icon: build/icon.png
+
 files:
   - dist/**/*
   - package.json
@@ -32,6 +37,9 @@ mac:
   identity: null  # ad-hoc unsigned for local builds
   hardenedRuntime: false
   gatekeeperAssess: false
+  # Drop the version from the filename so README direct-download links
+  # ('/releases/latest/download/...') stay valid across versions.
+  artifactName: ${productName}-mac-${arch}.${ext}
 
 dmg:
   writeUpdateInfo: false
@@ -41,7 +49,7 @@ win:
     - target: nsis
       arch:
         - x64
-  artifactName: ${productName}-${version}-${arch}.${ext}
+  artifactName: ${productName}-win-${arch}.${ext}
 
 nsis:
   oneClick: false

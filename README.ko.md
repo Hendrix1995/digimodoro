@@ -13,9 +13,9 @@ English version: [README.md](README.md)
 
 | OS | 아키텍처 | 직링크 |
 |---|---|---|
-| macOS | Apple Silicon (M 시리즈) | [DigiModoro-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-0.1.0-arm64.dmg) |
-| macOS | Intel | [DigiModoro.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-0.1.0.dmg) |
-| Windows | x64 | [DigiModoro-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-0.1.0-x64.exe) |
+| macOS | Apple Silicon (M 시리즈) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| macOS | Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
+| Windows | x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
 
 전체 빌드는 **[Releases 페이지](https://github.com/Hendrix1995/digimodoro/releases/latest)**에서 확인.
 

@@ -13,9 +13,9 @@ Pre-built installers for the latest release:
 
 | OS | Architecture | Direct download |
 |---|---|---|
-| macOS | Apple Silicon (M-series) | [DigiModoro-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-0.1.0-arm64.dmg) |
-| macOS | Intel | [DigiModoro.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-0.1.0.dmg) |
-| Windows | x64 | [DigiModoro-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-0.1.0-x64.exe) |
+| macOS | Apple Silicon (M-series) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| macOS | Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
+| Windows | x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
 
 All builds available on the **[Releases page](https://github.com/Hendrix1995/digimodoro/releases/latest)**.
 

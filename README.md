@@ -1,55 +1,55 @@
 # DigiModoro
 
-> Digimon-themed virtual pet powered by Pomodoro sessions.
-> Cross-platform desktop app for **Windows + macOS**. Complete 50-minute focus blocks to evolve your pet — the **time of day you complete a Pomodoro** decides which path it grows down.
+> 뽀모도로 세션으로 키우는 디지몬 컨셉의 가상 펫.
+> **Windows + macOS** 크로스플랫폼 데스크탑 앱. 50분짜리 집중 블록을 완료해 펫을 진화시킵니다 — **뽀모도로를 완료한 시간대**가 진화 분기를 결정합니다.
 
-Korean version: [README.ko.md](README.ko.md)
+English version: [README.en.md](README.en.md)
 
 ---
 
-## Download (non-developers)
+## 다운로드 (비개발자용)
 
-Pre-built installers for the latest release:
+최신 릴리스의 사전 빌드 인스톨러:
 
-| OS | Architecture | Direct download |
+| OS | 아키텍처 | 직링크 |
 |---|---|---|
-| macOS | Apple Silicon (M-series) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| macOS | Apple Silicon (M 시리즈) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
 | macOS | Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
 | Windows | x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
 
-All builds available on the **[Releases page](https://github.com/Hendrix1995/digimodoro/releases/latest)**.
+전체 빌드는 **[Releases 페이지](https://github.com/Hendrix1995/digimodoro/releases/latest)**에서 확인.
 
-> macOS builds are ad-hoc unsigned. First launch: **right-click the app → Open → Open** (Gatekeeper bypass for unsigned apps).
-> Windows builds are unsigned. SmartScreen may show a warning — click **More info → Run anyway**.
+> macOS 빌드는 ad-hoc 미서명입니다. 첫 실행 시: 앱을 **우클릭 → 열기 → 열기** (미서명 앱 Gatekeeper 우회).
+> Windows 빌드는 미서명입니다. SmartScreen 경고가 뜨면 **추가 정보 → 실행** 클릭.
 
 ---
 
-## Highlights
+## 한눈에
 
 | | |
 |---|---|
-| **6 stages** | egg → fresh → baby → child → adult → perfect → mega |
-| **414 sprite folders** | Egg + 413 species — one playthrough only walks one branch |
-| **11 egg variants** | The egg you hatch decides which lineage you start on |
-| **5 personalities** | Random at birth (`calm` / `gentle` / `holy` / `mischief` / `savage`) — bias evolution outcomes |
-| **5 time slots** | morning / forenoon / midday / evening / night — each maps to a distinct branch |
-| **Lucky roll** | 12% chance per evolution to swerve onto an alternate branch |
-| **Care system** | Neglect for 3 days straight and your pet dies |
+| **6단계 진화** | egg → fresh → baby → child → adult → perfect → mega |
+| **414종 스프라이트** | egg + 413종 — 한 펫은 한 갈래만 걷습니다 |
+| **알 11종** | 부화 시 lineage를 결정 |
+| **성격 5종** | 출생 시 랜덤 (`calm` / `gentle` / `holy` / `mischief` / `savage`) — 진화 결과에 편향 |
+| **5개 시간 슬롯** | morning / forenoon / midday / evening / night — 각 슬롯이 서로 다른 분기로 |
+| **운빨 (Lucky Roll)** | 진화마다 12% 확률로 옆가지로 빗나감 |
+| **돌봄 시스템** | 3일 연속 방치 → 사망(R.I.P.) |
 
 ---
 
-## Concept
+## 컨셉
 
-- 50 min focus + 10 min break = **1 fork** (one completed Pomodoro).
-- Forks accumulate within the current stage; once enough are collected, the pet evolves.
-- The branch is decided by which time slot you completed the most forks in during this stage.
-- Personality nudges ties; a 12% lucky roll can still swerve the branch onto an alternate.
-- The egg variant (1–11) decides the fresh lineage at hatch and overrides slot logic for the very first evolution.
-- Miss a fork for **3 consecutive days** → R.I.P. → moved to the graveyard.
+- 50분 집중 + 10분 휴식 = **1 포크**(뽀모도로 1회 완료)
+- 현재 단계에서 포크가 쌓여 충분해지면 진화
+- 분기는 **이번 단계에서 가장 많이 포크를 완료한 시간 슬롯**으로 결정
+- 성격이 동점을 깨고, 12% Lucky roll이 분기를 빗나가게 할 수 있음
+- 알 변형(1–11)은 부화 시 첫 fresh 디지몬 계통을 결정하며, 첫 진화는 슬롯 로직을 무시
+- **3일 연속** 포크 미완료 → R.I.P. → 묘지로 이동
 
-### Forks per stage
+### 단계별 필요 포크
 
-| Evolution | Forks required | Cumulative |
+| 진화 | 필요 포크 | 누적 |
 |---|---:|---:|
 | egg → fresh | 1 | 1 |
 | fresh → baby | 2 | 3 |
@@ -58,11 +58,11 @@ All builds available on the **[Releases page](https://github.com/Hendrix1995/dig
 | adult → perfect | 16 | 31 |
 | perfect → mega | 16 | **47** |
 
-Reaching mega takes ~47 forks (about 39 hours of pure focus).
+mega 도달까지 약 47포크(순수 집중 약 39시간).
 
-### Time slots
+### 시간 슬롯
 
-| Slot | Hours (local) |
+| 슬롯 | 시간(로컬) |
 |---|---|
 | morning | 05:00 – 09:00 |
 | forenoon | 09:00 – 12:00 |
@@ -70,156 +70,156 @@ Reaching mega takes ~47 forks (about 39 hours of pure focus).
 | evening | 17:00 – 21:00 |
 | night | 21:00 – 05:00 |
 
-### Personality bias (slot multipliers)
+### 성격별 슬롯 가중치
 
-| Personality | Boosted slots |
+| 성격 | 보너스 슬롯 |
 |---|---|
-| calm | none (neutral) |
-| gentle | morning ×1.15, forenoon ×1.10 |
-| holy | morning ×1.20, forenoon ×1.20 |
-| mischief | midday ×1.15, evening ×1.15 |
-| savage | evening ×1.10, night ×1.25 |
+| calm (온화) | 없음 (중립) |
+| gentle (순함) | morning ×1.15, forenoon ×1.10 |
+| holy (신성) | morning ×1.20, forenoon ×1.20 |
+| mischief (장난) | midday ×1.15, evening ×1.15 |
+| savage (거침) | evening ×1.10, night ×1.25 |
 
-Ties are broken by deterministic seeded RNG (per `petId` + evolution index), so the same fork distribution always yields the same evolution.
+동점은 결정적 시드 RNG(`petId` + 진화 인덱스)로 깨집니다. 동일한 포크 분포면 항상 같은 진화 결과가 나옵니다.
 
 ---
 
-## Quick start (development)
+## 빠른 시작 (개발)
 
 ```bash
-# from repo root
+# 리포 루트에서
 pnpm install
 pnpm --filter @digimodoro/core build
 pnpm --filter @digimodoro/app build
-pnpm --filter @digimodoro/app dev    # launches Electron
+pnpm --filter @digimodoro/app dev    # Electron 실행
 ```
 
-Or in one shot:
+또는 한 번에:
 
 ```bash
 pnpm dev
 ```
 
-A transparent pet window covers the whole screen and a Botamon tray icon gives quick access. Right-click the pet for the full context menu (start / pause focus, language, size, status panel, reset, quit). First launch creates `~/.digimodoro/` and hatches a random egg.
+화면 전체를 덮는 투명한 펫 윈도우와 Botamon 트레이 아이콘이 표시됩니다. 펫을 우클릭하면 컨텍스트 메뉴(집중 시작/일시정지, 언어, 크기, 상태창, 리셋, 종료)가 열립니다. 첫 실행 시 `~/.digimodoro/`가 생성되고 랜덤 알이 부화합니다.
 
 ---
 
-## Status panel
+## 상태창
 
-Open via tray menu or pet right-click → "Show status". Includes:
+트레이 메뉴나 펫 우클릭 → "상태 창 열기"로 호출. 구성:
 
-- Mini pet sprite (still when egg) with stage + personality
-- Pomodoro timer with primary action (start / pause / resume / ack-done) and secondary (abort / skip-break)
-- **Stats**:
-  - **Next evolution** — progress bar + `N/M` toward the next stage
-  - Forks (this stage), Total forks
-  - Streak miss days
-  - **Days until R.I.P.** — yellow at 2 days, red bold at 1 day
-  - Evolution history count
-  - Slot chips (morning / forenoon / midday / evening / night)
-- **Settings**: language (한국어 / EN), pet size, focus length, break length, per-event notification toggles
-- **Evolution history** — chronological list with from/to sprite thumbnails and dominant slot
-- **Graveyard** — list of past pets (R.I.P.'d or reset). Click a tombstone to expand the full evolution chain inline (egg → fresh → ... → final form) with sprites and slot labels per step.
+- 미니 펫 스프라이트(알일 때는 가만히 있음) + 단계 + 성격
+- 뽀모도로 타이머와 1차 액션(시작 / 일시정지 / 재개 / 완료 확인) + 2차 액션(중단 / 휴식 건너뛰기)
+- **통계**:
+  - **다음 진화까지** — 진척 게이지 + `N/M` 수치
+  - 이번 단계 포크, 총 포크
+  - 연속 결석 일수
+  - **R.I.P.까지 남은 일수** — 2일 노란색, 1일 이하 빨강 굵게
+  - 진화 이력 개수
+  - 슬롯 칩 5개 (morning / forenoon / midday / evening / night)
+- **설정**: 언어(한국어 / EN), 펫 크기, 집중 시간, 휴식 시간, 이벤트별 알림 토글
+- **진화 이력** — from/to 스프라이트 썸네일과 우세 슬롯이 포함된 시간순 목록
+- **묘지** — 과거 펫(R.I.P. 또는 리셋) 목록. 항목을 클릭하면 그 펫의 전체 진화 트리(egg → fresh → ... → 최종 형태)가 인라인으로 펼쳐지며, 단계마다 스프라이트와 우세 슬롯이 표시됩니다.
 
 ---
 
-## Building installers
+## 설치 빌드
 
 ```bash
-pnpm package        # macOS .dmg (arm64 + x64) AND Windows .exe (NSIS)
+pnpm package        # macOS .dmg (arm64 + x64) + Windows .exe (NSIS)
 ```
 
-Artifacts land in `release/`.
+결과물은 `release/`에 떨어집니다.
 
-macOS builds are **ad-hoc unsigned** by default (set `mac.identity` in `packages/app/electron-builder.yml` to use a real Developer ID).
-Building a Windows installer from macOS uses electron-builder's bundled wine — works for unsigned distribution; for code-signing run the same command from Windows.
+macOS 빌드는 기본적으로 **ad-hoc unsigned**입니다 (`packages/app/electron-builder.yml`의 `mac.identity`에 실제 Developer ID를 넣으면 서명 가능).
+macOS에서 Windows 인스톨러를 빌드할 때는 electron-builder의 번들 wine을 사용 — 미서명 배포에는 충분하지만, 코드 서명이 필요하면 Windows에서 직접 실행하세요.
 
 ---
 
-## Repo layout
+## 레포 구성
 
 ```
 packages/
-  core/   pure TypeScript domain — pomodoro state machine, evolution rules, reducer (no Electron)
-  data/   digimon roster + evolution.json + sprite assets
+  core/   순수 TypeScript 도메인 — 뽀모도로 상태 머신, 진화 규칙, reducer (Electron 의존성 없음)
+  data/   디지몬 로스터 + evolution.json + 스프라이트 에셋
   app/    Electron main / preload / renderer
 ```
 
 ---
 
-## File locations (runtime)
+## 런타임 파일 위치
 
-| Path | Purpose |
+| 경로 | 용도 |
 |---|---|
-| `~/.digimodoro/state.json` | Current pet state |
-| `~/.digimodoro/sessions.jsonl` | Completed Pomodoro log |
-| `~/.digimodoro/config.json` | User preferences |
-| `~/.digimodoro/graveyard.jsonl` | Retired / dead pets |
+| `~/.digimodoro/state.json` | 현재 펫 상태 |
+| `~/.digimodoro/sessions.jsonl` | 완료된 뽀모도로 로그 |
+| `~/.digimodoro/config.json` | 사용자 설정 |
+| `~/.digimodoro/graveyard.jsonl` | 은퇴/사망한 펫들 |
 
 ---
 
-## Sprites
+## 스프라이트
 
-Source GIFs live in `packages/data/sprites/_raw/` and are processed by `packages/data/scripts/copy-gif-sprites.mjs` into `packages/data/sprites/<digimonId>/idle.gif`. The script strips numeric variant suffixes (`Dinobeemon_2.gif` → `dinobeemon/idle.gif`) so canonical IDs match `evolution.json`. Requires ImageMagick (`magick`) on PATH.
+원본 GIF는 `packages/data/sprites/_raw/`에 있으며, `packages/data/scripts/copy-gif-sprites.mjs`가 `packages/data/sprites/<digimonId>/idle.gif`로 변환합니다. 스크립트는 변형 번호 접미사를 떼어내므로(`Dinobeemon_2.gif` → `dinobeemon/idle.gif`) canonical ID가 `evolution.json`과 일치합니다. PATH에 ImageMagick (`magick`)이 필요합니다.
 
 ---
 
-## Tunables
+## 튜닝 가능한 값
 
-Defaults live in `packages/core/src/types.ts`:
+`packages/core/src/types.ts`의 기본값:
 
 ```ts
-FOCUS_DURATION_SEC: 50 * 60   // 50 min
-BREAK_DURATION_SEC: 10 * 60   // 10 min
-LUCKY_ROLL_CHANCE:  0.12      // 12% swerve
+FOCUS_DURATION_SEC: 50 * 60   // 집중 50분
+BREAK_DURATION_SEC: 10 * 60   // 휴식 10분
+LUCKY_ROLL_CHANCE:  0.12      // 12% 빗나감
 STREAK_MISS_SOFT_DAYS: 1
 STREAK_MISS_HARD_DAYS: 2
 STREAK_MISS_RIP_DAYS:  3
 ```
 
-Focus / break minutes are also user-configurable from the status panel and persisted in `config.json`.
+집중/휴식 길이는 상태창에서 사용자가 직접 조절 가능하며 `config.json`에 저장됩니다.
 
 ---
 
-## Tests
+## 테스트
 
 ```bash
 pnpm --filter @digimodoro/core test
 ```
 
-59 tests across time-slot · pomodoro · xp · evolution · streak-miss · reducer.
+time-slot · 뽀모도로 · xp · 진화 · streak-miss · reducer 영역 **59개 테스트**.
 
 ---
 
-## Credits
+## 크레딧
 
-### Sprites
+### 스프라이트
 
-| Asset | Source |
+| 에셋 | 출처 |
 |---|---|
-| Digimon character animations *(Fresh → Mega)* | [With the Will — Digimon Sprite Animation Thread](https://withthewill.net/threads/digimon-sprite-animation-thread-read-first-post-fully-working.10472/) |
-| Digi-Egg item icons *(11 variants)* | [*Digimon Digital Monsters: D-Project*](https://digimon.fandom.com/wiki/Digimon_Digital_Monsters:_D-Project) — Bandai Namco, Nintendo DS (2008) |
+| 디지몬 캐릭터 애니메이션 *(Fresh → Mega)* | [With the Will — Digimon Sprite Animation Thread](https://withthewill.net/threads/digimon-sprite-animation-thread-read-first-post-fully-working.10472/) |
+| 디지타마 아이콘 *(11종)* | [*Digimon Digital Monsters: D-Project*](https://digimon.fandom.com/wiki/Digimon_Digital_Monsters:_D-Project) — Bandai Namco, Nintendo DS (2008) |
 
-### Tools
+### 도구
 
-- [Electron](https://www.electronjs.org/) — desktop runtime
-- [ImageMagick](https://imagemagick.org/) — sprite processing
-- [esbuild](https://esbuild.github.io/) — main / preload / renderer bundling
-- [Vitest](https://vitest.dev/) — tests
-- [pnpm](https://pnpm.io/) — workspace package manager
+- [Electron](https://www.electronjs.org/) — 데스크탑 런타임
+- [ImageMagick](https://imagemagick.org/) — 스프라이트 처리
+- [esbuild](https://esbuild.github.io/) — main / preload / renderer 번들링
+- [Vitest](https://vitest.dev/) — 테스트
+- [pnpm](https://pnpm.io/) — 워크스페이스 패키지 관리자
 
-### Trademarks
+### 상표권
 
-*Digimon* and all related characters are trademarks of Bandai Namco Entertainment / Toei Animation. DigiModoro is a fan project and is **not affiliated with, endorsed by, or sponsored by** Bandai Namco or Toei.
+*Digimon*과 관련 캐릭터는 Bandai Namco Entertainment / Toei Animation의 등록 상표입니다. DigiModoro는 팬 프로젝트로, 두 회사와 **공식적인 관련, 후원, 인증이 없습니다**.
 
-### Takedown Notice
+### 콘텐츠 삭제 요청
 
-If you are a rights holder and have concerns about any asset referenced here, please open an [issue](../../issues) and the relevant content will be removed promptly.
+권리자가 본 리포에 참조된 에셋에 대해 우려가 있다면 [이슈](../../issues)로 알려주시면 신속히 제거하겠습니다.
 
 ---
 
-## License
+## 라이선스
 
-**Proprietary / Commercial.** See [LICENSE](./LICENSE).
+**상업용 / 독점.** [LICENSE](./LICENSE) 참조.
 
-Source code in this repository may be inspected, but redistribution, modification, or commercial use requires a separate written agreement with the copyright holder.
+이 리포의 소스 코드는 열람 가능하지만, 재배포·수정·상업적 이용은 저작권자와의 별도 서면 동의가 필요합니다.

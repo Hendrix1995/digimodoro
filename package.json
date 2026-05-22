@@ -1,6 +1,6 @@
 {
   "name": "digimodoro",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "description": "Digimon-themed virtual pet powered by Pomodoro sessions. Windows + macOS desktop app.",
   "license": "MIT",

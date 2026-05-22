@@ -1,6 +1,6 @@
 {
   "name": "@digimodoro/app",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "description": "Electron shell for DigiModoro",
   "main": "./dist/main/index.cjs",

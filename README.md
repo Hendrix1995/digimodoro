@@ -33,11 +33,29 @@ English: [README.en.md](README.en.md)
 
 ## 크레딧
 
-- 디지몬 캐릭터 스프라이트: [With the Will — Digimon Sprite Animation Thread](https://withthewill.net/threads/digimon-sprite-animation-thread-read-first-post-fully-working.10472/)
-- 디지타마 아이콘: *Digimon Digital Monsters: D-Project* (Bandai Namco, Nintendo DS, 2008)
+### 스프라이트
 
-*Digimon*과 관련 캐릭터는 Bandai Namco Entertainment / Toei Animation의 등록 상표입니다. 본 프로젝트는 비공식 팬 프로젝트입니다.
+| 에셋 | 출처 |
+|---|---|
+| 디지몬 캐릭터 애니메이션 *(Fresh → Mega)* | [With the Will — Digimon Sprite Animation Thread](https://withthewill.net/threads/digimon-sprite-animation-thread-read-first-post-fully-working.10472/) |
+| 디지타마 아이콘 *(11종)* | [*Digimon Digital Monsters: D-Project*](https://digimon.fandom.com/wiki/Digimon_Digital_Monsters:_D-Project) — Bandai Namco, Nintendo DS (2008) |
 
-## 라이선스
+### 도구
 
-[MIT](./LICENSE)
+- [Electron](https://www.electronjs.org/) — 데스크탑 런타임
+- [ImageMagick](https://imagemagick.org/) — 스프라이트 처리
+- [esbuild](https://esbuild.github.io/) — main / preload / renderer 번들링
+- [Vitest](https://vitest.dev/) — 테스트
+- [pnpm](https://pnpm.io/) — 워크스페이스 패키지 관리자
+
+### 상표
+
+*Digimon* 및 관련 캐릭터는 Bandai Namco Entertainment / Toei Animation의 상표입니다. DigiModoro는 팬 프로젝트이며 Bandai Namco 또는 Toei와 제휴/후원/승인 관계가 없습니다.
+
+### 삭제 요청
+
+권리자께서 이 프로젝트에서 참조된 자산에 대해 우려가 있으시면 [이슈](../../issues)를 남겨주세요. 해당 콘텐츠는 신속히 제거됩니다.
+
+### 라이선스
+
+코드: [MIT](./LICENSE)

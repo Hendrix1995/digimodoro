@@ -33,11 +33,29 @@ It takes ~47 forks (about 39 hours of focused work) to reach the final stage.
 
 ## Credits
 
-- Digimon character sprites: [With the Will — Digimon Sprite Animation Thread](https://withthewill.net/threads/digimon-sprite-animation-thread-read-first-post-fully-working.10472/)
-- Digi-Egg icons: *Digimon Digital Monsters: D-Project* (Bandai Namco, Nintendo DS, 2008)
+### Sprites
 
-*Digimon* and related marks are trademarks of Bandai Namco Entertainment / Toei Animation. This is an unofficial fan project.
+| Asset | Source |
+|---|---|
+| Digimon character animations *(Fresh → Mega)* | [With the Will — Digimon Sprite Animation Thread](https://withthewill.net/threads/digimon-sprite-animation-thread-read-first-post-fully-working.10472/) |
+| Digi-Egg item icons *(11 variants)* | [*Digimon Digital Monsters: D-Project*](https://digimon.fandom.com/wiki/Digimon_Digital_Monsters:_D-Project) — Bandai Namco, Nintendo DS (2008) |
 
-## License
+### Tools
 
-[MIT](./LICENSE)
+- [Electron](https://www.electronjs.org/) — desktop runtime
+- [ImageMagick](https://imagemagick.org/) — sprite processing
+- [esbuild](https://esbuild.github.io/) — main / preload / renderer bundling
+- [Vitest](https://vitest.dev/) — tests
+- [pnpm](https://pnpm.io/) — workspace package manager
+
+### Trademarks
+
+*Digimon* and related characters are trademarks of Bandai Namco Entertainment / Toei Animation. DigiModoro is a fan project and is **not affiliated with, endorsed by, or sponsored by** Bandai Namco or Toei.
+
+### Takedown Notice
+
+If you are a rights holder and have concerns about any asset referenced here, please open an [issue](../../issues) and the relevant content will be removed promptly.
+
+### License
+
+Code: [MIT](./LICENSE)

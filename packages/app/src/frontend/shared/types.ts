@@ -30,7 +30,7 @@ export type Snapshot = {
     | { kind: 'focus'; startedAt: number; endsAt: number }
     | { kind: 'break'; startedAt: number; endsAt: number }
     | { kind: 'done'; completedAt: number; slot: string }
-    | { kind: 'paused'; remainingSec: number; was: 'focus' | 'break' }
+    | { kind: 'paused'; previous: 'focus' | 'break'; remainingSec: number; pausedAt: number }
   remainingSec: number
   nowSec: number
   nextStageForksRequired?: number

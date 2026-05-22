@@ -424,38 +424,34 @@ function emitAction(type: string): void {
   void emit('digi:action', { type, now: Math.floor(Date.now() / 1000) })
 }
 
-els.btnPrimary.addEventListener('click', async () => {
-  const a = els.btnPrimary.dataset.action
-  if (a === 'start') emitAction('start_focus')
-  else if (a === 'pause') emitAction('pause')
-  else if (a === 'resume') emitAction('resume')
-  else if (a === 'abort') {
-    if (window.confirm(t('confirmAbort', lang))) emitAction('abort')
-  } else if (a === 'ack-done') emitAction('acknowledge_done')
-  else if (a === 'skip-break') emitAction('skip_break')
-  else if (a === 'reset') {
-    const { initialState } = await import('@digimodoro/core')
-    const fresh = initialState({
-      now: Math.floor(Date.now() / 1000),
-      petId: `pet_${Math.random().toString(36).slice(2, 10)}${Date.now().toString(36).slice(-4)}`,
-      seedEggVariant: 1 + Math.floor(Math.random() * 11),
-      personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[
-        Math.floor(Math.random() * 5)
-      ],
-    })
-    await invoke('reset_pet', { newState: fresh })
-    void emit('digi:reset-pet', { fresh })
+// Dangerous action confirmation: click once to arm (button turns red),
+// click again within 3s to confirm. No native alert/confirm dialogs.
+let confirmTimer: ReturnType<typeof setTimeout> | undefined
+let confirmTarget: HTMLButtonElement | undefined
+
+function requireConfirm(btn: HTMLButtonElement, action: () => void): void {
+  if (confirmTarget === btn) {
+    // Second click — confirmed
+    clearTimeout(confirmTimer)
+    confirmTarget = undefined
+    btn.classList.remove('confirming')
+    action()
+  } else {
+    // First click — arm
+    if (confirmTarget) {
+      confirmTarget.classList.remove('confirming')
+      clearTimeout(confirmTimer)
+    }
+    confirmTarget = btn
+    btn.classList.add('confirming')
+    confirmTimer = setTimeout(() => {
+      btn.classList.remove('confirming')
+      confirmTarget = undefined
+    }, 3000)
   }
-})
-els.btnSecondary.addEventListener('click', () => {
-  const a = els.btnSecondary.dataset.action
-  if (a === 'skip-break') emitAction('skip_break')
-  else if (a === 'abort') {
-    if (window.confirm(t('confirmAbort', lang))) emitAction('abort')
-  }
-})
-els.btnReset.addEventListener('click', async () => {
-  if (!window.confirm(t('confirmReset', lang))) return
+}
+
+async function doReset(): Promise<void> {
   const { initialState } = await import('@digimodoro/core')
   const fresh = initialState({
     now: Math.floor(Date.now() / 1000),
@@ -467,6 +463,25 @@ els.btnReset.addEventListener('click', async () => {
   })
   await invoke('reset_pet', { newState: fresh })
   void emit('digi:reset-pet', { fresh })
+}
+
+els.btnPrimary.addEventListener('click', () => {
+  const a = els.btnPrimary.dataset.action
+  if (a === 'start') emitAction('start_focus')
+  else if (a === 'pause') emitAction('pause')
+  else if (a === 'resume') emitAction('resume')
+  else if (a === 'abort') requireConfirm(els.btnPrimary, () => emitAction('abort'))
+  else if (a === 'ack-done') emitAction('acknowledge_done')
+  else if (a === 'skip-break') emitAction('skip_break')
+  else if (a === 'reset') requireConfirm(els.btnPrimary, () => { void doReset() })
+})
+els.btnSecondary.addEventListener('click', () => {
+  const a = els.btnSecondary.dataset.action
+  if (a === 'skip-break') emitAction('skip_break')
+  else if (a === 'abort') requireConfirm(els.btnSecondary, () => emitAction('abort'))
+})
+els.btnReset.addEventListener('click', () => {
+  requireConfirm(els.btnReset, () => { void doReset() })
 })
 
 els.segLang.addEventListener('click', async (e) => {

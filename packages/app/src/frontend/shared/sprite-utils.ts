@@ -1,6 +1,5 @@
 import { convertFileSrc } from '@tauri-apps/api/core'
 
-// Most raw sprites face LEFT by default. The ones listed below face right.
 export const SPRITE_DEFAULT_FACING: Record<string, 'left' | 'right'> = {
   hanumon: 'right',
   chocomon: 'right',
@@ -23,17 +22,20 @@ export const SPRITE_DEFAULT_FACING: Record<string, 'left' | 'right'> = {
   numemon: 'right',
 }
 
-// spriteBasePath is an absolute filesystem path (e.g. C:/Users/.../sprites/)
-// convertFileSrc turns it into an asset:// URL that WebView can load
+// spriteBasePath is a native filesystem path (e.g. C:\Users\...\sprites on Windows)
+// We detect the OS path separator from the base path and use it consistently
 export function spriteUrl(spriteBasePath: string, digimonId: string, variant: number | undefined): string {
+  const sep = spriteBasePath.includes('\\') ? '\\' : '/'
+  const base = spriteBasePath.endsWith(sep) ? spriteBasePath : spriteBasePath + sep
+
   let relPath: string
   if (digimonId === 'egg') {
     const v = variant ?? 1
     const key = 'v' + String(v).padStart(2, '0')
-    relPath = `egg/${key}.png`
+    relPath = `egg${sep}${key}.png`
   } else {
-    relPath = `${digimonId}/idle.gif`
+    relPath = `${digimonId}${sep}idle.gif`
   }
-  const fullPath = spriteBasePath + relPath
-  return convertFileSrc(fullPath)
+
+  return convertFileSrc(base + relPath)
 }

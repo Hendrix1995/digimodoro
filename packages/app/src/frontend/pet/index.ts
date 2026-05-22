@@ -122,28 +122,27 @@ function broadcastSnapshot(snap: Snapshot): void {
 }
 
 async function registerActionListener(): Promise<void> {
-  await listen<{ type: string; now?: number }>('digi:action', (event) => {
+  await listen<{ type: string; now: number }>('digi:action', (event) => {
     const { type, now } = event.payload
+    const ts = now ?? Math.floor(Date.now() / 1000)
     switch (type) {
       case 'start_focus':
-        scheduler.dispatch({ type: 'start_focus', now: now ?? Math.floor(Date.now() / 1000) })
+        scheduler.dispatch({ type: 'start_focus', now: ts })
         break
       case 'abort':
-        scheduler.dispatch({ type: 'abort' })
+        scheduler.dispatch({ type: 'abort', now: ts })
         break
       case 'acknowledge_done':
-        scheduler.dispatch({ type: 'acknowledge_done' })
+        scheduler.dispatch({ type: 'acknowledge_done', now: ts })
         break
       case 'skip_break':
-        scheduler.dispatch({ type: 'skip_break' })
+        scheduler.dispatch({ type: 'skip_break', now: ts })
         break
       case 'pause':
-        scheduler.dispatch({ type: 'pause' })
-        mover.pause(true)
+        scheduler.dispatch({ type: 'pause', now: ts })
         break
       case 'resume':
-        scheduler.dispatch({ type: 'resume', now: now ?? Math.floor(Date.now() / 1000) })
-        mover.pause(false)
+        scheduler.dispatch({ type: 'resume', now: ts })
         break
     }
   })

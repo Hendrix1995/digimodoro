@@ -130,13 +130,15 @@ export class PetCanvas {
   }
 
   private spriteUrl(): string {
-    let path: string
+    const sep = this.spriteBase.includes('\\') ? '\\' : '/'
+    const base = this.spriteBase.endsWith(sep) ? this.spriteBase : this.spriteBase + sep
+    let rel: string
     if (this.digimonId === 'egg') {
       const v = this.eggVariant ?? 1
-      path = this.spriteBase + 'egg/v' + String(v).padStart(2, '0') + '.png'
+      rel = `egg${sep}v${String(v).padStart(2, '0')}.png`
     } else {
-      path = this.spriteBase + this.digimonId + '/idle.gif'
+      rel = `${this.digimonId}${sep}idle.gif`
     }
-    return convertFileSrc(path)
+    return convertFileSrc(base + rel)
   }
 }

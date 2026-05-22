@@ -416,6 +416,7 @@ function syncSettingsUi(): void {
 async function persistCfg(): Promise<void> {
   if (!cfg) return
   await invoke('save_config', { config: cfg })
+  void emit('digi:config-changed', cfg)
 }
 
 // --- Button wiring (emit actions to pet window) ---

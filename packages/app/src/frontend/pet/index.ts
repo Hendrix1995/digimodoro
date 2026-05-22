@@ -6,6 +6,7 @@ import {
   sendNotification,
 } from '@tauri-apps/plugin-notification'
 import {
+  DEFAULT_TUNABLES,
   type EvolutionRule,
   type PetState,
   initialState,
@@ -31,17 +32,13 @@ let mover: PetMover
 
 const BASE_PX = 96
 
-// ── Sprite rendering ────────────────────────────────────────────────────
-
 async function refreshSprite(digimonId: string, variant: number | undefined): Promise<void> {
   if (digimonId === lastDigi && variant === lastVariant) return
   lastDigi = digimonId
   lastVariant = variant
   try {
     sprite.src = await loadSprite(digimonId, variant)
-  } catch {
-    // Sprite load failed — keep previous image
-  }
+  } catch {}
 }
 
 function setFacing(dir: 'left' | 'right'): void {
@@ -50,8 +47,6 @@ function setFacing(dir: 'left' | 'right'): void {
   sprite.style.setProperty('--facing', String(flip))
 }
 
-// ── Notifications ───────────────────────────────────────────────────────
-
 async function notify(title: string, body: string): Promise<void> {
   try {
     let granted = await isPermissionGranted()
@@ -59,27 +54,17 @@ async function notify(title: string, body: string): Promise<void> {
       const perm = await requestPermission()
       granted = perm === 'granted'
     }
-    if (granted) {
-      sendNotification({ title, body })
-    }
-  } catch {
-    // Notification not supported
-  }
+    if (granted) sendNotification({ title, body })
+  } catch {}
 }
-
-// ── Bubble ──────────────────────────────────────────────────────────────
 
 let bubbleTimer: ReturnType<typeof setTimeout> | undefined
 function showBubble(text: string, ms = 2200): void {
   bubble.textContent = text
   bubble.classList.remove('hidden')
   if (bubbleTimer) clearTimeout(bubbleTimer)
-  bubbleTimer = setTimeout(() => {
-    bubble.classList.add('hidden')
-  }, ms)
+  bubbleTimer = setTimeout(() => { bubble.classList.add('hidden') }, ms)
 }
-
-// ── Drag handling ───────────────────────────────────────────────────────
 
 let isDragging = false
 let dragOffsetX = 0
@@ -90,16 +75,12 @@ sprite.addEventListener('mousedown', (e) => {
   e.preventDefault()
   isDragging = true
   mover.setDragging(true)
-
   const pos = mover.position()
   dragOffsetX = e.screenX - pos.x
   dragOffsetY = e.screenY - pos.y
-
   const onMove = (ev: MouseEvent): void => {
     if (!isDragging) return
-    const newX = ev.screenX - dragOffsetX
-    const newY = ev.screenY - dragOffsetY
-    mover.setPosition(newX, newY)
+    mover.setPosition(ev.screenX - dragOffsetX, ev.screenY - dragOffsetY)
   }
   const onUp = (): void => {
     isDragging = false
@@ -111,13 +92,7 @@ sprite.addEventListener('mousedown', (e) => {
   window.addEventListener('mouseup', onUp, true)
 })
 
-// ── Context menu (right-click) ──────────────────────────────────────────
-
-window.addEventListener('contextmenu', (e) => {
-  e.preventDefault()
-})
-
-// ── Cross-window communication ──────────────────────────────────────────
+window.addEventListener('contextmenu', (e) => e.preventDefault())
 
 function broadcastSnapshot(snap: Snapshot): void {
   void emit('digi:snapshot', snap)
@@ -128,24 +103,12 @@ async function registerActionListener(): Promise<void> {
     const { type, now } = event.payload
     const ts = now ?? Math.floor(Date.now() / 1000)
     switch (type) {
-      case 'start_focus':
-        scheduler.dispatch({ type: 'start_focus', now: ts })
-        break
-      case 'abort':
-        scheduler.dispatch({ type: 'abort', now: ts })
-        break
-      case 'acknowledge_done':
-        scheduler.dispatch({ type: 'acknowledge_done', now: ts })
-        break
-      case 'skip_break':
-        scheduler.dispatch({ type: 'skip_break', now: ts })
-        break
-      case 'pause':
-        scheduler.dispatch({ type: 'pause', now: ts })
-        break
-      case 'resume':
-        scheduler.dispatch({ type: 'resume', now: ts })
-        break
+      case 'start_focus': scheduler.dispatch({ type: 'start_focus', now: ts }); break
+      case 'abort': scheduler.dispatch({ type: 'abort', now: ts }); break
+      case 'acknowledge_done': scheduler.dispatch({ type: 'acknowledge_done', now: ts }); break
+      case 'skip_break': scheduler.dispatch({ type: 'skip_break', now: ts }); break
+      case 'pause': scheduler.dispatch({ type: 'pause', now: ts }); break
+      case 'resume': scheduler.dispatch({ type: 'resume', now: ts }); break
     }
   })
 
@@ -161,6 +124,15 @@ async function registerActionListener(): Promise<void> {
     lang = event.payload.lang
   })
 
+  await listen<AppConfig>('digi:config-changed', (event) => {
+    config = event.payload
+    scheduler.setTunables({
+      ...DEFAULT_TUNABLES,
+      FOCUS_DURATION_SEC: config.pomodoro.focusMinutes * 60,
+      BREAK_DURATION_SEC: config.pomodoro.breakMinutes * 60,
+    })
+  })
+
   await listen<{ fresh: PetState }>('digi:reset-pet', (event) => {
     scheduler.resetPet(event.payload.fresh)
     mover.setActive(false)
@@ -168,18 +140,13 @@ async function registerActionListener(): Promise<void> {
   })
 }
 
-// ── Boot ────────────────────────────────────────────────────────────────
-
 async function boot(): Promise<void> {
-  // Debug: write resource paths and file existence to debug.log
   await invoke('debug_boot').catch(() => {})
 
-  // Load bundled data
   const rules = await invoke<EvolutionRule[]>('load_evolution_rules')
   const lineage = await invoke<Record<string, string>>('load_egg_lineage')
   setEggLineage(lineage)
 
-  // Load or create pet state
   let state: PetState
   try {
     state = await invoke<PetState>('load_state')
@@ -195,7 +162,6 @@ async function boot(): Promise<void> {
     await invoke('save_state', { state })
   }
 
-  // Load config
   try {
     config = await invoke<AppConfig>('load_config')
   } catch {
@@ -204,29 +170,32 @@ async function boot(): Promise<void> {
   }
   lang = config.ui.language
 
-  // Set up pet window size
   const petScale = config.ui.petScale
   const petSize = Math.round(BASE_PX * petScale)
   await invoke('resize_pet_window', { width: petSize, height: petSize })
 
-  // Get screen work area
   const workW = window.screen.availWidth
   const workH = window.screen.availHeight
 
-  // Initialize mover — MUST start before sprite loading
   mover = new PetMover(
     { width: workW, height: workH },
     { width: petSize, height: petSize },
   )
   mover.setOnFacingChange(setFacing)
 
-  // Initialize scheduler
+  const tunables = {
+    ...DEFAULT_TUNABLES,
+    FOCUS_DURATION_SEC: config.pomodoro.focusMinutes * 60,
+    BREAK_DURATION_SEC: config.pomodoro.breakMinutes * 60,
+  }
+
   scheduler = new Scheduler(state, rules, {
     onChange(snap: Snapshot) {
       void refreshSprite(snap.state.digimonId, snap.state.seedEggVariant)
       document.body.classList.toggle('is-rip', Boolean(snap.state.rip))
 
-      mover.setActive(snap.phase.kind === 'focus')
+      const isActive = snap.phase.kind === 'focus' || snap.phase.kind === 'break' || snap.phase.kind === 'done'
+      mover.setActive(isActive)
 
       if (snap.state.stage === 'egg' || snap.state.rip || snap.phase.kind === 'paused') {
         mover.pause(true)
@@ -235,32 +204,22 @@ async function boot(): Promise<void> {
       }
 
       broadcastSnapshot(snap)
-
-      void invoke('update_tray', {
-        title: formatTrayTitle(snap),
-        phaseInfo: snap.phase.kind,
-      }).catch(() => {})
+      void invoke('update_tray', { title: formatTrayTitle(snap), phaseInfo: snap.phase.kind }).catch(() => {})
     },
     onEvolve(from: string, to: string) {
       showBubble(`${from} \u2192 ${to}`, 3500)
       void emit('digi:evolve', { from, to })
-      if (config.notifications.onEvolve) {
-        void notify(t('notifyEvolveTitle', lang), `${from} \u2192 ${to}`)
-      }
+      if (config.notifications.onEvolve) void notify(t('notifyEvolveTitle', lang), `${from} \u2192 ${to}`)
     },
     onForkComplete(slot: string) {
       showBubble(t('bubbleForkAdded', lang, { slot: t('slot_' + slot, lang) }))
       void emit('digi:fork-complete', { slot })
-      if (config.notifications.onForkComplete) {
-        void notify(t('notifyForkCompleteTitle', lang), t('notifyForkCompleteBody', lang))
-      }
+      if (config.notifications.onForkComplete) void notify(t('notifyForkCompleteTitle', lang), t('notifyForkCompleteBody', lang))
     },
     onBreakEnd() {
       showBubble(t('bubbleBreakOver', lang), 2500)
       void emit('digi:break-end', {})
-      if (config.notifications.onBreakEnd) {
-        void notify(t('notifyBreakEndTitle', lang), t('notifyBreakEndBody', lang))
-      }
+      if (config.notifications.onBreakEnd) void notify(t('notifyBreakEndTitle', lang), t('notifyBreakEndBody', lang))
     },
     onRip() {
       showBubble(t('bubbleRip', lang), 4000)
@@ -270,17 +229,13 @@ async function boot(): Promise<void> {
     },
   })
 
-  // Register cross-window listeners
   await registerActionListener()
 
-  // Start mover and scheduler
-  if (state.stage === 'egg' || state.rip) {
-    mover.pause(true)
-  }
+  if (state.stage === 'egg' || state.rip) mover.pause(true)
+  scheduler.setTunables(tunables)
   mover.start()
   scheduler.start()
 
-  // Load sprite async — doesn't block mover/scheduler
   void refreshSprite(state.digimonId, state.seedEggVariant)
   setFacing(mover.currentFacing())
 }

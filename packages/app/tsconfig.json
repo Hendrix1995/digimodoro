@@ -7,9 +7,8 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["node"],
     "composite": false
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "node_modules"]
+  "include": ["src/frontend/**/*"],
+  "exclude": ["dist", "node_modules", "src-tauri", "src/main", "src/preload", "src/renderer"]
 }

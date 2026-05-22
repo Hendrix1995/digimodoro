@@ -5,12 +5,16 @@ out
 .DS_Store
 *.log
 
-# Electron build output
+# Build output
 release
 *.dmg
 *.exe
 *.snap
 *.AppImage
+*.msi
+
+# Tauri
+packages/app/src-tauri/target
 
 # Sprite raw sources (recovered locally, not committed)
 packages/data/sprites/_raw

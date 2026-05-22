@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DigiModoro</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <header class="topbar">
+        <div class="brand" id="brand">DigiModoro</div>
+        <div class="slot-pill" id="slot-pill">-</div>
+      </header>
+
+      <section class="pet-stage" id="pet-stage">
+        <div class="pet-shadow"></div>
+        <img class="pet-sprite" id="pet-sprite" alt="" />
+      </section>
+
+      <section class="pet-meta">
+        <div class="pet-name" id="pet-name">...</div>
+        <div class="pet-sub" id="pet-meta">stage</div>
+      </section>
+
+      <section class="timer">
+        <div class="timer-digits" id="timer-digits">00:00</div>
+        <div class="timer-phase" id="timer-phase">idle</div>
+      </section>
+
+      <section class="controls">
+        <button id="btn-primary" class="btn primary">Start focus</button>
+        <button id="btn-secondary" class="btn ghost" hidden>Skip break</button>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title" id="stats-title">Stats</div>
+        <div class="stats">
+          <div class="stat stat-wide">
+            <span class="stat-label" id="lbl-next-evo">Next evolution</span>
+            <span class="stat-value" id="stat-next-evo">0/0</span>
+          </div>
+          <div class="stat-progress">
+            <div class="stat-progress-bar" id="stat-next-evo-bar"></div>
+          </div>
+          <div class="stat">
+            <span class="stat-label" id="lbl-forks-stage">Forks (this stage)</span>
+            <span class="stat-value" id="stat-forks-stage">0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label" id="lbl-forks-total">Total forks</span>
+            <span class="stat-value" id="stat-forks-total">0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label" id="lbl-streak">Streak miss</span>
+            <span class="stat-value" id="stat-streak">0d</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label" id="lbl-rip-countdown">Days until R.I.P.</span>
+            <span class="stat-value" id="stat-rip-countdown">3d</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label" id="lbl-evo-count">Evolution history #</span>
+            <span class="stat-value" id="stat-evo-count">0</span>
+          </div>
+          <div class="slots-row" id="slots-row"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title" id="settings-title">Settings</div>
+        <div class="setting-row">
+          <span class="setting-label" id="lbl-language">Language</span>
+          <div class="seg" id="seg-lang">
+            <button class="seg-btn" data-lang="ko">한국어</button>
+            <button class="seg-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+        <div class="setting-row">
+          <span class="setting-label" id="lbl-pet-size">Pet size</span>
+          <div class="seg" id="seg-size">
+            <button class="seg-btn" data-scale="0.5">XS</button>
+            <button class="seg-btn" data-scale="0.75">S</button>
+            <button class="seg-btn" data-scale="1">M</button>
+            <button class="seg-btn" data-scale="1.5">L</button>
+            <button class="seg-btn" data-scale="2">XL</button>
+          </div>
+        </div>
+        <div class="setting-row">
+          <span class="setting-label" id="lbl-focus-len">Focus length</span>
+          <div class="num-input">
+            <input id="inp-focus" type="number" min="1" max="180" step="1" value="50" />
+            <span class="unit" id="unit-min-focus">min</span>
+          </div>
+        </div>
+        <div class="setting-row">
+          <span class="setting-label" id="lbl-break-len">Break length</span>
+          <div class="num-input">
+            <input id="inp-break" type="number" min="1" max="60" step="1" value="10" />
+            <span class="unit" id="unit-min-break">min</span>
+          </div>
+        </div>
+        <div class="setting-row setting-group">
+          <span class="setting-label" id="lbl-notifications">Notifications</span>
+          <div class="toggles">
+            <label class="toggle">
+              <input id="tog-fork" type="checkbox" />
+              <span id="lbl-tog-fork">On focus complete</span>
+            </label>
+            <label class="toggle">
+              <input id="tog-evolve" type="checkbox" />
+              <span id="lbl-tog-evolve">On evolve</span>
+            </label>
+            <label class="toggle">
+              <input id="tog-break" type="checkbox" />
+              <span id="lbl-tog-break">On break end</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title" id="history-title">Evolution history</div>
+        <ul class="evo-list" id="evo-list">
+          <li class="evo-empty">-</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title" id="graveyard-title">Graveyard</div>
+        <ul class="grave-list" id="grave-list">
+          <li class="grave-empty">-</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <button id="btn-reset" class="link">Reset pet</button>
+      </footer>
+    </main>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>

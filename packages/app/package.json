@@ -1,23 +1,27 @@
 {
   "name": "@digimodoro/app",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "private": true,
-  "description": "Electron shell for DigiModoro",
-  "main": "./dist/main/index.cjs",
+  "description": "Tauri shell for DigiModoro",
+  "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "node esbuild.config.mjs",
-    "build:watch": "node esbuild.config.mjs --watch",
-    "dev": "pnpm --filter @digimodoro/core build && node esbuild.config.mjs && electron .",
+    "vite:dev": "vite dev",
+    "vite:build": "vite build",
+    "dev": "pnpm --filter @digimodoro/core build && tauri dev",
+    "build": "pnpm --filter @digimodoro/core build && tauri build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "echo 'app — no tests yet'",
-    "package": "pnpm --filter @digimodoro/core build && node esbuild.config.mjs && (electron-builder --mac; electron-builder --win)"
+    "test": "echo 'app — no tests yet'"
   },
-  "devDependencies": {
+  "dependencies": {
     "@digimodoro/core": "workspace:*",
     "@digimodoro/data": "workspace:*",
-    "electron": "^33.0.0",
-    "electron-builder": "^25.0.0",
-    "esbuild": "^0.21.5"
+    "@tauri-apps/api": "^2.11.0",
+    "@tauri-apps/plugin-notification": "^2.3.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.2",
+    "typescript": "^5.5.0",
+    "vite": "^8.0.14"
   }
 }

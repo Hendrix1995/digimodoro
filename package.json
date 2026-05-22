@@ -2,7 +2,7 @@
   "name": "digimodoro",
   "version": "0.1.6",
   "private": true,
-  "description": "Digimon-themed virtual pet powered by Pomodoro sessions. Windows + macOS desktop app.",
+  "description": "Digimon-themed virtual pet powered by Pomodoro sessions. Windows desktop app (Tauri v2).",
   "license": "MIT",
   "engines": {
     "node": ">=22.0.0",
@@ -14,7 +14,7 @@
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
     "dev": "pnpm --filter @digimodoro/app dev",
-    "package": "pnpm --filter @digimodoro/app package"
+    "package": "pnpm --filter @digimodoro/app build"
   },
   "devDependencies": {
     "typescript": "^5.5.0",

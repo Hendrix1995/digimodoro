@@ -1,4 +1,4 @@
-import { convertFileSrc } from '@tauri-apps/api/core'
+import { invoke } from '@tauri-apps/api/core'
 
 export const SPRITE_DEFAULT_FACING: Record<string, 'left' | 'right'> = {
   hanumon: 'right',
@@ -22,20 +22,16 @@ export const SPRITE_DEFAULT_FACING: Record<string, 'left' | 'right'> = {
   numemon: 'right',
 }
 
-// spriteBasePath is a native filesystem path (e.g. C:\Users\...\sprites on Windows)
-// We detect the OS path separator from the base path and use it consistently
-export function spriteUrl(spriteBasePath: string, digimonId: string, variant: number | undefined): string {
-  const sep = spriteBasePath.includes('\\') ? '\\' : '/'
-  const base = spriteBasePath.endsWith(sep) ? spriteBasePath : spriteBasePath + sep
-
-  let relPath: string
+// Loads a sprite via Rust (reads file → returns data:image/...;base64,... URL)
+// No asset protocol, no path encoding issues.
+export async function loadSprite(digimonId: string, variant?: number): Promise<string> {
+  let relativePath: string
   if (digimonId === 'egg') {
     const v = variant ?? 1
     const key = 'v' + String(v).padStart(2, '0')
-    relPath = `egg${sep}${key}.png`
+    relativePath = `egg/${key}.png`
   } else {
-    relPath = `${digimonId}${sep}idle.gif`
+    relativePath = `${digimonId}/idle.gif`
   }
-
-  return convertFileSrc(base + relPath)
+  return invoke<string>('load_sprite', { relativePath })
 }

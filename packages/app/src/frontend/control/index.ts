@@ -3,7 +3,7 @@ import { emit, listen } from '@tauri-apps/api/event'
 import { t, type Lang } from '@digimodoro/core'
 import type { Snapshot, AppConfig, GraveyardEntry } from '../shared/types'
 import { DEFAULT_CONFIG } from '../shared/types'
-import { SPRITE_DEFAULT_FACING, spriteUrl } from '../shared/sprite-utils'
+import { SPRITE_DEFAULT_FACING, loadSprite } from '../shared/sprite-utils'
 import { PetCanvas } from './pet-canvas'
 
 const defaultFacing = (id: string): 'left' | 'right' =>
@@ -66,7 +66,6 @@ const els = {
   btnReset: $<HTMLButtonElement>('btn-reset'),
 }
 
-let spriteBase = ''
 let snap: Snapshot | undefined
 let cfg: AppConfig | undefined
 let lang: Lang = 'ko'
@@ -81,16 +80,19 @@ function fmtTime(sec: number): string {
   return mm + ':' + ss
 }
 
-function evoThumbUrl(digimonId: string, eggVariant: number): string {
-  return spriteUrl(spriteBase, digimonId, digimonId === 'egg' ? eggVariant : undefined)
+async function loadThumb(el: HTMLImageElement, digimonId: string, eggVariant?: number): Promise<void> {
+  try {
+    el.src = await loadSprite(digimonId, digimonId === 'egg' ? eggVariant : undefined)
+  } catch {
+    el.style.visibility = 'hidden'
+  }
 }
 
-function makeEvoThumb(src: string): HTMLImageElement {
+function makeEvoThumb(digimonId: string, eggVariant?: number): HTMLImageElement {
   const img = document.createElement('img')
   img.className = 'evo-thumb'
   img.alt = ''
-  img.src = src
-  img.addEventListener('error', () => { img.style.visibility = 'hidden' })
+  void loadThumb(img, digimonId, eggVariant)
   return img
 }
 
@@ -134,8 +136,7 @@ function renderGraveyard(): void {
     const thumb = document.createElement('img')
     thumb.className = 'grave-thumb'
     thumb.alt = ''
-    thumb.src = spriteUrl(spriteBase, entry.digimonId, entry.seedEggVariant)
-    thumb.addEventListener('error', () => { thumb.style.visibility = 'hidden' })
+    void loadThumb(thumb, entry.digimonId, entry.seedEggVariant)
 
     const body = document.createElement('div')
     body.className = 'grave-body'
@@ -197,8 +198,7 @@ function buildGraveTree(entry: GraveyardEntry): HTMLElement {
     const img = document.createElement('img')
     img.className = 'tree-thumb'
     img.alt = ''
-    img.src = spriteUrl(spriteBase, id, id === 'egg' ? eggVariant : undefined)
-    img.addEventListener('error', () => { img.style.visibility = 'hidden' })
+    void loadThumb(img, id, id === 'egg' ? eggVariant : undefined)
     const label = document.createElement('span')
     label.className = 'tree-name'
     label.textContent = id
@@ -363,14 +363,14 @@ function applySnapshot(s: Snapshot): void {
       const li = document.createElement('li')
       const pair = document.createElement('span')
       pair.className = 'evo-pair'
-      const fromImg = makeEvoThumb(evoThumbUrl(e.from, eggVariant))
+      const fromImg = makeEvoThumb(e.from, e.from === 'egg' ? eggVariant : undefined)
       const fromName = document.createElement('span')
       fromName.className = 'evo-name'
       fromName.textContent = e.from
       const arrow = document.createElement('span')
       arrow.className = 'evo-arrow'
       arrow.textContent = '\u2192'
-      const toImg = makeEvoThumb(evoThumbUrl(e.to, eggVariant))
+      const toImg = makeEvoThumb(e.to)
       const toName = document.createElement('span')
       toName.className = 'evo-name'
       toName.textContent = e.to
@@ -549,7 +549,6 @@ for (const [el, key] of [
 // --- Boot ---
 
 async function boot(): Promise<void> {
-  spriteBase = await invoke<string>('get_sprite_base_path')
   try {
     cfg = await invoke<AppConfig>('load_config')
   } catch {
@@ -562,7 +561,6 @@ async function boot(): Promise<void> {
   pet = new PetCanvas({
     spriteEl: els.petSprite,
     stageEl: els.petStage,
-    spriteBase,
     defaultFacing,
   })
   pet.start()

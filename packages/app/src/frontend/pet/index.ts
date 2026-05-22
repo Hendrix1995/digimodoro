@@ -1,4 +1,4 @@
-import { invoke, convertFileSrc } from '@tauri-apps/api/core'
+import { invoke } from '@tauri-apps/api/core'
 import { emit, listen } from '@tauri-apps/api/event'
 import {
   isPermissionGranted,
@@ -17,13 +17,12 @@ import { Scheduler } from './scheduler'
 import { PetMover } from './mover'
 import type { Snapshot, AppConfig } from '../shared/types'
 import { DEFAULT_CONFIG } from '../shared/types'
-import { SPRITE_DEFAULT_FACING, spriteUrl } from '../shared/sprite-utils'
+import { SPRITE_DEFAULT_FACING, loadSprite } from '../shared/sprite-utils'
 
 const sprite = document.getElementById('sprite') as HTMLImageElement
 const bubble = document.getElementById('bubble') as HTMLElement
 
 let lang: Lang = 'ko'
-let spriteBase = ''
 let lastDigi = ''
 let lastVariant: number | undefined
 let config: AppConfig = DEFAULT_CONFIG
@@ -34,11 +33,15 @@ const BASE_PX = 96
 
 // ── Sprite rendering ────────────────────────────────────────────────────
 
-function refreshSprite(digimonId: string, variant: number | undefined): void {
+async function refreshSprite(digimonId: string, variant: number | undefined): Promise<void> {
   if (digimonId === lastDigi && variant === lastVariant) return
   lastDigi = digimonId
   lastVariant = variant
-  sprite.src = spriteUrl(spriteBase, digimonId, variant)
+  try {
+    sprite.src = await loadSprite(digimonId, variant)
+  } catch {
+    // Sprite load failed — keep previous image
+  }
 }
 
 function setFacing(dir: 'left' | 'right'): void {
@@ -60,7 +63,7 @@ async function notify(title: string, body: string): Promise<void> {
       sendNotification({ title, body })
     }
   } catch {
-    // Notification not supported in this environment
+    // Notification not supported
   }
 }
 
@@ -112,7 +115,6 @@ sprite.addEventListener('mousedown', (e) => {
 
 window.addEventListener('contextmenu', (e) => {
   e.preventDefault()
-  // TODO Phase 8: show custom HTML context menu
 })
 
 // ── Cross-window communication ──────────────────────────────────────────
@@ -169,9 +171,6 @@ async function registerActionListener(): Promise<void> {
 // ── Boot ────────────────────────────────────────────────────────────────
 
 async function boot(): Promise<void> {
-  // Load sprite base URL
-  spriteBase = await invoke<string>('get_sprite_base_path')
-
   // Load bundled data
   const rules = await invoke<EvolutionRule[]>('load_evolution_rules')
   const lineage = await invoke<Record<string, string>>('load_egg_lineage')
@@ -207,42 +206,33 @@ async function boot(): Promise<void> {
   const petSize = Math.round(BASE_PX * petScale)
   await invoke('resize_pet_window', { width: petSize, height: petSize })
 
-  // Get screen work area (approximate with window.screen)
+  // Get screen work area
   const workW = window.screen.availWidth
   const workH = window.screen.availHeight
 
-  // Initialize mover
+  // Initialize mover — MUST start before sprite loading
   mover = new PetMover(
     { width: workW, height: workH },
     { width: petSize, height: petSize },
   )
   mover.setOnFacingChange(setFacing)
-  mover.setOnJump((_e) => {
-    // Jump animation feedback — sprite stays the same, window moves
-  })
 
   // Initialize scheduler
   scheduler = new Scheduler(state, rules, {
     onChange(snap: Snapshot) {
-      refreshSprite(snap.state.digimonId, snap.state.seedEggVariant)
+      void refreshSprite(snap.state.digimonId, snap.state.seedEggVariant)
       document.body.classList.toggle('is-rip', Boolean(snap.state.rip))
 
-      // Update mover active state
       mover.setActive(snap.phase.kind === 'focus')
 
-      // Mover pause logic
-      if (snap.state.stage === 'egg' || snap.state.rip) {
-        mover.pause(true)
-      } else if (snap.phase.kind === 'paused') {
+      if (snap.state.stage === 'egg' || snap.state.rip || snap.phase.kind === 'paused') {
         mover.pause(true)
       } else {
         mover.pause(false)
       }
 
-      // Broadcast to control window
       broadcastSnapshot(snap)
 
-      // Update tray
       void invoke('update_tray', {
         title: formatTrayTitle(snap),
         phaseInfo: snap.phase.kind,
@@ -277,21 +267,19 @@ async function boot(): Promise<void> {
     },
   })
 
-  // Render initial sprite
-  refreshSprite(state.digimonId, state.seedEggVariant)
-  setFacing(mover.currentFacing())
-
   // Register cross-window listeners
   await registerActionListener()
 
-  // Start loops
+  // Start mover and scheduler
   if (state.stage === 'egg' || state.rip) {
     mover.pause(true)
   }
   mover.start()
   scheduler.start()
 
-  console.log('[pet] booted — digimon:', state.digimonId, 'stage:', state.stage)
+  // Load sprite async — doesn't block mover/scheduler
+  void refreshSprite(state.digimonId, state.seedEggVariant)
+  setFacing(mover.currentFacing())
 }
 
 function formatTrayTitle(snap: Snapshot): string {
@@ -304,4 +292,4 @@ function formatTrayTitle(snap: Snapshot): string {
   return ` ${mm}:${ss}${paused}`
 }
 
-boot().catch((e) => console.error('[pet] boot failed:', e))
+boot().catch(() => {})

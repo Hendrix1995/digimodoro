@@ -1,11 +1,10 @@
-import { convertFileSrc } from '@tauri-apps/api/core'
+import { loadSprite } from '../shared/sprite-utils'
 
 type Vec = { x: number; y: number }
 
 export type PetCanvasOptions = {
   spriteEl: HTMLImageElement
   stageEl: HTMLElement
-  spriteBase: string
   defaultFacing: (digimonId: string) => 'left' | 'right'
 }
 
@@ -14,7 +13,6 @@ const TICK_MS = 60
 export class PetCanvas {
   private spriteEl: HTMLImageElement
   private stageEl: HTMLElement
-  private spriteBase: string
   private defaultFacing: (id: string) => 'left' | 'right'
 
   private digimonId = ''
@@ -35,7 +33,6 @@ export class PetCanvas {
   constructor(opts: PetCanvasOptions) {
     this.spriteEl = opts.spriteEl
     this.stageEl = opts.stageEl
-    this.spriteBase = opts.spriteBase
     this.defaultFacing = opts.defaultFacing
   }
 
@@ -43,13 +40,21 @@ export class PetCanvas {
     if (digimonId === this.digimonId && eggVariant === this.eggVariant) return
     this.digimonId = digimonId
     this.eggVariant = eggVariant
-    this.spriteEl.src = this.spriteUrl()
+    void this.loadSpriteImage()
     this.pos = { x: 0, y: 0 }
     this.dir = 1
     this.movement = 'idle'
     this.jumpTicksLeft = 0
     this.applyFacing()
     this.render()
+  }
+
+  private async loadSpriteImage(): Promise<void> {
+    try {
+      this.spriteEl.src = await loadSprite(this.digimonId, this.eggVariant)
+    } catch {
+      // Keep previous image
+    }
   }
 
   private isEgg(): boolean {
@@ -127,18 +132,5 @@ export class PetCanvas {
     this.pos.y = y
     this.spriteEl.style.transform =
       `translate(${this.pos.x.toFixed(1)}px, ${y.toFixed(1)}px) scaleX(var(--facing, 1))`
-  }
-
-  private spriteUrl(): string {
-    const sep = this.spriteBase.includes('\\') ? '\\' : '/'
-    const base = this.spriteBase.endsWith(sep) ? this.spriteBase : this.spriteBase + sep
-    let rel: string
-    if (this.digimonId === 'egg') {
-      const v = this.eggVariant ?? 1
-      rel = `egg${sep}v${String(v).padStart(2, '0')}.png`
-    } else {
-      rel = `${this.digimonId}${sep}idle.gif`
-    }
-    return convertFileSrc(base + rel)
   }
 }

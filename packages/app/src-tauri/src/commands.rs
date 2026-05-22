@@ -48,14 +48,26 @@ pub fn load_egg_lineage(app: AppHandle) -> Result<serde_json::Value, String> {
     store::load_resource_json(&app, "data/egg-lineage.json")
 }
 
-// --- Sprite path ---
+// --- Sprite loading (data URL) ---
 
 #[tauri::command]
-pub fn get_sprite_base_path(app: AppHandle) -> Result<String, String> {
+pub fn load_sprite(app: AppHandle, relative_path: String) -> Result<String, String> {
+    use base64::Engine;
+
     let sprites_dir = store::get_sprites_dir(&app)?;
-    let path_str = sprites_dir.to_string_lossy().to_string();
-    // Return native path as-is — convertFileSrc on JS side handles encoding
-    Ok(path_str)
+    let full_path = sprites_dir.join(&relative_path);
+
+    let bytes = std::fs::read(&full_path)
+        .map_err(|e| format!("read sprite {}: {}", relative_path, e))?;
+
+    let mime = if relative_path.ends_with(".gif") {
+        "image/gif"
+    } else {
+        "image/png"
+    };
+
+    let b64 = base64::engine::general_purpose::STANDARD.encode(&bytes);
+    Ok(format!("data:{};base64,{}", mime, b64))
 }
 
 // --- Window management ---

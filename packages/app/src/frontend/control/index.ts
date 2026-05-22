@@ -424,31 +424,41 @@ function emitAction(type: string): void {
   void emit('digi:action', { type, now: Math.floor(Date.now() / 1000) })
 }
 
-// Dangerous action confirmation: click once to arm (button turns red),
-// click again within 3s to confirm. No native alert/confirm dialogs.
-let confirmTimer: ReturnType<typeof setTimeout> | undefined
-let confirmTarget: HTMLButtonElement | undefined
+// --- Custom confirm dialog ---
 
-function requireConfirm(btn: HTMLButtonElement, action: () => void): void {
-  if (confirmTarget === btn) {
-    // Second click — confirmed
-    clearTimeout(confirmTimer)
-    confirmTarget = undefined
-    btn.classList.remove('confirming')
-    action()
-  } else {
-    // First click — arm
-    if (confirmTarget) {
-      confirmTarget.classList.remove('confirming')
-      clearTimeout(confirmTimer)
-    }
-    confirmTarget = btn
-    btn.classList.add('confirming')
-    confirmTimer = setTimeout(() => {
-      btn.classList.remove('confirming')
-      confirmTarget = undefined
-    }, 3000)
-  }
+let confirmResolve: ((v: boolean) => void) | undefined
+const confirmOverlay = document.createElement('div')
+confirmOverlay.className = 'confirm-overlay hidden'
+const confirmBox = document.createElement('div')
+confirmBox.className = 'confirm-box'
+const confirmMsg = document.createElement('div')
+confirmMsg.className = 'confirm-msg'
+const confirmBtns = document.createElement('div')
+confirmBtns.className = 'confirm-btns'
+const confirmYes = document.createElement('button')
+confirmYes.className = 'btn confirm-yes'
+const confirmNo = document.createElement('button')
+confirmNo.className = 'btn confirm-no'
+confirmBtns.append(confirmNo, confirmYes)
+confirmBox.append(confirmMsg, confirmBtns)
+confirmOverlay.appendChild(confirmBox)
+document.body.appendChild(confirmOverlay)
+
+confirmYes.addEventListener('click', () => {
+  confirmOverlay.classList.add('hidden')
+  confirmResolve?.(true)
+})
+confirmNo.addEventListener('click', () => {
+  confirmOverlay.classList.add('hidden')
+  confirmResolve?.(false)
+})
+
+function showConfirm(msg: string): Promise<boolean> {
+  confirmMsg.textContent = msg
+  confirmYes.textContent = t('confirmYes', lang)
+  confirmNo.textContent = lang === 'ko' ? '\uCDE8\uC18C' : 'Cancel'
+  confirmOverlay.classList.remove('hidden')
+  return new Promise((resolve) => { confirmResolve = resolve })
 }
 
 async function doReset(): Promise<void> {
@@ -465,23 +475,29 @@ async function doReset(): Promise<void> {
   void emit('digi:reset-pet', { fresh })
 }
 
-els.btnPrimary.addEventListener('click', () => {
+els.btnPrimary.addEventListener('click', async () => {
   const a = els.btnPrimary.dataset.action
   if (a === 'start') emitAction('start_focus')
   else if (a === 'pause') emitAction('pause')
   else if (a === 'resume') emitAction('resume')
-  else if (a === 'abort') requireConfirm(els.btnPrimary, () => emitAction('abort'))
+  else if (a === 'abort') {
+    if (await showConfirm(t('confirmAbort', lang))) emitAction('abort')
+  }
   else if (a === 'ack-done') emitAction('acknowledge_done')
   else if (a === 'skip-break') emitAction('skip_break')
-  else if (a === 'reset') requireConfirm(els.btnPrimary, () => { void doReset() })
+  else if (a === 'reset') {
+    if (await showConfirm(t('confirmReset', lang))) void doReset()
+  }
 })
-els.btnSecondary.addEventListener('click', () => {
+els.btnSecondary.addEventListener('click', async () => {
   const a = els.btnSecondary.dataset.action
   if (a === 'skip-break') emitAction('skip_break')
-  else if (a === 'abort') requireConfirm(els.btnSecondary, () => emitAction('abort'))
+  else if (a === 'abort') {
+    if (await showConfirm(t('confirmAbort', lang))) emitAction('abort')
+  }
 })
-els.btnReset.addEventListener('click', () => {
-  requireConfirm(els.btnReset, () => { void doReset() })
+els.btnReset.addEventListener('click', async () => {
+  if (await showConfirm(t('confirmReset', lang))) void doReset()
 })
 
 els.segLang.addEventListener('click', async (e) => {

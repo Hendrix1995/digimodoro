@@ -132,18 +132,47 @@ body.is-egg .pet-sprite {
 .btn:hover {
   background: #232a37;
 }
-.btn.confirming {
-  background: #b83030;
-  border-color: #b83030;
-  animation: pulse 0.6s ease infinite alternate;
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
 }
-@keyframes pulse {
-  from { opacity: 1; }
-  to { opacity: 0.7; }
+.confirm-overlay.hidden {
+  display: none;
 }
-.link.confirming {
-  color: #ff5050;
-  animation: pulse 0.6s ease infinite alternate;
+.confirm-box {
+  background: #181c25;
+  border: 1px solid #2a3140;
+  border-radius: 12px;
+  padding: 20px 24px;
+  min-width: 240px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+.confirm-msg {
+  font-size: 13px;
+  color: #e7eaf0;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.confirm-btns {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.confirm-yes {
+  background: #d3573c;
+  border-color: #d3573c;
+}
+.confirm-yes:hover {
+  background: #e16a4c;
+}
+.confirm-no {
+  background: transparent;
 }
 .btn:active {
   transform: translateY(1px);

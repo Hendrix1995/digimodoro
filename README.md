@@ -9,20 +9,45 @@ English version: [README.en.md](README.en.md)
 
 ## 다운로드 (비개발자용)
 
-최신 릴리스의 사전 빌드 인스톨러:
+### macOS — .pkg 인스톨러 (권장)
 
-| OS | 아키텍처 | 직링크 |
-|---|---|---|
-| macOS | Apple Silicon (M 시리즈) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
-| macOS | Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
-| Windows | x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
+`.pkg`로 받으시면 인스톨러가 자동으로 미서명 quarantine까지 해제하므로 터미널 명령 없이 그냥 더블클릭만으로 설치됩니다.
+
+| 아키텍처 | 다운로드 |
+|---|---|
+| Apple Silicon (M 시리즈) | [DigiModoro-mac-arm64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.pkg) |
+| Intel | [DigiModoro-mac-x64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.pkg) |
+
+설치 순서:
+1. `.pkg` 더블클릭
+2. *"확인되지 않은 개발자"* 경고가 뜨면 **우클릭 → 열기** 1회
+3. 인스톨러 GUI에서 "계속 → 계속 → 설치"
+4. 완료 → Launchpad에서 DigiModoro 실행
+
+(인스톨러의 postinstall 스크립트가 `/Applications/DigiModoro.app`의 quarantine 속성을 자동 제거합니다.)
+
+### macOS — .dmg (드래그 앤 드롭 / Homebrew용)
+
+| 아키텍처 | 다운로드 |
+|---|---|
+| Apple Silicon | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
+
+`.dmg`는 직접 받으면 *"손상되었기 때문에 열 수 없습니다"* 경고 처리가 필요합니다 — `xattr -cr /Applications/DigiModoro.app` 또는 Homebrew Cask 경유:
+
+```bash
+brew install --cask Hendrix1995/digimodoro/digimodoro
+```
+
+### Windows
+
+| 아키텍처 | 다운로드 |
+|---|---|
+| x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
+
+> 미서명 빌드라 SmartScreen 경고가 뜹니다. **추가 정보 → 실행** 클릭. (SignPath.io OSS 무료 서명 도입 진행 중)
 
 전체 빌드는 **[Releases 페이지](https://github.com/Hendrix1995/digimodoro/releases/latest)**에서 확인.
-
-> 현재 macOS / Windows 코드 서명은 아직 셋업 전입니다. 미서명 빌드라 다음 경고가 뜰 수 있습니다 — 서명 도입 후 사라집니다.
->
-> - **macOS**: *"DigiModoro은(는) 손상되었기 때문에 열 수 없습니다"* — Gatekeeper의 미서명 차단입니다. 일시 우회: `/Applications`로 옮긴 뒤 터미널에서 `xattr -cr /Applications/DigiModoro.app` 1회 실행.
-> - **Windows**: SmartScreen 경고 → **추가 정보 → 실행**.
 
 ---
 

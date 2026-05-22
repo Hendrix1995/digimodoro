@@ -36,6 +36,15 @@ extraResources:
 
 mac:
   target:
+    # .pkg is the primary distribution format. The pkg-scripts postinstall
+    # automatically strips com.apple.quarantine after install, so users get
+    # working app from a double-click without ever touching Terminal. dmg
+    # is kept as a secondary option for users who prefer drag-and-drop or
+    # for Homebrew Cask installs.
+    - target: pkg
+      arch:
+        - arm64
+        - x64
     - target: dmg
       arch:
         - arm64
@@ -53,6 +62,13 @@ dmg:
   # ULFO = LZFSE — Apple's modern compressor. Better ratio than the default
   # bzip2 format, with native macOS 10.11+ support (we already require 10.12+).
   format: ULFO
+
+pkg:
+  scripts: build/pkg-scripts
+  installLocation: /Applications
+  allowAnywhere: true
+  allowCurrentUserHome: true
+  allowRootDirectory: true
 
 win:
   target:

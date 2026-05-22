@@ -9,20 +9,45 @@ Korean version: [README.md](README.md)
 
 ## Download (non-developers)
 
-Pre-built installers for the latest release:
+### macOS — .pkg installer (recommended)
 
-| OS | Architecture | Direct download |
-|---|---|---|
-| macOS | Apple Silicon (M-series) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
-| macOS | Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
-| Windows | x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
+The `.pkg` installer auto-strips the unsigned-app quarantine attribute during install, so it's a clean double-click experience with no Terminal involved.
+
+| Architecture | Download |
+|---|---|
+| Apple Silicon (M-series) | [DigiModoro-mac-arm64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.pkg) |
+| Intel | [DigiModoro-mac-x64.pkg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.pkg) |
+
+Install:
+1. Double-click the `.pkg`.
+2. If macOS says *"unidentified developer"*, right-click → **Open** once.
+3. Run through the installer ("Continue → Continue → Install").
+4. Done — launch DigiModoro from Launchpad.
+
+(A postinstall script runs `xattr -cr /Applications/DigiModoro.app` automatically.)
+
+### macOS — .dmg (drag-and-drop / for Homebrew)
+
+| Architecture | Download |
+|---|---|
+| Apple Silicon | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
+| Intel | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
+
+A direct `.dmg` download triggers Gatekeeper's *"is damaged"* error. Either run `xattr -cr /Applications/DigiModoro.app` once after copying to `/Applications`, or install via Homebrew Cask:
+
+```bash
+brew install --cask Hendrix1995/digimodoro/digimodoro
+```
+
+### Windows
+
+| Architecture | Download |
+|---|---|
+| x64 | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
+
+> Builds are unsigned, so SmartScreen will warn. Click **More info → Run anyway**. (Free OSS Authenticode signing via SignPath.io is being set up.)
 
 All builds available on the **[Releases page](https://github.com/Hendrix1995/digimodoro/releases/latest)**.
-
-> macOS and Windows code signing are not set up yet. Until they are, unsigned builds may produce these warnings:
->
-> - **macOS**: *"DigiModoro is damaged and can't be opened"* — that is Gatekeeper blocking unsigned apps. Temporary workaround: move the app to `/Applications`, then run `xattr -cr /Applications/DigiModoro.app` once in Terminal.
-> - **Windows**: SmartScreen warning → **More info → Run anyway**.
 
 ---
 

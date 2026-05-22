@@ -10,12 +10,15 @@ const bubble = document.getElementById('bubble') as HTMLDivElement
 let spriteBase = ''
 let lastDigi = ''
 let lastVariant: number | undefined
-// Hide sprite off-screen until the first position arrives so it doesn't
-// flash at (0,0) on load.
-let petX = -9999
-let petY = -9999
+// Start at a visible default (bottom-center of viewport) so the sprite is
+// never invisible even if the very first position broadcast from the main
+// process is lost — which is the recurring Windows symptom. The mover's
+// next tick (~16 ms) overwrites this with the real coordinate.
+let petX = Math.round((typeof window !== 'undefined' ? window.innerWidth : 800) / 2)
+let petY = Math.max(0, (typeof window !== 'undefined' ? window.innerHeight : 600) - 80)
 let petScale = 1
 let bubbleVisible = false
+let firstPositionReceived = false
 
 const BASE_PX = 96 // base sprite size at scale=1
 
@@ -33,6 +36,12 @@ function refreshSprite(digimonId: string, variant: number | undefined): void {
   lastDigi = digimonId
   lastVariant = variant
   sprite.src = spriteUrl(digimonId, variant)
+  // Force position re-apply once the image actually loads, in case the
+  // window's transparent compositor on Windows skipped the earlier paint.
+  sprite.addEventListener('load', () => applyPosition(), { once: true })
+  sprite.addEventListener('error', () => {
+    console.error('[pet] failed to load sprite:', sprite.src)
+  }, { once: true })
 }
 
 // Most raw sprites face LEFT by default. The ones listed below face right.
@@ -141,6 +150,7 @@ function registerListeners(): void {
     petX = p.x
     petY = p.y
     petScale = p.scale
+    firstPositionReceived = true
     applyPosition()
   })
 
@@ -165,15 +175,21 @@ async function boot(): Promise<void> {
   if (snap.phase.kind === 'focus') document.body.classList.add('is-focus')
   if (snap.state.rip) document.body.classList.add('is-rip')
 
-  // Fallback for the (rare) case where no position broadcast arrived between
-  // listener registration and now — drop the sprite at the bottom-center of
-  // the visible workspace so the egg is at least visible. The next mover
-  // tick will overwrite this within 16 ms.
-  if (petX === -9999 && petY === -9999) {
-    petX = Math.round(window.innerWidth / 2)
-    petY = Math.max(0, window.innerHeight - 60)
-    applyPosition()
-  }
+  // Force apply now — the JS defaults are already visible coordinates; this
+  // makes sure the sprite is positioned and sized before any potential paint
+  // suppression by the Windows compositor.
+  applyPosition()
+
+  // If the main process never broadcasts a position (very unlikely but the
+  // Windows transparent-window stack has been known to lose early IPC),
+  // schedule a one-off forced re-application after the first paint. Without
+  // this, the sprite would silently sit at its JS default and the user would
+  // see nothing if the load event also failed.
+  requestAnimationFrame(() => {
+    if (!firstPositionReceived) {
+      applyPosition()
+    }
+  })
 
   // Sync language: load from config once and follow further changes.
   try {

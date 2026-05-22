@@ -1,0 +1,21 @@
+#!/bin/bash
+# Runs after the .pkg installer copies DigiModoro.app into /Applications.
+# Strips the com.apple.quarantine extended attribute so the unsigned app
+# launches without the "DigiModoro is damaged and can't be opened"
+# Gatekeeper error. The pkg installer runs this with sufficient privileges
+# regardless of whether the user installs to /Applications or ~/Applications.
+set -e
+
+# $2 holds the install location chosen by the user (e.g. /Applications).
+TARGET_APP="$2/DigiModoro.app"
+
+if [ -d "$TARGET_APP" ]; then
+  /usr/bin/xattr -cr "$TARGET_APP" || true
+fi
+
+# Also try the standard /Applications fallback in case $2 wasn't supplied.
+if [ -d "/Applications/DigiModoro.app" ]; then
+  /usr/bin/xattr -cr "/Applications/DigiModoro.app" || true
+fi
+
+exit 0

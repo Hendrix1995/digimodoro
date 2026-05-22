@@ -16,6 +16,13 @@ files:
   - package.json
   - "!**/*.map"
 
+# Ship only Korean + English locale packs. Default Electron bundle includes
+# ~50 .pak files for every Chromium-supported language, most of which we
+# never use. Trimming them shaves ~8 MB off the packaged app.
+electronLanguages:
+  - en-US
+  - ko
+
 extraResources:
   - from: ../data/evolution.json
     to: data/evolution.json
@@ -43,6 +50,9 @@ mac:
 
 dmg:
   writeUpdateInfo: false
+  # ULFO = LZFSE — Apple's modern compressor. Better ratio than the default
+  # bzip2 format, with native macOS 10.11+ support (we already require 10.12+).
+  format: ULFO
 
 win:
   target:

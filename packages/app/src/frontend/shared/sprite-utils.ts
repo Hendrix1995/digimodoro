@@ -20,6 +20,7 @@ export const SPRITE_DEFAULT_FACING: Record<string, 'left' | 'right'> = {
   metalgarurumon: 'right',
   metalgreymon: 'right',
   numemon: 'right',
+  puttimon: 'right',
 }
 
 // Loads a sprite via Rust (reads file → returns data:image/...;base64,... URL)

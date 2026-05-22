@@ -270,8 +270,7 @@ async function boot(): Promise<void> {
       void refreshSprite(snap.state.digimonId, snap.state.seedEggVariant)
       document.body.classList.toggle('is-rip', Boolean(snap.state.rip))
 
-      const isActive = snap.phase.kind === 'focus' || snap.phase.kind === 'break' || snap.phase.kind === 'done'
-      mover.setActive(isActive)
+      mover.setActive(snap.phase.kind === 'focus')
 
       if (snap.state.stage === 'egg' || snap.state.rip || snap.phase.kind === 'paused') {
         mover.pause(true)

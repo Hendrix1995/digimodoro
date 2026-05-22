@@ -19,8 +19,10 @@ Pre-built installers for the latest release:
 
 All builds available on the **[Releases page](https://github.com/Hendrix1995/digimodoro/releases/latest)**.
 
-> macOS builds are ad-hoc unsigned. First launch: **right-click the app → Open → Open** (Gatekeeper bypass for unsigned apps).
-> Windows builds are unsigned. SmartScreen may show a warning — click **More info → Run anyway**.
+> macOS and Windows code signing are not set up yet. Until they are, unsigned builds may produce these warnings:
+>
+> - **macOS**: *"DigiModoro is damaged and can't be opened"* — that is Gatekeeper blocking unsigned apps. Temporary workaround: move the app to `/Applications`, then run `xattr -cr /Applications/DigiModoro.app` once in Terminal.
+> - **Windows**: SmartScreen warning → **More info → Run anyway**.
 
 ---
 
@@ -220,6 +222,4 @@ If you are a rights holder and have concerns about any asset referenced here, pl
 
 ## License
 
-**Proprietary / Commercial.** See [LICENSE](./LICENSE).
-
-Source code in this repository may be inspected, but redistribution, modification, or commercial use requires a separate written agreement with the copyright holder.
+Code: **[MIT](./LICENSE)**.

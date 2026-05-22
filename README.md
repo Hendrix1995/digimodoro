@@ -19,8 +19,10 @@ English version: [README.en.md](README.en.md)
 
 전체 빌드는 **[Releases 페이지](https://github.com/Hendrix1995/digimodoro/releases/latest)**에서 확인.
 
-> macOS 빌드는 ad-hoc 미서명입니다. 첫 실행 시: 앱을 **우클릭 → 열기 → 열기** (미서명 앱 Gatekeeper 우회).
-> Windows 빌드는 미서명입니다. SmartScreen 경고가 뜨면 **추가 정보 → 실행** 클릭.
+> 현재 macOS / Windows 코드 서명은 아직 셋업 전입니다. 미서명 빌드라 다음 경고가 뜰 수 있습니다 — 서명 도입 후 사라집니다.
+>
+> - **macOS**: *"DigiModoro은(는) 손상되었기 때문에 열 수 없습니다"* — Gatekeeper의 미서명 차단입니다. 일시 우회: `/Applications`로 옮긴 뒤 터미널에서 `xattr -cr /Applications/DigiModoro.app` 1회 실행.
+> - **Windows**: SmartScreen 경고 → **추가 정보 → 실행**.
 
 ---
 
@@ -220,6 +222,4 @@ time-slot · 뽀모도로 · xp · 진화 · streak-miss · reducer 영역 **59�
 
 ## 라이선스
 
-**상업용 / 독점.** [LICENSE](./LICENSE) 참조.
-
-이 리포의 소스 코드는 열람 가능하지만, 재배포·수정·상업적 이용은 저작권자와의 별도 서면 동의가 필요합니다.
+코드: **[MIT](./LICENSE)**.

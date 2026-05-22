@@ -24,6 +24,12 @@
     "notification:default",
     "notification:allow-notify",
     "notification:allow-is-permission-granted",
-    "notification:allow-request-permission"
+    "notification:allow-request-permission",
+    {
+      "identifier": "core:resources:default",
+      "allow": [
+        { "path": "$RESOURCE/**" }
+      ]
+    }
   ]
 }

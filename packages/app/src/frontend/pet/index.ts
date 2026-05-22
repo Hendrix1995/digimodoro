@@ -231,11 +231,13 @@ async function boot(): Promise<void> {
       // Update mover active state
       mover.setActive(snap.phase.kind === 'focus')
 
-      // Pause mover for eggs
-      if (snap.state.stage === 'egg') {
+      // Mover pause logic
+      if (snap.state.stage === 'egg' || snap.state.rip) {
         mover.pause(true)
-      } else if (snap.phase.kind !== 'paused' && !snap.state.rip) {
-        // Only unpause if not explicitly paused by user
+      } else if (snap.phase.kind === 'paused') {
+        mover.pause(true)
+      } else {
+        mover.pause(false)
       }
 
       // Broadcast to control window
@@ -303,4 +305,4 @@ function formatTrayTitle(snap: Snapshot): string {
   return ` ${mm}:${ss}${paused}`
 }
 
-void boot()
+boot().catch((e) => console.error('[pet] boot failed:', e))

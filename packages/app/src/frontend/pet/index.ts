@@ -171,6 +171,9 @@ async function registerActionListener(): Promise<void> {
 // ── Boot ────────────────────────────────────────────────────────────────
 
 async function boot(): Promise<void> {
+  // Debug: write resource paths and file existence to debug.log
+  await invoke('debug_boot').catch(() => {})
+
   // Load bundled data
   const rules = await invoke<EvolutionRule[]>('load_evolution_rules')
   const lineage = await invoke<Record<string, string>>('load_egg_lineage')

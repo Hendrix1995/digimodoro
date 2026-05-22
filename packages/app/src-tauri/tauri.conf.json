@@ -37,12 +37,12 @@
       "icons/icon.ico",
       "icons/icon.png"
     ],
-    "resources": {
-      "../../data/evolution.json": "data/evolution.json",
-      "../../data/roster.json": "data/roster.json",
-      "../../data/egg-lineage.json": "data/egg-lineage.json",
-      "../../data/sprites/**/*": "sprites/"
-    },
+    "resources": [
+      "../../data/evolution.json",
+      "../../data/roster.json",
+      "../../data/egg-lineage.json",
+      "../../data/sprites/"
+    ],
     "windows": {
       "webviewInstallMode": {
         "type": "embedBootstrapper"

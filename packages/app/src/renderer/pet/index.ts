@@ -122,13 +122,13 @@ sprite.addEventListener('mousedown', (e) => {
   window.addEventListener('blur', onUp, true)
 })
 
-async function boot(): Promise<void> {
-  spriteBase = await api.getSpriteBase()
-  const snap = await api.getSnapshot()
-  refreshSprite(snap.state.digimonId, snap.state.seedEggVariant)
-  if (snap.phase.kind === 'focus') document.body.classList.add('is-focus')
-  if (snap.state.rip) document.body.classList.add('is-rip')
-
+// Register IPC listeners synchronously BEFORE awaiting anything so a fast
+// main-process broadcast (initial position, snapshot push) doesn't get
+// dropped while we're still awaiting handshake replies. This was the
+// recurring Windows symptom: the egg stayed at the off-screen sentinel
+// position because the very first onPetPos broadcasts fired before the
+// renderer registered its handler.
+function registerListeners(): void {
   api.onSnapshot((s) => {
     refreshSprite(s.state.digimonId, s.state.seedEggVariant)
     document.body.classList.toggle('is-focus', s.phase.kind === 'focus')
@@ -151,6 +151,29 @@ async function boot(): Promise<void> {
   api.onEvolve(({ from, to }) => showBubble(`${from} → ${to}`, 3500))
   api.onBreakEnd(() => showBubble(t('bubbleBreakOver', lang), 2500))
   api.onRip(() => showBubble(t('bubbleRip', lang), 4000))
+  api.onLang((l) => {
+    lang = l
+  })
+}
+
+async function boot(): Promise<void> {
+  registerListeners()
+
+  spriteBase = await api.getSpriteBase()
+  const snap = await api.getSnapshot()
+  refreshSprite(snap.state.digimonId, snap.state.seedEggVariant)
+  if (snap.phase.kind === 'focus') document.body.classList.add('is-focus')
+  if (snap.state.rip) document.body.classList.add('is-rip')
+
+  // Fallback for the (rare) case where no position broadcast arrived between
+  // listener registration and now — drop the sprite at the bottom-center of
+  // the visible workspace so the egg is at least visible. The next mover
+  // tick will overwrite this within 16 ms.
+  if (petX === -9999 && petY === -9999) {
+    petX = Math.round(window.innerWidth / 2)
+    petY = Math.max(0, window.innerHeight - 60)
+    applyPosition()
+  }
 
   // Sync language: load from config once and follow further changes.
   try {
@@ -159,9 +182,6 @@ async function boot(): Promise<void> {
   } catch {
     // ignore — fallback to default 'ko'
   }
-  api.onLang((l) => {
-    lang = l
-  })
 }
 
 void boot()

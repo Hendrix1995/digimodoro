@@ -35,7 +35,12 @@ export function createPetWindow(): BrowserWindow {
     maximizable: false,
     fullscreenable: false,
     hasShadow: false,
-    backgroundColor: '#00000000',
+    // Use alpha=1/255 instead of full zero. Windows DWM occasionally
+    // refuses to paint a layered transparent window whose backdrop alpha
+    // is exactly 0, which left the pet sprite invisible on Windows users'
+    // first launch. Alpha 1 is visually indistinguishable but keeps DWM
+    // happy. macOS treats both the same.
+    backgroundColor: '#01000000',
     show: true,
     focusable: true,
     roundedCorners: false,
@@ -53,11 +58,11 @@ export function createPetWindow(): BrowserWindow {
 
   win.setAlwaysOnTop(true, 'floating')
   win.setVisibleOnAllWorkspaces(true, { visibleOnFullScreen: true })
-  win.setBackgroundColor('#00000000')
+  win.setBackgroundColor('#01000000')
 
   win.loadFile(path.join(__dirname, '../renderer/pet/index.html'))
   win.webContents.on('did-finish-load', () => {
-    win.setBackgroundColor('#00000000')
+    win.setBackgroundColor('#01000000')
     win.show()
     win.moveTop()
     console.log('[pet] loaded; bounds=', win.getBounds())

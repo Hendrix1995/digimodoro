@@ -19,7 +19,7 @@ pub fn run() {
             commands::append_session,
             commands::load_evolution_rules,
             commands::load_egg_lineage,
-            commands::get_sprite_base_url,
+            commands::get_sprite_base_path,
             commands::show_control_window,
             commands::move_pet_window,
             commands::resize_pet_window,

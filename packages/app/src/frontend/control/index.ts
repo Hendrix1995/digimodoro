@@ -518,7 +518,7 @@ for (const [el, key] of [
 // --- Boot ---
 
 async function boot(): Promise<void> {
-  spriteBase = await invoke<string>('get_sprite_base_url')
+  spriteBase = await invoke<string>('get_sprite_base_path')
   try {
     cfg = await invoke<AppConfig>('load_config')
   } catch {

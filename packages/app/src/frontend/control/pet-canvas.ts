@@ -1,3 +1,5 @@
+import { convertFileSrc } from '@tauri-apps/api/core'
+
 type Vec = { x: number; y: number }
 
 export type PetCanvasOptions = {
@@ -128,10 +130,13 @@ export class PetCanvas {
   }
 
   private spriteUrl(): string {
+    let path: string
     if (this.digimonId === 'egg') {
       const v = this.eggVariant ?? 1
-      return this.spriteBase + 'egg/v' + String(v).padStart(2, '0') + '.png'
+      path = this.spriteBase + 'egg/v' + String(v).padStart(2, '0') + '.png'
+    } else {
+      path = this.spriteBase + this.digimonId + '/idle.gif'
     }
-    return this.spriteBase + this.digimonId + '/idle.gif'
+    return convertFileSrc(path)
   }
 }

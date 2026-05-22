@@ -51,16 +51,15 @@ pub fn load_egg_lineage(app: AppHandle) -> Result<serde_json::Value, String> {
 // --- Sprite path ---
 
 #[tauri::command]
-pub fn get_sprite_base_url(app: AppHandle) -> Result<String, String> {
+pub fn get_sprite_base_path(app: AppHandle) -> Result<String, String> {
     let sprites_dir = store::get_sprites_dir(&app)?;
-    let url = tauri::Url::from_file_path(&sprites_dir)
-        .map_err(|_| "failed to create URL from path".to_string())?;
-    // Return the directory URL with trailing slash for easy concatenation
-    let mut url_str = url.to_string();
-    if !url_str.ends_with('/') {
-        url_str.push('/');
+    let mut path_str = sprites_dir.to_string_lossy().to_string();
+    // Normalize to forward slashes for URL conversion
+    path_str = path_str.replace('\\', "/");
+    if !path_str.ends_with('/') {
+        path_str.push('/');
     }
-    Ok(url_str)
+    Ok(path_str)
 }
 
 // --- Window management ---

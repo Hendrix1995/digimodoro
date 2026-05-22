@@ -1,4 +1,4 @@
-import { invoke } from '@tauri-apps/api/core'
+import { invoke, convertFileSrc } from '@tauri-apps/api/core'
 import { emit, listen } from '@tauri-apps/api/event'
 import {
   isPermissionGranted,
@@ -171,7 +171,7 @@ async function registerActionListener(): Promise<void> {
 
 async function boot(): Promise<void> {
   // Load sprite base URL
-  spriteBase = await invoke<string>('get_sprite_base_url')
+  spriteBase = await invoke<string>('get_sprite_base_path')
 
   // Load bundled data
   const rules = await invoke<EvolutionRule[]>('load_evolution_rules')

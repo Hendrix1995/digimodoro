@@ -1,6 +1,6 @@
 # DigiModoro
 
-> Digimon-themed virtual pet powered by Pomodoro sessions. Windows + macOS desktop app.
+> Digimon-themed virtual pet powered by Pomodoro sessions. Windows desktop app.
 
 한국어: [README.md](README.md)
 
@@ -10,11 +10,8 @@
 
 | OS | |
 |---|---|
-| macOS (Apple Silicon) | [DigiModoro-mac-arm64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-arm64.dmg) |
-| macOS (Intel) | [DigiModoro-mac-x64.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-mac-x64.dmg) |
-| Windows | [DigiModoro-win-x64.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro-win-x64.exe) |
+| Windows | [DigiModoro_0.3.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.0_x64-setup.exe) |
 
-**macOS**: open the `.dmg` → drag DigiModoro into `Applications` → launch from Launchpad. If a warning appears on first run, right-click → **Open**.
 **Windows**: double-click the `.exe` → if a warning appears, **More info → Run anyway**.
 
 ---
@@ -29,6 +26,16 @@
 
 It takes ~47 forks (about 39 hours of focused work) to reach the final stage.
 
+## Box (v0.3.0+)
+
+Park your favorite digimon in the box and pull them out later. A pet in the box **does not grow and cannot die** — when you take it out it resumes exactly where it left off.
+
+- Box capacity: **5 slots**
+- **Save**: click an empty slot in the control panel → the active pet is parked, a new egg starts. The "Open box" shortcut button appears on the evolution bubble.
+- **Take out**: click a saved pet → "Take out" → the active pet auto-moves into the empty slot.
+- **Delete**: permanently removes a pet from the box.
+- **Blocked when**: the active pet is an egg / has R.I.P. / a Pomodoro is in progress / the box is full.
+
 ---
 
 ## Credits
@@ -42,9 +49,9 @@ It takes ~47 forks (about 39 hours of focused work) to reach the final stage.
 
 ### Tools
 
-- [Electron](https://www.electronjs.org/) — desktop runtime
+- [Tauri v2](https://v2.tauri.app/) — desktop runtime
+- [Vite](https://vitejs.dev/) — frontend build
 - [ImageMagick](https://imagemagick.org/) — sprite processing
-- [esbuild](https://esbuild.github.io/) — main / preload / renderer bundling
 - [Vitest](https://vitest.dev/) — tests
 - [pnpm](https://pnpm.io/) — workspace package manager
 

@@ -10,7 +10,7 @@ English: [README.en.md](README.en.md)
 
 | 운영체제 | |
 |---|---|
-| Windows | [DigiModoro_0.2.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.2.1_x64-setup.exe) |
+| Windows | [DigiModoro_0.3.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.0_x64-setup.exe) |
 
 **Windows**: `.exe` 더블클릭 → 경고가 뜨면 **추가 정보 → 실행**.
 
@@ -25,6 +25,16 @@ English: [README.en.md](README.en.md)
 - 트레이 아이콘 클릭으로 상태창 열기.
 
 총 47번의 포크(약 39시간 집중)로 최종 단계 도달.
+
+## 박스 (v0.3.0~)
+
+마음에 드는 디지몬을 박스에 보관해두고 나중에 꺼낼 수 있습니다. 박스에 들어간 디지몬은 **성장도 죽음도 멈춥니다** — 꺼내면 보관 직전 상태 그대로 이어집니다.
+
+- 박스 슬롯: 최대 **5개**
+- **보관**: 컨트롤 패널의 박스 빈 칸 클릭 → 현재 펫을 보관, 새 알이 시작됩니다. 진화 알림 버블의 "박스 열기" 버튼이 단축키.
+- **꺼내기**: 박스에 보관된 펫을 클릭 → "꺼내기" → 활성 펫이 자동으로 박스의 빈 칸으로 이동.
+- **삭제**: 박스에서 영구 제거.
+- **차단 조건**: 알 단계 / R.I.P. / 포모도로 진행 중 / 박스 가득 — 위 4가지 상황에서는 보관·꺼내기 불가.
 
 ---
 

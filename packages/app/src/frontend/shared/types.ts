@@ -80,3 +80,13 @@ export const DEFAULT_CONFIG: AppConfig = {
   pomodoro: { focusMinutes: 50, breakMinutes: 10 },
   notifications: { onForkComplete: true, onEvolve: true, onBreakEnd: true },
 }
+
+// --- Box (favorite-pet storage) ---
+
+export type PetState = Snapshot['state']
+
+export type BoxSlot = { frozenAt: number; pet: PetState } | null
+
+export type BoxData = { slots: BoxSlot[] }
+
+export const BOX_CAPACITY = 5

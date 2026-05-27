@@ -49,7 +49,26 @@ html, body {
   white-space: nowrap;
   pointer-events: none;
   animation: pop 0.18s ease-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
+
+#bubble.has-action {
+  pointer-events: auto;
+}
+
+#bubble .bubble-btn {
+  background: #2c3445;
+  color: #cfd6e6;
+  border: 0;
+  border-radius: 4px;
+  font-size: 10px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+#bubble .bubble-btn:hover { background: #3a4459; }
 
 #bubble.hidden {
   display: none;

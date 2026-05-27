@@ -1,8 +1,8 @@
 import { invoke } from '@tauri-apps/api/core'
 import { emit, listen } from '@tauri-apps/api/event'
 import { t, type Lang } from '@digimodoro/core'
-import type { Snapshot, AppConfig, GraveyardEntry } from '../shared/types'
-import { DEFAULT_CONFIG } from '../shared/types'
+import type { Snapshot, AppConfig, GraveyardEntry, BoxData, BoxSlot, PetState } from '../shared/types'
+import { DEFAULT_CONFIG, BOX_CAPACITY } from '../shared/types'
 import { SPRITE_DEFAULT_FACING, loadSprite } from '../shared/sprite-utils'
 import { PetCanvas } from './pet-canvas'
 
@@ -63,6 +63,9 @@ const els = {
   evoList: $('evo-list'),
   graveyardTitle: $('graveyard-title'),
   graveList: $('grave-list'),
+  boxTitle: $('box-title'),
+  boxList: $<HTMLUListElement>('box-list'),
+  boxNote: $('box-note'),
   btnReset: $<HTMLButtonElement>('btn-reset'),
 }
 
@@ -72,6 +75,7 @@ let lang: Lang = 'ko'
 let pet: PetCanvas | undefined
 let lastPetId: string | undefined
 let graveyard: GraveyardEntry[] = []
+let boxData: BoxData = { slots: Array.from({ length: BOX_CAPACITY }, () => null) }
 
 function fmtTime(sec: number): string {
   const s = Math.max(0, Math.floor(sec))
@@ -223,6 +227,185 @@ async function refreshGraveyard(): Promise<void> {
   renderGraveyard()
 }
 
+// --- Box ---
+
+type BoxBlockReason = 'egg' | 'rip' | 'busy' | 'full' | null
+
+function boxBlockReason(): BoxBlockReason {
+  if (!snap) return 'egg'
+  if (snap.state.stage === 'egg' || snap.state.digimonId === 'egg') return 'egg'
+  if (snap.state.rip) return 'rip'
+  const k = snap.phase.kind
+  if (k === 'focus' || k === 'break' || k === 'paused') return 'busy'
+  const emptyExists = boxData.slots.some((s) => s == null)
+  if (!emptyExists) return 'full'
+  return null
+}
+
+function boxBlockMessage(reason: BoxBlockReason): string {
+  switch (reason) {
+    case 'egg': return t('boxBlockedEgg', lang)
+    case 'rip': return t('boxBlockedRip', lang)
+    case 'busy': return t('boxBlockedBusy', lang)
+    case 'full': return t('boxBlockedFull', lang)
+    default: return ''
+  }
+}
+
+function makeBoxThumb(digimonId: string, eggVariant?: number): HTMLImageElement {
+  const img = document.createElement('img')
+  img.className = 'box-thumb'
+  img.alt = ''
+  void loadThumb(img, digimonId, eggVariant)
+  return img
+}
+
+function renderBox(): void {
+  const list = els.boxList
+  list.innerHTML = ''
+  const block = boxBlockReason()
+  els.boxNote.textContent = block ? boxBlockMessage(block) : ''
+
+  boxData.slots.forEach((slot, idx) => {
+    const li = document.createElement('li')
+    li.className = 'box-slot'
+    if (slot == null) {
+      li.classList.add('empty')
+      // Empty slot: block-aware click → save current
+      const blocked = block !== null // 'full' won't apply to empty slots anyway since there IS empty
+      if (blocked && block !== 'full') li.classList.add('disabled')
+      const label = document.createElement('span')
+      label.textContent = t('boxEmptySlot', lang)
+      li.appendChild(label)
+      li.addEventListener('click', () => {
+        const r = boxBlockReason()
+        // For empty-slot save, 'full' never blocks (we ARE the empty slot)
+        if (r && r !== 'full') {
+          els.boxNote.textContent = boxBlockMessage(r)
+          return
+        }
+        void onSaveCurrentToSlot(idx)
+      })
+    } else {
+      // Filled slot: thumbnail + name; click toggles action menu
+      const variant = slot.pet.seedEggVariant
+      li.appendChild(makeBoxThumb(slot.pet.digimonId, variant))
+      const name = document.createElement('div')
+      name.className = 'box-name'
+      name.textContent = slot.pet.digimonId
+      li.appendChild(name)
+
+      const actions = document.createElement('div')
+      actions.className = 'box-actions'
+      const btnOut = document.createElement('button')
+      btnOut.textContent = t('boxTakeOut', lang)
+      const takeOutBlocked = block !== null // any block reason prevents takeout
+      if (takeOutBlocked) btnOut.disabled = true
+      btnOut.addEventListener('click', (e) => {
+        e.stopPropagation()
+        li.classList.remove('menu-open')
+        const r = boxBlockReason()
+        if (r) {
+          els.boxNote.textContent = boxBlockMessage(r)
+          return
+        }
+        void onTakeOutSlot(idx)
+      })
+      const btnDel = document.createElement('button')
+      btnDel.className = 'danger'
+      btnDel.textContent = t('boxDelete', lang)
+      btnDel.addEventListener('click', (e) => {
+        e.stopPropagation()
+        li.classList.remove('menu-open')
+        void onDeleteSlot(idx)
+      })
+      actions.appendChild(btnOut)
+      actions.appendChild(btnDel)
+      li.appendChild(actions)
+
+      li.addEventListener('click', () => {
+        // Close other open menus, toggle this one
+        list.querySelectorAll('.box-slot.menu-open').forEach((el) => {
+          if (el !== li) el.classList.remove('menu-open')
+        })
+        li.classList.toggle('menu-open')
+      })
+    }
+    list.appendChild(li)
+  })
+}
+
+async function refreshBox(): Promise<void> {
+  try {
+    const data = await invoke<BoxData>('load_box')
+    // Pad/truncate defensively
+    const slots: BoxSlot[] = []
+    for (let i = 0; i < BOX_CAPACITY; i++) slots.push(data.slots?.[i] ?? null)
+    boxData = { slots }
+  } catch {
+    boxData = { slots: Array.from({ length: BOX_CAPACITY }, () => null) }
+  }
+  renderBox()
+}
+
+async function buildFreshEgg(): Promise<PetState> {
+  const { initialState } = await import('@digimodoro/core')
+  return initialState({
+    now: Math.floor(Date.now() / 1000),
+    petId: `pet_${Math.random().toString(36).slice(2, 10)}${Date.now().toString(36).slice(-4)}`,
+    seedEggVariant: 1 + Math.floor(Math.random() * 11),
+    personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[
+      Math.floor(Math.random() * 5)
+    ]!,
+  }) as PetState
+}
+
+async function onSaveCurrentToSlot(slotIdx: number): Promise<void> {
+  if (!snap) return
+  if (!(await showConfirm(t('boxConfirmSave', lang)))) return
+  const fresh = await buildFreshEgg()
+  try {
+    const newActive = await invoke<PetState>('save_current_to_box', {
+      slotIdx,
+      current: snap.state,
+      newEgg: fresh,
+    })
+    await refreshBox()
+    void emit('digi:box-swap', { newActive })
+  } catch (err) {
+    console.error('[box] save failed', err)
+    els.boxNote.textContent = String(err)
+  }
+}
+
+async function onTakeOutSlot(slotIdx: number): Promise<void> {
+  if (!snap) return
+  if (!(await showConfirm(t('boxConfirmTakeOut', lang)))) return
+  try {
+    const newActive = await invoke<PetState>('take_out_of_box', {
+      targetSlotIdx: slotIdx,
+      current: snap.state,
+    })
+    await refreshBox()
+    void emit('digi:box-swap', { newActive })
+  } catch (err) {
+    console.error('[box] take-out failed', err)
+    els.boxNote.textContent = String(err)
+  }
+}
+
+async function onDeleteSlot(slotIdx: number): Promise<void> {
+  if (!(await showConfirm(t('boxConfirmDelete', lang)))) return
+  try {
+    await invoke('delete_box_slot', { slotIdx })
+    await refreshBox()
+  } catch (err) {
+    console.error('[box] delete failed', err)
+    els.boxNote.textContent = String(err)
+  }
+}
+
+
 function applyLangTexts(): void {
   els.brand.textContent = t('appName', lang)
   els.statsTitle.textContent = t('statsTitle', lang)
@@ -245,9 +428,11 @@ function applyLangTexts(): void {
   els.lblTogBreak.textContent = t('notifyBreakEnd', lang)
   els.historyTitle.textContent = t('evoHistory', lang)
   els.graveyardTitle.textContent = t('graveyardTitle', lang)
+  els.boxTitle.textContent = t('boxTitle', lang)
   els.btnReset.textContent = t('reset', lang)
   if (snap) applyTimerLabels()
   renderGraveyard()
+  renderBox()
 }
 
 function applyTimerLabels(): void {
@@ -384,6 +569,10 @@ function applySnapshot(s: Snapshot): void {
   }
 
   document.body.classList.toggle('is-rip', Boolean(s.state.rip))
+
+  // Box availability depends on snap (egg/rip/busy/full check). Re-render so
+  // disabled/enabled state of slots tracks the current pet+phase.
+  renderBox()
 }
 
 function currentSlotLabel(nowSec: number): string {
@@ -470,7 +659,7 @@ async function doReset(): Promise<void> {
     seedEggVariant: 1 + Math.floor(Math.random() * 11),
     personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[
       Math.floor(Math.random() * 5)
-    ],
+    ]!,
   })
   await invoke('reset_pet', { newState: fresh })
   void emit('digi:reset-pet', { fresh })
@@ -579,6 +768,14 @@ async function boot(): Promise<void> {
   })
 
   await refreshGraveyard()
+  await refreshBox()
+
+  // Pet window emits this when a quick "박스에 보관" button is clicked on the
+  // evolution bubble — scroll the box section into view so the user sees it.
+  await listen('digi:focus-box', () => {
+    const section = document.getElementById('box-section')
+    section?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  })
 
   console.log('[control] booted')
 }

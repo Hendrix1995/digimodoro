@@ -61,7 +61,7 @@ export class Scheduler {
       phase: this.phase,
       remainingSec: remainingSec(this.phase, nowSec()),
       nowSec: nowSec(),
-      nextStageForksRequired: rule?.forksRequired,
+      ...(rule?.forksRequired != null ? { nextStageForksRequired: rule.forksRequired } : {}),
       daysUntilRip,
     }
   }

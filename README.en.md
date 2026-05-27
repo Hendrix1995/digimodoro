@@ -10,8 +10,8 @@
 
 | OS | |
 |---|---|
-| Windows | [DigiModoro_0.4.2_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.2_x64-setup.exe) |
-| macOS 15+ (Intel · Apple Silicon universal) | [DigiModoro_0.4.2_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.2_universal.dmg) |
+| Windows | [DigiModoro_0.4.3_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.3_x64-setup.exe) |
+| macOS 15+ (Intel · Apple Silicon universal) | [DigiModoro_0.4.3_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.3_universal.dmg) |
 
 ### Windows
 

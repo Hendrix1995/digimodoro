@@ -1,5 +1,6 @@
 use crate::store;
 use tauri::menu::{ContextMenu, Menu, MenuItem, PredefinedMenuItem};
+use tauri::webview::Webview;
 use tauri::{AppHandle, Manager, WebviewUrl, WebviewWindowBuilder};
 
 #[derive(serde::Deserialize)]
@@ -148,8 +149,8 @@ pub fn resize_pet_window(app: AppHandle, width: f64, height: f64) -> Result<(), 
 
 #[tauri::command]
 pub fn show_pet_menu(app: AppHandle, items: Vec<PetMenuSpec>) -> Result<(), String> {
-    let window = app
-        .get_window("pet")
+    let webview_window = app
+        .get_webview_window("pet")
         .ok_or_else(|| "pet window not found".to_string())?;
     let menu = Menu::new(&app).map_err(|e| e.to_string())?;
     for spec in items {
@@ -168,7 +169,8 @@ pub fn show_pet_menu(app: AppHandle, items: Vec<PetMenuSpec>) -> Result<(), Stri
             menu.append(&item).map_err(|e| e.to_string())?;
         }
     }
-    menu.popup(window).map_err(|e| e.to_string())?;
+    let webview: &Webview<_> = webview_window.as_ref();
+    menu.popup(webview.window()).map_err(|e| e.to_string())?;
     Ok(())
 }
 

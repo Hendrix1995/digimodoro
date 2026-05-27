@@ -6,6 +6,7 @@ export const SPRITE_DEFAULT_FACING: Record<string, 'left' | 'right'> = {
   damemon: 'right',
   darkdramon: 'right',
   darktyranomon: 'right',
+  dondokomon: 'right',
   gaogamon: 'right',
   dracumon: 'right',
   ebidramon: 'right',

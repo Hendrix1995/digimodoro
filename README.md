@@ -10,7 +10,7 @@ English: [README.en.md](README.en.md)
 
 | 운영체제 | |
 |---|---|
-| Windows | [DigiModoro_0.3.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.0_x64-setup.exe) |
+| Windows | [DigiModoro_0.3.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.1_x64-setup.exe) |
 
 **Windows**: `.exe` 더블클릭 → 경고가 뜨면 **추가 정보 → 실행**.
 

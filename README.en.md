@@ -10,7 +10,7 @@
 
 | OS | |
 |---|---|
-| Windows | [DigiModoro_0.3.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.0_x64-setup.exe) |
+| Windows | [DigiModoro_0.3.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.1_x64-setup.exe) |
 
 **Windows**: double-click the `.exe` → if a warning appears, **More info → Run anyway**.
 

@@ -10,9 +10,12 @@ English: [README.en.md](README.en.md)
 
 | 운영체제 | |
 |---|---|
-| Windows | [DigiModoro_0.3.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.1_x64-setup.exe) |
+| Windows | [DigiModoro_0.4.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.0_x64-setup.exe) |
+| macOS (Intel · Apple Silicon 공용) | [DigiModoro_0.4.0_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.0_universal.dmg) |
 
 **Windows**: `.exe` 더블클릭 → 경고가 뜨면 **추가 정보 → 실행**.
+
+**macOS**: `.dmg` 더블클릭 → `DigiModoro.app`을 **Applications** 폴더로 드래그. 처음 실행할 때 "확인되지 않은 개발자" 경고가 뜨면 **Applications에서 앱을 우클릭 → 열기 → 다시 한 번 열기**. (한 번만 거치면 다음부터는 평소처럼 실행됩니다.)
 
 ---
 

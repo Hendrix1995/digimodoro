@@ -37,6 +37,8 @@ export class PetMover {
   private readonly ACCEL = 0.18
   private active = true
   private lookbackTicksLeft = 0
+  private lastEmittedX = Number.NaN
+  private lastEmittedY = Number.NaN
 
   constructor(
     work: { width: number; height: number },
@@ -254,7 +256,11 @@ export class PetMover {
   private emitPosition(): void {
     const winX = Math.round(this.x - this.petW / 2)
     const winY = Math.round(this.y - this.petH)
-    void invoke('move_pet_window', { x: winX, y: winY })
+    if (winX !== this.lastEmittedX || winY !== this.lastEmittedY) {
+      this.lastEmittedX = winX
+      this.lastEmittedY = winY
+      void invoke('move_pet_window', { x: winX, y: winY })
+    }
     this.onPosition?.({ x: this.x, y: this.y })
   }
 }

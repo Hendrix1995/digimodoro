@@ -10,8 +10,8 @@
 
 | OS | |
 |---|---|
-| Windows | [DigiModoro_0.4.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.0_x64-setup.exe) |
-| macOS (Intel · Apple Silicon universal) | [DigiModoro_0.4.0_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.0_universal.dmg) |
+| Windows | [DigiModoro_0.4.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.1_x64-setup.exe) |
+| macOS (Intel · Apple Silicon universal) | [DigiModoro_0.4.1_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.1_universal.dmg) |
 
 **Windows**: double-click the `.exe` → if a warning appears, **More info → Run anyway**.
 

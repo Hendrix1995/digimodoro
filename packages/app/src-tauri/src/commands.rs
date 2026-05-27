@@ -124,11 +124,8 @@ pub fn show_control_window(app: AppHandle) -> Result<(), String> {
 #[tauri::command]
 pub fn move_pet_window(app: AppHandle, x: f64, y: f64) -> Result<(), String> {
     if let Some(win) = app.get_webview_window("pet") {
-        win.set_position(tauri::Position::Physical(tauri::PhysicalPosition {
-            x: x as i32,
-            y: y as i32,
-        }))
-        .map_err(|e| e.to_string())?;
+        win.set_position(tauri::Position::Logical(tauri::LogicalPosition { x, y }))
+            .map_err(|e| e.to_string())?;
     }
     Ok(())
 }
@@ -136,11 +133,8 @@ pub fn move_pet_window(app: AppHandle, x: f64, y: f64) -> Result<(), String> {
 #[tauri::command]
 pub fn resize_pet_window(app: AppHandle, width: f64, height: f64) -> Result<(), String> {
     if let Some(win) = app.get_webview_window("pet") {
-        win.set_size(tauri::Size::Physical(tauri::PhysicalSize {
-            width: width as u32,
-            height: height as u32,
-        }))
-        .map_err(|e| e.to_string())?;
+        win.set_size(tauri::Size::Logical(tauri::LogicalSize { width, height }))
+            .map_err(|e| e.to_string())?;
     }
     Ok(())
 }

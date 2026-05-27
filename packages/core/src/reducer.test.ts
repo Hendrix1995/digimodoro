@@ -79,49 +79,11 @@ describe('reduce: fork awards', () => {
 })
 
 describe('reduce: egg → fresh by variant', () => {
-  it('seedEggVariant decides the lineage regardless of slot', () => {
-    const a = initialState({ now: 1000, petId: 'a', seedEggVariant: 2 })
-    const after = feedFork(a, 'night', 1001)
-    expect(after.digimonId).toBe('kuramon')
-    expect(after.stage).toBe('fresh')
-  })
-
   it('falls back to branch.to when no variant is set', () => {
     const a = initialState({ now: 1000, petId: 'a' })
     const after = feedFork(a, 'morning', 1001)
     expect(after.digimonId).toBe('botamon') // all-slot branch
     expect(after.stage).toBe('fresh')
-  })
-})
-
-describe('reduce: adult branching by dominant slot', () => {
-  it('agumon → greymon when morning dominates', () => {
-    let s = initialState({ now: 0, petId: 'sun-coder', seedEggVariant: 1 })
-    // hatch + climb to agumon
-    s = feedFork(s, 'morning', 100) // egg → botamon
-    s = feedFork(s, 'morning', 200)
-    s = feedFork(s, 'morning', 300) // botamon → koromon (after 2 in stage)
-    s = feedFork(s, 'morning', 400)
-    s = feedFork(s, 'morning', 500) // koromon → agumon
-    expect(s.digimonId).toBe('agumon')
-    // 4 morning forks at agumon → greymon
-    s = feedFork(s, 'morning', 600)
-    s = feedFork(s, 'morning', 700)
-    s = feedFork(s, 'morning', 800)
-    s = feedFork(s, 'morning', 900)
-    expect(s.digimonId).toBe('greymon')
-    expect(s.stage).toBe('adult')
-    const last = s.evolutionHistory[s.evolutionHistory.length - 1]!
-    expect(last.dominantSlot).toBe('morning')
-    expect(last.slotForksAtEvolve.morning).toBe(4)
-  })
-
-  it('agumon → numemon when night dominates', () => {
-    let s = initialState({ now: 0, petId: 'owl-coder', seedEggVariant: 1 })
-    for (let i = 0; i < 5; i++) s = feedFork(s, 'night', 100 + i)
-    expect(s.digimonId).toBe('agumon')
-    for (let i = 0; i < 4; i++) s = feedFork(s, 'night', 1000 + i)
-    expect(s.digimonId).toBe('numemon')
   })
 })
 

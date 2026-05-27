@@ -81,11 +81,16 @@ export function pickBranch(
 ): BranchPick {
   const dominant = dominantSlot(slotForks, personality, `${petId}:tie:${evoIndex}`)
 
-  let branch =
-    rule.branches.find((b) => b.slot === dominant) ?? rule.branches[0] ?? {
-      slot: dominant,
-      to: rule.from, // degenerate fallback — caller should ensure branches exist
-    }
+  // A parent may have multiple canonical children sharing the same slot. Filter
+  // to that slot's pool first; if the dominant slot has no branches, fall back
+  // to the full set (degenerate but keeps the pet moving forward).
+  const slotPool = rule.branches.filter((b) => b.slot === dominant)
+  const pool = slotPool.length > 0 ? slotPool : rule.branches
+  const pickIdx = Math.floor(seededRandom(`${petId}:branch:${evoIndex}`) * pool.length)
+  let branch = pool[pickIdx] ?? pool[0] ?? {
+    slot: dominant,
+    to: rule.from, // degenerate fallback — caller should ensure branches exist
+  }
 
   // Lucky roll: 12% chance to swerve to a different `to`. Skip when every
   // branch shares the same `to` (no real alternative to pick).

@@ -10,9 +10,12 @@
 
 | OS | |
 |---|---|
-| Windows | [DigiModoro_0.3.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.3.1_x64-setup.exe) |
+| Windows | [DigiModoro_0.4.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.0_x64-setup.exe) |
+| macOS (Intel · Apple Silicon universal) | [DigiModoro_0.4.0_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.0_universal.dmg) |
 
 **Windows**: double-click the `.exe` → if a warning appears, **More info → Run anyway**.
+
+**macOS**: double-click the `.dmg` → drag `DigiModoro.app` to **Applications**. On first launch, if "unidentified developer" appears, **right-click the app in Applications → Open → Open again**. (Only needed once.)
 
 ---
 

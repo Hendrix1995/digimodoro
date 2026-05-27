@@ -11,7 +11,16 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows-latest
+            args: ''
+          - platform: macos-latest
+            args: '--target universal-apple-darwin'
+
+    runs-on: ${{ matrix.platform }}
 
     steps:
       - uses: actions/checkout@v4
@@ -26,6 +35,10 @@ jobs:
           cache: 'pnpm'
 
       - uses: dtolnay/rust-toolchain@stable
+
+      - name: Add macOS Rust targets
+        if: matrix.platform == 'macos-latest'
+        run: rustup target add aarch64-apple-darwin x86_64-apple-darwin
 
       - name: Rust cache
         uses: swatinem/rust-cache@v2
@@ -47,6 +60,9 @@ jobs:
           tauriScript: pnpm tauri
           tagName: v__VERSION__
           releaseName: DigiModoro v__VERSION__
-          releaseBody: Windows 전용 데스크탑 앱. .exe 파일을 다운로드하여 설치하세요.
+          releaseBody: |
+            Windows: .exe 다운로드 → 더블클릭. SmartScreen 경고가 뜨면 추가 정보 → 실행.
+            macOS: .dmg 다운로드 → Applications로 드래그. 첫 실행 시 우클릭 → 열기 → 다시 열기 (Gatekeeper 우회).
           releaseDraft: false
           prerelease: ${{ contains(github.ref_name, '-alpha') || contains(github.ref_name, '-beta') || contains(github.ref_name, '-rc') }}
+          args: ${{ matrix.args }}

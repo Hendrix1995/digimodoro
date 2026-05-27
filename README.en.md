@@ -17,11 +17,20 @@
 
 Double-click the `.exe` → if SmartScreen warns, **More info → Run anyway**.
 
-### macOS 15 (Sequoia) and later
+### macOS — first-launch setup
 
 Double-click the `.dmg`, then drag `DigiModoro.app` to **Applications**.
 
-This is a free, unsigned build, so on first launch macOS will show *"Apple could not verify ‘DigiModoro’ is free of malware..."*. Run through the steps below once, and the app will launch normally after that.
+This is a free, unsigned build, so the first launch shows a Gatekeeper warning. The bypass depends on your **macOS version**. (Check via Apple menu → About This Mac.) After one-time setup, the app launches normally.
+
+#### macOS 14 (Sonoma) and earlier — right-click shortcut
+
+1. In **Applications**, **right-click** `DigiModoro.app` → **Open**
+2. When the *"unidentified developer"* dialog appears, click **「Open」**
+
+#### macOS 15 (Sequoia) and later — System Settings path
+
+(macOS 15 removed the right-click → Open shortcut for unsigned apps.)
 
 1. Double-click `DigiModoro.app` → when the warning appears, click **Done** (do *not* move to Trash)
 2. Open **System Settings → Privacy & Security**

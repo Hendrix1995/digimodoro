@@ -1,9 +1,9 @@
 mod commands;
 mod store;
 
-use tauri::Manager;
 use tauri::menu::{MenuBuilder, MenuItemBuilder};
 use tauri::tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent};
+use tauri::{Emitter, Manager};
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
@@ -36,9 +36,17 @@ pub fn run() {
             commands::show_control_window,
             commands::move_pet_window,
             commands::resize_pet_window,
+            commands::show_pet_menu,
             commands::update_tray,
             commands::quit_app,
         ])
+        .on_menu_event(|app, event| {
+            if let Some(action) = event.id().as_ref().strip_prefix("pet:") {
+                if let Some(window) = app.get_webview_window("pet") {
+                    let _ = window.emit("digi:pet-menu-action", action.to_string());
+                }
+            }
+        })
         .setup(|app| {
             // Ensure user data directory exists
             let data_dir = store::get_data_dir();

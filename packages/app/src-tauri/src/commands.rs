@@ -1,5 +1,12 @@
 use crate::store;
+use tauri::menu::{Menu, MenuItem, PredefinedMenuItem};
 use tauri::{AppHandle, Manager, WebviewUrl, WebviewWindowBuilder};
+
+#[derive(serde::Deserialize)]
+pub struct PetMenuSpec {
+    pub id: String,
+    pub label: String,
+}
 
 // --- File I/O commands ---
 
@@ -136,6 +143,32 @@ pub fn resize_pet_window(app: AppHandle, width: f64, height: f64) -> Result<(), 
         win.set_size(tauri::Size::Logical(tauri::LogicalSize { width, height }))
             .map_err(|e| e.to_string())?;
     }
+    Ok(())
+}
+
+#[tauri::command]
+pub fn show_pet_menu(app: AppHandle, items: Vec<PetMenuSpec>) -> Result<(), String> {
+    let window = app
+        .get_webview_window("pet")
+        .ok_or_else(|| "pet window not found".to_string())?;
+    let menu = Menu::new(&app).map_err(|e| e.to_string())?;
+    for spec in items {
+        if spec.id == "__sep__" {
+            let sep = PredefinedMenuItem::separator(&app, None).map_err(|e| e.to_string())?;
+            menu.append(&sep).map_err(|e| e.to_string())?;
+        } else {
+            let item = MenuItem::with_id(
+                &app,
+                format!("pet:{}", spec.id),
+                &spec.label,
+                true,
+                None::<&str>,
+            )
+            .map_err(|e| e.to_string())?;
+            menu.append(&item).map_err(|e| e.to_string())?;
+        }
+    }
+    menu.popup(window).map_err(|e| e.to_string())?;
     Ok(())
 }
 

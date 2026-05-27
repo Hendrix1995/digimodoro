@@ -1,6 +1,6 @@
 # DigiModoro
 
-> 뽀모도로 세션으로 키우는 디지몬 가상 펫. Windows 데스크탑 앱.
+> 뽀모도로 세션으로 키우는 디지몬 가상 펫. Windows · macOS 데스크탑 앱.
 
 English: [README.en.md](README.en.md)
 
@@ -10,12 +10,24 @@ English: [README.en.md](README.en.md)
 
 | 운영체제 | |
 |---|---|
-| Windows | [DigiModoro_0.4.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.1_x64-setup.exe) |
-| macOS (Intel · Apple Silicon 공용) | [DigiModoro_0.4.1_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.1_universal.dmg) |
+| Windows | [DigiModoro_0.4.2_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.2_x64-setup.exe) |
+| macOS 15+ (Intel · Apple Silicon 공용) | [DigiModoro_0.4.2_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.2_universal.dmg) |
 
-**Windows**: `.exe` 더블클릭 → 경고가 뜨면 **추가 정보 → 실행**.
+### Windows
 
-**macOS**: `.dmg` 더블클릭 → `DigiModoro.app`을 **Applications** 폴더로 드래그. 처음 실행할 때 "확인되지 않은 개발자" 경고가 뜨면 **Applications에서 앱을 우클릭 → 열기 → 다시 한 번 열기**. (한 번만 거치면 다음부터는 평소처럼 실행됩니다.)
+`.exe` 더블클릭 → SmartScreen 경고가 뜨면 **추가 정보 → 실행**.
+
+### macOS 15 (Sequoia) 이상
+
+`.dmg`을 더블클릭한 뒤 `DigiModoro.app`을 **Applications** 폴더로 드래그합니다.
+
+코드 서명을 하지 않은 무료 빌드라, 처음 실행할 때 *"Apple은 ‘DigiModoro’에 ... 악성 코드가 없음을 확인할 수 없습니다"* 경고가 뜹니다. 아래 단계를 한 번만 거치면 다음부터는 평소처럼 실행됩니다.
+
+1. `DigiModoro.app`을 더블클릭 → 경고 다이얼로그가 뜨면 **완료** 클릭 (휴지통으로 옮기지 마세요)
+2. **시스템 설정 → 개인정보 보호 및 보안** 열기
+3. 화면 아래쪽으로 스크롤하면 *"‘DigiModoro’이(가) 식별된 개발자로부터 받지 않은 것이기 때문에 차단되었습니다"* 메시지 옆에 **「그래도 열기」** 버튼이 나타납니다
+4. **「그래도 열기」** 클릭 → 비밀번호 또는 Touch ID 인증
+5. 다시 차단 다이얼로그가 뜨면 이번엔 **「열기」** 버튼이 추가되어 있으니 클릭
 
 ---
 

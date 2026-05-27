@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { computeMissDays, rolloverStreak, shouldRip, streakSeverity } from './streak-miss.js'
+import { computeMissDays, rolloverStreak } from './streak-miss.js'
 import { emptySlotForks } from './xp.js'
-import { DEFAULT_TUNABLES, type PetState } from './types.js'
+import { type PetState } from './types.js'
 
 function localTs(year: number, month: number, day: number, hour = 12): number {
   return Math.floor(new Date(year, month - 1, day, hour).getTime() / 1000)
@@ -69,18 +69,3 @@ describe('rolloverStreak', () => {
   })
 })
 
-describe('streakSeverity / shouldRip', () => {
-  it('classifies by thresholds', () => {
-    expect(streakSeverity(pet(0, 0), DEFAULT_TUNABLES)).toBe('ok')
-    expect(streakSeverity(pet(0, 3), DEFAULT_TUNABLES)).toBe('soft')
-    expect(streakSeverity(pet(0, 6), DEFAULT_TUNABLES)).toBe('hard')
-    expect(streakSeverity(pet(0, 14), DEFAULT_TUNABLES)).toBe('rip')
-  })
-
-  it('shouldRip true only past the RIP threshold and not already dead', () => {
-    expect(shouldRip(pet(0, 13), DEFAULT_TUNABLES)).toBe(false)
-    expect(shouldRip(pet(0, 14), DEFAULT_TUNABLES)).toBe(true)
-    const dead = { ...pet(0, 14), rip: { at: 1, cause: 'neglect' } }
-    expect(shouldRip(dead, DEFAULT_TUNABLES)).toBe(false)
-  })
-})

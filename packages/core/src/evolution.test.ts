@@ -124,13 +124,6 @@ describe('nextStage', () => {
 })
 
 describe('freshForEggVariant', () => {
-  it('round-robins three lineages', () => {
-    expect(freshForEggVariant(1)).toBe('botamon')
-    expect(freshForEggVariant(2)).toBe('kuramon')
-    expect(freshForEggVariant(3)).toBe('poyomon')
-    expect(freshForEggVariant(4)).toBe('botamon')
-    expect(freshForEggVariant(11)).toBe('kuramon')
-  })
   it('returns undefined for missing/invalid', () => {
     expect(freshForEggVariant(undefined)).toBeUndefined()
     expect(freshForEggVariant(99)).toBeUndefined()

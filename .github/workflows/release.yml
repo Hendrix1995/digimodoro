@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*.*.*'
+      - 'v*.*.*-*'
 
 permissions:
   contents: write
@@ -48,4 +49,4 @@ jobs:
           releaseName: DigiModoro v__VERSION__
           releaseBody: Windows 전용 데스크탑 앱. .exe 파일을 다운로드하여 설치하세요.
           releaseDraft: false
-          prerelease: false
+          prerelease: ${{ contains(github.ref_name, '-alpha') || contains(github.ref_name, '-beta') || contains(github.ref_name, '-rc') }}

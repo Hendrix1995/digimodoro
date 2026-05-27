@@ -2712,6 +2712,14 @@
     }
   },
   {
+    "id": "shoutmonb",
+    "name": "Shoutmon B",
+    "stage": "child",
+    "sprite": {
+      "idle": "shoutmonb/idle.gif"
+    }
+  },
+  {
     "id": "shurimon",
     "name": "Shurimon",
     "stage": "adult",

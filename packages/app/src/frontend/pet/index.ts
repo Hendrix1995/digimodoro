@@ -59,8 +59,25 @@ async function notify(title: string, body: string): Promise<void> {
 }
 
 let bubbleTimer: ReturnType<typeof setTimeout> | undefined
-function showBubble(text: string, ms = 2200): void {
-  bubble.textContent = text
+type BubbleAction = { label: string; onClick: () => void }
+function showBubble(text: string, ms = 2200, action?: BubbleAction): void {
+  bubble.textContent = ''
+  bubble.classList.remove('has-action')
+  const span = document.createElement('span')
+  span.textContent = text
+  bubble.appendChild(span)
+  if (action) {
+    const btn = document.createElement('button')
+    btn.className = 'bubble-btn'
+    btn.textContent = action.label
+    btn.addEventListener('click', () => {
+      action.onClick()
+      bubble.classList.add('hidden')
+      if (bubbleTimer) clearTimeout(bubbleTimer)
+    })
+    bubble.appendChild(btn)
+    bubble.classList.add('has-action')
+  }
   bubble.classList.remove('hidden')
   if (bubbleTimer) clearTimeout(bubbleTimer)
   bubbleTimer = setTimeout(() => { bubble.classList.add('hidden') }, ms)
@@ -97,7 +114,7 @@ async function doHatchNew(): Promise<void> {
     now: Math.floor(Date.now() / 1000),
     petId: `pet_${Math.random().toString(36).slice(2, 10)}${Date.now().toString(36).slice(-4)}`,
     seedEggVariant: 1 + Math.floor(Math.random() * 11),
-    personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[Math.floor(Math.random() * 5)],
+    personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[Math.floor(Math.random() * 5)]!,
   })
   await invoke('reset_pet', { newState: fresh })
   void emit('digi:reset-pet', { fresh })
@@ -216,6 +233,12 @@ async function registerActionListener(): Promise<void> {
     mover.setActive(false)
     mover.pause(true)
   })
+
+  await listen<{ newActive: PetState }>('digi:box-swap', (event) => {
+    scheduler.resetPet(event.payload.newActive)
+    mover.setActive(false)
+    mover.pause(true)
+  })
 }
 
 async function boot(): Promise<void> {
@@ -233,7 +256,7 @@ async function boot(): Promise<void> {
       seedEggVariant: 1 + Math.floor(Math.random() * 11),
       personality: (['calm', 'gentle', 'holy', 'mischief', 'savage'] as const)[
         Math.floor(Math.random() * 5)
-      ],
+      ]!,
     })
     await invoke('save_state', { state })
   }
@@ -282,7 +305,13 @@ async function boot(): Promise<void> {
       void invoke('update_tray', { title: formatTrayTitle(snap), phaseInfo: snap.phase.kind }).catch(() => {})
     },
     onEvolve(from: string, to: string) {
-      showBubble(`${from} \u2192 ${to}`, 3500)
+      showBubble(`${from} \u2192 ${to}`, 6000, {
+        label: t('boxOpen', lang),
+        onClick: () => {
+          void invoke('show_control_window').catch(() => {})
+          void emit('digi:focus-box', {})
+        },
+      })
       void emit('digi:evolve', { from, to })
       if (config.notifications.onEvolve) void notify(t('notifyEvolveTitle', lang), `${from} \u2192 ${to}`)
     },

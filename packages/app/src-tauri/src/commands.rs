@@ -29,6 +29,33 @@ pub fn load_graveyard() -> Result<Vec<serde_json::Value>, String> {
 }
 
 #[tauri::command]
+pub fn load_box() -> Result<serde_json::Value, String> {
+    store::load_box_json()
+}
+
+#[tauri::command]
+pub fn save_current_to_box(
+    slot_idx: usize,
+    current: serde_json::Value,
+    new_egg: serde_json::Value,
+) -> Result<serde_json::Value, String> {
+    store::save_current_to_box_store(slot_idx, &current, &new_egg)
+}
+
+#[tauri::command]
+pub fn take_out_of_box(
+    target_slot_idx: usize,
+    current: serde_json::Value,
+) -> Result<serde_json::Value, String> {
+    store::take_out_of_box_store(target_slot_idx, &current)
+}
+
+#[tauri::command]
+pub fn delete_box_slot(slot_idx: usize) -> Result<(), String> {
+    store::delete_box_slot_store(slot_idx)
+}
+
+#[tauri::command]
 pub fn reset_pet(new_state: serde_json::Value) -> Result<(), String> {
     store::reset_pet_store(&new_state)
 }

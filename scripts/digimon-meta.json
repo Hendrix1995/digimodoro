@@ -16925,7 +16925,7 @@
   "shoutmonb": {
     "name": "Shoutmon B",
     "api_id": 984,
-    "stage": null,
+    "stage": "child",
     "next": [
       "987",
       "990",

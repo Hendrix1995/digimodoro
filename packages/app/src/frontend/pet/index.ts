@@ -120,72 +120,59 @@ async function doHatchNew(): Promise<void> {
   void emit('digi:reset-pet', { fresh })
 }
 
-const menu = document.createElement('div')
-menu.id = 'ctx-menu'
-menu.className = 'ctx-menu hidden'
-document.body.appendChild(menu)
 let currentSnap: Snapshot | undefined
 
 window.addEventListener('contextmenu', (e) => {
   e.preventDefault()
-  showContextMenu()
+  void showNativeContextMenu()
 })
 
-document.addEventListener('mousedown', (e) => {
-  if (!menu.classList.contains('hidden') && !(e.target as HTMLElement).closest('#ctx-menu')) {
-    menu.classList.add('hidden')
-  }
-})
-
-function showContextMenu(): void {
-  while (menu.firstChild) menu.removeChild(menu.firstChild)
+async function showNativeContextMenu(): Promise<void> {
+  const items: { id: string; label: string }[] = []
   const snap = currentSnap
-  const now = Math.floor(Date.now() / 1000)
 
   if (!snap || snap.state.rip) {
-    addMenuItem(t('hatchNew', lang), () => void doHatchNew())
+    items.push({ id: 'hatchNew', label: t('hatchNew', lang) })
   } else {
     const phase = snap.phase.kind
     if (phase === 'idle') {
-      addMenuItem(t('startFocus', lang), () => scheduler.dispatch({ type: 'start_focus', now }))
+      items.push({ id: 'startFocus', label: t('startFocus', lang) })
     } else if (phase === 'focus') {
-      addMenuItem(t('pause', lang), () => scheduler.dispatch({ type: 'pause', now }))
-      addMenuItem(t('abort', lang), () => scheduler.dispatch({ type: 'abort', now }))
+      items.push({ id: 'pause', label: t('pause', lang) })
+      items.push({ id: 'abort', label: t('abort', lang) })
     } else if (phase === 'paused') {
-      addMenuItem(t('resume', lang), () => scheduler.dispatch({ type: 'resume', now }))
-      addMenuItem(t('abort', lang), () => scheduler.dispatch({ type: 'abort', now }))
+      items.push({ id: 'resume', label: t('resume', lang) })
+      items.push({ id: 'abort', label: t('abort', lang) })
     } else if (phase === 'done') {
-      addMenuItem(t('startBreak', lang), () => scheduler.dispatch({ type: 'acknowledge_done', now }))
-      addMenuItem(t('skipBreak', lang), () => scheduler.dispatch({ type: 'skip_break', now }))
+      items.push({ id: 'startBreak', label: t('startBreak', lang) })
+      items.push({ id: 'skipBreak', label: t('skipBreak', lang) })
     } else if (phase === 'break') {
-      addMenuItem(t('pause', lang), () => scheduler.dispatch({ type: 'pause', now }))
-      addMenuItem(t('skipBreak', lang), () => scheduler.dispatch({ type: 'skip_break', now }))
+      items.push({ id: 'pause', label: t('pause', lang) })
+      items.push({ id: 'skipBreak', label: t('skipBreak', lang) })
     }
   }
 
-  addSeparator()
-  addMenuItem(t('showStatus', lang), () => void invoke('show_control_window'))
-  addSeparator()
-  addMenuItem(t('quit', lang), () => void invoke('quit_app').catch(() => {}))
+  items.push({ id: '__sep__', label: '' })
+  items.push({ id: 'showStatus', label: t('showStatus', lang) })
+  items.push({ id: '__sep__', label: '' })
+  items.push({ id: 'quit', label: t('quit', lang) })
 
-  menu.classList.remove('hidden')
+  await invoke('show_pet_menu', { items })
 }
 
-function addMenuItem(label: string, onClick: () => void): void {
-  const item = document.createElement('div')
-  item.className = 'ctx-item'
-  item.textContent = label
-  item.addEventListener('click', () => {
-    menu.classList.add('hidden')
-    onClick()
-  })
-  menu.appendChild(item)
-}
-
-function addSeparator(): void {
-  const sep = document.createElement('div')
-  sep.className = 'ctx-sep'
-  menu.appendChild(sep)
+function dispatchPetMenuAction(action: string): void {
+  const now = Math.floor(Date.now() / 1000)
+  switch (action) {
+    case 'hatchNew': void doHatchNew(); break
+    case 'startFocus': scheduler.dispatch({ type: 'start_focus', now }); break
+    case 'pause': scheduler.dispatch({ type: 'pause', now }); break
+    case 'resume': scheduler.dispatch({ type: 'resume', now }); break
+    case 'abort': scheduler.dispatch({ type: 'abort', now }); break
+    case 'startBreak': scheduler.dispatch({ type: 'acknowledge_done', now }); break
+    case 'skipBreak': scheduler.dispatch({ type: 'skip_break', now }); break
+    case 'showStatus': void invoke('show_control_window'); break
+    case 'quit': void invoke('quit_app').catch(() => {}); break
+  }
 }
 
 function broadcastSnapshot(snap: Snapshot): void {
@@ -205,6 +192,10 @@ async function registerActionListener(): Promise<void> {
       case 'pause': scheduler.dispatch({ type: 'pause', now: ts }); break
       case 'resume': scheduler.dispatch({ type: 'resume', now: ts }); break
     }
+  })
+
+  await listen<string>('digi:pet-menu-action', (event) => {
+    dispatchPetMenuAction(event.payload)
   })
 
   await listen<{ scale: number }>('digi:scale-change', (event) => {

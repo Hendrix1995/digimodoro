@@ -1,6 +1,6 @@
 # DigiModoro
 
-> Digimon-themed virtual pet powered by Pomodoro sessions. Windows desktop app.
+> Digimon-themed virtual pet powered by Pomodoro sessions. Windows & macOS desktop app.
 
 한국어: [README.md](README.md)
 
@@ -10,12 +10,24 @@
 
 | OS | |
 |---|---|
-| Windows | [DigiModoro_0.4.1_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.1_x64-setup.exe) |
-| macOS (Intel · Apple Silicon universal) | [DigiModoro_0.4.1_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.1_universal.dmg) |
+| Windows | [DigiModoro_0.4.2_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.2_x64-setup.exe) |
+| macOS 15+ (Intel · Apple Silicon universal) | [DigiModoro_0.4.2_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.2_universal.dmg) |
 
-**Windows**: double-click the `.exe` → if a warning appears, **More info → Run anyway**.
+### Windows
 
-**macOS**: double-click the `.dmg` → drag `DigiModoro.app` to **Applications**. On first launch, if "unidentified developer" appears, **right-click the app in Applications → Open → Open again**. (Only needed once.)
+Double-click the `.exe` → if SmartScreen warns, **More info → Run anyway**.
+
+### macOS 15 (Sequoia) and later
+
+Double-click the `.dmg`, then drag `DigiModoro.app` to **Applications**.
+
+This is a free, unsigned build, so on first launch macOS will show *"Apple could not verify ‘DigiModoro’ is free of malware..."*. Run through the steps below once, and the app will launch normally after that.
+
+1. Double-click `DigiModoro.app` → when the warning appears, click **Done** (do *not* move to Trash)
+2. Open **System Settings → Privacy & Security**
+3. Scroll down to the security section. Next to *"‘DigiModoro’ was blocked because it is not from an identified developer"*, you'll see an **「Open Anyway」** button
+4. Click **「Open Anyway」** → authenticate with password or Touch ID
+5. The warning dialog will reappear, this time with an **「Open」** button — click it
 
 ---
 

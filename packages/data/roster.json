@@ -58,7 +58,7 @@
   {
     "id": "alphamon",
     "name": "Alphamon",
-    "stage": "mega",
+    "stage": "ultra",
     "sprite": {
       "idle": "alphamon/idle.gif"
     }
@@ -1394,7 +1394,7 @@
   {
     "id": "imperialdramonfightermode",
     "name": "Imperialdramon(Fighter Mode)",
-    "stage": "mega",
+    "stage": "ultra",
     "sprite": {
       "idle": "imperialdramonfightermode/idle.gif"
     }
@@ -2162,7 +2162,7 @@
   {
     "id": "omegamon",
     "name": "Omegamon",
-    "stage": "mega",
+    "stage": "ultra",
     "sprite": {
       "idle": "omegamon/idle.gif"
     }
@@ -2186,7 +2186,7 @@
   {
     "id": "ofanimonfalldownmode",
     "name": "Ofanimon(Falldown Mode)",
-    "stage": "mega",
+    "stage": "ultra",
     "sprite": {
       "idle": "ofanimonfalldownmode/idle.gif"
     }
@@ -2538,7 +2538,7 @@
   {
     "id": "rosemonburstmode",
     "name": "Rosemon(Burst Mode)",
-    "stage": "mega",
+    "stage": "ultra",
     "sprite": {
       "idle": "rosemonburstmode/idle.gif"
     }

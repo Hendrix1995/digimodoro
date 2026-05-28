@@ -1228,30 +1228,6 @@
     ],
     "raw_file": "022_AlgomonUltimate.gif"
   },
-  "armagemon": {
-    "name": "Armagemon",
-    "api_id": 420,
-    "stage": "mega",
-    "next": [],
-    "prior": [
-      "68",
-      "69",
-      "146",
-      "156",
-      "176",
-      "177",
-      "218",
-      "292",
-      "390",
-      "406",
-      "410",
-      "412",
-      "1186",
-      "667",
-      "441"
-    ],
-    "raw_file": "023_Armagemon.gif"
-  },
   "babamon": {
     "name": "Babamon",
     "api_id": 135,
@@ -21214,5 +21190,29 @@
       "273"
     ],
     "raw_file": "437_Zudomon.gif"
+  },
+  "armadimon": {
+    "name": "Armadimon",
+    "api_id": 420,
+    "stage": "child",
+    "next": [],
+    "prior": [
+      "68",
+      "69",
+      "146",
+      "156",
+      "176",
+      "177",
+      "218",
+      "292",
+      "390",
+      "406",
+      "410",
+      "412",
+      "1186",
+      "667",
+      "441"
+    ],
+    "raw_file": "023_Armagemon.gif"
   }
 }

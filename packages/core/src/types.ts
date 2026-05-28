@@ -1,4 +1,4 @@
-export type Stage = 'egg' | 'fresh' | 'baby' | 'child' | 'adult' | 'perfect' | 'mega'
+export type Stage = 'egg' | 'fresh' | 'baby' | 'child' | 'adult' | 'perfect' | 'mega' | 'ultra'
 
 export const STAGES: readonly Stage[] = [
   'egg',
@@ -8,6 +8,7 @@ export const STAGES: readonly Stage[] = [
   'adult',
   'perfect',
   'mega',
+  'ultra',
 ] as const
 
 export type TimeSlot = 'morning' | 'forenoon' | 'midday' | 'evening' | 'night'

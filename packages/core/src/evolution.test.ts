@@ -117,9 +117,10 @@ describe('nextStage', () => {
     expect(nextStage('egg')).toBe('fresh')
     expect(nextStage('child')).toBe('adult')
     expect(nextStage('perfect')).toBe('mega')
+    expect(nextStage('mega')).toBe('ultra')
   })
-  it('stays at mega', () => {
-    expect(nextStage('mega')).toBe('mega')
+  it('stays at ultra', () => {
+    expect(nextStage('ultra')).toBe('ultra')
   })
 })
 

@@ -20,6 +20,9 @@ packages/app/src-tauri/resources
 # Sprite raw sources (recovered locally, not committed)
 packages/data/sprites/_raw
 
+# Evolution tree visualizer — generated locally for exploration
+packages/data/evolution-tree.html
+
 # Editor
 .vscode
 .idea

@@ -74,10 +74,13 @@ for parent_stage in STAGES[:-1]:
             slot_dist_warnings.append((p, len(kids), len(slot_set)))
 
 # Pass 1.5: manual override — curated canon mappings from wikimon for cases
-# where digi-api has empty evolution data. Two forms:
+# where digi-api has empty evolution data. Three forms:
 #   addChildren[parent_id] = [child_ids]  — append children to a parent.
 #   addParents[orphan_id]  = [parent_ids] — register specific parents for a
-#     digimon, so it is no longer treated as an orphan in Pass 2.
+#     digimon. When this is set, the digimon is RESTRICTED to these parents
+#     only: it is removed from all other parents' branch lists (including
+#     canonical/orphan-adoption) and added only to the listed ones.
+#   stageOverrides[id]     = stage       — applied at load time above.
 manual_applied = {'children': 0, 'parents': 0}
 for parent_id, kids in (manual.get('addChildren') or {}).items():
     if parent_id not in meta: continue
@@ -94,6 +97,13 @@ for parent_id, kids in (manual.get('addChildren') or {}).items():
 for orphan_id, parent_ids in (manual.get('addParents') or {}).items():
     if orphan_id not in meta: continue
     orphan_stage = meta[orphan_id].get('stage')
+    # Restrictive mode: remove orphan_id from ALL other parents first.
+    for p, kids in list(parent_branches.items()):
+        if orphan_id in kids:
+            kids.remove(orphan_id)
+            if not kids:
+                del parent_branches[p]
+    # Then register only the specified parents.
     for p in parent_ids:
         if p not in meta: continue
         if meta[p].get('stage') is None: continue
@@ -106,8 +116,10 @@ for orphan_id, parent_ids in (manual.get('addParents') or {}).items():
             parent_branches[p] = existing
 
 # Pass 2: orphan adoption — any next-stage digimon not pointed to by any
-# canonical parent gets adopted by every parent in the same stage. This
-# guarantees full reachability while preserving canon where it exists.
+# canonical parent gets adopted ONLY by dead-end parents (canonical children 0).
+# This preserves canon: a parent with real canonical children does not get
+# polluted with unrelated orphans. Reachability is maintained via dead-end
+# parents acting as fallback routes.
 orphans_by_stage = {}
 for parent_stage in STAGES[:-1]:
     target_stage = NEXT_OF[parent_stage]
@@ -120,13 +132,28 @@ for parent_stage in STAGES[:-1]:
             pointed_to.add(c)
     orphans = [t for t in targets if t not in pointed_to]
     orphans_by_stage[parent_stage] = orphans
+    if not orphans: continue
     for p in parents:
-        existing = parent_branches.get(p, [])
-        for o in orphans:
-            if o not in existing:
-                existing.append(o)
-        if existing:
-            parent_branches[p] = existing
+        if parent_branches.get(p, []): continue  # has canonical children → skip
+        parent_branches[p] = list(orphans)
+
+# Pass 3: excludeParents — remove a digimon from specific parents' branch
+# lists (child-centric: "this digimon cannot evolve from these parents").
+for child_id, exclude_parents in (manual.get('excludeParents') or {}).items():
+    for p in exclude_parents:
+        if p in parent_branches and child_id in parent_branches[p]:
+            parent_branches[p].remove(child_id)
+            if not parent_branches[p]:
+                del parent_branches[p]
+
+# Pass 3.5: unreachable — remove a digimon from ALL parents' branch lists.
+# Used to "cut the road" to undesired digimon entirely.
+for child_id in (manual.get('unreachable') or []):
+    for p in list(parent_branches.keys()):
+        if child_id in parent_branches[p]:
+            parent_branches[p].remove(child_id)
+            if not parent_branches[p]:
+                del parent_branches[p]
 
 # Egg → fresh: artificial root, kept as round-robin over the fresh pool. The
 # real picker is egg-lineage.json (overrides this in the reducer), so these
@@ -142,7 +169,21 @@ for id_, d in meta.items():
     if not d.get('stage') or d['stage'] == 'ultra': continue
     kids = parent_branches.get(id_, [])
     if not kids: continue
-    branches = [{'slot': slot_for(id_, c), 'to': c} for c in kids]
+    weights = (manual.get('branchWeights') or {}).get(id_, {})
+    slot_overrides = (manual.get('slotOverrides') or {}).get(id_, {})
+    global_weights = manual.get('childGlobalWeights') or {}
+    branches = []
+    for c in kids:
+        override = slot_overrides.get(c)
+        slots = override if isinstance(override, list) else [override or slot_for(id_, c)]
+        for s in slots:
+            b = {'slot': s, 'to': c}
+            # Per-parent weight overrides global weight if both exist.
+            if c in weights:
+                b['weight'] = weights[c]
+            elif c in global_weights:
+                b['weight'] = global_weights[c]
+            branches.append(b)
     rules.append({
         'from': id_,
         'forksRequired': FORKS_REQUIRED.get(d['stage'], 8),

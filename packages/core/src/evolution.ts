@@ -86,7 +86,18 @@ export function pickBranch(
   // to the full set (degenerate but keeps the pet moving forward).
   const slotPool = rule.branches.filter((b) => b.slot === dominant)
   const pool = slotPool.length > 0 ? slotPool : rule.branches
-  const pickIdx = Math.floor(seededRandom(`${petId}:branch:${evoIndex}`) * pool.length)
+  // Weighted random: each branch has weight defaulting to 1.0. e.g. weight=0.1
+  // gives ~10% chance vs others at 1.0 (in a 2-branch pool: 0.1/1.1 ≈ 9.1%).
+  const weights = pool.map((b) => b.weight ?? 1.0)
+  const totalWeight = weights.reduce((s, w) => s + w, 0)
+  const roll = seededRandom(`${petId}:branch:${evoIndex}`) * totalWeight
+  let cum = 0
+  let pickIdx = 0
+  for (let i = 0; i < pool.length; i++) {
+    cum += weights[i]!
+    if (roll < cum) { pickIdx = i; break }
+    pickIdx = i
+  }
   let branch = pool[pickIdx] ?? pool[0] ?? {
     slot: dominant,
     to: rule.from, // degenerate fallback — caller should ensure branches exist

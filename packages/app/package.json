@@ -1,6 +1,6 @@
 {
   "name": "@digimodoro/app",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "private": true,
   "description": "Tauri shell for DigiModoro",
   "type": "module",

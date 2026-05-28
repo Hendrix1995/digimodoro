@@ -94,6 +94,9 @@ export type PetState = {
 export type EvolutionBranch = {
   slot: TimeSlot
   to: string
+  // Optional weight for pickBranch selection within a slot pool.
+  // Defaults to 1.0 when absent. e.g. 0.1 = ~10% chance vs others at 1.0.
+  weight?: number
 }
 
 export type EvolutionRule = {

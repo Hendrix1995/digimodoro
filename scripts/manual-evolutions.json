@@ -1,5 +1,5 @@
 {
-  "_comment": "Manual evolution mappings curated from wikimon (May 2026). Applied by build-tree.py after canonical pass and before orphan adoption. stageOverrides reassigns canon-verified Super Ultimate digimon from mega to ultra.",
+  "_comment": "Manual evolution mappings curated from wikimon (May 2026). addParents acts as a RESTRICTIVE filter: the listed parents are the ONLY parents that can evolve into the child. stageOverrides reassigns canon-verified Super Ultimate digimon from mega to ultra.",
   "addChildren": {
     "gaossmon": [
       "greymon"
@@ -61,6 +61,90 @@
       "agumon",
       "gabumon",
       "renamon"
+    ],
+    "omegamon": [
+      "wargreymon",
+      "metalgarurumon"
+    ],
+    "chaosmon": [
+      "bancholeomon",
+      "darkdramon",
+      "sleipmon"
+    ],
+    "shinegreymonruinmode": [
+      "shinegreymon"
+    ],
+    "imperialdramonfightermode": [
+      "imperialdramondragonmode",
+      "imperialdramondragonmodeblack"
+    ],
+    "ofanimonfalldownmode": [
+      "ofanimon"
+    ],
+    "imperialdramonpaladinmode": [
+      "imperialdramondragonmode",
+      "imperialdramondragonmodeblack"
+    ],
+    "alphamon": [
+      "dorugoramon"
+    ],
+    "beelzebumonblastmode": [
+      "beelzebumon"
+    ],
+    "rosemonburstmode": [
+      "rosemon"
+    ],
+    "shinegreymonburstmode": [
+      "shinegreymon"
+    ],
+    "armadimon": [
+      "caprimon",
+      "wanyamon",
+      "koromon"
+    ],
+    "dondokomon": [
+      "gigimon",
+      "sunmon",
+      "koromon"
+    ],
+    "falcomon": [
+      "tsumemon",
+      "chocomon",
+      "chicchimon"
+    ],
+    "gaossmon": [
+      "gigimon",
+      "sunmon",
+      "koromon"
+    ],
+    "kudamon": [
+      "pagumon",
+      "tokomon",
+      "moonmon",
+      "wanyamon"
+    ],
+    "otamamon": [
+      "pagumon",
+      "moonmon",
+      "dorimon",
+      "chocomon"
+    ],
+    "shoutmonb": [
+      "sunmon",
+      "koromon",
+      "gigimon"
+    ],
+    "snowgoburimon": [
+      "tunomon",
+      "moonmon",
+      "tokomon",
+      "tsumemon"
+    ],
+    "grimmon": [
+      "dorumon",
+      "dracumon",
+      "impmon",
+      "keramon"
     ]
   },
   "stageOverrides": {
@@ -78,5 +162,307 @@
     "ofanimonfalldownmode": "ultra",
     "rosemonburstmode": "ultra",
     "omegamon": "ultra"
+  },
+  "branchWeights": {
+    "imperialdramondragonmode": {
+      "imperialdramonpaladinmode": 0.1
+    },
+    "imperialdramondragonmodeblack": {
+      "imperialdramonpaladinmode": 0.1
+    }
+  },
+  "slotOverrides": {
+    "imperialdramondragonmode": {
+      "imperialdramonpaladinmode": [
+        "morning",
+        "forenoon",
+        "midday",
+        "evening",
+        "night"
+      ],
+      "imperialdramonfightermode": [
+        "morning",
+        "forenoon",
+        "midday",
+        "evening",
+        "night"
+      ]
+    },
+    "imperialdramondragonmodeblack": {
+      "imperialdramonpaladinmode": [
+        "morning",
+        "forenoon",
+        "midday",
+        "evening",
+        "night"
+      ],
+      "imperialdramonfightermode": [
+        "morning",
+        "forenoon",
+        "midday",
+        "evening",
+        "night"
+      ]
+    },
+    "angewomon": {
+      "ofanimon": "morning",
+      "holydramon": "forenoon",
+      "rosemon": "midday",
+      "marinangemon": "evening",
+      "lilithmon": "night",
+      "valkyrimon": "night"
+    },
+    "weregarurumon": {
+      "baihumon": "morning"
+    },
+    "machgaogamon": {
+      "baihumon": "forenoon"
+    },
+    "cerberumon": {
+      "baihumon": "midday"
+    },
+    "vajramon": {
+      "baihumon": "evening"
+    },
+    "grappuleomon": {
+      "baihumon": "night"
+    }
+  },
+  "excludeParents": {
+    "babamon": [
+      "angewomon",
+      "lilamon"
+    ],
+    "beelzebumon": [
+      "angewomon"
+    ],
+    "belialvamdemon": [
+      "angewomon"
+    ],
+    "darkdramon": [
+      "angewomon"
+    ],
+    "granddracumon": [
+      "angewomon"
+    ],
+    "heraklekabuterimon": [
+      "angewomon"
+    ],
+    "hououmon": [
+      "angewomon"
+    ],
+    "mugendramon": [
+      "angewomon"
+    ],
+    "metaletemon": [
+      "angewomon"
+    ],
+    "plesiomon": [
+      "angewomon"
+    ],
+    "seraphimon": [
+      "angewomon"
+    ],
+    "wargreymon": [
+      "angewomon"
+    ],
+    "sleipmon": [
+      "angewomon"
+    ],
+    "baihumon": [
+      "andiramon",
+      "angewomon",
+      "archnemon",
+      "delumon",
+      "insekimon",
+      "metalgreymon",
+      "sinduramon"
+    ],
+    "bancholeomon": [
+      "lilamon"
+    ],
+    "cherubimonvirtue": [
+      "metalgreymon"
+    ],
+    "numemon": [
+      "alraumon",
+      "bakumon",
+      "bearmon",
+      "betamon",
+      "dorumon",
+      "falcomon",
+      "floramon",
+      "gabumon",
+      "gaomon",
+      "gizamon",
+      "goburimon",
+      "gottsumon",
+      "guilmon",
+      "hagurumon",
+      "hawkmon",
+      "impmon",
+      "kamemon",
+      "keramon",
+      "kudamon",
+      "kunemon",
+      "lalamon",
+      "lopmon",
+      "lucemon",
+      "monodramon",
+      "mushmon",
+      "palmon",
+      "patamon",
+      "penmon",
+      "picodevimon",
+      "piyomon",
+      "plotmon",
+      "renamon",
+      "shakomon",
+      "shamamon",
+      "snowgoburimon",
+      "solarmon",
+      "tentomon",
+      "terriermon",
+      "toyagumon",
+      "toyagumonblack",
+      "tukaimon",
+      "vmon",
+      "wormmon",
+      "yukiagumon"
+    ],
+    "nanimon": [
+      "gabumon",
+      "ganimon",
+      "gaomon",
+      "gottsumon",
+      "impmon",
+      "keramon",
+      "kunemon",
+      "palmon",
+      "patamon",
+      "penmon",
+      "picodevimon",
+      "piyomon",
+      "solarmon",
+      "toyagumon",
+      "toyagumonblack"
+    ],
+    "platinumsukamon": [
+      "dokunemon",
+      "kotemon",
+      "pawnchessmonblack",
+      "pawnchessmonwhite"
+    ],
+    "sukamon": [
+      "alraumon",
+      "bakumon",
+      "bearmon",
+      "betamon",
+      "dorumon",
+      "floramon",
+      "gizamon",
+      "goburimon",
+      "gomamon",
+      "gottsumon",
+      "guilmon",
+      "hagurumon",
+      "hawkmon",
+      "impmon",
+      "keramon",
+      "kunemon",
+      "lopmon",
+      "lucemon",
+      "monodramon",
+      "mushmon",
+      "otamamon",
+      "palmon",
+      "penmon",
+      "picodevimon",
+      "piyomon",
+      "plotmon",
+      "renamon",
+      "shamamon",
+      "snowgoburimon",
+      "solarmon",
+      "tentomon",
+      "terriermon",
+      "toyagumon",
+      "toyagumonblack",
+      "tukaimon",
+      "vmon",
+      "wormmon",
+      "yukiagumon"
+    ],
+    "raremon": [
+      "floramon",
+      "gabumon",
+      "gizamon",
+      "gomamon",
+      "hagurumon",
+      "kunemon",
+      "monodramon",
+      "palmon",
+      "patamon",
+      "picodevimon",
+      "piyomon",
+      "plotmon",
+      "tentomon",
+      "vmon"
+    ],
+    "sandyanmamon": [
+      "candmon",
+      "dokunemon"
+    ],
+    "vegimon": [
+      "betamon",
+      "gabumon",
+      "gaomon",
+      "gottsumon",
+      "guilmon",
+      "impmon",
+      "kunemon",
+      "palmon",
+      "shamamon"
+    ],
+    "zassoumon": [],
+    "geremon": [
+      "alraumon",
+      "gabumon",
+      "goburimon",
+      "gottsumon",
+      "guilmon",
+      "hagurumon",
+      "keramon",
+      "lopmon",
+      "lucemon",
+      "patamon",
+      "picodevimon",
+      "piyomon",
+      "plotmon",
+      "renamon",
+      "shamamon",
+      "snowgoburimon",
+      "solarmon",
+      "tentomon",
+      "terriermon",
+      "toyagumonblack",
+      "tukaimon",
+      "vmon",
+      "wormmon",
+      "yukiagumon"
+    ],
+    "gokimon": [
+      "gaomon",
+      "goburimon",
+      "impmon"
+    ],
+    "redvegimon": [
+      "alraumon",
+      "candmon",
+      "kunemon",
+      "solarmon",
+      "tentomon",
+      "vmon"
+    ]
   }
 }

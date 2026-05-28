@@ -26,16 +26,6 @@
     ]
   },
   {
-    "from": "aegisdramon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "aerovdramon",
     "forksRequired": 32,
     "branches": [
@@ -292,10 +282,6 @@
       {
         "slot": "night",
         "to": "damemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -414,14 +400,6 @@
       {
         "slot": "morning",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -456,14 +434,6 @@
       {
         "slot": "morning",
         "to": "delumon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -490,14 +460,6 @@
       {
         "slot": "forenoon",
         "to": "skullbaluchimon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -514,10 +476,6 @@
         "to": "aquilamon"
       },
       {
-        "slot": "night",
-        "to": "geremon"
-      },
-      {
         "slot": "evening",
         "to": "icemon"
       },
@@ -532,18 +490,6 @@
       {
         "slot": "midday",
         "to": "kiwimon"
-      },
-      {
-        "slot": "evening",
-        "to": "numemon"
-      },
-      {
-        "slot": "night",
-        "to": "redvegimon"
-      },
-      {
-        "slot": "evening",
-        "to": "sukamon"
       },
       {
         "slot": "evening",
@@ -572,10 +518,6 @@
       {
         "slot": "evening",
         "to": "zassoumon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -782,14 +724,6 @@
       {
         "slot": "forenoon",
         "to": "vamdemon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -798,84 +732,28 @@
     "forksRequired": 32,
     "branches": [
       {
-        "slot": "evening",
-        "to": "babamon"
-      },
-      {
-        "slot": "night",
-        "to": "baihumon"
-      },
-      {
-        "slot": "night",
-        "to": "beelzebumon"
-      },
-      {
-        "slot": "morning",
-        "to": "belialvamdemon"
-      },
-      {
-        "slot": "night",
-        "to": "darkdramon"
-      },
-      {
-        "slot": "night",
-        "to": "granddracumon"
-      },
-      {
-        "slot": "midday",
-        "to": "heraklekabuterimon"
-      },
-      {
         "slot": "forenoon",
         "to": "holydramon"
       },
       {
-        "slot": "evening",
-        "to": "hououmon"
-      },
-      {
-        "slot": "evening",
+        "slot": "night",
         "to": "lilithmon"
       },
       {
-        "slot": "night",
+        "slot": "evening",
         "to": "marinangemon"
       },
       {
-        "slot": "night",
-        "to": "metaletemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "mugendramon"
-      },
-      {
-        "slot": "evening",
+        "slot": "morning",
         "to": "ofanimon"
       },
       {
-        "slot": "forenoon",
-        "to": "plesiomon"
-      },
-      {
-        "slot": "forenoon",
+        "slot": "midday",
         "to": "rosemon"
-      },
-      {
-        "slot": "midday",
-        "to": "seraphimon"
-      },
-      {
-        "slot": "midday",
-        "to": "sleipmon"
       },
       {
         "slot": "night",
         "to": "valkyrimon"
-      },
-      {
-        "slot": "midday",
-        "to": "wargreymon"
       }
     ]
   },
@@ -934,14 +812,6 @@
       {
         "slot": "morning",
         "to": "shakkoumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -960,10 +830,6 @@
       {
         "slot": "morning",
         "to": "hououmon"
-      },
-      {
-        "slot": "morning",
-        "to": "baihumon"
       },
       {
         "slot": "evening",
@@ -1004,16 +870,6 @@
       {
         "slot": "night",
         "to": "zhuqiaomon"
-      }
-    ]
-  },
-  {
-    "from": "anubimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -1096,42 +952,6 @@
       {
         "slot": "morning",
         "to": "shakkoumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "apocalymon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "apollomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "shinegreymonburstmode"
-      },
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -1210,14 +1030,6 @@
       {
         "slot": "midday",
         "to": "silphymon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -1240,10 +1052,6 @@
       {
         "slot": "forenoon",
         "to": "apocalymon"
-      },
-      {
-        "slot": "night",
-        "to": "baihumon"
       },
       {
         "slot": "midday",
@@ -1298,40 +1106,6 @@
       {
         "slot": "evening",
         "to": "duftmon"
-      }
-    ]
-  },
-  {
-    "from": "algomonultimate",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "babamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "rosemonburstmode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "baihumon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -1434,14 +1208,6 @@
       {
         "slot": "night",
         "to": "vamdemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -1514,14 +1280,6 @@
         "to": "karatukinumemon"
       },
       {
-        "slot": "morning",
-        "to": "numemon"
-      },
-      {
-        "slot": "midday",
-        "to": "sukamon"
-      },
-      {
         "slot": "midday",
         "to": "sorcerimon"
       },
@@ -1536,10 +1294,6 @@
       {
         "slot": "forenoon",
         "to": "growmon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -1548,26 +1302,8 @@
     "forksRequired": 64,
     "branches": [
       {
-        "slot": "midday",
-        "to": "beelzebumonblastmode"
-      },
-      {
         "slot": "morning",
         "to": "chaosmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "barbamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -1724,18 +1460,6 @@
       {
         "slot": "evening",
         "to": "mojyamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -1746,34 +1470,6 @@
       {
         "slot": "midday",
         "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "belialvamdemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "belphemonsleepmode",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -1866,10 +1562,6 @@
         "to": "nanimon"
       },
       {
-        "slot": "midday",
-        "to": "numemon"
-      },
-      {
         "slot": "night",
         "to": "octmon"
       },
@@ -1888,10 +1580,6 @@
       {
         "slot": "night",
         "to": "sandyanmamon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
       },
       {
         "slot": "forenoon",
@@ -1914,16 +1602,8 @@
         "to": "tuchidarumon"
       },
       {
-        "slot": "night",
-        "to": "vegimon"
-      },
-      {
         "slot": "forenoon",
         "to": "whamon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -2080,14 +1760,6 @@
       {
         "slot": "evening",
         "to": "yatagaramon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -2135,10 +1807,6 @@
       },
       {
         "slot": "morning",
-        "to": "numemon"
-      },
-      {
-        "slot": "morning",
         "to": "kabuterimon"
       },
       {
@@ -2156,10 +1824,6 @@
       {
         "slot": "morning",
         "to": "monochromon"
-      },
-      {
-        "slot": "midday",
-        "to": "nanimon"
       },
       {
         "slot": "morning",
@@ -2198,10 +1862,6 @@
         "to": "gawappamon"
       },
       {
-        "slot": "forenoon",
-        "to": "geremon"
-      },
-      {
         "slot": "morning",
         "to": "golemon"
       },
@@ -2234,10 +1894,6 @@
         "to": "peckmon"
       },
       {
-        "slot": "forenoon",
-        "to": "raremon"
-      },
-      {
         "slot": "night",
         "to": "revolmon"
       },
@@ -2246,20 +1902,12 @@
         "to": "saberdramon"
       },
       {
-        "slot": "night",
-        "to": "sukamon"
-      },
-      {
         "slot": "morning",
         "to": "togemon"
       },
       {
         "slot": "morning",
         "to": "woodmon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -2286,30 +1934,6 @@
       {
         "slot": "forenoon",
         "to": "saintgalgomon"
-      }
-    ]
-  },
-  {
-    "from": "blacksaintgalgomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "blackwargreymon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "omegamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -2348,16 +1972,6 @@
       {
         "slot": "midday",
         "to": "megidramon"
-      }
-    ]
-  },
-  {
-    "from": "blastmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -2482,16 +2096,6 @@
     ]
   },
   {
-    "from": "boltmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "bombernanimon",
     "forksRequired": 16,
     "branches": [
@@ -2518,14 +2122,6 @@
       {
         "slot": "midday",
         "to": "volcamon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -2598,46 +2194,6 @@
       {
         "slot": "night",
         "to": "wanyamon"
-      },
-      {
-        "slot": "midday",
-        "to": "caprimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "chicchimon"
-      },
-      {
-        "slot": "evening",
-        "to": "chocomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "dorimon"
-      },
-      {
-        "slot": "evening",
-        "to": "gigimon"
-      },
-      {
-        "slot": "morning",
-        "to": "minomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "moonmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "sunmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "tanemon"
-      },
-      {
-        "slot": "night",
-        "to": "tunomon"
       }
     ]
   },
@@ -2738,38 +2294,6 @@
       {
         "slot": "night",
         "to": "pawnchessmonwhite"
-      },
-      {
-        "slot": "midday",
-        "to": "armadimon"
-      },
-      {
-        "slot": "midday",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "falcomon"
-      },
-      {
-        "slot": "night",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "morning",
-        "to": "kudamon"
-      },
-      {
-        "slot": "midday",
-        "to": "otamamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "morning",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -2870,10 +2394,6 @@
         "to": "peckmon"
       },
       {
-        "slot": "forenoon",
-        "to": "redvegimon"
-      },
-      {
         "slot": "midday",
         "to": "reppamon"
       },
@@ -2882,30 +2402,12 @@
         "to": "saberdramon"
       },
       {
-        "slot": "morning",
-        "to": "sandyanmamon"
-      },
-      {
         "slot": "forenoon",
         "to": "tankmon"
       },
       {
         "slot": "evening",
         "to": "wizarmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "cannondramon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -3028,14 +2530,6 @@
       {
         "slot": "night",
         "to": "holyangemon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -3100,10 +2594,6 @@
       {
         "slot": "morning",
         "to": "zeedmillenniumon"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -3114,10 +2604,6 @@
       {
         "slot": "midday",
         "to": "chaosdukemoncore"
-      },
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -3186,30 +2672,6 @@
     ]
   },
   {
-    "from": "cherubimonvirtue",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "cherubimonvice",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "shinegreymonruinmode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "chicomon",
     "forksRequired": 2,
     "branches": [
@@ -3272,36 +2734,8 @@
         "to": "dotfalcomon"
       },
       {
-        "slot": "morning",
-        "to": "armadimon"
-      },
-      {
-        "slot": "evening",
-        "to": "dondokomon"
-      },
-      {
         "slot": "forenoon",
         "to": "falcomon"
-      },
-      {
-        "slot": "night",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "midday",
-        "to": "kudamon"
-      },
-      {
-        "slot": "morning",
-        "to": "otamamon"
-      },
-      {
-        "slot": "evening",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "night",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -3330,36 +2764,12 @@
         "to": "wormmon"
       },
       {
-        "slot": "night",
-        "to": "armadimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "dondokomon"
-      },
-      {
         "slot": "forenoon",
         "to": "falcomon"
       },
       {
-        "slot": "morning",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "night",
-        "to": "kudamon"
-      },
-      {
         "slot": "midday",
         "to": "otamamon"
-      },
-      {
-        "slot": "night",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "morning",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -3370,14 +2780,6 @@
       {
         "slot": "forenoon",
         "to": "chronomondestroymode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "shinegreymonburstmode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -3408,14 +2810,6 @@
       {
         "slot": "evening",
         "to": "taomon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -3506,14 +2900,6 @@
       {
         "slot": "evening",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -3608,14 +2994,6 @@
       {
         "slot": "morning",
         "to": "vamdemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -3646,20 +3024,6 @@
       {
         "slot": "evening",
         "to": "firamon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "demon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -3814,14 +3178,6 @@
       {
         "slot": "forenoon",
         "to": "skullbaluchimon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -3846,14 +3202,6 @@
       {
         "slot": "midday",
         "to": "chaosmon"
-      },
-      {
-        "slot": "evening",
-        "to": "shinegreymonruinmode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -3880,14 +3228,6 @@
       {
         "slot": "night",
         "to": "megalogrowmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -3986,34 +3326,6 @@
       {
         "slot": "midday",
         "to": "brachimon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "deathmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "deathmonblack",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -4112,14 +3424,6 @@
       {
         "slot": "forenoon",
         "to": "superstarmon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -4127,10 +3431,6 @@
     "from": "delumon",
     "forksRequired": 32,
     "branches": [
-      {
-        "slot": "midday",
-        "to": "baihumon"
-      },
       {
         "slot": "evening",
         "to": "boltmon"
@@ -4292,14 +3592,6 @@
       {
         "slot": "forenoon",
         "to": "triceramon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -4418,52 +3710,6 @@
       {
         "slot": "midday",
         "to": "vajramon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "devitamamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "diablomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "dianamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "rosemonburstmode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -4490,14 +3736,6 @@
       {
         "slot": "morning",
         "to": "yatagaramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -4708,14 +3946,6 @@
       {
         "slot": "evening",
         "to": "kyukimon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -4778,14 +4008,6 @@
       {
         "slot": "midday",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -4884,14 +4106,6 @@
       {
         "slot": "night",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -4929,14 +4143,6 @@
       },
       {
         "slot": "forenoon",
-        "to": "platinumsukamon"
-      },
-      {
-        "slot": "evening",
-        "to": "sandyanmamon"
-      },
-      {
-        "slot": "forenoon",
         "to": "snimon"
       },
       {
@@ -4958,10 +4164,6 @@
       {
         "slot": "evening",
         "to": "zassoumon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -5020,24 +4222,6 @@
       {
         "slot": "evening",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "dondokomon",
-    "forksRequired": 8,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -5062,36 +4246,8 @@
         "to": "dorumon"
       },
       {
-        "slot": "morning",
-        "to": "armadimon"
-      },
-      {
-        "slot": "morning",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "falcomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "morning",
-        "to": "kudamon"
-      },
-      {
         "slot": "forenoon",
         "to": "otamamon"
-      },
-      {
-        "slot": "midday",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "morning",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -5166,14 +4322,6 @@
       {
         "slot": "midday",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -5306,10 +4454,6 @@
         "to": "geogreymon"
       },
       {
-        "slot": "morning",
-        "to": "numemon"
-      },
-      {
         "slot": "night",
         "to": "omekamon"
       },
@@ -5324,10 +4468,6 @@
       {
         "slot": "midday",
         "to": "sangloupmon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
       },
       {
         "slot": "morning",
@@ -5350,10 +4490,6 @@
       {
         "slot": "morning",
         "to": "diatrymon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -5568,52 +4704,6 @@
       {
         "slot": "evening",
         "to": "weregarurumonblack"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "duftmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "dukemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "shinegreymonburstmode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "ebemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -5716,14 +4806,6 @@
       {
         "slot": "midday",
         "to": "vermillimon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -5812,24 +4894,6 @@
       {
         "slot": "midday",
         "to": "vamdemon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "exogrimmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -5837,10 +4901,6 @@
     "from": "falcomon",
     "forksRequired": 8,
     "branches": [
-      {
-        "slot": "night",
-        "to": "numemon"
-      },
       {
         "slot": "morning",
         "to": "tyranomon"
@@ -5864,10 +4924,6 @@
       {
         "slot": "midday",
         "to": "diatrymon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -5934,14 +4990,6 @@
       {
         "slot": "morning",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -5992,14 +5040,6 @@
       {
         "slot": "evening",
         "to": "volcamon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -6058,14 +5098,6 @@
       {
         "slot": "forenoon",
         "to": "vermillimon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -6141,10 +5173,6 @@
       },
       {
         "slot": "midday",
-        "to": "raremon"
-      },
-      {
-        "slot": "midday",
         "to": "shellmon"
       },
       {
@@ -6168,20 +5196,12 @@
         "to": "kyubimon"
       },
       {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
         "slot": "midday",
         "to": "ponchomon"
       },
       {
         "slot": "midday",
         "to": "redvegimon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
       },
       {
         "slot": "midday",
@@ -6206,10 +5226,6 @@
       {
         "slot": "midday",
         "to": "woodmon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -6300,14 +5316,6 @@
       {
         "slot": "morning",
         "to": "vamdemon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -6394,14 +5402,6 @@
       {
         "slot": "evening",
         "to": "zudomon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -6448,14 +5448,6 @@
       {
         "slot": "night",
         "to": "weregarurumonblack"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -6520,10 +5512,6 @@
         "to": "geogreymon"
       },
       {
-        "slot": "morning",
-        "to": "geremon"
-      },
-      {
         "slot": "evening",
         "to": "greymon"
       },
@@ -6572,10 +5560,6 @@
         "to": "monochromon"
       },
       {
-        "slot": "morning",
-        "to": "nanimon"
-      },
-      {
         "slot": "forenoon",
         "to": "nefertimon"
       },
@@ -6584,20 +5568,12 @@
         "to": "nisedrimogemon"
       },
       {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
         "slot": "evening",
         "to": "omekamon"
       },
       {
         "slot": "midday",
         "to": "orgemon"
-      },
-      {
-        "slot": "evening",
-        "to": "raremon"
       },
       {
         "slot": "forenoon",
@@ -6644,10 +5620,6 @@
         "to": "vdramon"
       },
       {
-        "slot": "morning",
-        "to": "vegimon"
-      },
-      {
         "slot": "midday",
         "to": "wizarmon"
       },
@@ -6670,10 +5642,6 @@
       {
         "slot": "midday",
         "to": "damemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -6684,14 +5652,6 @@
       {
         "slot": "morning",
         "to": "susanoomon"
-      },
-      {
-        "slot": "evening",
-        "to": "omegamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -6734,14 +5694,6 @@
       {
         "slot": "night",
         "to": "sinduramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -6798,10 +5750,6 @@
         "to": "morishellmon"
       },
       {
-        "slot": "forenoon",
-        "to": "nanimon"
-      },
-      {
         "slot": "morning",
         "to": "octmon"
       },
@@ -6820,10 +5768,6 @@
       {
         "slot": "evening",
         "to": "tylomon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -6834,14 +5778,6 @@
       {
         "slot": "evening",
         "to": "angemon"
-      },
-      {
-        "slot": "midday",
-        "to": "numemon"
-      },
-      {
-        "slot": "morning",
-        "to": "vegimon"
       },
       {
         "slot": "forenoon",
@@ -6856,20 +5792,12 @@
         "to": "leomon"
       },
       {
-        "slot": "midday",
-        "to": "nanimon"
-      },
-      {
         "slot": "forenoon",
         "to": "orgemon"
       },
       {
         "slot": "evening",
         "to": "unimon"
-      },
-      {
-        "slot": "midday",
-        "to": "gokimon"
       },
       {
         "slot": "evening",
@@ -6934,10 +5862,6 @@
       {
         "slot": "midday",
         "to": "sunflowmon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -6948,10 +5872,6 @@
       {
         "slot": "night",
         "to": "greymon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -7160,14 +6080,6 @@
       {
         "slot": "forenoon",
         "to": "paildramon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -7246,14 +6158,6 @@
       {
         "slot": "night",
         "to": "volcamon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -7320,14 +6224,6 @@
       {
         "slot": "morning",
         "to": "flaremon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -7362,14 +6258,6 @@
       {
         "slot": "forenoon",
         "to": "superstarmon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -7444,14 +6332,6 @@
       {
         "slot": "midday",
         "to": "waruseadramon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -7534,16 +6414,6 @@
     ]
   },
   {
-    "from": "gigaseadramon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "gigimon",
     "forksRequired": 4,
     "branches": [
@@ -7592,36 +6462,16 @@
         "to": "guilmon"
       },
       {
-        "slot": "night",
-        "to": "armadimon"
-      },
-      {
         "slot": "evening",
         "to": "dondokomon"
-      },
-      {
-        "slot": "evening",
-        "to": "falcomon"
       },
       {
         "slot": "midday",
         "to": "gaossmon"
       },
       {
-        "slot": "midday",
-        "to": "kudamon"
-      },
-      {
-        "slot": "midday",
-        "to": "otamamon"
-      },
-      {
         "slot": "evening",
         "to": "shoutmonb"
-      },
-      {
-        "slot": "morning",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -7728,10 +6578,6 @@
         "to": "orgemon"
       },
       {
-        "slot": "midday",
-        "to": "raremon"
-      },
-      {
         "slot": "night",
         "to": "shellmon"
       },
@@ -7768,14 +6614,6 @@
         "to": "kyubimon"
       },
       {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "sukamon"
-      },
-      {
         "slot": "midday",
         "to": "shadramon"
       },
@@ -7806,10 +6644,6 @@
       {
         "slot": "forenoon",
         "to": "stingmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -7824,10 +6658,6 @@
       {
         "slot": "forenoon",
         "to": "devimon"
-      },
-      {
-        "slot": "morning",
-        "to": "numemon"
       },
       {
         "slot": "evening",
@@ -7870,10 +6700,6 @@
         "to": "tortamon"
       },
       {
-        "slot": "evening",
-        "to": "gokimon"
-      },
-      {
         "slot": "night",
         "to": "kuwagamon"
       },
@@ -7914,10 +6740,6 @@
         "to": "gawappamon"
       },
       {
-        "slot": "midday",
-        "to": "geremon"
-      },
-      {
         "slot": "forenoon",
         "to": "golemon"
       },
@@ -7950,10 +6772,6 @@
         "to": "seahomon"
       },
       {
-        "slot": "night",
-        "to": "sukamon"
-      },
-      {
         "slot": "forenoon",
         "to": "shurimon"
       },
@@ -7964,10 +6782,6 @@
       {
         "slot": "evening",
         "to": "stingmon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -7986,14 +6800,6 @@
       {
         "slot": "forenoon",
         "to": "metalgreymon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -8060,14 +6866,6 @@
       {
         "slot": "morning",
         "to": "volcamon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -8125,10 +6923,6 @@
       },
       {
         "slot": "morning",
-        "to": "raremon"
-      },
-      {
-        "slot": "morning",
         "to": "rukamon"
       },
       {
@@ -8161,10 +6955,6 @@
       },
       {
         "slot": "evening",
-        "to": "sukamon"
-      },
-      {
-        "slot": "evening",
         "to": "sorcerimon"
       },
       {
@@ -8178,10 +6968,6 @@
       {
         "slot": "night",
         "to": "xvmon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -8194,16 +6980,8 @@
         "to": "airdramon"
       },
       {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
         "slot": "morning",
         "to": "tyranomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "vegimon"
       },
       {
         "slot": "evening",
@@ -8228,10 +7006,6 @@
       {
         "slot": "midday",
         "to": "monochromon"
-      },
-      {
-        "slot": "morning",
-        "to": "nanimon"
       },
       {
         "slot": "evening",
@@ -8272,10 +7046,6 @@
       {
         "slot": "forenoon",
         "to": "dokugumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "geremon"
       },
       {
         "slot": "evening",
@@ -8319,10 +7089,6 @@
       },
       {
         "slot": "night",
-        "to": "sukamon"
-      },
-      {
-        "slot": "night",
         "to": "tankmon"
       },
       {
@@ -8332,44 +7098,6 @@
       {
         "slot": "evening",
         "to": "wizarmon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "granddracumon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "grankuwagamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "imperialdramonpaladinmode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "grandlocomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -8546,14 +7274,6 @@
       {
         "slot": "night",
         "to": "bishopchessmonwhite"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -8564,14 +7284,6 @@
       {
         "slot": "morning",
         "to": "chaosgrimmon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -8630,14 +7342,6 @@
       {
         "slot": "night",
         "to": "machgaogamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -8732,24 +7436,6 @@
       {
         "slot": "forenoon",
         "to": "vamdemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "griffomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -8856,14 +7542,6 @@
       {
         "slot": "morning",
         "to": "rapidmonperfect"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -8884,16 +7562,8 @@
         "to": "devimon"
       },
       {
-        "slot": "midday",
-        "to": "numemon"
-      },
-      {
         "slot": "night",
         "to": "tyranomon"
-      },
-      {
-        "slot": "night",
-        "to": "vegimon"
       },
       {
         "slot": "evening",
@@ -8957,10 +7627,6 @@
       },
       {
         "slot": "night",
-        "to": "geremon"
-      },
-      {
-        "slot": "night",
         "to": "allomon"
       },
       {
@@ -8990,14 +7656,6 @@
       {
         "slot": "night",
         "to": "raptordramon"
-      },
-      {
-        "slot": "evening",
-        "to": "sukamon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -9032,38 +7690,6 @@
       {
         "slot": "midday",
         "to": "renamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "armadimon"
-      },
-      {
-        "slot": "evening",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "night",
-        "to": "falcomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "morning",
-        "to": "kudamon"
-      },
-      {
-        "slot": "midday",
-        "to": "otamamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "midday",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -9110,14 +7736,6 @@
       {
         "slot": "forenoon",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9128,10 +7746,6 @@
       {
         "slot": "midday",
         "to": "devimon"
-      },
-      {
-        "slot": "midday",
-        "to": "numemon"
       },
       {
         "slot": "midday",
@@ -9172,14 +7786,6 @@
       {
         "slot": "morning",
         "to": "starmon"
-      },
-      {
-        "slot": "evening",
-        "to": "raremon"
-      },
-      {
-        "slot": "evening",
-        "to": "sukamon"
       },
       {
         "slot": "forenoon",
@@ -9234,10 +7840,6 @@
         "to": "galgomon"
       },
       {
-        "slot": "evening",
-        "to": "geremon"
-      },
-      {
         "slot": "forenoon",
         "to": "goldvdramon"
       },
@@ -9268,10 +7870,6 @@
       {
         "slot": "forenoon",
         "to": "sunflowmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -9292,10 +7890,6 @@
         "to": "birdramon"
       },
       {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
         "slot": "evening",
         "to": "tyranomon"
       },
@@ -9314,10 +7908,6 @@
       {
         "slot": "midday",
         "to": "tailmon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
       },
       {
         "slot": "night",
@@ -9362,38 +7952,6 @@
       {
         "slot": "midday",
         "to": "peckmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "heraklekabuterimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "imperialdramonfightermode"
-      },
-      {
-        "slot": "night",
-        "to": "imperialdramonpaladinmode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "hiandromon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -9526,14 +8084,6 @@
       {
         "slot": "midday",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9576,14 +8126,6 @@
       {
         "slot": "forenoon",
         "to": "blackmegalogrowmon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9646,14 +8188,6 @@
       {
         "slot": "forenoon",
         "to": "taomon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9708,14 +8242,6 @@
       {
         "slot": "morning",
         "to": "volcamon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9834,14 +8360,6 @@
       {
         "slot": "morning",
         "to": "volcamon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9924,14 +8442,6 @@
       {
         "slot": "midday",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -9940,16 +8450,49 @@
     "forksRequired": 64,
     "branches": [
       {
+        "slot": "morning",
+        "to": "imperialdramonfightermode"
+      },
+      {
+        "slot": "forenoon",
+        "to": "imperialdramonfightermode"
+      },
+      {
+        "slot": "midday",
+        "to": "imperialdramonfightermode"
+      },
+      {
         "slot": "evening",
         "to": "imperialdramonfightermode"
       },
       {
         "slot": "night",
-        "to": "imperialdramonpaladinmode"
+        "to": "imperialdramonfightermode"
+      },
+      {
+        "slot": "morning",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
       },
       {
         "slot": "forenoon",
-        "to": "alphamon"
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "midday",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "evening",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "night",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
       }
     ]
   },
@@ -9958,16 +8501,49 @@
     "forksRequired": 64,
     "branches": [
       {
+        "slot": "morning",
+        "to": "imperialdramonfightermode"
+      },
+      {
         "slot": "forenoon",
         "to": "imperialdramonfightermode"
       },
       {
         "slot": "midday",
-        "to": "imperialdramonpaladinmode"
+        "to": "imperialdramonfightermode"
+      },
+      {
+        "slot": "evening",
+        "to": "imperialdramonfightermode"
       },
       {
         "slot": "night",
-        "to": "alphamon"
+        "to": "imperialdramonfightermode"
+      },
+      {
+        "slot": "morning",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "forenoon",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "midday",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "evening",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
+      },
+      {
+        "slot": "night",
+        "to": "imperialdramonpaladinmode",
+        "weight": 0.1
       }
     ]
   },
@@ -9988,14 +8564,6 @@
         "to": "devimon"
       },
       {
-        "slot": "midday",
-        "to": "numemon"
-      },
-      {
-        "slot": "night",
-        "to": "vegimon"
-      },
-      {
         "slot": "night",
         "to": "bakemon"
       },
@@ -10008,20 +8576,12 @@
         "to": "evilmon"
       },
       {
-        "slot": "midday",
-        "to": "nanimon"
-      },
-      {
         "slot": "night",
         "to": "orgemon"
       },
       {
         "slot": "morning",
         "to": "tailmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gokimon"
       },
       {
         "slot": "midday",
@@ -10078,10 +8638,6 @@
       {
         "slot": "forenoon",
         "to": "madleomon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
       },
       {
         "slot": "evening",
@@ -10234,48 +8790,6 @@
       {
         "slot": "forenoon",
         "to": "zudomon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "jijimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "jumbogamemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "shinegreymonburstmode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "justimonaccelarm",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -10294,14 +8808,6 @@
       {
         "slot": "night",
         "to": "knightmon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -10400,14 +8906,6 @@
       {
         "slot": "forenoon",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -10500,16 +8998,8 @@
         "to": "knightchessmonwhite"
       },
       {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
         "slot": "evening",
         "to": "peckmon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -10548,34 +9038,6 @@
       {
         "slot": "forenoon",
         "to": "armadimon"
-      },
-      {
-        "slot": "night",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "midday",
-        "to": "falcomon"
-      },
-      {
-        "slot": "morning",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "midday",
-        "to": "kudamon"
-      },
-      {
-        "slot": "night",
-        "to": "otamamon"
-      },
-      {
-        "slot": "midday",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "evening",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -10648,14 +9110,6 @@
       {
         "slot": "evening",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -10666,14 +9120,6 @@
       {
         "slot": "midday",
         "to": "andromon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -10692,10 +9138,6 @@
       {
         "slot": "night",
         "to": "bakemon"
-      },
-      {
-        "slot": "morning",
-        "to": "nanimon"
       },
       {
         "slot": "midday",
@@ -10718,30 +9160,8 @@
         "to": "chrysalimon"
       },
       {
-        "slot": "night",
-        "to": "geremon"
-      },
-      {
-        "slot": "midday",
-        "to": "numemon"
-      },
-      {
-        "slot": "evening",
-        "to": "sukamon"
-      },
-      {
         "slot": "midday",
         "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "kingchessmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -10840,14 +9260,6 @@
       {
         "slot": "midday",
         "to": "archnemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -10870,14 +9282,6 @@
       {
         "slot": "morning",
         "to": "extyranomon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -10916,14 +9320,6 @@
       {
         "slot": "morning",
         "to": "extyranomon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -11056,10 +9452,6 @@
       {
         "slot": "midday",
         "to": "xvmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -11074,14 +9466,6 @@
       {
         "slot": "forenoon",
         "to": "dinobeemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -11167,27 +9551,11 @@
       },
       {
         "slot": "forenoon",
-        "to": "falcomon"
-      },
-      {
-        "slot": "forenoon",
         "to": "gaossmon"
       },
       {
         "slot": "morning",
-        "to": "kudamon"
-      },
-      {
-        "slot": "midday",
-        "to": "otamamon"
-      },
-      {
-        "slot": "morning",
         "to": "shoutmonb"
-      },
-      {
-        "slot": "midday",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -11228,10 +9596,6 @@
         "to": "wizarmon"
       },
       {
-        "slot": "morning",
-        "to": "platinumsukamon"
-      },
-      {
         "slot": "evening",
         "to": "hanumon"
       },
@@ -11254,10 +9618,6 @@
       {
         "slot": "midday",
         "to": "omekamon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -11288,14 +9648,6 @@
       {
         "slot": "midday",
         "to": "lilamon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -11303,10 +9655,6 @@
     "from": "kudamon",
     "forksRequired": 8,
     "branches": [
-      {
-        "slot": "evening",
-        "to": "numemon"
-      },
       {
         "slot": "night",
         "to": "flarelizamon"
@@ -11318,10 +9666,6 @@
       {
         "slot": "night",
         "to": "reppamon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -11334,16 +9678,8 @@
         "to": "airdramon"
       },
       {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
         "slot": "night",
         "to": "tyranomon"
-      },
-      {
-        "slot": "morning",
-        "to": "vegimon"
       },
       {
         "slot": "midday",
@@ -11370,14 +9706,6 @@
         "to": "orgemon"
       },
       {
-        "slot": "forenoon",
-        "to": "raremon"
-      },
-      {
-        "slot": "midday",
-        "to": "sukamon"
-      },
-      {
         "slot": "morning",
         "to": "shellmon"
       },
@@ -11398,24 +9726,12 @@
         "to": "musyamon"
       },
       {
-        "slot": "night",
-        "to": "nanimon"
-      },
-      {
-        "slot": "evening",
-        "to": "redvegimon"
-      },
-      {
         "slot": "evening",
         "to": "snimon"
       },
       {
         "slot": "evening",
         "to": "yanmamon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -11430,46 +9746,6 @@
       {
         "slot": "midday",
         "to": "tsumemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "caprimon"
-      },
-      {
-        "slot": "morning",
-        "to": "chicchimon"
-      },
-      {
-        "slot": "evening",
-        "to": "chocomon"
-      },
-      {
-        "slot": "night",
-        "to": "dorimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gigimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "minomon"
-      },
-      {
-        "slot": "evening",
-        "to": "moonmon"
-      },
-      {
-        "slot": "evening",
-        "to": "sunmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "tanemon"
-      },
-      {
-        "slot": "morning",
-        "to": "tunomon"
       }
     ]
   },
@@ -11584,24 +9860,6 @@
       {
         "slot": "morning",
         "to": "vamdemon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "kuzuhamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -11644,14 +9902,6 @@
       {
         "slot": "morning",
         "to": "kyukimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -11772,16 +10022,6 @@
     ]
   },
   {
-    "from": "lampmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "lekismon",
     "forksRequired": 16,
     "branches": [
@@ -11868,14 +10108,6 @@
       {
         "slot": "morning",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -12086,14 +10318,6 @@
       {
         "slot": "morning",
         "to": "sinduramon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -12204,24 +10428,6 @@
       {
         "slot": "forenoon",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "leviamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -12236,10 +10442,6 @@
       {
         "slot": "morning",
         "to": "holydramon"
-      },
-      {
-        "slot": "morning",
-        "to": "babamon"
       },
       {
         "slot": "midday",
@@ -12266,10 +10468,6 @@
         "to": "minervamon"
       },
       {
-        "slot": "evening",
-        "to": "bancholeomon"
-      },
-      {
         "slot": "forenoon",
         "to": "lotusmon"
       },
@@ -12288,20 +10486,6 @@
       {
         "slot": "morning",
         "to": "shinegreymon"
-      }
-    ]
-  },
-  {
-    "from": "lilithmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "ofanimonfalldownmode"
-      },
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -12416,10 +10600,6 @@
         "to": "galgomon"
       },
       {
-        "slot": "forenoon",
-        "to": "geremon"
-      },
-      {
         "slot": "evening",
         "to": "lekismon"
       },
@@ -12429,33 +10609,11 @@
       },
       {
         "slot": "midday",
-        "to": "numemon"
-      },
-      {
-        "slot": "midday",
         "to": "prairiemon"
-      },
-      {
-        "slot": "evening",
-        "to": "sukamon"
       },
       {
         "slot": "forenoon",
         "to": "wendimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "lotusmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -12498,22 +10656,6 @@
       {
         "slot": "morning",
         "to": "chrysalimon"
-      },
-      {
-        "slot": "midday",
-        "to": "geremon"
-      },
-      {
-        "slot": "morning",
-        "to": "numemon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -12548,10 +10690,6 @@
       {
         "slot": "evening",
         "to": "madleomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -12590,14 +10728,6 @@
       {
         "slot": "night",
         "to": "taomon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -12626,7 +10756,7 @@
         "to": "rosemon"
       },
       {
-        "slot": "evening",
+        "slot": "forenoon",
         "to": "baihumon"
       },
       {
@@ -12692,16 +10822,8 @@
     "forksRequired": 64,
     "branches": [
       {
-        "slot": "evening",
-        "to": "omegamon"
-      },
-      {
         "slot": "night",
         "to": "zeedmillenniumon"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -12724,28 +10846,6 @@
       {
         "slot": "night",
         "to": "rizegreymon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "holydramon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "imperialdramonfightermode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -12768,14 +10868,6 @@
       {
         "slot": "night",
         "to": "volcamon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -12938,16 +11030,6 @@
       {
         "slot": "night",
         "to": "sleipmon"
-      }
-    ]
-  },
-  {
-    "from": "marinangemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -13138,14 +11220,6 @@
       {
         "slot": "forenoon",
         "to": "rapidmonperfect"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -13400,40 +11474,12 @@
     ]
   },
   {
-    "from": "megidramon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "shinegreymonruinmode"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "metaletemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "metalgarurumon",
     "forksRequired": 64,
     "branches": [
       {
         "slot": "midday",
         "to": "omegamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -13448,10 +11494,6 @@
       {
         "slot": "morning",
         "to": "metalgarurumon"
-      },
-      {
-        "slot": "evening",
-        "to": "baihumon"
       },
       {
         "slot": "evening",
@@ -13512,10 +11554,6 @@
       {
         "slot": "evening",
         "to": "zanbamon"
-      },
-      {
-        "slot": "morning",
-        "to": "cherubimonvirtue"
       },
       {
         "slot": "morning",
@@ -13598,16 +11636,6 @@
       {
         "slot": "morning",
         "to": "wargreymon"
-      }
-    ]
-  },
-  {
-    "from": "metalseadramon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -13703,10 +11731,6 @@
       },
       {
         "slot": "forenoon",
-        "to": "baihumon"
-      },
-      {
-        "slot": "forenoon",
         "to": "belphemonsleepmode"
       },
       {
@@ -13734,24 +11758,6 @@
       {
         "slot": "midday",
         "to": "zeedmillenniumon"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "minervamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "rosemonburstmode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -13774,38 +11780,6 @@
       {
         "slot": "evening",
         "to": "wormmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "armadimon"
-      },
-      {
-        "slot": "midday",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "evening",
-        "to": "falcomon"
-      },
-      {
-        "slot": "evening",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "midday",
-        "to": "kudamon"
-      },
-      {
-        "slot": "night",
-        "to": "otamamon"
-      },
-      {
-        "slot": "evening",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "evening",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -13820,34 +11794,6 @@
       {
         "slot": "midday",
         "to": "vikemon"
-      }
-    ]
-  },
-  {
-    "from": "miragegaogamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "omegamon"
-      },
-      {
-        "slot": "night",
-        "to": "shinegreymonburstmode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "miragegaogamonburstmode",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -13962,14 +11908,6 @@
       {
         "slot": "midday",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -14000,10 +11938,6 @@
       {
         "slot": "night",
         "to": "monochromon"
-      },
-      {
-        "slot": "night",
-        "to": "raremon"
       },
       {
         "slot": "evening",
@@ -14050,24 +11984,12 @@
         "to": "kougamon"
       },
       {
-        "slot": "morning",
-        "to": "numemon"
-      },
-      {
         "slot": "evening",
         "to": "raptordramon"
       },
       {
         "slot": "night",
-        "to": "sukamon"
-      },
-      {
-        "slot": "night",
         "to": "sunflowmon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -14164,10 +12086,6 @@
       {
         "slot": "forenoon",
         "to": "zeedmillenniumon"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -14184,32 +12102,12 @@
         "to": "lunamon"
       },
       {
-        "slot": "evening",
-        "to": "armadimon"
-      },
-      {
-        "slot": "night",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "morning",
-        "to": "falcomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gaossmon"
-      },
-      {
         "slot": "midday",
         "to": "kudamon"
       },
       {
         "slot": "night",
         "to": "otamamon"
-      },
-      {
-        "slot": "midday",
-        "to": "shoutmonb"
       },
       {
         "slot": "morning",
@@ -14232,14 +12130,6 @@
       {
         "slot": "midday",
         "to": "vermillimon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -14306,10 +12196,6 @@
       {
         "slot": "forenoon",
         "to": "saberdramon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -14328,14 +12214,6 @@
       {
         "slot": "morning",
         "to": "pandamon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -14406,10 +12284,6 @@
         "to": "devimon"
       },
       {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
         "slot": "evening",
         "to": "tyranomon"
       },
@@ -14440,10 +12314,6 @@
       {
         "slot": "forenoon",
         "to": "vdramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "sukamon"
       },
       {
         "slot": "forenoon",
@@ -14500,10 +12370,6 @@
       {
         "slot": "midday",
         "to": "xvmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -14542,14 +12408,6 @@
       {
         "slot": "forenoon",
         "to": "vamdemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -14636,14 +12494,6 @@
       {
         "slot": "midday",
         "to": "waruseadramon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -14752,24 +12602,6 @@
       {
         "slot": "night",
         "to": "taomon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "neptunemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -14796,14 +12628,6 @@
       {
         "slot": "night",
         "to": "vermillimon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -14934,14 +12758,6 @@
       {
         "slot": "night",
         "to": "sinduramon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -15012,14 +12828,6 @@
       {
         "slot": "midday",
         "to": "vamdemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -15158,14 +12966,6 @@
       {
         "slot": "morning",
         "to": "atlurkabuterimonred"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -15238,14 +13038,6 @@
       {
         "slot": "forenoon",
         "to": "extyranomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -15256,14 +13048,6 @@
       {
         "slot": "forenoon",
         "to": "ofanimonfalldownmode"
-      },
-      {
-        "slot": "evening",
-        "to": "rosemonburstmode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -15336,10 +13120,6 @@
         "to": "revolmon"
       },
       {
-        "slot": "morning",
-        "to": "sukamon"
-      },
-      {
         "slot": "evening",
         "to": "shellmon"
       },
@@ -15362,10 +13142,6 @@
       {
         "slot": "morning",
         "to": "yanmamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -15388,14 +13164,6 @@
       {
         "slot": "forenoon",
         "to": "weregarurumonblack"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -15436,36 +13204,12 @@
         "to": "tukaimon"
       },
       {
-        "slot": "morning",
-        "to": "armadimon"
-      },
-      {
-        "slot": "night",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "midday",
-        "to": "falcomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gaossmon"
-      },
-      {
         "slot": "forenoon",
         "to": "kudamon"
       },
       {
         "slot": "forenoon",
         "to": "otamamon"
-      },
-      {
-        "slot": "morning",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "forenoon",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -15556,14 +13300,6 @@
         "to": "birdramon"
       },
       {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
-        "slot": "night",
-        "to": "vegimon"
-      },
-      {
         "slot": "midday",
         "to": "whamon"
       },
@@ -15586,10 +13322,6 @@
       {
         "slot": "evening",
         "to": "mojyamon"
-      },
-      {
-        "slot": "midday",
-        "to": "nanimon"
       },
       {
         "slot": "evening",
@@ -15648,20 +13380,12 @@
         "to": "ponchomon"
       },
       {
-        "slot": "forenoon",
-        "to": "raremon"
-      },
-      {
         "slot": "evening",
         "to": "redvegimon"
       },
       {
         "slot": "evening",
         "to": "reppamon"
-      },
-      {
-        "slot": "night",
-        "to": "sukamon"
       },
       {
         "slot": "night",
@@ -15686,10 +13410,6 @@
       {
         "slot": "midday",
         "to": "woodmon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -15720,16 +13440,6 @@
       {
         "slot": "midday",
         "to": "minervamon"
-      }
-    ]
-  },
-  {
-    "from": "parasimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -15778,10 +13488,6 @@
       {
         "slot": "forenoon",
         "to": "devimon"
-      },
-      {
-        "slot": "midday",
-        "to": "numemon"
       },
       {
         "slot": "night",
@@ -15864,10 +13570,6 @@
         "to": "fladramon"
       },
       {
-        "slot": "midday",
-        "to": "geremon"
-      },
-      {
         "slot": "morning",
         "to": "icedevimon"
       },
@@ -15892,10 +13594,6 @@
         "to": "musyamon"
       },
       {
-        "slot": "evening",
-        "to": "nanimon"
-      },
-      {
         "slot": "forenoon",
         "to": "nefertimon"
       },
@@ -15910,10 +13608,6 @@
       {
         "slot": "midday",
         "to": "prairiemon"
-      },
-      {
-        "slot": "evening",
-        "to": "raremon"
       },
       {
         "slot": "evening",
@@ -15946,10 +13640,6 @@
       {
         "slot": "forenoon",
         "to": "sunflowmon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -15964,10 +13654,6 @@
       {
         "slot": "midday",
         "to": "wizarmon"
-      },
-      {
-        "slot": "midday",
-        "to": "platinumsukamon"
       },
       {
         "slot": "forenoon",
@@ -15988,10 +13674,6 @@
       {
         "slot": "midday",
         "to": "knightchessmonwhite"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -16034,14 +13716,6 @@
       {
         "slot": "morning",
         "to": "knightchessmonwhite"
-      },
-      {
-        "slot": "midday",
-        "to": "platinumsukamon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -16104,14 +13778,6 @@
       {
         "slot": "evening",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -16221,14 +13887,6 @@
       },
       {
         "slot": "night",
-        "to": "nanimon"
-      },
-      {
-        "slot": "evening",
-        "to": "numemon"
-      },
-      {
-        "slot": "night",
         "to": "saberdramon"
       },
       {
@@ -16236,16 +13894,8 @@
         "to": "sangloupmon"
       },
       {
-        "slot": "morning",
-        "to": "sukamon"
-      },
-      {
         "slot": "midday",
         "to": "tocanmon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -16312,30 +13962,6 @@
     ]
   },
   {
-    "from": "pharaohmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "hououmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "imperialdramonfightermode"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "picodevimon",
     "forksRequired": 8,
     "branches": [
@@ -16384,14 +14010,6 @@
         "to": "evilmon"
       },
       {
-        "slot": "night",
-        "to": "nanimon"
-      },
-      {
-        "slot": "evening",
-        "to": "raremon"
-      },
-      {
         "slot": "midday",
         "to": "shellmon"
       },
@@ -16420,10 +14038,6 @@
         "to": "dinohumon"
       },
       {
-        "slot": "night",
-        "to": "geremon"
-      },
-      {
         "slot": "evening",
         "to": "icedevimon"
       },
@@ -16436,20 +14050,12 @@
         "to": "lekismon"
       },
       {
-        "slot": "morning",
-        "to": "numemon"
-      },
-      {
         "slot": "evening",
         "to": "owlmon"
       },
       {
         "slot": "morning",
         "to": "saberdramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "sukamon"
       },
       {
         "slot": "night",
@@ -16466,20 +14072,6 @@
       {
         "slot": "evening",
         "to": "magnamon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "piemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -16614,24 +14206,6 @@
       {
         "slot": "morning",
         "to": "insekimon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "plesiomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -16688,10 +14262,6 @@
         "to": "vdramon"
       },
       {
-        "slot": "forenoon",
-        "to": "raremon"
-      },
-      {
         "slot": "evening",
         "to": "flarelizamon"
       },
@@ -16710,10 +14280,6 @@
       {
         "slot": "night",
         "to": "gaogamon"
-      },
-      {
-        "slot": "midday",
-        "to": "geremon"
       },
       {
         "slot": "evening",
@@ -16749,19 +14315,11 @@
       },
       {
         "slot": "evening",
-        "to": "numemon"
-      },
-      {
-        "slot": "evening",
         "to": "reppamon"
       },
       {
         "slot": "morning",
         "to": "revolmon"
-      },
-      {
-        "slot": "midday",
-        "to": "sukamon"
       },
       {
         "slot": "evening",
@@ -16782,10 +14340,6 @@
       {
         "slot": "morning",
         "to": "sunflowmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -16800,14 +14354,6 @@
       {
         "slot": "midday",
         "to": "vajramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -16822,46 +14368,6 @@
       {
         "slot": "midday",
         "to": "gummymon"
-      },
-      {
-        "slot": "midday",
-        "to": "caprimon"
-      },
-      {
-        "slot": "evening",
-        "to": "chicchimon"
-      },
-      {
-        "slot": "morning",
-        "to": "chocomon"
-      },
-      {
-        "slot": "midday",
-        "to": "dorimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gigimon"
-      },
-      {
-        "slot": "night",
-        "to": "minomon"
-      },
-      {
-        "slot": "morning",
-        "to": "moonmon"
-      },
-      {
-        "slot": "morning",
-        "to": "sunmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "tanemon"
-      },
-      {
-        "slot": "night",
-        "to": "tunomon"
       }
     ]
   },
@@ -16880,44 +14386,6 @@
       {
         "slot": "midday",
         "to": "taomon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "princemamemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "pukumon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "pinochimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -16964,26 +14432,6 @@
       {
         "slot": "night",
         "to": "tunomon"
-      }
-    ]
-  },
-  {
-    "from": "queenchessmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "qinglongmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -17076,14 +14524,6 @@
       {
         "slot": "evening",
         "to": "doruguremon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -17094,10 +14534,6 @@
       {
         "slot": "forenoon",
         "to": "birdramon"
-      },
-      {
-        "slot": "midday",
-        "to": "numemon"
       },
       {
         "slot": "evening",
@@ -17170,10 +14606,6 @@
       {
         "slot": "midday",
         "to": "geogreymon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -17248,24 +14680,6 @@
       {
         "slot": "evening",
         "to": "vamdemon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "ravmon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -17340,14 +14754,6 @@
       {
         "slot": "forenoon",
         "to": "vamdemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -17358,10 +14764,6 @@
       {
         "slot": "morning",
         "to": "devimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "numemon"
       },
       {
         "slot": "evening",
@@ -17428,10 +14830,6 @@
         "to": "prairiemon"
       },
       {
-        "slot": "morning",
-        "to": "geremon"
-      },
-      {
         "slot": "evening",
         "to": "growmon"
       },
@@ -17449,15 +14847,7 @@
       },
       {
         "slot": "forenoon",
-        "to": "sukamon"
-      },
-      {
-        "slot": "forenoon",
         "to": "damemon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -17570,14 +14960,6 @@
       {
         "slot": "midday",
         "to": "volcamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -17596,16 +14978,8 @@
     "forksRequired": 64,
     "branches": [
       {
-        "slot": "evening",
-        "to": "imperialdramonfightermode"
-      },
-      {
         "slot": "morning",
         "to": "rosemonburstmode"
-      },
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -17652,56 +15026,6 @@
       {
         "slot": "midday",
         "to": "karatenmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "saberleomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "omegamon"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "saintgalgomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "sakuyamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "rosemonburstmode"
-      },
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -17724,14 +15048,6 @@
       {
         "slot": "midday",
         "to": "gigadramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -17770,14 +15086,6 @@
       {
         "slot": "evening",
         "to": "matadrmon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -17926,14 +15234,6 @@
       {
         "slot": "morning",
         "to": "vamdemon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -17948,32 +15248,6 @@
       {
         "slot": "night",
         "to": "yatagaramon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "seraphimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "imperialdramonfightermode"
-      },
-      {
-        "slot": "morning",
-        "to": "imperialdramonpaladinmode"
-      },
-      {
-        "slot": "morning",
-        "to": "alphamon"
       }
     ]
   },
@@ -18016,14 +15290,6 @@
       {
         "slot": "morning",
         "to": "rizegreymon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -18089,10 +15355,6 @@
     "from": "shakomon",
     "forksRequired": 8,
     "branches": [
-      {
-        "slot": "midday",
-        "to": "numemon"
-      },
       {
         "slot": "morning",
         "to": "whamon"
@@ -18160,10 +15422,6 @@
       {
         "slot": "morning",
         "to": "wizarmon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -18171,14 +15429,6 @@
     "from": "shamamon",
     "forksRequired": 8,
     "branches": [
-      {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
-        "slot": "evening",
-        "to": "vegimon"
-      },
       {
         "slot": "evening",
         "to": "garurumon"
@@ -18206,10 +15456,6 @@
       {
         "slot": "midday",
         "to": "musyamon"
-      },
-      {
-        "slot": "evening",
-        "to": "geremon"
       },
       {
         "slot": "midday",
@@ -18244,20 +15490,12 @@
         "to": "prairiemon"
       },
       {
-        "slot": "midday",
-        "to": "sukamon"
-      },
-      {
         "slot": "evening",
         "to": "sorcerimon"
       },
       {
         "slot": "forenoon",
         "to": "stingmon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -18414,14 +15652,6 @@
       {
         "slot": "night",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -18430,20 +15660,12 @@
     "forksRequired": 64,
     "branches": [
       {
-        "slot": "evening",
-        "to": "omegamon"
-      },
-      {
-        "slot": "morning",
-        "to": "shinegreymonburstmode"
-      },
-      {
         "slot": "midday",
         "to": "shinegreymonruinmode"
       },
       {
-        "slot": "forenoon",
-        "to": "alphamon"
+        "slot": "morning",
+        "to": "shinegreymonburstmode"
       }
     ]
   },
@@ -18510,16 +15732,6 @@
     ]
   },
   {
-    "from": "shoutmonb",
-    "forksRequired": 8,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
     "from": "shurimon",
     "forksRequired": 16,
     "branches": [
@@ -18554,14 +15766,6 @@
       {
         "slot": "evening",
         "to": "kyukimon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -18626,10 +15830,6 @@
       {
         "slot": "night",
         "to": "hououmon"
-      },
-      {
-        "slot": "night",
-        "to": "baihumon"
       },
       {
         "slot": "morning",
@@ -18770,36 +15970,12 @@
     ]
   },
   {
-    "from": "skullmammon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "slashangemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
     "from": "sleipmon",
     "forksRequired": 64,
     "branches": [
       {
         "slot": "midday",
         "to": "chaosmon"
-      },
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -18862,14 +16038,6 @@
       {
         "slot": "midday",
         "to": "vamdemon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -18877,10 +16045,6 @@
     "from": "snowgoburimon",
     "forksRequired": 8,
     "branches": [
-      {
-        "slot": "midday",
-        "to": "numemon"
-      },
       {
         "slot": "forenoon",
         "to": "yukidarumon"
@@ -18910,10 +16074,6 @@
         "to": "ikkakumon"
       },
       {
-        "slot": "night",
-        "to": "geremon"
-      },
-      {
         "slot": "morning",
         "to": "hyougamon"
       },
@@ -18926,16 +16086,8 @@
         "to": "icemon"
       },
       {
-        "slot": "night",
-        "to": "sukamon"
-      },
-      {
         "slot": "forenoon",
         "to": "woodmon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -18952,10 +16104,6 @@
         "to": "whamon"
       },
       {
-        "slot": "morning",
-        "to": "nanimon"
-      },
-      {
         "slot": "night",
         "to": "starmon"
       },
@@ -18966,14 +16114,6 @@
       {
         "slot": "forenoon",
         "to": "flarelizamon"
-      },
-      {
-        "slot": "midday",
-        "to": "redvegimon"
-      },
-      {
-        "slot": "night",
-        "to": "geremon"
       },
       {
         "slot": "forenoon",
@@ -18994,18 +16134,6 @@
       {
         "slot": "forenoon",
         "to": "kenkimon"
-      },
-      {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
-        "slot": "night",
-        "to": "sukamon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -19048,24 +16176,6 @@
       {
         "slot": "night",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "spinomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -19196,14 +16306,6 @@
       {
         "slot": "night",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -19290,14 +16392,6 @@
       {
         "slot": "morning",
         "to": "vajramon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -19420,14 +16514,6 @@
       {
         "slot": "night",
         "to": "bishopchessmonwhite"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -19482,14 +16568,6 @@
       {
         "slot": "midday",
         "to": "rizegreymon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -19510,36 +16588,16 @@
         "to": "coronamon"
       },
       {
-        "slot": "morning",
-        "to": "armadimon"
-      },
-      {
         "slot": "midday",
         "to": "dondokomon"
-      },
-      {
-        "slot": "midday",
-        "to": "falcomon"
       },
       {
         "slot": "night",
         "to": "gaossmon"
       },
       {
-        "slot": "morning",
-        "to": "kudamon"
-      },
-      {
-        "slot": "morning",
-        "to": "otamamon"
-      },
-      {
         "slot": "forenoon",
         "to": "shoutmonb"
-      },
-      {
-        "slot": "evening",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -19566,16 +16624,6 @@
       {
         "slot": "midday",
         "to": "darkdramon"
-      }
-    ]
-  },
-  {
-    "from": "tactimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -19686,14 +16734,6 @@
       {
         "slot": "night",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -19744,38 +16784,6 @@
       {
         "slot": "forenoon",
         "to": "renamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "armadimon"
-      },
-      {
-        "slot": "midday",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "midday",
-        "to": "falcomon"
-      },
-      {
-        "slot": "morning",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "morning",
-        "to": "kudamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "otamamon"
-      },
-      {
-        "slot": "night",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "midday",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -19866,14 +16874,6 @@
       {
         "slot": "midday",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -19986,10 +16986,6 @@
         "to": "airdramon"
       },
       {
-        "slot": "forenoon",
-        "to": "numemon"
-      },
-      {
         "slot": "morning",
         "to": "tyranomon"
       },
@@ -20042,10 +17038,6 @@
         "to": "gekomon"
       },
       {
-        "slot": "forenoon",
-        "to": "geremon"
-      },
-      {
         "slot": "night",
         "to": "gokimon"
       },
@@ -20058,20 +17050,8 @@
         "to": "kuwagamon"
       },
       {
-        "slot": "morning",
-        "to": "raremon"
-      },
-      {
-        "slot": "morning",
-        "to": "redvegimon"
-      },
-      {
         "slot": "midday",
         "to": "sandyanmamon"
-      },
-      {
-        "slot": "midday",
-        "to": "sukamon"
       },
       {
         "slot": "forenoon",
@@ -20108,10 +17088,6 @@
       {
         "slot": "forenoon",
         "to": "yanmamon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   },
@@ -20213,15 +17189,7 @@
       },
       {
         "slot": "morning",
-        "to": "geremon"
-      },
-      {
-        "slot": "morning",
         "to": "growmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "numemon"
       },
       {
         "slot": "forenoon",
@@ -20232,16 +17200,8 @@
         "to": "seahomon"
       },
       {
-        "slot": "night",
-        "to": "sukamon"
-      },
-      {
         "slot": "morning",
         "to": "wendimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -20364,14 +17324,6 @@
       {
         "slot": "evening",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -20449,31 +17401,7 @@
       },
       {
         "slot": "forenoon",
-        "to": "armadimon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "morning",
-        "to": "falcomon"
-      },
-      {
-        "slot": "evening",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "forenoon",
         "to": "kudamon"
-      },
-      {
-        "slot": "evening",
-        "to": "otamamon"
-      },
-      {
-        "slot": "evening",
-        "to": "shoutmonb"
       },
       {
         "slot": "night",
@@ -20556,14 +17484,6 @@
       {
         "slot": "night",
         "to": "zudomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -20574,14 +17494,6 @@
       {
         "slot": "morning",
         "to": "taomon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -20592,10 +17504,6 @@
       {
         "slot": "forenoon",
         "to": "devimon"
-      },
-      {
-        "slot": "midday",
-        "to": "numemon"
       },
       {
         "slot": "night",
@@ -20624,10 +17532,6 @@
       {
         "slot": "night",
         "to": "tailmon"
-      },
-      {
-        "slot": "evening",
-        "to": "sukamon"
       },
       {
         "slot": "forenoon",
@@ -20666,10 +17570,6 @@
         "to": "guardromon"
       },
       {
-        "slot": "forenoon",
-        "to": "nanimon"
-      },
-      {
         "slot": "night",
         "to": "omekamon"
       },
@@ -20684,10 +17584,6 @@
       {
         "slot": "evening",
         "to": "wizarmon"
-      },
-      {
-        "slot": "morning",
-        "to": "grimmon"
       }
     ]
   },
@@ -20710,10 +17606,6 @@
       {
         "slot": "night",
         "to": "mechanorimon"
-      },
-      {
-        "slot": "night",
-        "to": "nanimon"
       },
       {
         "slot": "night",
@@ -20740,24 +17632,8 @@
         "to": "guardromon"
       },
       {
-        "slot": "morning",
-        "to": "geremon"
-      },
-      {
-        "slot": "night",
-        "to": "numemon"
-      },
-      {
         "slot": "night",
         "to": "raptordramon"
-      },
-      {
-        "slot": "night",
-        "to": "sukamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -20896,20 +17772,12 @@
         "to": "tankmon"
       },
       {
-        "slot": "morning",
-        "to": "geremon"
-      },
-      {
         "slot": "night",
         "to": "icedevimon"
       },
       {
         "slot": "midday",
         "to": "igamon"
-      },
-      {
-        "slot": "morning",
-        "to": "numemon"
       },
       {
         "slot": "evening",
@@ -20928,10 +17796,6 @@
         "to": "saberdramon"
       },
       {
-        "slot": "morning",
-        "to": "sukamon"
-      },
-      {
         "slot": "forenoon",
         "to": "tocanmon"
       },
@@ -20946,10 +17810,6 @@
       {
         "slot": "evening",
         "to": "stingmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
       }
     ]
   },
@@ -20982,32 +17842,8 @@
         "to": "kotemon"
       },
       {
-        "slot": "forenoon",
-        "to": "armadimon"
-      },
-      {
-        "slot": "morning",
-        "to": "dondokomon"
-      },
-      {
         "slot": "evening",
         "to": "falcomon"
-      },
-      {
-        "slot": "evening",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "evening",
-        "to": "kudamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "otamamon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "shoutmonb"
       },
       {
         "slot": "morning",
@@ -21072,34 +17908,6 @@
         "to": "vmon"
       },
       {
-        "slot": "midday",
-        "to": "armadimon"
-      },
-      {
-        "slot": "night",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "evening",
-        "to": "falcomon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "gaossmon"
-      },
-      {
-        "slot": "morning",
-        "to": "kudamon"
-      },
-      {
-        "slot": "morning",
-        "to": "otamamon"
-      },
-      {
-        "slot": "night",
-        "to": "shoutmonb"
-      },
-      {
         "slot": "night",
         "to": "snowgoburimon"
       }
@@ -21152,14 +17960,6 @@
       {
         "slot": "night",
         "to": "shawujinmon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -21294,14 +18094,6 @@
       {
         "slot": "midday",
         "to": "yatagaramon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -21396,14 +18188,6 @@
       {
         "slot": "midday",
         "to": "vademon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -21502,14 +18286,6 @@
       {
         "slot": "morning",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -21524,10 +18300,6 @@
       {
         "slot": "night",
         "to": "angemon"
-      },
-      {
-        "slot": "morning",
-        "to": "numemon"
       },
       {
         "slot": "morning",
@@ -21574,10 +18346,6 @@
         "to": "vdramon"
       },
       {
-        "slot": "midday",
-        "to": "raremon"
-      },
-      {
         "slot": "morning",
         "to": "kuwagamon"
       },
@@ -21600,10 +18368,6 @@
       {
         "slot": "evening",
         "to": "woodmon"
-      },
-      {
-        "slot": "night",
-        "to": "redvegimon"
       },
       {
         "slot": "night",
@@ -21639,10 +18403,6 @@
       },
       {
         "slot": "morning",
-        "to": "geremon"
-      },
-      {
-        "slot": "morning",
         "to": "goldvdramon"
       },
       {
@@ -21658,16 +18418,8 @@
         "to": "kyubimon"
       },
       {
-        "slot": "midday",
-        "to": "sukamon"
-      },
-      {
         "slot": "morning",
         "to": "xvmon"
-      },
-      {
-        "slot": "night",
-        "to": "grimmon"
       }
     ]
   },
@@ -21780,16 +18532,6 @@
       {
         "slot": "evening",
         "to": "tactimon"
-      }
-    ]
-  },
-  {
-    "from": "valkyrimon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -21978,28 +18720,6 @@
       {
         "slot": "evening",
         "to": "vamdemon"
-      },
-      {
-        "slot": "midday",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
-      }
-    ]
-  },
-  {
-    "from": "venomvamdemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "evening",
-        "to": "beelzebumonblastmode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -22038,20 +18758,6 @@
       {
         "slot": "forenoon",
         "to": "wargreymon"
-      }
-    ]
-  },
-  {
-    "from": "vikemon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "imperialdramonfightermode"
-      },
-      {
-        "slot": "evening",
-        "to": "alphamon"
       }
     ]
   },
@@ -22194,32 +18900,8 @@
         "to": "armadimon"
       },
       {
-        "slot": "midday",
-        "to": "dondokomon"
-      },
-      {
-        "slot": "night",
-        "to": "falcomon"
-      },
-      {
-        "slot": "evening",
-        "to": "gaossmon"
-      },
-      {
         "slot": "night",
         "to": "kudamon"
-      },
-      {
-        "slot": "midday",
-        "to": "otamamon"
-      },
-      {
-        "slot": "night",
-        "to": "shoutmonb"
-      },
-      {
-        "slot": "night",
-        "to": "snowgoburimon"
       }
     ]
   },
@@ -22230,10 +18912,6 @@
       {
         "slot": "evening",
         "to": "omegamon"
-      },
-      {
-        "slot": "night",
-        "to": "alphamon"
       }
     ]
   },
@@ -22396,14 +19074,6 @@
       {
         "slot": "night",
         "to": "lilamon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -22446,14 +19116,6 @@
       {
         "slot": "night",
         "to": "sinduramon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "morning",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -22688,14 +19350,6 @@
       {
         "slot": "forenoon",
         "to": "weregarurumon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -22810,14 +19464,6 @@
       {
         "slot": "morning",
         "to": "tonosamagekomon"
-      },
-      {
-        "slot": "evening",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -22908,14 +19554,6 @@
       {
         "slot": "night",
         "to": "vamdemon"
-      },
-      {
-        "slot": "morning",
-        "to": "divemon"
-      },
-      {
-        "slot": "evening",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -22934,10 +19572,6 @@
       {
         "slot": "night",
         "to": "devimon"
-      },
-      {
-        "slot": "evening",
-        "to": "numemon"
       },
       {
         "slot": "midday",
@@ -23028,16 +19662,8 @@
         "to": "stingmon"
       },
       {
-        "slot": "midday",
-        "to": "geremon"
-      },
-      {
         "slot": "night",
         "to": "kongoumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "sukamon"
       },
       {
         "slot": "midday",
@@ -23050,10 +19676,6 @@
       {
         "slot": "night",
         "to": "xvmon"
-      },
-      {
-        "slot": "evening",
-        "to": "grimmon"
       }
     ]
   },
@@ -23116,16 +19738,6 @@
       {
         "slot": "midday",
         "to": "wargreymon"
-      }
-    ]
-  },
-  {
-    "from": "xuanwumon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "forenoon",
-        "to": "alphamon"
       }
     ]
   },
@@ -23200,14 +19812,6 @@
       {
         "slot": "forenoon",
         "to": "yatagaramon"
-      },
-      {
-        "slot": "night",
-        "to": "divemon"
-      },
-      {
-        "slot": "midday",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -23238,14 +19842,6 @@
       {
         "slot": "evening",
         "to": "shakkoumon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "divemon"
-      },
-      {
-        "slot": "night",
-        "to": "rookchessmonwhite"
       }
     ]
   },
@@ -23320,10 +19916,6 @@
         "to": "geogreymon"
       },
       {
-        "slot": "morning",
-        "to": "geremon"
-      },
-      {
         "slot": "midday",
         "to": "greymon"
       },
@@ -23349,43 +19941,11 @@
       },
       {
         "slot": "morning",
-        "to": "numemon"
-      },
-      {
-        "slot": "morning",
-        "to": "sukamon"
-      },
-      {
-        "slot": "morning",
         "to": "sorcerimon"
       },
       {
         "slot": "forenoon",
         "to": "xvmon"
-      },
-      {
-        "slot": "forenoon",
-        "to": "grimmon"
-      }
-    ]
-  },
-  {
-    "from": "zanbamon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "night",
-        "to": "alphamon"
-      }
-    ]
-  },
-  {
-    "from": "zhuqiaomon",
-    "forksRequired": 64,
-    "branches": [
-      {
-        "slot": "midday",
-        "to": "alphamon"
       }
     ]
   },
@@ -23446,10 +20006,6 @@
       {
         "slot": "evening",
         "to": "ankylomon"
-      },
-      {
-        "slot": "midday",
-        "to": "grimmon"
       }
     ]
   }

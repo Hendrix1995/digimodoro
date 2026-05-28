@@ -6,7 +6,7 @@ export type Snapshot = {
     seedEggVariant?: number
     personality?: 'calm' | 'gentle' | 'holy' | 'mischief' | 'savage'
     digimonId: string
-    stage: 'egg' | 'fresh' | 'baby' | 'child' | 'adult' | 'perfect' | 'mega'
+    stage: 'egg' | 'fresh' | 'baby' | 'child' | 'adult' | 'perfect' | 'mega' | 'ultra'
     xp: { totalForks: number; inStageForks: number }
     inStageSlotForks: {
       morning: number

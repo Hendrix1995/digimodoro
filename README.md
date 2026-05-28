@@ -10,8 +10,8 @@ English: [README.en.md](README.en.md)
 
 | 운영체제 | |
 |---|---|
-| Windows | [DigiModoro_0.4.5_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.5_x64-setup.exe) |
-| macOS 15+ (Intel · Apple Silicon 공용) | [DigiModoro_0.4.5_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.4.5_universal.dmg) |
+| Windows | [DigiModoro_0.5.0_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.5.0_x64-setup.exe) |
+| macOS 15+ (Intel · Apple Silicon 공용) | [DigiModoro_0.5.0_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.5.0_universal.dmg) |
 
 ### Windows
 

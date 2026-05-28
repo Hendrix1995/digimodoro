@@ -1,0 +1,77 @@
+{
+  "_comment": "Manual evolution mappings curated from wikimon (May 2026). Applied by build-tree.py after canonical pass and before orphan adoption. stageOverrides reassigns canon-verified Super Ultimate digimon from mega to ultra.",
+  "addChildren": {
+    "gaossmon": [
+      "greymon"
+    ],
+    "kenkimon": [
+      "andromon"
+    ],
+    "tocanmon": [
+      "taomon"
+    ],
+    "grimmon": [
+      "chaosgrimmon"
+    ],
+    "akatorimon": [
+      "delumon",
+      "fantomon",
+      "garudamon",
+      "gigadramon",
+      "parrotmon",
+      "piccolomon",
+      "sinduramon"
+    ],
+    "botamon": [
+      "koromon",
+      "pagumon",
+      "tokomon",
+      "wanyamon"
+    ],
+    "bombernanimon": [
+      "giromon",
+      "insekimon",
+      "megadramon",
+      "metalmamemon",
+      "volcamon"
+    ],
+    "centalmon": [
+      "andromon",
+      "cyberdramon",
+      "garudamon",
+      "giromon",
+      "knightmon",
+      "weregarurumon"
+    ],
+    "bishopchessmonwhite": [
+      "hiandromon",
+      "jumbogamemon",
+      "kingchessmon",
+      "queenchessmon"
+    ],
+    "armadimon": [
+      "ankylomon"
+    ]
+  },
+  "addParents": {
+    "tactimon": [
+      "vajramon"
+    ],
+    "damemon": [
+      "agumon",
+      "gabumon",
+      "renamon"
+    ]
+  },
+  "stageOverrides": {
+    "susanoomon": "ultra",
+    "imperialdramonpaladinmode": "ultra",
+    "beelzebumonblastmode": "ultra",
+    "chronomondestroymode": "ultra",
+    "shinegreymonruinmode": "ultra",
+    "shinegreymonburstmode": "ultra",
+    "chaosdukemoncore": "ultra",
+    "chaosmon": "ultra",
+    "zeedmillenniumon": "ultra"
+  }
+}

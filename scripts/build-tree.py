@@ -9,24 +9,36 @@ Two-pass branch construction:
      Result: every digimon in the roster becomes reachable from the egg.
 
 - Number of branches per parent is uncapped (5-slot limit removed).
-- Slots are assigned deterministically by hashing the child id, so the same
-  child always sits in the same slot regardless of parent. Multiple children
-  may share a slot.
+- Slots are assigned deterministically by hashing (parent_id, child_id), so
+  the same child can land in different slots depending on which parent it
+  comes from. This avoids the bias where an orphan adopted by every same-
+  stage parent ends up dominating one slot across the entire stage.
 """
 import json, hashlib
 
 with open('scripts/digimon-meta.json') as f: meta = json.load(f)
 with open('scripts/matched.json') as f: matched = json.load(f)
 apiid_to_ours = {str(m['api_id']): m['id'] for m in matched}
+try:
+    with open('scripts/manual-evolutions.json') as f: manual = json.load(f)
+except FileNotFoundError:
+    manual = {'addChildren': {}, 'addParents': {}}
 
-STAGES = ['fresh', 'baby', 'child', 'adult', 'perfect', 'mega']
+STAGES = ['fresh', 'baby', 'child', 'adult', 'perfect', 'mega', 'ultra']
 NEXT_OF = {STAGES[i]: STAGES[i+1] if i+1 < len(STAGES) else None for i in range(len(STAGES))}
 SLOTS = ['morning', 'forenoon', 'midday', 'evening', 'night']
-FORKS_REQUIRED = {'egg': 1, 'fresh': 2, 'baby': 4, 'child': 8, 'adult': 16, 'perfect': 32}
+FORKS_REQUIRED = {'egg': 1, 'fresh': 2, 'baby': 4, 'child': 8, 'adult': 16, 'perfect': 32, 'mega': 64}
+
+# Apply stage overrides from manual-evolutions.json before any canonical
+# processing. This is how we mark canon-verified Super Ultimate digimon as
+# 'ultra' instead of 'mega'.
+for did, new_stage in (manual.get('stageOverrides') or {}).items():
+    if did in meta:
+        meta[did]['stage'] = new_stage
 
 
-def slot_for(child_id: str) -> str:
-    h = int(hashlib.md5(child_id.encode()).hexdigest()[:8], 16)
+def slot_for(parent_id: str, child_id: str) -> str:
+    h = int(hashlib.md5(f'{parent_id}:{child_id}'.encode()).hexdigest()[:8], 16)
     return SLOTS[h % len(SLOTS)]
 
 
@@ -57,9 +69,41 @@ for parent_stage in STAGES[:-1]:
             continue
         parent_branches[p] = kids
         # Diagnostic: how many distinct slots do these kids land in?
-        slot_set = {slot_for(c) for c in kids}
+        slot_set = {slot_for(p, c) for c in kids}
         if len(kids) >= 5 and len(slot_set) < 5:
             slot_dist_warnings.append((p, len(kids), len(slot_set)))
+
+# Pass 1.5: manual override — curated canon mappings from wikimon for cases
+# where digi-api has empty evolution data. Two forms:
+#   addChildren[parent_id] = [child_ids]  — append children to a parent.
+#   addParents[orphan_id]  = [parent_ids] — register specific parents for a
+#     digimon, so it is no longer treated as an orphan in Pass 2.
+manual_applied = {'children': 0, 'parents': 0}
+for parent_id, kids in (manual.get('addChildren') or {}).items():
+    if parent_id not in meta: continue
+    parent_stage_check = meta[parent_id].get('stage')
+    target_stage = NEXT_OF.get(parent_stage_check)
+    existing = parent_branches.get(parent_id, [])
+    for c in kids:
+        if c not in meta or meta[c].get('stage') != target_stage: continue
+        if c not in existing:
+            existing.append(c)
+            manual_applied['children'] += 1
+    if existing:
+        parent_branches[parent_id] = existing
+for orphan_id, parent_ids in (manual.get('addParents') or {}).items():
+    if orphan_id not in meta: continue
+    orphan_stage = meta[orphan_id].get('stage')
+    for p in parent_ids:
+        if p not in meta: continue
+        if meta[p].get('stage') is None: continue
+        if NEXT_OF.get(meta[p]['stage']) != orphan_stage: continue
+        existing = parent_branches.get(p, [])
+        if orphan_id not in existing:
+            existing.append(orphan_id)
+            manual_applied['parents'] += 1
+        if existing:
+            parent_branches[p] = existing
 
 # Pass 2: orphan adoption — any next-stage digimon not pointed to by any
 # canonical parent gets adopted by every parent in the same stage. This
@@ -95,10 +139,10 @@ egg_branches = [
 
 rules = [{'from': 'egg', 'forksRequired': FORKS_REQUIRED['egg'], 'branches': egg_branches}]
 for id_, d in meta.items():
-    if not d.get('stage') or d['stage'] == 'mega': continue
+    if not d.get('stage') or d['stage'] == 'ultra': continue
     kids = parent_branches.get(id_, [])
     if not kids: continue
-    branches = [{'slot': slot_for(c), 'to': c} for c in kids]
+    branches = [{'slot': slot_for(id_, c), 'to': c} for c in kids]
     rules.append({
         'from': id_,
         'forksRequired': FORKS_REQUIRED.get(d['stage'], 8),
@@ -111,6 +155,7 @@ egg_lineage = {str(i): fresh_pool[(i - 1) % len(fresh_pool)] for i in range(1, 1
 with open('packages/data/evolution.json', 'w') as f:
     json.dump(rules, f, indent=2, ensure_ascii=False)
 print(f'evolution.json: {len(rules)} rules')
+print(f'  manual overrides applied: +{manual_applied["children"]} children, +{manual_applied["parents"]} parent links')
 
 roster = [{'id': 'egg', 'name': 'Digi Egg', 'stage': 'egg', 'sprite': {'idle': 'egg/idle.png'}}]
 for id_, d in meta.items():

@@ -88,7 +88,7 @@ export function reduce(
 
   // Evolution loop — handles overflow if a single pomodoro tips multiple
   // stages (unlikely in practice but cheap to support).
-  while (!next.rip && next.stage !== 'mega') {
+  while (!next.rip && next.stage !== 'ultra') {
     const rule = rules.find((r) => r.from === next.digimonId)
     if (!rule || !isReadyToEvolve(rule, next.xp.inStageForks)) break
 

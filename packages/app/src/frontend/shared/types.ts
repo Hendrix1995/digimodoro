@@ -89,4 +89,4 @@ export type BoxSlot = { frozenAt: number; pet: PetState } | null
 
 export type BoxData = { slots: BoxSlot[] }
 
-export const BOX_CAPACITY = 5
+export const BOX_CAPACITY = 20

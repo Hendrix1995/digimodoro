@@ -10,8 +10,8 @@
 
 | OS | |
 |---|---|
-| Windows | [DigiModoro_0.5.2_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.5.2_x64-setup.exe) |
-| macOS 15+ (Intel · Apple Silicon universal) | [DigiModoro_0.5.2_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.5.2_universal.dmg) |
+| Windows | [DigiModoro_0.5.3_x64-setup.exe](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.5.3_x64-setup.exe) |
+| macOS 15+ (Intel · Apple Silicon universal) | [DigiModoro_0.5.3_universal.dmg](https://github.com/Hendrix1995/digimodoro/releases/latest/download/DigiModoro_0.5.3_universal.dmg) |
 
 ### Windows
 
@@ -54,7 +54,7 @@ It takes ~47 forks (about 39 hours of focused work) to reach the final stage.
 
 Park your favorite digimon in the box and pull them out later. A pet in the box **does not grow and cannot die** — when you take it out it resumes exactly where it left off.
 
-- Box capacity: **5 slots**
+- Box capacity: **20 slots**
 - **Save**: click an empty slot in the control panel → the active pet is parked, a new egg starts. The "Open box" shortcut button appears on the evolution bubble.
 - **Take out**: click a saved pet → "Take out" → the active pet auto-moves into the empty slot.
 - **Delete**: permanently removes a pet from the box.

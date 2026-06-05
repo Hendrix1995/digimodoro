@@ -29,7 +29,7 @@ fn box_path() -> PathBuf {
     get_data_dir().join("box.json")
 }
 
-const BOX_CAPACITY: usize = 5;
+const BOX_CAPACITY: usize = 20;
 
 /// Atomic write: write to .tmp then rename
 fn atomic_write(path: &PathBuf, data: &str) -> Result<(), String> {
@@ -254,8 +254,8 @@ pub fn take_out_of_box_store(
         }
         // Find an empty slot to park the current pet into. The just-vacated
         // target slot doesn't count yet — we look first for a pre-existing
-        // empty, falling back to target. Either way the box ends with 5
-        // entries, one of which is `current` and target is now active.
+        // empty, falling back to target. Either way the box ends with
+        // BOX_CAPACITY entries, one of which is `current` and target is now active.
         let park_idx = slots
             .iter()
             .enumerate()

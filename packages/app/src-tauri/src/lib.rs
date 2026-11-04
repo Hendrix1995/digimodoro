@@ -132,7 +132,7 @@ fn tray_icon(app: &tauri::App) -> tauri::image::Image<'static> {
             return img;
         }
     }
-    app.default_window_icon().cloned().unwrap()
+    app.default_window_icon().cloned().unwrap().to_owned()
 }
 
 /// skipTaskbar only removes the taskbar button; the window still shows in

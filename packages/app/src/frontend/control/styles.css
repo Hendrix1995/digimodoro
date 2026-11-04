@@ -650,3 +650,11 @@ body.is-egg .pet-sprite {
 body.is-rip .pet-sprite {
   filter: grayscale(1) brightness(0.6);
 }
+
+/* Windows (WebView2) draws classic light scrollbars that take layout width;
+   keep inner lists consistent with the dark panel. */
+.evo-list,
+.grave-list {
+  scrollbar-width: thin;
+  scrollbar-color: #2a3140 transparent;
+}

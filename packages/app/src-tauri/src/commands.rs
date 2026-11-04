@@ -89,8 +89,17 @@ pub fn load_egg_lineage(app: AppHandle) -> Result<serde_json::Value, String> {
 pub fn load_sprite(app: AppHandle, relative_path: String) -> Result<String, String> {
     use base64::Engine;
 
+    // Only plain relative paths inside the sprites dir. On Windows, an absolute
+    // or UNC path passed to join() would replace the base entirely.
+    let rel = std::path::Path::new(&relative_path);
+    if !rel
+        .components()
+        .all(|c| matches!(c, std::path::Component::Normal(_)))
+    {
+        return Err(format!("invalid sprite path: {}", relative_path));
+    }
     let sprites_dir = store::get_sprites_dir(&app)?;
-    let full_path = sprites_dir.join(&relative_path);
+    let full_path = sprites_dir.join(rel);
 
     let bytes = std::fs::read(&full_path)
         .map_err(|e| format!("read sprite {}: {}", relative_path, e))?;
@@ -107,14 +116,21 @@ pub fn load_sprite(app: AppHandle, relative_path: String) -> Result<String, Stri
 
 // --- Window management ---
 
+// Async so it runs off the main thread: on Windows, building a webview window
+// inside a synchronous command deadlocks (WebView2 creation needs the main
+// thread's message pump, which a sync command blocks).
 #[tauri::command]
-pub fn show_control_window(app: AppHandle) -> Result<(), String> {
+pub async fn show_control_window(app: AppHandle) -> Result<(), String> {
+    open_control_window(&app)
+}
+
+pub fn open_control_window(app: &AppHandle) -> Result<(), String> {
     if let Some(win) = app.get_webview_window("control") {
         win.show().map_err(|e| e.to_string())?;
         win.set_focus().map_err(|e| e.to_string())?;
     } else {
         let _win = WebviewWindowBuilder::new(
-            &app,
+            app,
             "control",
             WebviewUrl::App("control/index.html".into()),
         )
@@ -126,6 +142,64 @@ pub fn show_control_window(app: AppHandle) -> Result<(), String> {
         .build()
         .map_err(|e| e.to_string())?;
     }
+    Ok(())
+}
+
+// Drag is driven from the native cursor position in physical pixels, so it
+// stays under the cursor even when monitors use different scale factors
+// (screenX from the webview is not consistent across mixed-DPI monitors).
+#[derive(Default)]
+pub struct PetDrag(pub std::sync::Mutex<Option<(f64, f64)>>);
+
+#[derive(serde::Serialize)]
+pub struct LogicalPoint {
+    pub x: f64,
+    pub y: f64,
+}
+
+#[tauri::command]
+pub fn pet_drag_start(app: AppHandle, drag: tauri::State<'_, PetDrag>) -> Result<(), String> {
+    let win = app
+        .get_webview_window("pet")
+        .ok_or_else(|| "pet window not found".to_string())?;
+    let cursor = win.cursor_position().map_err(|e| e.to_string())?;
+    let pos = win.outer_position().map_err(|e| e.to_string())?;
+    *drag.0.lock().map_err(|e| e.to_string())? =
+        Some((cursor.x - pos.x as f64, cursor.y - pos.y as f64));
+    Ok(())
+}
+
+/// Moves the pet window under the cursor and returns its new top-left in
+/// logical coordinates (same space move_pet_window uses).
+#[tauri::command]
+pub fn pet_drag_move(
+    app: AppHandle,
+    drag: tauri::State<'_, PetDrag>,
+) -> Result<Option<LogicalPoint>, String> {
+    let Some((ox, oy)) = *drag.0.lock().map_err(|e| e.to_string())? else {
+        return Ok(None);
+    };
+    let win = app
+        .get_webview_window("pet")
+        .ok_or_else(|| "pet window not found".to_string())?;
+    let cursor = win.cursor_position().map_err(|e| e.to_string())?;
+    let x = (cursor.x - ox).round();
+    let y = (cursor.y - oy).round();
+    win.set_position(tauri::Position::Physical(tauri::PhysicalPosition {
+        x: x as i32,
+        y: y as i32,
+    }))
+    .map_err(|e| e.to_string())?;
+    let scale = win.scale_factor().map_err(|e| e.to_string())?;
+    Ok(Some(LogicalPoint {
+        x: x / scale,
+        y: y / scale,
+    }))
+}
+
+#[tauri::command]
+pub fn pet_drag_end(drag: tauri::State<'_, PetDrag>) -> Result<(), String> {
+    *drag.0.lock().map_err(|e| e.to_string())? = None;
     Ok(())
 }
 

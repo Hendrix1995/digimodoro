@@ -12,12 +12,13 @@ pub fn run() {
     #[cfg(desktop)]
     {
         builder = builder.plugin(tauri_plugin_single_instance::init(|app, _args, _cwd| {
-            let _ = commands::show_control_window(app.clone());
+            let _ = commands::open_control_window(app);
         }));
     }
 
     builder
         .plugin(tauri_plugin_notification::init())
+        .manage(commands::PetDrag::default())
         .invoke_handler(tauri::generate_handler![
             commands::load_state,
             commands::save_state,
@@ -35,6 +36,9 @@ pub fn run() {
             commands::load_sprite,
             commands::show_control_window,
             commands::move_pet_window,
+            commands::pet_drag_start,
+            commands::pet_drag_move,
+            commands::pet_drag_end,
             commands::resize_pet_window,
             commands::show_pet_menu,
             commands::update_tray,
@@ -52,6 +56,11 @@ pub fn run() {
             let data_dir = store::get_data_dir();
             std::fs::create_dir_all(&data_dir).ok();
 
+            #[cfg(windows)]
+            if let Some(pet) = app.get_webview_window("pet") {
+                hide_from_alt_tab(&pet);
+            }
+
             // Build tray menu
             let show_item = MenuItemBuilder::with_id("show", "Show Status")
                 .build(app)?;
@@ -66,13 +75,13 @@ pub fn run() {
             // Create system tray
             let _tray = TrayIconBuilder::with_id("main")
                 .tooltip("DigiModoro")
-                .icon(app.default_window_icon().cloned().unwrap())
+                .icon(tray_icon(app))
                 .menu(&menu)
                 .show_menu_on_left_click(false)
                 .on_menu_event(|app, event| {
                     match event.id().as_ref() {
                         "show" => {
-                            let _ = commands::show_control_window(app.clone());
+                            let _ = commands::open_control_window(app);
                         }
                         "quit" => {
                             app.exit(0);
@@ -88,7 +97,7 @@ pub fn run() {
                     } = event
                     {
                         let app = tray.app_handle();
-                        let _ = commands::show_control_window(app.clone());
+                        let _ = commands::open_control_window(app);
                     }
                 })
                 .build(app)?;
@@ -96,14 +105,49 @@ pub fn run() {
             Ok(())
         })
         .on_window_event(|window, event| {
-            // Hide control window instead of closing it
-            if window.label() == "control" {
-                if let tauri::WindowEvent::CloseRequested { api, .. } = event {
-                    api.prevent_close();
-                    window.hide().ok();
+            if let tauri::WindowEvent::CloseRequested { api, .. } = event {
+                match window.label() {
+                    // Hide control window instead of closing it
+                    "control" => {
+                        api.prevent_close();
+                        window.hide().ok();
+                    }
+                    // The pet window owns the scheduler; never let Alt+F4 close it.
+                    // Quitting goes through the tray / pet menu (app.exit).
+                    "pet" => api.prevent_close(),
+                    _ => {}
                 }
             }
         })
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
+}
+
+/// On Windows the dedicated 32px tray image is used; the default window icon
+/// is a 256px image that Windows shrinks to 16px for the notification area.
+fn tray_icon(app: &tauri::App) -> tauri::image::Image<'static> {
+    #[cfg(windows)]
+    {
+        if let Ok(img) = tauri::image::Image::from_bytes(include_bytes!("../icons/tray.png")) {
+            return img;
+        }
+    }
+    app.default_window_icon().cloned().unwrap().to_owned()
+}
+
+/// skipTaskbar only removes the taskbar button; the window still shows in
+/// Alt+Tab / Task View unless it is a tool window.
+#[cfg(windows)]
+fn hide_from_alt_tab(window: &tauri::WebviewWindow) {
+    use windows_sys::Win32::UI::WindowsAndMessaging::{
+        GetWindowLongPtrW, SetWindowLongPtrW, GWL_EXSTYLE, WS_EX_APPWINDOW, WS_EX_TOOLWINDOW,
+    };
+    if let Ok(hwnd) = window.hwnd() {
+        let h = hwnd.0 as windows_sys::Win32::Foundation::HWND;
+        unsafe {
+            let style = GetWindowLongPtrW(h, GWL_EXSTYLE);
+            let style = (style | WS_EX_TOOLWINDOW as isize) & !(WS_EX_APPWINDOW as isize);
+            SetWindowLongPtrW(h, GWL_EXSTYLE, style);
+        }
+    }
 }

@@ -15,10 +15,13 @@ import {
   type Lang,
 } from '@digimodoro/core'
 import { Scheduler } from './scheduler'
-import { PetMover } from './mover'
+import { PetMover, type WorkArea } from './mover'
 import type { Snapshot, AppConfig } from '../shared/types'
 import { DEFAULT_CONFIG } from '../shared/types'
 import { SPRITE_DEFAULT_FACING, loadSprite } from '../shared/sprite-utils'
+import { blockBrowserShortcuts } from '../shared/keys'
+
+blockBrowserShortcuts()
 
 const sprite = document.getElementById('sprite') as HTMLImageElement
 const bubble = document.getElementById('bubble') as HTMLElement
@@ -84,26 +87,43 @@ function showBubble(text: string, ms = 2200, action?: BubbleAction): void {
 }
 
 let isDragging = false
-let dragOffsetX = 0
-let dragOffsetY = 0
+let dragMovePending = false
 
+// The window is moved natively from the OS cursor position (physical pixels),
+// so the pet stays under the cursor across monitors with different scaling.
 sprite.addEventListener('mousedown', (e) => {
   if (e.button !== 0) return
   e.preventDefault()
   isDragging = true
   mover.setDragging(true)
-  const pos = mover.position()
-  dragOffsetX = e.screenX - pos.x
-  dragOffsetY = e.screenY - pos.y
-  const onMove = (ev: MouseEvent): void => {
-    if (!isDragging) return
-    mover.setPosition(ev.screenX - dragOffsetX, ev.screenY - dragOffsetY)
+  const started = invoke('pet_drag_start').catch(() => {})
+  const onMove = (): void => {
+    if (!isDragging || dragMovePending) return
+    dragMovePending = true
+    void started
+      .then(() => invoke<{ x: number; y: number } | null>('pet_drag_move'))
+      .then((p) => {
+        if (p) mover.syncWindowPosition(p.x, p.y)
+      })
+      .catch(() => {})
+      .finally(() => {
+        dragMovePending = false
+      })
   }
   const onUp = (): void => {
     isDragging = false
-    mover.setDragging(false)
     window.removeEventListener('mousemove', onMove, true)
     window.removeEventListener('mouseup', onUp, true)
+    void started
+      .then(() => invoke<{ x: number; y: number } | null>('pet_drag_move'))
+      .then((p) => {
+        if (p) mover.syncWindowPosition(p.x, p.y)
+      })
+      .catch(() => {})
+      .finally(() => {
+        void invoke('pet_drag_end').catch(() => {})
+        mover.setDragging(false)
+      })
   }
   window.addEventListener('mousemove', onMove, true)
   window.addEventListener('mouseup', onUp, true)
@@ -239,7 +259,7 @@ async function boot(): Promise<void> {
 
   let state: PetState
   try {
-    state = await invoke<PetState>('load_state')
+    state = await loadStateWithRetry()
   } catch {
     state = initialState({
       now: Math.floor(Date.now() / 1000),
@@ -264,13 +284,22 @@ async function boot(): Promise<void> {
   const petSize = Math.round(BASE_PX * petScale)
   await invoke('resize_pet_window', { width: petSize, height: petSize })
 
-  const workW = window.screen.availWidth
-  const workH = window.screen.availHeight
-
-  mover = new PetMover(
-    { width: workW, height: workH },
-    { width: petSize, height: petSize },
-  )
+  let work = readWorkArea()
+  mover = new PetMover(work, { width: petSize, height: petSize })
+  // Display scale, resolution and taskbar size/position can change while the
+  // app runs (docking, changing Windows display settings); track them.
+  setInterval(() => {
+    const next = readWorkArea()
+    if (
+      next.left !== work.left ||
+      next.top !== work.top ||
+      next.width !== work.width ||
+      next.height !== work.height
+    ) {
+      work = next
+      mover.updateWorkArea(next)
+    }
+  }, 1000)
   mover.setOnFacingChange(setFacing)
 
   const tunables = {
@@ -333,6 +362,35 @@ async function boot(): Promise<void> {
 
   void refreshSprite(state.digimonId, state.seedEggVariant)
   setFacing(mover.currentFacing())
+}
+
+// Work area of the primary display. availLeft/availTop are non-zero when the
+// taskbar (Windows) or menu bar (macOS) sits at the left/top edge.
+function readWorkArea(): WorkArea {
+  const scr = window.screen as Screen & { availLeft?: number; availTop?: number }
+  return {
+    left: scr.availLeft ?? 0,
+    top: scr.availTop ?? 0,
+    width: scr.availWidth,
+    height: scr.availHeight,
+  }
+}
+
+// Only a missing file means "no pet yet". Any other failure (on Windows, a
+// file briefly locked by antivirus/backup software) is retried so an existing
+// pet is not replaced by a fresh egg.
+async function loadStateWithRetry(): Promise<PetState> {
+  let lastErr: unknown
+  for (let i = 0; i < 5; i++) {
+    try {
+      return await invoke<PetState>('load_state')
+    } catch (e) {
+      if (e === 'no_state') throw e
+      lastErr = e
+      await new Promise((r) => setTimeout(r, 500))
+    }
+  }
+  throw lastErr
 }
 
 function formatTrayTitle(snap: Snapshot): string {

@@ -5,6 +5,9 @@ import type { Snapshot, AppConfig, GraveyardEntry, BoxData, BoxSlot, PetState } 
 import { DEFAULT_CONFIG, BOX_CAPACITY } from '../shared/types'
 import { SPRITE_DEFAULT_FACING, loadSprite } from '../shared/sprite-utils'
 import { PetCanvas } from './pet-canvas'
+import { blockBrowserShortcuts } from '../shared/keys'
+
+blockBrowserShortcuts()
 
 const defaultFacing = (id: string): 'left' | 'right' =>
   SPRITE_DEFAULT_FACING[id] ?? 'left'
@@ -712,6 +715,11 @@ els.segSize.addEventListener('click', async (e) => {
   await persistCfg()
   void emit('digi:scale-change', { scale: s })
 })
+// On Windows (WebView2) the wheel over a focused number input changes its
+// value; drop focus so the wheel only scrolls.
+for (const inp of [els.inpFocus, els.inpBreak]) {
+  inp.addEventListener('wheel', () => inp.blur(), { passive: true })
+}
 els.inpFocus.addEventListener('change', async () => {
   if (!cfg) return
   cfg.pomodoro.focusMinutes = Math.max(1, Math.min(180, Number(els.inpFocus.value) || 50))

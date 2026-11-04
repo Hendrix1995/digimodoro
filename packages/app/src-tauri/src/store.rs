@@ -31,11 +31,37 @@ fn box_path() -> PathBuf {
 
 const BOX_CAPACITY: usize = 20;
 
+const IO_RETRIES: u32 = 5;
+const IO_RETRY_DELAY: std::time::Duration = std::time::Duration::from_millis(50);
+
+/// Retries an I/O operation a few times. On Windows, antivirus scanners,
+/// the search indexer or backup tools can briefly hold a file open, which
+/// makes reads/renames fail with a sharing violation.
+fn with_retry<T>(mut op: impl FnMut() -> std::io::Result<T>) -> std::io::Result<T> {
+    let mut attempt = 0;
+    loop {
+        match op() {
+            Ok(v) => return Ok(v),
+            Err(e) if e.kind() == std::io::ErrorKind::NotFound => return Err(e),
+            Err(e) => {
+                attempt += 1;
+                if attempt >= IO_RETRIES {
+                    return Err(e);
+                }
+                std::thread::sleep(IO_RETRY_DELAY);
+            }
+        }
+    }
+}
+
 /// Atomic write: write to .tmp then rename
 fn atomic_write(path: &PathBuf, data: &str) -> Result<(), String> {
     let tmp = path.with_extension(format!("tmp.{}", std::process::id()));
-    fs::write(&tmp, data).map_err(|e| format!("write tmp failed: {}", e))?;
-    fs::rename(&tmp, path).map_err(|e| format!("rename failed: {}", e))?;
+    with_retry(|| fs::write(&tmp, data)).map_err(|e| format!("write tmp failed: {}", e))?;
+    if let Err(e) = with_retry(|| fs::rename(&tmp, path)) {
+        let _ = fs::remove_file(&tmp);
+        return Err(format!("rename failed: {}", e));
+    }
     Ok(())
 }
 
@@ -52,8 +78,20 @@ pub fn load_state_json() -> Result<serde_json::Value, String> {
     if !path.exists() {
         return Err("no_state".to_string());
     }
-    let raw = fs::read_to_string(&path).map_err(|e| format!("read state: {}", e))?;
-    serde_json::from_str(&raw).map_err(|e| format!("parse state: {}", e))
+    let raw = with_retry(|| fs::read_to_string(&path)).map_err(|e| format!("read state: {}", e))?;
+    match serde_json::from_str(raw.trim_start_matches('\u{feff}')) {
+        Ok(v) => Ok(v),
+        Err(_) => {
+            // Keep the unreadable file instead of letting a fresh egg overwrite it.
+            let secs = std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .map(|d| d.as_secs())
+                .unwrap_or(0);
+            let backup = get_data_dir().join(format!("state.corrupt-{}.json", secs));
+            fs::copy(&path, &backup).map_err(|e| format!("backup corrupt state: {}", e))?;
+            Err("no_state".to_string())
+        }
+    }
 }
 
 pub fn save_state_json(state: &serde_json::Value) -> Result<(), String> {

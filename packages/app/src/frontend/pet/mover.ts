@@ -2,6 +2,18 @@ import { invoke } from '@tauri-apps/api/core'
 
 type State = 'idle' | 'walk' | 'jump' | 'land'
 
+export type WorkArea = {
+  left: number
+  top: number
+  width: number
+  height: number
+}
+
+const TICK_MS = 16
+// Upper bound on catch-up steps per timer callback, so a long stall (sleep,
+// suspended webview) does not fast-forward the pet across the screen.
+const MAX_CATCHUP_STEPS = 8
+
 export type JumpEvent = {
   durationMs: number
 }
@@ -22,8 +34,12 @@ export class PetMover {
   private state: State = 'idle'
   private stateTicksLeft = 30
   private timer: ReturnType<typeof setInterval> | undefined
+  private workLeft: number
+  private workTop: number
   private workW: number
   private workH: number
+  private lastTickAt = 0
+  private tickDebt = 0
   private petW: number
   private petH: number
   private onFacingChange: ((dir: 'left' | 'right') => void) | undefined
@@ -40,21 +56,32 @@ export class PetMover {
   private lastEmittedX = Number.NaN
   private lastEmittedY = Number.NaN
 
-  constructor(
-    work: { width: number; height: number },
-    petDims: { width: number; height: number },
-  ) {
+  constructor(work: WorkArea, petDims: { width: number; height: number }) {
+    this.workLeft = work.left
+    this.workTop = work.top
     this.workW = work.width
     this.workH = work.height
     this.petW = petDims.width
     this.petH = petDims.height
-    this.x = Math.floor(this.workW / 2)
-    this.y = Math.floor(this.workH - 24)
+    this.x = Math.floor(this.workLeft + this.workW / 2)
+    this.y = Math.floor(this.groundY())
   }
 
-  updateWorkArea(work: { width: number; height: number }): void {
+  updateWorkArea(work: WorkArea): void {
+    this.workLeft = work.left
+    this.workTop = work.top
     this.workW = work.width
     this.workH = work.height
+    // Pull the pet back inside if the area shrank or moved.
+    const left = this.workLeft + this.petW / 2
+    const right = this.workLeft + this.workW - this.petW / 2
+    this.x = Math.min(Math.max(this.x, left), right)
+    if (this.y > this.groundY()) this.y = this.groundY()
+    this.emitPosition()
+  }
+
+  private groundY(): number {
+    return this.workTop + this.workH - 24
   }
 
   updateDims(dims: { width: number; height: number }): void {
@@ -74,7 +101,12 @@ export class PetMover {
 
   start(): void {
     if (this.timer) return
-    this.timer = setInterval(() => this.tick(), 16)
+    // Physics runs in fixed 16ms steps driven by elapsed time, not by timer
+    // callbacks: Windows can coarsen setInterval to ~31ms (battery saver,
+    // timer resolution), which would otherwise halve the pet's speed.
+    this.lastTickAt = performance.now()
+    this.tickDebt = 0
+    this.timer = setInterval(() => this.onTimer(), TICK_MS)
     this.emitPosition()
   }
   stop(): void {
@@ -98,6 +130,16 @@ export class PetMover {
     this.emitPosition()
   }
 
+  /// Records a window position that was already applied natively (drag),
+  /// given as the window's logical top-left. Does not move the window again.
+  syncWindowPosition(winX: number, winY: number): void {
+    this.x = winX + this.petW / 2
+    this.y = winY + this.petH
+    this.lastEmittedX = Math.round(winX)
+    this.lastEmittedY = Math.round(winY)
+    this.onPosition?.({ x: this.x, y: this.y })
+  }
+
   setActive(active: boolean): void {
     if (this.active === active) return
     this.active = active
@@ -114,15 +156,24 @@ export class PetMover {
     return { x: this.x, y: this.y }
   }
 
-  private tick(): void {
-    if (this.paused || this.dragging) {
-      this.emitPosition()
-      return
+  private onTimer(): void {
+    const now = performance.now()
+    this.tickDebt += now - this.lastTickAt
+    this.lastTickAt = now
+    let steps = Math.floor(this.tickDebt / TICK_MS)
+    this.tickDebt -= steps * TICK_MS
+    if (steps > MAX_CATCHUP_STEPS) {
+      steps = MAX_CATCHUP_STEPS
+      this.tickDebt = 0
     }
-    if (Date.now() - this.lastUserDragAt < 600) {
-      this.emitPosition()
-      return
-    }
+    if (this.dragging) return
+    for (let i = 0; i < steps; i++) this.step()
+    this.emitPosition()
+  }
+
+  private step(): void {
+    if (this.paused || this.dragging) return
+    if (Date.now() - this.lastUserDragAt < 600) return
 
     if (this.stateTicksLeft-- <= 0) this.pickState()
 
@@ -160,8 +211,8 @@ export class PetMover {
     this.y += this.vy
 
     // Bounds — keep pet inside the work area
-    const left = this.petW / 2
-    const right = this.workW - this.petW / 2
+    const left = this.workLeft + this.petW / 2
+    const right = this.workLeft + this.workW - this.petW / 2
     if (this.x < left) {
       this.x = left
       this.vx = Math.abs(this.vx)
@@ -172,7 +223,7 @@ export class PetMover {
       this.setFacing('left')
     }
 
-    const groundY = this.workH - 24
+    const groundY = this.groundY()
     if (this.y >= groundY) {
       this.y = groundY
       this.vy = 0
@@ -182,9 +233,7 @@ export class PetMover {
         this.stateTicksLeft = 8 + Math.floor(Math.random() * 12)
       }
     }
-    if (this.y < this.petH) this.y = this.petH
-
-    this.emitPosition()
+    if (this.y < this.workTop + this.petH) this.y = this.workTop + this.petH
   }
 
   private pickState(): void {
